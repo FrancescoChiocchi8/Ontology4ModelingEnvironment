@@ -1,0 +1,200 @@
+# baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
+# imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
+# imports: http://fhnw.ch/modelingEnvironment/DomainOntology
+# imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
+# imports: http://ikm-group.ch/archimeo
+# prefix: lo
+
+@prefix : <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix archimeo: <http://ikm-group.ch/archiMEO#> .
+@prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
+@prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmi-type-vocabulary: <http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary#> .
+@prefix dcterms: <http://purl.org/dcterms#> .
+@prefix elements: <http://purl.org/dc/elements/1.1#> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix foaf: <http://xmlns.com/foaf/spec#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix media-types: <http://www.iana.org/assignments/media-types#> .
+@prefix nco: <http://ikm-group.ch/archiMEO/nco#> .
+@prefix ontogov: <http://ch.fhnw.ontogov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/modelingEnvironment/LanguageOntology>
+  rdf:type owl:Ontology ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  cc:license "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License."@en ;
+  dc:contributor "Stefano Izzo" ;
+  dc:creator "Emanuele Laurenzi" ;
+  dc:description "The Language Ontology."@en ;
+  dc:issued "2018-04-25"^^xsd:date ;
+  dc:modified "2018-04-26"^^xsd:date ;
+  dc:publisher <http://de.dbpedia.org/resource/Fachhochschule_Nordwestschweiz> ;
+  dc:publisher <http://www.fhnw.ch/business> ;
+  dc:publisher "University of Applied Sciences Northwestern Switzerland FHNW"@en ;
+  dc:rights "Copyright 2018 FHNW" ;
+  dc:title "The Language Ontology"@en ;
+  rdfs:comment "Version 1.1: Initial import"@en ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/DomainOntology> ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/PaletteOntology> ;
+  owl:imports <http://ikm-group.ch/archimeo> ;
+  owl:versionInfo 1.1 ;
+.
+lo:ModelingElement
+  rdf:type owl:Class ;
+  rdfs:label "Modeling Element" ;
+  rdfs:subClassOf lo:ModelingLanguageConstruct ;
+.
+lo:ModelingLanguageConstruct
+  rdf:type owl:Class ;
+  rdfs:label "Modeling construct" ;
+  rdfs:subClassOf owl:Thing ;
+.
+lo:ModelingRelation
+  rdf:type owl:Class ;
+  rdfs:label "Modeling Relation" ;
+  rdfs:subClassOf lo:ModelingLanguageConstruct ;
+.
+lo:ModelingRelation_1
+  rdf:type lo:ModelingRelation ;
+  rdfs:label "prepareKoGu1" ;
+.
+lo:NotAllowedCombination
+  rdf:type owl:Class ;
+  rdfs:label "Not Allowed Source-Target Combination" ;
+  rdfs:label "This concept has the purpose to represent all the source-target combinations between instance elements that an instance relation should be not allowed" ;
+  rdfs:subClassOf owl:Thing ;
+.
+lo:PrepareKoGuIsMappedWithCostReimbursment
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#PrepareKoGu> ;
+  rdfs:label "is mapped with prepare" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Cost_Reimbursment> ;
+  rdfs:subPropertyOf lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept ;
+.
+lo:PrepareKoGuIsMappedWithPrepare
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#PrepareKoGu> ;
+  rdfs:label "is mapped with prepare" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Prepare> ;
+  rdfs:subPropertyOf lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept ;
+.
+lo:SequenceFlow_1
+  rdf:type bpmn:SequenceFlow ;
+  rdfs:label "sf" ;
+.
+lo:combinationHasSource
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:label "Combination has source" ;
+  rdfs:range lo:ModelingElement ;
+.
+lo:combinationHasTarget
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:label "Combination has target" ;
+  rdfs:range lo:ModelingElement ;
+.
+lo:combinationIsNotAllowedInMR
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:label "source-target combination is not allowed in modeling relation" ;
+  rdfs:range lo:ModelingRelation ;
+.
+lo:date_of_birth
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain bpmn:DataInput ;
+  rdfs:label "data of birth" ;
+  rdfs:range xsd:date ;
+.
+lo:metaModelHasModelingLanguageConstruct
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain emo:BusinessMetaModel ;
+  rdfs:range lo:ModelingLanguageConstruct ;
+.
+lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          lo:ModelingLanguageConstruct
+          bpmn:DataInput
+        ) ;
+    ] ;
+  rdfs:label "is mapped with" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+.
+lo:modelingRelationHasSourceModelingElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingRelation ;
+  rdfs:label "Modeling Relation Has Source Modeling Element" ;
+  rdfs:range lo:ModelingElement ;
+.
+lo:modelingRelationHasTargetModelingElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingRelation ;
+  rdfs:label "Modeling Relation Has Target Modeling Element" ;
+  rdfs:range lo:ModelingElement ;
+.
+lo:notAllowedComb_Start-Start
+  rdf:type lo:NotAllowedCombination ;
+  lo:combinationHasSource bpmn:StartEvent ;
+  lo:combinationHasTarget bpmn:StartEvent ;
+  lo:combinationIsNotAllowedInMR bpmn:SequenceFlow ;
+  rdfs:label "Start event cannot be directly connected with start event - Semantics defined in BPMN 2.0" ;
+.
+bpmn:Artifact
+  rdfs:subClassOf lo:ModelingElement ;
+.
+bpmn:ConnectingObject
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+bpmn:FlowElement
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+bpmn:FlowElementContainer
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+bpmn:FlowObject
+  rdfs:subClassOf lo:ModelingElement ;
+.
+bpmn:Swimlane
+  rdfs:subClassOf lo:ModelingElement ;
+.
+archi:Relationships
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+emo:Aspect
+  rdfs:subClassOf lo:ModelingElement ;
+.
+emo:Perspective
+  rdfs:subClassOf lo:ModelingElement ;
+.
+eo:EnterpriseObject
+  rdfs:subClassOf lo:ModelingElement ;
+.
+nco:NCO
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+.
+<http://ikm-group.ch/archimeo/iso42010#ADMetaModel>
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#Standard> ;
+.
+rdf:Property
+  rdf:type owl:Class ;
+.
+owl:Class
+  rdf:type owl:Class ;
+.
+owl:Thing
+  rdf:type owl:Class ;
+.

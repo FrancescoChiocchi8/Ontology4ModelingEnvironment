@@ -1,0 +1,839 @@
+# baseURI: http://fhnw.ch/modelingEnvironment/PaletteOntology
+# imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
+# prefix: po
+
+@prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/modelingEnvironment/PaletteOntology>
+  rdf:type owl:Ontology ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
+.
+po:Activity
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Call_Activity.png" ;
+  po:paletteElementImageURL "Call_Activity.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Call_Activity.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
+  rdfs:label "Call Activity" ;
+.
+po:Category_Activities
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Activities" ;
+.
+po:Category_Connectors
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Connectors" ;
+.
+po:Category_Data
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Data" ;
+.
+po:Category_Events
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Events" ;
+.
+po:Category_Gateways
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Gateways" ;
+.
+po:CloseTransferCaseRecord
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:CloseTransferCaseRecord ;
+  rdfs:label """Close Transfer Case Record
+ """ ;
+.
+po:ConfirmTransfer
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:ConfirmTransfer ;
+  rdfs:label "Confirm Transfer" ;
+.
+po:DataInput
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataInput.png" ;
+  po:paletteElementImageURL "DataInput.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "DataInput.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Data ;
+  po:paletteModelHasParentPaletteModel po:DataObject ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#DataType> ;
+  rdfs:label "Data Input" ;
+.
+po:DataObject
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataObject.png" ;
+  po:paletteElementImageURL "DataObject.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "DataObject.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Data ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#DataType> ;
+  rdfs:label "Data Object" ;
+.
+po:DataOutput
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataOutput.png" ;
+  po:paletteElementImageURL "DataOutput.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "DataOutput.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Data ;
+  po:paletteModelHasParentPaletteModel po:DataObject ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#DataType> ;
+  rdfs:label "Data Output" ;
+.
+po:EventBasedGateway
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Orange" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "EventBased_Gateway.png" ;
+  po:paletteElementImageURL "EventBased_Gateway.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "EventBased_Gateway.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
+  rdfs:label "Event-based Gateway" ;
+.
+po:ExclusiveGateway
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Orange" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Exclusive_Gateway.png" ;
+  po:paletteElementImageURL "Exclusive_Gateway.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "Exclusive_Gateway.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelHasParentPaletteModel po:SimpleGateway ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
+  rdfs:label "Exclusive Gatweay" ;
+.
+po:FinalizeKoGu
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
+  rdfs:label "Finalize KoGu" ;
+.
+po:MakeDispositionOfCase
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:MakeDispositionOfCase ;
+  rdfs:label "Make Disposition Of Case" ;
+.
+po:ManualTask
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Manual_Task.png" ;
+  po:paletteElementImageURL "Manual_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Manual_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ServiceTask> ;
+  rdfs:label "Manual Task" ;
+.
+po:MessageIntermediate
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Green" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Message_Intermediate.png" ;
+  po:paletteElementImageURL "Message_Intermediate.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementThumbnailURL "Message_Intermediate.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelHasParentPaletteModel po:SimpleIntermediate ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#IntermediateEvent> ;
+  rdfs:label "Message Intermediate" ;
+.
+po:MessageStart
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Green" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Message_Start.png" ;
+  po:paletteElementImageURL "Message_Start.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementThumbnailURL "Message_Start.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelHasParentPaletteModel po:SimpleStart ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
+  rdfs:label "Message Start" ;
+.
+po:PaletteCategory
+  rdf:type owl:Class ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  rdfs:subClassOf owl:Thing ;
+.
+po:PaletteConnector
+  rdf:type owl:Class ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  rdfs:label "Palette Connector" ;
+  rdfs:subClassOf po:PaletteConstruct ;
+.
+po:PaletteConstruct
+  rdf:type owl:Class ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  rdfs:subClassOf owl:Thing ;
+.
+po:PaletteElement
+  rdf:type owl:Class ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  rdfs:label "Palette Element" ;
+  rdfs:subClassOf po:PaletteConstruct ;
+.
+po:ParallelGateway
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Orange" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Parallel_Gateway.png" ;
+  po:paletteElementImageURL "Parallel_Gateway.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "Parallel_Gateway.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelHasParentPaletteModel po:SimpleGateway ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ParallelGateway> ;
+  rdfs:label "Parallel Gateway" ;
+.
+po:PrepareKoGu
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementImageURL "User_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareKoGu ;
+  rdfs:label "Prepare KoGu" ;
+.
+po:PrepareMedicalRecordAdmission
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareMedicalAdmission ;
+  rdfs:label """Prepare Medical Record Admission
+ """ ;
+.
+po:PrepareRehabAdmission
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareRehabAdmission ;
+  rdfs:label """Prepare Rehab Admission
+ """ ;
+.
+po:ReceiveTask
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Receive_Task.png" ;
+  po:paletteElementImageURL "Receive_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Receive_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#SendTask> ;
+  rdfs:label "Receive Task" ;
+.
+po:ReleaseTransferCase
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:ReleaseTransferCase ;
+  rdfs:label """Release Transfer Case
+ """ ;
+.
+po:SendTask
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementImageURL "Send_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#SendTask> ;
+  rdfs:label "Send Task" ;
+.
+po:SequenceFlow
+  rdf:type po:PaletteConnector ;
+  rdfs:label "Sequence Flow" ;
+.
+po:ServiceTask
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Service_Task.png" ;
+  po:paletteElementImageURL "Service_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Service_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ServiceTask> ;
+  rdfs:label "Service Task" ;
+.
+po:SimpleEnd
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Red" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Simple_End.png" ;
+  po:paletteElementImageURL "Simple_End.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementThumbnailURL "Simple_End.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#EndEvent> ;
+  rdfs:label "Simple End" ;
+.
+po:SimpleGateway
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Orange" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Simple_Gateway.png" ;
+  po:paletteElementImageURL "Simple_Gateway.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "Simple_Gateway.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
+  rdfs:label "Simple Gatweay" ;
+.
+po:SimpleIntermediate
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Simple_Intermediate.png" ;
+  po:paletteElementImageURL "Simple_Intermediate.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "Simple_Intermediate.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#IntermediateEvent> ;
+  rdfs:label "Simple Intermediate" ;
+.
+po:SimpleStart
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#00AD5F" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Simple_Start.png" ;
+  po:paletteElementImageURL "Simple_Start.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementThumbnailURL "Simple_Start.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
+  rdfs:label "Simple Start" ;
+.
+po:SubReceiveActivity
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false" ;
+  po:paletteElementUsesImage "null" ;
+  po:paletteModelHasPaletteCategory "lo:Category_Activities" ;
+  po:paletteModelHasParentPaletteModel "http://fhnw.ch/modelingEnvironment/LanguageOntology#ReceiveTask" ;
+  rdfs:label "Subtask Receive Activity" ;
+.
+po:Subprocess
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Subprocess.png" ;
+  po:paletteElementImageURL "Subprocess.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Subprocess.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#SubProcess> ;
+  rdfs:label "Subprocess" ;
+.
+po:Task
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementImageURL "Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
+  rdfs:label "Task" ;
+.
+po:TestActivity
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false" ;
+  po:paletteElementUsesImage "null" ;
+  po:paletteModelHasPaletteCategory "lo:Category_Activities" ;
+  po:paletteModelHasParentPaletteModel "lo:ManualTask" ;
+  rdfs:label "Test Activity" ;
+.
+po:TestSub
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false" ;
+  po:paletteElementUsesImage "null" ;
+  po:paletteModelHasPaletteCategory "http://fhnw.ch/modelingEnvironment/LanguageOntology#Category_Activities" ;
+  po:paletteModelHasParentPaletteModel "http://fhnw.ch/modelingEnvironment/LanguageOntology#Subprocess" ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct "bpmn:TestSub" ;
+  rdfs:label "Test Sub" ;
+.
+po:TimerIntermediate
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Timer_Intermediate.png" ;
+  po:paletteElementImageURL "Timer_Intermediate.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Timer_Intermediate.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelHasParentPaletteModel po:SimpleIntermediate ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#IntermediateEvent> ;
+  rdfs:label "Timer Intermediate" ;
+.
+po:TimerStart
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Timer_Start.png" ;
+  po:paletteElementImageURL "Timer_Start.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Timer_Start.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Events ;
+  po:paletteModelHasParentPaletteModel po:SimpleStart ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
+  rdfs:label "Timer Start" ;
+.
+po:User_Task
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementImageURL "User_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
+  rdfs:label "User Task" ;
+.
+po:graphicalElementClassType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "Class Type" ;
+  rdfs:range xsd:string ;
+.
+po:graphicalElementX
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "X coordinate" ;
+  rdfs:range xsd:string ;
+.
+po:graphicalElementY
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "Y coordinate" ;
+  rdfs:range xsd:string ;
+.
+po:hiddenFromPalette
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteCategory ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Hide from Palette" ;
+  rdfs:range xsd:boolean ;
+.
+po:languageElementIsRelatedToDomainElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "Domain Ontology Class" ;
+  rdfs:range owl:Thing ;
+.
+po:paletteCategoryOrderNumber
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteCategory ;
+  rdfs:label "palette category order number" ;
+  rdfs:range xsd:integer ;
+.
+po:paletteConnectorArrowBaseBorderColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Border Color of Arrow Base" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowBaseBorderThickness
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Thickness of Arrow Base Border" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowBaseColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Color of Arrow Base" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowBaseShape
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Shape of Arrow Base" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowBaseURLImage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "URL of Arrow Base Image" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowBaseUsesImage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Use an Image for the Base Arrow" ;
+  rdfs:range xsd:boolean ;
+.
+po:paletteConnectorArrowHeadBorderColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Border Color of Arrow Head" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowHeadBorderThickness
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Thickness of Arrow Head Border" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowHeadColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Color of Arrow Head" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowHeadShape
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Shape of Arrow Head" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowHeadURLImage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "URL of Arrow Head Image" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorArrowHeadUsesImage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Use an Image for the Head Arrow" ;
+  rdfs:range xsd:boolean ;
+.
+po:paletteConnectorLineColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Connector Line Color" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorLineThickness
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Palette Line Thickness" ;
+  rdfs:range xsd:string ;
+.
+po:paletteConnectorLineType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:label "Connector Line Type" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementBackgroundColor
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Background Color" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementHeight
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Height" ;
+  rdfs:range xsd:integer ;
+.
+po:paletteElementIconPosition
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Icon Position" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementIconURL
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Icon URL" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementImageURL
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "URL of Icon Image" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementLabelPosition
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Label position" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementShape
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Shape of Palette Element" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementThumbnailURL
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "URL of palette image" ;
+  rdfs:range xsd:string ;
+.
+po:paletteElementUsesImage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Use Images instead of Shape" ;
+  rdfs:range xsd:boolean ;
+.
+po:paletteElementWidth
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteElement ;
+  rdfs:label "Width" ;
+  rdfs:range xsd:integer ;
+.
+po:paletteModelHasPaletteCategory
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Palette Category" ;
+  rdfs:range po:PaletteCategory ;
+.
+po:paletteModelHasParentPaletteModel
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Parent Palette Model" ;
+  rdfs:range po:PaletteConstruct ;
+.
+po:paletteModelIsRelatedToModelingLanguageConstruct
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "palette model is related to language element" ;
+  rdfs:range rdfs:Class ;
+.
+<http://ikm-group.ch/archiMEO/BPMN#DataType>
+  rdfs:label "Data" ;
+.
+<http://ikm-group.ch/ontology-based-modelling-environment>
+  owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
+.

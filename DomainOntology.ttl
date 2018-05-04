@@ -1,0 +1,49 @@
+# baseURI: http://fhnw.ch/modelingEnvironment/DomainOntology
+# imports: http://ikm-group.ch/archiMEO/top
+# prefix: do
+
+@prefix : <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/modelingEnvironment/DomainOntology>
+  rdf:type owl:Ontology ;
+  owl:imports <http://ikm-group.ch/archiMEO/top> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+do:Action
+  rdf:type owl:Class ;
+  rdfs:label "Action" ;
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+do:Cost_Reimbursment
+  rdf:type owl:Class ;
+  rdfs:label "Cost Reimbursement" ;
+  rdfs:subClassOf do:Object ;
+.
+do:DomainOntologyConcept
+  rdf:type owl:Class ;
+  rdfs:label "Domain Ontology Concept" ;
+  rdfs:subClassOf owl:Thing ;
+.
+do:Object
+  rdf:type owl:Class ;
+  rdfs:label "Object" ;
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+do:Prepare
+  rdf:type owl:Class ;
+  rdfs:label "Prepare" ;
+  rdfs:subClassOf do:Action ;
+.
+do:Standard
+  rdf:type owl:Class ;
+  rdfs:label "Standard" ;
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<http://ikm-group.ch/archiMEO/top#TopLevelElements>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
