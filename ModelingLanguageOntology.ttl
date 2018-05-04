@@ -159,9 +159,6 @@ bpmn:Artifact
 bpmn:ConnectingObject
   rdfs:subClassOf lo:ModelingRelation ;
 .
-bpmn:FlowElement
-  rdfs:subClassOf lo:ModelingRelation ;
-.
 bpmn:FlowElementContainer
   rdfs:subClassOf lo:ModelingRelation ;
 .
