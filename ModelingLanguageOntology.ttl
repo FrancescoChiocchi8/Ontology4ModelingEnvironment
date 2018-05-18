@@ -64,6 +64,7 @@ lo:MRhasNotAllowedCombination
 .
 lo:ModelingContainer
   rdf:type owl:Class ;
+  rdfs:comment "This class is used for those elements that act as containers, e.g. Pool and Lane in BPMN. In case in the canvas an element (e.g. a task) is in a container (e.g. lane), the realtion \"belongsTo\" is created between the instances of the two." ;
   rdfs:label "Modeling Container" ;
   rdfs:subClassOf lo:ModelingLanguageConstruct ;
 .
@@ -126,6 +127,11 @@ lo:combinationIsNotAllowedInMR
   rdfs:domain lo:CombinationNotAllowed ;
   rdfs:label "source-target combination is not allowed in modeling relation" ;
   rdfs:range lo:ModelingRelation ;
+.
+lo:containerIsContainedInContainer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingContainer ;
+  rdfs:label "Container is contained in container" ;
 .
 lo:date_of_birth
   rdf:type owl:DatatypeProperty ;
