@@ -72,6 +72,11 @@ lo:ModelingElement
   rdfs:label "Modeling Element" ;
   rdfs:subClassOf lo:ModelingLanguageConstruct ;
 .
+lo:ModelingElementBelongsToModelingContainer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingElement ;
+  rdfs:label "Modeling element belongs to modeling container" ;
+.
 lo:ModelingLanguageConstruct
   rdf:type owl:Class ;
   rdfs:label "Modeling construct" ;
