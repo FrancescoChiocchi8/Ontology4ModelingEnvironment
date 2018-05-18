@@ -62,6 +62,11 @@ lo:MRhasNotAllowedCombination
   rdfs:label "Modeling relation has not allowed combination" ;
   rdfs:range lo:CombinationNotAllowed ;
 .
+lo:ModelingContainer
+  rdf:type owl:Class ;
+  rdfs:label "Modeling Container" ;
+  rdfs:subClassOf lo:ModelingLanguageConstruct ;
+.
 lo:ModelingElement
   rdf:type owl:Class ;
   rdfs:label "Modeling Element" ;
@@ -172,6 +177,7 @@ bpmn:FlowObject
   rdfs:subClassOf lo:ModelingElement ;
 .
 bpmn:Swimlane
+  rdfs:subClassOf lo:ModelingContainer ;
   rdfs:subClassOf lo:ModelingElement ;
 .
 archi:Relationships
