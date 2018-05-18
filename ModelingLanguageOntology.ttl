@@ -50,6 +50,18 @@
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:versionInfo 1.1 ;
 .
+lo:CombinationNotAllowed
+  rdf:type owl:Class ;
+  rdfs:label "Not Allowed Source-Target Combination" ;
+  rdfs:label "This concept has the purpose to represent all the source-target combinations between instance elements that an instance relation should be not allowed" ;
+  rdfs:subClassOf owl:Thing ;
+.
+lo:MRhasNotAllowedCombination
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingRelation ;
+  rdfs:label "Modeling relation has not allowed combination" ;
+  rdfs:range lo:CombinationNotAllowed ;
+.
 lo:ModelingElement
   rdf:type owl:Class ;
   rdfs:label "Modeling Element" ;
@@ -68,12 +80,6 @@ lo:ModelingRelation
 lo:ModelingRelation_1
   rdf:type lo:ModelingRelation ;
   rdfs:label "prepareKoGu1" ;
-.
-lo:NotAllowedCombination
-  rdf:type owl:Class ;
-  rdfs:label "Not Allowed Source-Target Combination" ;
-  rdfs:label "This concept has the purpose to represent all the source-target combinations between instance elements that an instance relation should be not allowed" ;
-  rdfs:subClassOf owl:Thing ;
 .
 lo:PrepareKoGuIsMappedWithCostReimbursment
   rdf:type owl:ObjectProperty ;
@@ -95,19 +101,19 @@ lo:SequenceFlow_1
 .
 lo:combinationHasSource
   rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:domain lo:CombinationNotAllowed ;
   rdfs:label "Combination has source" ;
   rdfs:range lo:ModelingElement ;
 .
 lo:combinationHasTarget
   rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:domain lo:CombinationNotAllowed ;
   rdfs:label "Combination has target" ;
   rdfs:range lo:ModelingElement ;
 .
 lo:combinationIsNotAllowedInMR
   rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:NotAllowedCombination ;
+  rdfs:domain lo:CombinationNotAllowed ;
   rdfs:label "source-target combination is not allowed in modeling relation" ;
   rdfs:range lo:ModelingRelation ;
 .
@@ -147,7 +153,7 @@ lo:modelingRelationHasTargetModelingElement
   rdfs:range lo:ModelingElement ;
 .
 lo:notAllowedComb_Start-Start
-  rdf:type lo:NotAllowedCombination ;
+  rdf:type lo:CombinationNotAllowed ;
   lo:combinationHasSource bpmn:StartEvent ;
   lo:combinationHasTarget bpmn:StartEvent ;
   lo:combinationIsNotAllowedInMR bpmn:SequenceFlow ;
