@@ -16724,13 +16724,10 @@ rdf:type bpaas:CloudService ;
 bpaas:cloudServiceHasDescription "Drive" ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_1_Perform_planning_and_management_accounting_10728> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_11_7_Document_trade_14095> ;
-<<<<<<< HEAD
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_Invoice_customer_10743> ;
-=======
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_Perform_revenue_accounting_10729> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_Invoice_customer_10743> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
->>>>>>> origin/master
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_3_Transmit_billing_data_to_customers_10796> ;
 bpaas:cloudServiceHasAction fbpdo:Create ;
 bpaas:cloudServiceHasAction fbpdo:Manage ;
@@ -16810,10 +16807,7 @@ bpaas:cloudServiceHasDescription "Dropbox" ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_11_7_Document_trade_14095> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_Perform_revenue_accounting_10729> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_Invoice_customer_10743> ;
-<<<<<<< HEAD
-=======
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
->>>>>>> origin/master
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_3_Transmit_billing_data_to_customers_10796> ;
 bpaas:cloudServiceHasAction fbpdo:Create ;
 bpaas:cloudServiceHasAction fbpdo:Manage ;
@@ -17048,7 +17042,6 @@ bpaas:cloudServiceHasAccessLogAvailabilityInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAccessLogRetentionPeriodInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogAvailabilityInMonth questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogRetentionPeriodInMonths questionnaire:Not_Specified ;
-<<<<<<< HEAD
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Daily ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_day ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Hourly ;
@@ -17060,7 +17053,6 @@ bpaas:cloudServiceHasBackupRetentionTime bpaas:Monthly ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_four_weeks ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_two_weeks ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:twenty8_days ;
-=======
 bpaas:cloudServiceHasBackupFrequency bpaas:Five_years ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Longer_than_1_year ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_1_year ;
@@ -17072,7 +17064,6 @@ bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_2_weeks ;
 bpaas:cloudServiceHasBackupFrequency bpaas:twenty8_days ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Weekly ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_1_week ;
->>>>>>> origin/master
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_week ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_day ;
 bpaas:CloudServiceHasMediaTypeImportExport questionnaire:Not_Specified ;
@@ -17114,13 +17105,10 @@ rdfs:label "InvoiceNinja" ;
 bdata:MailJet
 rdf:type bpaas:CloudService ;
 bpaas:cloudServiceHasDescription "MailJet" ;
-<<<<<<< HEAD
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_Invoice_customer_10743> ;
-=======
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_Perform_revenue_accounting_10729> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_Invoice_customer_10743> ;
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
->>>>>>> origin/master
 bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_3_Transmit_billing_data_to_customers_10796> ;
 bpaas:cloudServiceHasAction fbpdo:Manage ;
 bpaas:cloudServiceHasAction fbpdo:Send ;
@@ -17418,7 +17406,6 @@ bpaas:cloudServiceHasAccessLogAvailabilityInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAccessLogRetentionPeriodInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogAvailabilityInMonth questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogRetentionPeriodInMonths questionnaire:Not_Specified ;
-<<<<<<< HEAD
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Monthly ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_month ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_2_weeks ;
@@ -17428,14 +17415,12 @@ bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_week ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Daily ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_day ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Hourly ;
-=======
 bpaas:cloudServiceHasBackupFrequency bpaas:Five_years ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Longer_than_1_year ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_1_year ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_6_months ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_2_month ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_2_month ;
->>>>>>> origin/master
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_month ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Monthly ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_four_weeks ;
@@ -17503,9 +17488,7 @@ bpaas:cloudServiceHasAccessLogAvailabilityInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAccessLogRetentionPeriodInMonths questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogAvailabilityInMonth questionnaire:Yes ;
 bpaas:cloudServiceHasAuditLogRetentionPeriodInMonths questionnaire:Not_Specified ;
-<<<<<<< HEAD
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Not_Specified ;
-=======
 bpaas:cloudServiceHasBackupFrequency bpaas:Five_years ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Longer_than_1_year ;
 bpaas:cloudServiceHasBackupFrequency bpaas:Up_to_1_year ;
@@ -17519,7 +17502,6 @@ bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_two_weeks ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:twenty8_days ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_week ;
 bpaas:cloudServiceHasBackupRetentionTime bpaas:Up_to_1_day ;
->>>>>>> origin/master
 bpaas:CloudServiceHasMediaTypeImportExport questionnaire:Not_Specified ;
 bpaas:cloudServiceHasDataMigration questionnaire:Not_Specified ;
 bpaas:cloudServiceHasAPI questionnaire:Not_Specified ;
