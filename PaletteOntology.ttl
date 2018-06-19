@@ -17,7 +17,7 @@
 .
 po:Activity
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:hiddenFromPalette "true"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
@@ -51,6 +51,10 @@ po:Category_Events
 po:Category_Gateways
   rdf:type po:PaletteCategory ;
   rdfs:label "Gateways" ;
+.
+po:Category_Groups
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Groups" ;
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
@@ -196,6 +200,23 @@ po:FinalizeKoGu
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   rdfs:label "Finalize KoGu" ;
 .
+po:Group
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Group.jpg" ;
+  po:paletteElementImageURL "Group4Process.bmp" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Group.jpg" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Group> ;
+  rdfs:label "Group" ;
+.
 po:Lane
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -304,7 +325,7 @@ po:PaletteConstruct
 .
 po:PaletteElement
   rdf:type owl:Class ;
-  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "false"^^xsd:boolean ;
   rdfs:label "Palette Element" ;
   rdfs:subClassOf po:PaletteConstruct ;
 .
