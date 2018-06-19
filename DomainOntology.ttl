@@ -1,8 +1,10 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/DomainOntology
 # imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/apqc
 # prefix: do
 
 @prefix : <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix apqc: <http://ikm-group.ch/archimeo/apqc#> .
 @prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,6 +14,7 @@
 <http://fhnw.ch/modelingEnvironment/DomainOntology>
   rdf:type owl:Ontology ;
   owl:imports <http://ikm-group.ch/archiMEO/top> ;
+  owl:imports <http://ikm-group.ch/archimeo/apqc> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 do:Action

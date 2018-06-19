@@ -26,7 +26,7 @@ po:Activity
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementThumbnailURL "Thumbnail_Call_Activity.png" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
@@ -51,6 +51,10 @@ po:Category_Events
 po:Category_Gateways
   rdf:type po:PaletteCategory ;
   rdfs:label "Gateways" ;
+.
+po:Category_Swimlanes
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Swimlanes" ;
 .
 po:CloseTransferCaseRecord
   rdf:type po:PaletteElement ;
@@ -192,6 +196,22 @@ po:FinalizeKoGu
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   rdfs:label "Finalize KoGu" ;
 .
+po:Lane
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconURL "Lane.png" ;
+  po:paletteElementImageURL "Lane.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Lane.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Swimlanes ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Lane> ;
+  rdfs:label "Lane" ;
+.
 po:MakeDispositionOfCase
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -305,6 +325,22 @@ po:ParallelGateway
   po:paletteModelHasParentPaletteModel po:SimpleGateway ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ParallelGateway> ;
   rdfs:label "Parallel Gateway" ;
+.
+po:Pool
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconURL "Pool.png" ;
+  po:paletteElementImageURL "Pool.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Pool.png" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Swimlanes ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+  rdfs:label "Pool" ;
 .
 po:PrepareKoGu
   rdf:type po:PaletteElement ;
