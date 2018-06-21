@@ -202,7 +202,7 @@ po:FinalizeKoGu
 .
 po:Gateway
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:hiddenFromPalette "true"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Orange" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
