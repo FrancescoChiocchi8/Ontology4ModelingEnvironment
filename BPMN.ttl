@@ -308,19 +308,3 @@ bpmn:bpmnProcessRepresentsBusinessProcess
 emo:BPMNConsistsOfGroup
   rdfs:range bpmn:Group ;
 .
-bpmn:Wholeprocess_sendinvoice
-  a  rdfs:Class ;
-  rdfs:label "Wholeprocess_sendinvoice" ;
-  rdfs:subClassOf  bpmn:Group .
-bpmn:ManagingCustomerRelationship
-        a                rdfs:Class ;
-        rdfs:label       "ManagingCustomerRelationship" ;
-        rdfs:subClassOf  bpmn:Group .
-bpmn:GeneratingCustomerBillingData
-        a                rdfs:Class ;
-        rdfs:label       "GeneratingCustomerBillingData" ;
-        rdfs:subClassOf  bpmn:Group .
-bpmn:TransmittingBillingData
-        a                rdfs:Class ;
-        rdfs:label       "TransmittingBillingData" ;
-        rdfs:subClassOf  bpmn:Group .

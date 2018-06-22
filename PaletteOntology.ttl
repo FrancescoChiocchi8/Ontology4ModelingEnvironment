@@ -148,24 +148,6 @@ po:DataOutput
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#DataType> ;
   rdfs:label "Data Output" ;
 .
-po:Event
-  rdf:type po:PaletteConstruct ;
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteElementBackgroundColor "#00AD5F" ;
-  po:paletteElementHeight 70 ;
-  po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "Event.PNG" ;
-  po:paletteElementImageURL "Event.PNG" ;
-  po:paletteElementLabelPosition "inside" ;
-  po:paletteElementShape "Circle" ;
-  po:paletteElementThumbnailURL "Event.PNG" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 70 ;
-  po:paletteModelHasPaletteCategory po:Category_Events ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
-  rdfs:label "Event" ;
-.
 po:EventBasedGateway
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -218,19 +200,6 @@ po:FinalizeKoGu
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   rdfs:label "Finalize KoGu" ;
 .
-po:GeneratingCustomerBillingData
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false" ;
-  po:paletteElementHeight "0" ;
-  po:paletteElementImageURL "Group_GeneratingCustBillData.jpg" ;
-  po:paletteElementThumbnailURL "Group_GeneratingCustBillData.jpg" ;
-  po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "0" ;
-  po:paletteModelHasPaletteCategory po:Category_Groups ;
-  po:paletteModelHasParentPaletteModel po:Group ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#GeneratingCustomerBillingData> ;
-  rdfs:label "Generating Customer Billing Data" ;
-.
 po:Group
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -244,7 +213,7 @@ po:Group
   po:paletteElementThumbnailURL "Group.jpg" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
-  po:paletteModelHasPaletteCategory po:Category_Groups ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Group> ;
   rdfs:label "Group" ;
 .
@@ -257,7 +226,7 @@ po:Lane
   po:paletteElementImageURL "Lane.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
-  po:paletteElementThumbnailURL "Lane.png" ;
+  po:paletteElementThumbnailURL "Thumbnail_Lane.png" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Swimlanes ;
@@ -281,19 +250,6 @@ po:MakeDispositionOfCase
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:MakeDispositionOfCase ;
   rdfs:label "Make Disposition Of Case" ;
 .
-po:ManagingCustomerRelationship
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false" ;
-  po:paletteElementHeight "0" ;
-  po:paletteElementImageURL "Group_ManagingCR.jpg" ;
-  po:paletteElementThumbnailURL "Group_ManagingCR.jpg" ;
-  po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "0" ;
-  po:paletteModelHasPaletteCategory po:Category_Groups ;
-  po:paletteModelHasParentPaletteModel po:Group ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ManagingCustomerRelationship> ;
-  rdfs:label "Managing Customer Relationship" ;
-.
 po:ManualTask
   rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
@@ -312,16 +268,6 @@ po:ManualTask
   po:paletteModelHasParentPaletteModel po:User_Task ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ServiceTask> ;
   rdfs:label "Manual Task" ;
-.
-po:MessageFlow
-  rdf:type po:PaletteConnector ;
-  po:hiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
-  po:paletteElementThumbnailURL "Message.png" ;
-  po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteModelHasPaletteCategory po:Category_Connectors ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#MessageFlow> ;
-  rdfs:label "Message Flow" ;
 .
 po:MessageIntermediate
   rdf:type po:PaletteConstruct ;
@@ -410,7 +356,7 @@ po:Pool
   po:paletteElementImageURL "Pool.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
-  po:paletteElementThumbnailURL "Pool.png" ;
+  po:paletteElementThumbnailURL "Thumbnail_Pool.png" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Swimlanes ;
@@ -529,12 +475,6 @@ po:SendTask
 .
 po:SequenceFlow
   rdf:type po:PaletteConnector ;
-  po:hiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
-  po:paletteElementThumbnailURL "Sequence.png" ;
-  po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteModelHasPaletteCategory po:Category_Connectors ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#SequenceFlow> ;
   rdfs:label "Sequence Flow" ;
 .
 po:ServiceTask
@@ -571,7 +511,6 @@ po:SimpleEnd
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Events ;
-  po:paletteModelHasParentPaletteModel po:Event ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#EndEvent> ;
   rdfs:label "Simple End" ;
 .
@@ -607,7 +546,6 @@ po:SimpleIntermediate
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Events ;
-  po:paletteModelHasParentPaletteModel po:Event ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#IntermediateEvent> ;
   rdfs:label "Simple Intermediate" ;
 .
@@ -626,7 +564,6 @@ po:SimpleStart
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Events ;
-  po:paletteModelHasParentPaletteModel po:Event ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
   rdfs:label "Simple Start" ;
 .
@@ -727,19 +664,6 @@ po:TimerStart
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#StartEvent> ;
   rdfs:label "Timer Start" ;
 .
-po:TransmittingBillingData
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false" ;
-  po:paletteElementHeight "0" ;
-  po:paletteElementImageURL "Group_TransmittingBillData.jpg" ;
-  po:paletteElementThumbnailURL "Group_TransmittingBillData.jpg" ;
-  po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "0" ;
-  po:paletteModelHasPaletteCategory po:Category_Groups ;
-  po:paletteModelHasParentPaletteModel po:Group ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#TransmittingBillingData> ;
-  rdfs:label "Transmitting Billing Data" ;
-.
 po:User_Task
   rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
@@ -758,19 +682,6 @@ po:User_Task
   po:paletteModelHasParentPaletteModel po:Task ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
   rdfs:label "User Task" ;
-.
-po:Wholeprocess_sendinvoice
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "false" ;
-  po:paletteElementHeight "0" ;
-  po:paletteElementImageURL "Group.jpg" ;
-  po:paletteElementThumbnailURL "Group.jpg" ;
-  po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "0" ;
-  po:paletteModelHasPaletteCategory po:Category_Groups ;
-  po:paletteModelHasParentPaletteModel po:Group ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Wholeprocess_sendinvoice> ;
-  rdfs:label "Whole process_send invoice" ;
 .
 po:graphicalElementClassType
   rdf:type owl:DatatypeProperty ;
