@@ -168,7 +168,7 @@ po:Event
 .
 po:EventBasedGateway
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "true"^^xsd:boolean ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Orange" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
@@ -180,12 +180,13 @@ po:EventBasedGateway
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelHasParentPaletteModel po:SimpleGateway ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
   rdfs:label "Event-based Gateway" ;
 .
 po:ExclusiveGateway
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "true"^^xsd:boolean ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Orange" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
@@ -197,7 +198,7 @@ po:ExclusiveGateway
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Gateways ;
-  po:paletteModelHasParentPaletteModel po:Gateway ;
+  po:paletteModelHasParentPaletteModel po:SimpleGateway ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
   rdfs:label "Exclusive Gatweay" ;
 .
@@ -218,7 +219,6 @@ po:FinalizeKoGu
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   rdfs:label "Finalize KoGu" ;
 .
-<<<<<<< HEAD
 po:GeneratingCustomerBillingData
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false" ;
@@ -231,28 +231,6 @@ po:GeneratingCustomerBillingData
   po:paletteModelHasParentPaletteModel po:Group ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#GeneratingCustomerBillingData> ;
   rdfs:label "Generating Customer Billing Data" ;
-=======
-po:Gateway
-  rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "true"^^xsd:boolean ;
-  po:paletteElementBackgroundColor "Orange" ;
-  po:paletteElementHeight 70 ;
-  po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "Exclusive_Gateway.png" ;
-  po:paletteElementIconURL "Simple_Gateway.png" ;
-  po:paletteElementImageURL "Exclusive_Gateway.png" ;
-  po:paletteElementImageURL "Simple_Gateway.png" ;
-  po:paletteElementLabelPosition "inside" ;
-  po:paletteElementShape "Diamond" ;
-  po:paletteElementThumbnailURL "Exclusive_Gateway.png" ;
-  po:paletteElementThumbnailURL "Simple_Gateway.png" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
-  po:paletteModelHasPaletteCategory po:Category_Gateways ;
-  po:paletteModelHasParentPaletteModel po:Gateway ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
-  rdfs:label "Gatweay" ;
->>>>>>> d36240a60aa91688f66aff5c6966e4590877f6fa
 .
 po:Group
   rdf:type po:PaletteElement ;
@@ -408,7 +386,7 @@ po:PaletteElement
 .
 po:ParallelGateway
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "true"^^xsd:boolean ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Orange" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
@@ -420,7 +398,7 @@ po:ParallelGateway
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Gateways ;
-  po:paletteModelHasParentPaletteModel po:Gateway ;
+  po:paletteModelHasParentPaletteModel po:SimpleGateway ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ParallelGateway> ;
   rdfs:label "Parallel Gateway" ;
 .
@@ -598,6 +576,23 @@ po:SimpleEnd
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#EndEvent> ;
   rdfs:label "Simple End" ;
 .
+po:SimpleGateway
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "Orange" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Simple_Gateway.png" ;
+  po:paletteElementImageURL "Simple_Gateway.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Diamond" ;
+  po:paletteElementThumbnailURL "Simple_Gateway.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Gateways ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Gateway> ;
+  rdfs:label "Simple Gatweay" ;
+.
 po:SimpleIntermediate
   rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
@@ -646,7 +641,7 @@ po:SubReceiveActivity
 .
 po:Subprocess
   rdf:type po:PaletteElement ;
-  po:hiddenFromPalette "true"^^xsd:boolean ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
