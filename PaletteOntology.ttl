@@ -781,12 +781,14 @@ po:graphicalElementClassType
 .
 po:graphicalElementX
   rdf:type owl:DatatypeProperty ;
+  rdfs:comment "The X coordinate of an element instantiated in the Canvas" ;
   rdfs:domain owl:Thing ;
   rdfs:label "X coordinate" ;
   rdfs:range xsd:string ;
 .
 po:graphicalElementY
   rdf:type owl:DatatypeProperty ;
+  rdfs:comment "the Y coordinate of an element instantiated in the Canvas" ;
   rdfs:domain owl:Thing ;
   rdfs:label "Y coordinate" ;
   rdfs:range xsd:string ;
