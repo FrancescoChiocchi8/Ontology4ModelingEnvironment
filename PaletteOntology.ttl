@@ -163,7 +163,7 @@ po:DiscretionaryTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelHasParentPaletteModel po:ManualTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
   rdfs:label "Discretionary Task" ;
 .
