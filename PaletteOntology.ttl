@@ -148,6 +148,25 @@ po:DataOutput
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#DataType> ;
   rdfs:label "Data Output" ;
 .
+po:DiscretionaryTask
+  rdf:type po:PaletteConstruct ;
+  rdf:type po:PaletteElement ;
+  po:hiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementHeight 70 ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Discretionary_Task.png" ;
+  po:paletteElementImageURL "Discretionary_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementThumbnailURL "Thumbnail_Discretionary_Task.png" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementWidth 100 ;
+  po:paletteModelHasPaletteCategory po:Category_Activities ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
+  rdfs:label "Discretionary Task" ;
+.
 po:Event
   rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;

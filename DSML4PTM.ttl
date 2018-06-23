@@ -1,8 +1,8 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/DSML4PTM
 # imports: http://ikm-group.ch/archiMEO/BPMN
+# imports: http://ikm-group.ch/archimeo/CMMN
 # prefix: dsml4ptm
 
-@prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,6 +12,7 @@
 <http://fhnw.ch/modelingEnvironment/DSML4PTM>
   rdf:type owl:Ontology ;
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
+  owl:imports <http://ikm-group.ch/archimeo/CMMN> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 dsml4ptm:AcuteHospital
@@ -149,6 +150,11 @@ dsml4ptm:PerformPhysicalAdmission
   rdfs:label "Perform Physical Admission" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#ManualTask> ;
 .
+dsml4ptm:PerformRehabConference
+  rdf:type owl:Class ;
+  rdfs:label "Perform Rehab Conference" ;
+  rdfs:subClassOf <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
+.
 dsml4ptm:PerformTransfer
   rdf:type owl:Class ;
   rdfs:label "Perform Transfer" ;
@@ -218,6 +224,11 @@ dsml4ptm:TransferalManager
   rdf:type owl:Class ;
   rdfs:label "Transferal Manager" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
+dsml4ptm:UpdateDisposition
+  rdf:type owl:Class ;
+  rdfs:label "Update Disposition" ;
+  rdfs:subClassOf <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
 .
 dsml4ptm:fourtyeight_twentyfourHoursBeforeTransfer
   rdf:type owl:Class ;
