@@ -310,8 +310,8 @@ po:ManualTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ServiceTask> ;
+  po:paletteModelHasParentPaletteModel po:Task ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#ManualTask> ;
   rdfs:label "Manual Task" ;
 .
 po:MessageFlow
@@ -757,7 +757,7 @@ po:User_Task
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
   po:paletteModelHasParentPaletteModel po:Task ;
-  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#Task> ;
+  po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#UserTask> ;
   rdfs:label "User Task" ;
 .
 po:Wholeprocess_sendinvoice
