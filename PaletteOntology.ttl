@@ -149,7 +149,6 @@ po:DataOutput
   rdfs:label "Data Output" ;
 .
 po:DiscretionaryTask
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -168,7 +167,6 @@ po:DiscretionaryTask
   rdfs:label "Discretionary Task" ;
 .
 po:Event
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#00AD5F" ;
@@ -314,7 +312,6 @@ po:ManagingCustomerRelationship
   rdfs:label "Managing Customer Relationship" ;
 .
 po:ManualTask
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -343,7 +340,6 @@ po:MessageFlow
   rdfs:label "Message Flow" ;
 .
 po:MessageIntermediate
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Green" ;
@@ -362,7 +358,6 @@ po:MessageIntermediate
   rdfs:label "Message Intermediate" ;
 .
 po:MessageStart
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Green" ;
@@ -490,7 +485,6 @@ po:PrepareRehabAdmission
  """ ;
 .
 po:ReceiveTask
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -527,7 +521,6 @@ po:ReleaseTransferCase
  """ ;
 .
 po:SendTask
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -556,7 +549,6 @@ po:SequenceFlow
   rdfs:label "Sequence Flow" ;
 .
 po:ServiceTask
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -575,7 +567,6 @@ po:ServiceTask
   rdfs:label "Service Task" ;
 .
 po:SimpleEnd
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "Red" ;
@@ -611,7 +602,6 @@ po:SimpleGateway
   rdfs:label "Simple Gatweay" ;
 .
 po:SimpleIntermediate
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -630,7 +620,6 @@ po:SimpleIntermediate
   rdfs:label "Simple Intermediate" ;
 .
 po:SimpleStart
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#00AD5F" ;
@@ -708,7 +697,6 @@ po:TestSub
   rdfs:label "Test Sub" ;
 .
 po:TimerIntermediate
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -727,7 +715,6 @@ po:TimerIntermediate
   rdfs:label "Timer Intermediate" ;
 .
 po:TimerStart
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -759,7 +746,6 @@ po:TransmittingBillingData
   rdfs:label "Transmitting Billing Data" ;
 .
 po:User_Task
-  rdf:type po:PaletteConstruct ;
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
