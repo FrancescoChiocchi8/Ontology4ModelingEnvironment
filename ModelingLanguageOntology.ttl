@@ -206,6 +206,12 @@ eo:EnterpriseObject
 nco:NCO
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
+<http://ikm-group.ch/archimeo/cmmn#Sentry>
+  rdfs:subClassOf lo:ModelingElement ;
+.
+<http://ikm-group.ch/archimeo/cmmn#Task>
+  rdfs:subClassOf lo:ModelingElement ;
+.
 <http://ikm-group.ch/archimeo/iso42010#ADMetaModel>
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#Standard> ;
 .

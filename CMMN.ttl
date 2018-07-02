@@ -18,10 +18,8 @@ cmmn:DiscretionaryTask
 cmmn:Sentry
   rdf:type owl:Class ;
   rdfs:label "Sentry" ;
-  rdfs:subClassOf owl:Thing ;
 .
 cmmn:Task
   rdf:type owl:Class ;
   rdfs:label "Task" ;
-  rdfs:subClassOf owl:Thing ;
 .
