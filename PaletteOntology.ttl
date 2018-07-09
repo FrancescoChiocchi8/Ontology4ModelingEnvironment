@@ -73,7 +73,7 @@ po:CloseTransferCaseRecord
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:CloseTransferCaseRecord ;
   rdfs:label """Close Transfer Case Record
  """ ;
@@ -91,7 +91,7 @@ po:ConfirmTransfer
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:ConfirmTransfer ;
   rdfs:label "Confirm Transfer" ;
 .
@@ -232,7 +232,7 @@ po:FinalizeKoGu
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   rdfs:label "Finalize KoGu" ;
 .
@@ -294,7 +294,7 @@ po:MakeDispositionOfCase
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:MakeDispositionOfCase ;
   rdfs:label "Make Disposition Of Case" ;
 .
@@ -479,7 +479,7 @@ po:PrepareRehabAdmission
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareRehabAdmission ;
   rdfs:label """Prepare Rehab Admission
  """ ;
@@ -515,7 +515,7 @@ po:ReleaseTransferCase
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:ReleaseTransferCase ;
   rdfs:label """Release Transfer Case
  """ ;
@@ -745,7 +745,7 @@ po:TransmittingBillingData
   po:paletteModelIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archiMEO/BPMN#TransmittingBillingData> ;
   rdfs:label "Transmitting Billing Data" ;
 .
-po:User_Task
+po:UserTask
   rdf:type po:PaletteElement ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
