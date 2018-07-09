@@ -444,7 +444,7 @@ po:PrepareKoGu
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareKoGu ;
   rdfs:label "Prepare KoGu" ;
 .
@@ -461,7 +461,7 @@ po:PrepareMedicalRecordAdmission
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
-  po:paletteModelHasParentPaletteModel po:User_Task ;
+  po:paletteModelHasParentPaletteModel po:UserTask ;
   po:paletteModelIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareMedicalAdmission ;
   rdfs:label """Prepare Medical Record Admission
  """ ;
