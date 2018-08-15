@@ -986,6 +986,9 @@ po:paletteModelIsRelatedToModelingLanguageConstruct
 <http://ikm-group.ch/archiMEO/BPMN#DataType>
   rdfs:label "Data" ;
 .
+<http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#ManualTask> ;
+.
 <http://ikm-group.ch/ontology-based-modelling-environment>
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
 .

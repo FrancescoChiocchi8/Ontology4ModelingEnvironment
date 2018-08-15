@@ -1,8 +1,8 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
 # imports: http://fhnw.ch/modelingEnvironment/DomainOntology
-# imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
 # imports: http://ikm-group.ch/archimeo
+# imports: http://ikm-group.ch/archimeo/bpaas
 # prefix: lo
 
 @prefix : <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
@@ -46,8 +46,8 @@
   rdfs:comment "Version 1.1: Initial import"@en ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DomainOntology> ;
-  owl:imports <http://fhnw.ch/modelingEnvironment/PaletteOntology> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
+  owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo 1.1 ;
 .
 lo:CombinationNotAllowed
@@ -205,6 +205,10 @@ eo:EnterpriseObject
 .
 nco:NCO
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+.
+<http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf bpmn:ManualTask ;
 .
 <http://ikm-group.ch/archimeo/cmmn#Sentry>
   rdfs:subClassOf lo:ModelingElement ;
