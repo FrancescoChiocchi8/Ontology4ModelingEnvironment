@@ -162,6 +162,11 @@ and diverge within a Process.\" (OMG 2009)""" ;
   rdfs:label "Gateway" ;
   rdfs:subClassOf bpmn:FlowObject ;
 .
+bpmn:GeneratingCustomerBillingData
+  rdf:type rdfs:Class ;
+  rdfs:label "GeneratingCustomerBillingData" ;
+  rdfs:subClassOf bpmn:Group ;
+.
 bpmn:Group
   rdf:type owl:Class ;
   rdfs:label "Group" ;
@@ -184,6 +189,11 @@ bpmn:Lane
   rdfs:comment """Lanes are used to organize and categorize Activities within a Pool. The meaning of the Lanes is up to the modeler.
 BPMN does not specify the usage of Lanes""" ;
   rdfs:subClassOf bpmn:Swimlane ;
+.
+bpmn:ManagingCustomerRelationship
+  rdf:type rdfs:Class ;
+  rdfs:label "ManagingCustomerRelationship" ;
+  rdfs:subClassOf bpmn:Group ;
 .
 bpmn:ManualTask
   rdf:type owl:Class ;
@@ -295,10 +305,20 @@ bpmn:TimerStartEvent
   rdfs:label "TimerStartEvent" ;
   rdfs:subClassOf bpmn:StartEvent ;
 .
+bpmn:TransmittingBillingData
+  rdf:type rdfs:Class ;
+  rdfs:label "TransmittingBillingData" ;
+  rdfs:subClassOf bpmn:Group ;
+.
 bpmn:UserTask
   rdf:type owl:Class ;
   rdfs:label "UserTask" ;
   rdfs:subClassOf bpmn:Task ;
+.
+bpmn:Wholeprocess_sendinvoice
+  rdf:type rdfs:Class ;
+  rdfs:label "Wholeprocess_sendinvoice" ;
+  rdfs:subClassOf bpmn:Group ;
 .
 bpmn:bpmnProcessRepresentsBusinessProcess
   rdf:type owl:ObjectProperty ;
@@ -308,19 +328,3 @@ bpmn:bpmnProcessRepresentsBusinessProcess
 emo:BPMNConsistsOfGroup
   rdfs:range bpmn:Group ;
 .
-bpmn:Wholeprocess_sendinvoice
-  a  rdfs:Class ;
-  rdfs:label "Wholeprocess_sendinvoice" ;
-  rdfs:subClassOf  bpmn:Group .
-bpmn:ManagingCustomerRelationship
-        a                rdfs:Class ;
-        rdfs:label       "ManagingCustomerRelationship" ;
-        rdfs:subClassOf  bpmn:Group .
-bpmn:GeneratingCustomerBillingData
-        a                rdfs:Class ;
-        rdfs:label       "GeneratingCustomerBillingData" ;
-        rdfs:subClassOf  bpmn:Group .
-bpmn:TransmittingBillingData
-        a                rdfs:Class ;
-        rdfs:label       "TransmittingBillingData" ;
-        rdfs:subClassOf  bpmn:Group .
