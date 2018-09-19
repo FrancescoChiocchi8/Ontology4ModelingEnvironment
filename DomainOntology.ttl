@@ -50,3 +50,6 @@ do:Standard
 <http://ikm-group.ch/archiMEO/top#TopLevelElements>
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
+apqc:AmericanProductivityAndQualityCenter
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
