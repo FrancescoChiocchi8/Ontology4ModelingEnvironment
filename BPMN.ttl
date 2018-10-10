@@ -255,6 +255,11 @@ bpmn:SequenceFlow
   rdfs:label "SequenceFlow" ;
   rdfs:subClassOf bpmn:ConnectingObject ;
 .
+bpmn:SequenceFlowWithDecision
+  rdf:type owl:Class ;
+  rdfs:label "Sequence Flow With Decision" ;
+  rdfs:subClassOf bpmn:SequenceFlow ;
+.
 bpmn:ServiceTask
   rdf:type owl:Class ;
   rdfs:label "ServiceTask" ;
