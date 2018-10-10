@@ -110,6 +110,12 @@ lo:SequenceFlow_1
   rdf:type bpmn:SequenceFlow ;
   rdfs:label "sf" ;
 .
+lo:StartTest
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain bpmn:UserTask ;
+  rdfs:label "Start time _ Test" ;
+  rdfs:range xsd:dateTime ;
+.
 lo:combinationHasSource
   rdf:type owl:ObjectProperty ;
   rdfs:domain lo:CombinationNotAllowed ;

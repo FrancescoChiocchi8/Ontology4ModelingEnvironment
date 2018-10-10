@@ -762,6 +762,7 @@ po:TransmittingBillingData
 .
 po:UserTask
   rdf:type po:PaletteElement ;
+  rdf:type <http://ikm-group.ch/archiMEO/BPMN#UserTask> ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementHeight 70 ;
@@ -771,7 +772,7 @@ po:UserTask
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementThumbnailURL "Thumbnail_User_Task.png" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
   po:paletteElementWidth 100 ;
   po:paletteModelHasPaletteCategory po:Category_Activities ;
   po:paletteModelHasParentPaletteModel po:Task ;
