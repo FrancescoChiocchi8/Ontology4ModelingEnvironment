@@ -172,15 +172,15 @@ questiondata:Do_you_need_API_integration
   rdfs:label "Do you need API integration?" ;
 .
 questiondata:Encryption_Type
-  rdf:type questionnaire:SingleSelection ;
   rdf:type questionnaire:Security ;
+  rdf:type questionnaire:SingleSelection ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasEncryptionLevel ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasEncryptionType ;
   questionnaire:questionHasAnswers questionnaire:Not_Specified ;
   questionnaire:questionHasAnswers bpaas:High ;
   questionnaire:questionHasAnswers bpaas:Low ;
   questionnaire:questionHasAnswers bpaas:Medium ;
-  rdfs:label "What encryption level do you prefer?" ;
+  rdfs:label "What is your preferred data encryption level?" ;
 .
 questiondata:Functional
   rdf:type questionnaire:CloudServiceDomain ;
@@ -330,8 +330,8 @@ questiondata:PreferedAuditLogRetentionPeriodinMonths
 questiondata:PreferedAvailability_monthly_downtime
   rdf:type questionnaire:Availability ;
   rdf:type questionnaire:ValueInsert ;
-  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasMonthlyDowntimeInMinute ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAvailabilityInPercent ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasMonthlyDowntimeInMinute ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:float ;
   rdfs:label "What is your favourite monthly downtime in minutes?  Insert 0 if not required " ;
 .
@@ -593,8 +593,8 @@ questiondata:Target_market
   rdfs:label "Select the target market. If none, select \"No Target\"" ;
 .
 questiondata:What_are_the_offered_support_channels
-  rdf:type questionnaire:ServiceSupport ;
   rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:ServiceSupport ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasSupportChannel ;
   questionnaire:questionHasAnswers questionnaire:Not_Specified ;
   questionnaire:questionHasAnswers bpaas:Mail ;
