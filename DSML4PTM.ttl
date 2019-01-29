@@ -1,4 +1,5 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/DSML4PTM
+# imports: http://fhnw.ch/modelingEnvironment/dkmm
 # imports: http://ikm-group.ch/archiMEO/BPMN
 # imports: http://ikm-group.ch/archimeo/CMMN
 # prefix: dsml4ptm
@@ -11,6 +12,7 @@
 
 <http://fhnw.ch/modelingEnvironment/DSML4PTM>
   rdf:type owl:Ontology ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/dkmm> ;
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
   owl:imports <http://ikm-group.ch/archimeo/CMMN> ;
   owl:versionInfo "Created with TopBraid Composer" ;
@@ -159,11 +161,6 @@ dsml4ptm:PerformTransfer
   rdf:type owl:Class ;
   rdfs:label "Perform Transfer" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#ManualTask> ;
-.
-dsml4ptm:PrepareKoGu
-  rdf:type owl:Class ;
-  rdfs:label "Prepare KoGu" ;
-  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#UserTask> ;
 .
 dsml4ptm:PrepareMedicalAdmission
   rdf:type owl:Class ;
