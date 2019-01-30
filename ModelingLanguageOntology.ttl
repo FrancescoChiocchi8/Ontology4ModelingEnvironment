@@ -31,7 +31,9 @@
 
 <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard>
   rdf:type rdfs:Class ;
-  rdfs:comment "This concept describes the medical data conforming to the ICF Standard and is part of the KoGu data object" ;
+  rdf:type owl:Thing ;
+  <http://fhnw.ch/modelingEnvironment/DSML4PTM#hasAttribute> "test" ;
+  rdfs:comment "This concept described…" ;
   rdfs:label "ICF Standard" ;
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
 .
@@ -54,7 +56,6 @@
   rdf:type rdf:Property ;
   rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
   rdfs:range <http://who.int/icf#ActivitiesAndParticipation> ;
-  rdfs:range <http://who.int/icf#EnvironmentalFactors> ;
 .
 <http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithBodyFunction>
   rdf:type rdf:Property ;
@@ -140,6 +141,13 @@ lo:DocumentAndKnowledgeModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Document and Knowledge Modeling Language" ;
 .
+lo:ICFStandardHasTimeStamp
+  rdfs:label "Time Stamp" ;
+.
+lo:ICFStandard_1
+  rdf:type <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
+  rdfs:label "KoGu Data Object" ;
+.
 lo:MRhasNotAllowedCombination
   rdf:type owl:ObjectProperty ;
   rdfs:domain lo:ModelingRelation ;
@@ -198,15 +206,6 @@ lo:PrepareKoGuIsMappedWithPrepare
   rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Prepare> ;
   rdfs:subPropertyOf lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept ;
 .
-lo:Property_Test
-  rdf:type rdf:Property ;
-  rdfs:label "subclass test" ;
-.
-lo:Property_test
-  rdf:type rdf:Property ;
-  rdfs:label "subclass test" ;
-  rdfs:range xsd:decimal ;
-.
 lo:SequenceFlow_1
   rdf:type bpmn:SequenceFlow ;
   rdfs:label "sf" ;
@@ -259,9 +258,6 @@ lo:hasNewProperty
   rdf:type rdf:Property ;
   rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:decimal ;
-.
-lo:hasProva
-  rdf:type rdf:Property ;
 .
 lo:metaModelHasModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
@@ -323,7 +319,6 @@ bpmn:Swimlane
   rdfs:subClassOf lo:ModelingElement ;
 .
 bpmn:UserTask
-  lo:hasProva xsd:string ;
   rdfs:range xsd:string ;
   rdfs:range "true"^^xsd:boolean ;
 .
