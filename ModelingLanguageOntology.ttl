@@ -14,6 +14,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcmi-type-vocabulary: <http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary#> .
 @prefix dcterms: <http://purl.org/dcterms#> .
+@prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
 @prefix elements: <http://purl.org/dc/elements/1.1#> .
 @prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
 @prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
@@ -29,57 +30,26 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard>
+dsml4ptm:ICFStandard
   rdf:type rdfs:Class ;
-  rdf:type owl:Thing ;
-  <http://fhnw.ch/modelingEnvironment/DSML4PTM#hasAttribute> "test" ;
+  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#ICFQualifier> ;
+  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#b_BodyFunction> ;
+  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#d_ActivitiesAndParticipation> ;
+  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#e_EnvironmentalFactors> ;
+  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#s_BodyStructures> ;
   rdfs:comment "This concept described…" ;
   rdfs:label "ICF Standard" ;
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
 .
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandardHasTimeStamp>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range xsd:dateTime ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#PrepaerKoGu>
+dsml4ptm:PrepaerKoGu
   rdf:type rdfs:Class ;
   rdfs:subClassOf bpmn:UserTask ;
 .
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#PrepareKoGu2>
+dsml4ptm:PrepareKoGu2
   rdfs:subClassOf bpmn:UserTask ;
 .
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#PrepareKoGu3>
+dsml4ptm:PrepareKoGu3
   rdfs:subClassOf bpmn:UserTask ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithActivityAndParticipation>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range <http://who.int/icf#ActivitiesAndParticipation> ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithBodyFunction>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range <http://who.int/icf#BodyFunction> ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithBodyStructures>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range <http://who.int/icf#BodyStructures> ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithEnvironmentalFactors>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isMappedWithPerformance>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range <http://who.int/icf#Performance> ;
-.
-<http://fhnw.ch/modelingEnvironment/DSML4PTM#isPartOfKoGuDO>
-  rdf:type rdf:Property ;
-  rdfs:domain <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DSML4PTM#KoGuDataObject> ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology>
   rdf:type owl:Ontology ;
@@ -145,8 +115,20 @@ lo:ICFStandardHasTimeStamp
   rdfs:label "Time Stamp" ;
 .
 lo:ICFStandard_1
-  rdf:type <http://fhnw.ch/modelingEnvironment/DSML4PTM#ICFStandard> ;
-  rdfs:label "KoGu Data Object" ;
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "Modeling Language Ontology is mapped with a Domain Ontology concept" ;
+.
+lo:ICFStandard_2
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "b199. Mental functions, unspecified" ;
+.
+lo:ICFStandard_3
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "3" ;
+.
+lo:ICFStandard_4
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "4" ;
 .
 lo:MRhasNotAllowedCombination
   rdf:type owl:ObjectProperty ;
@@ -192,19 +174,6 @@ lo:ModelingRelation_1
 lo:OrganizationalModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Organizational Modeling Language" ;
-.
-lo:PrepareKoGuIsMappedWithCostReimbursment
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:ModelingLanguageConstruct ;
-  rdfs:label "is mapped with prepare" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Cost_Reimbursment> ;
-  rdfs:subPropertyOf lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept ;
-.
-lo:PrepareKoGuIsMappedWithPrepare
-  rdf:type owl:ObjectProperty ;
-  rdfs:label "is mapped with prepare" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Prepare> ;
-  rdfs:subPropertyOf lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept ;
 .
 lo:SequenceFlow_1
   rdf:type bpmn:SequenceFlow ;
@@ -259,21 +228,15 @@ lo:hasNewProperty
   rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:decimal ;
 .
+lo:isMappedWithDomainOntologyConcept
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingLanguageConstruct ;
+  rdfs:label "Modeling Language Ontology is mapped with a Domain Ontology concept" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+.
 lo:metaModelHasModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
   rdfs:range lo:ModelingLanguageConstruct ;
-.
-lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain [
-      rdf:type owl:Class ;
-      owl:unionOf (
-          lo:ModelingLanguageConstruct
-          bpmn:DataInput
-        ) ;
-    ] ;
-  rdfs:label "is mapped with" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
 lo:modelingLanguageHasModelingConstruct
   rdf:type owl:ObjectProperty ;
@@ -300,7 +263,7 @@ lo:notAllowedComb_Start-Start
   rdfs:label "Start event cannot be directly connected with start event - Semantics defined in BPMN 2.0" ;
 .
 <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document>
-  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+  rdfs:subClassOf lo:ModelingElement ;
 .
 bpmn:Artifact
   rdfs:subClassOf lo:ModelingElement ;
@@ -345,7 +308,6 @@ nco:NCO
   rdfs:subClassOf lo:ModelingElement ;
 .
 <http://ikm-group.ch/archimeo/cmmn#Task>
-  lo:modelingLanguageConstructIsMappedWithDomainOntologyConcept <http://fhnw.ch/modelingEnvironment/DomainOntology#Prepare> ;
   rdfs:subClassOf lo:ModelingElement ;
 .
 <http://ikm-group.ch/archimeo/iso42010#ADMetaModel>

@@ -11,11 +11,6 @@
   rdf:type owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
-icf:ActivitiesAndParticipation
-  rdf:type owl:Class ;
-  rdfs:label "Activities and Participation" ;
-  rdfs:subClassOf icf:ICFCategory ;
-.
 icf:AnatomicalLocalization
   rdf:type owl:Class ;
   rdfs:label "natomical Localization" ;
@@ -26,25 +21,10 @@ icf:BarrierOrFacilitator
   rdfs:label "Barrier or Facilitator" ;
   rdfs:subClassOf icf:ICFQualifier ;
 .
-icf:BodyFunction
-  rdf:type owl:Class ;
-  rdfs:label "Body Function " ;
-  rdfs:subClassOf icf:ICFCategory ;
-.
-icf:BodyStructures
-  rdf:type owl:Class ;
-  rdfs:label "Body Structures" ;
-  rdfs:subClassOf icf:ICFCategory ;
-.
 icf:Capacity
   rdf:type owl:Class ;
   rdfs:label "Capacity" ;
   rdfs:subClassOf icf:ICFQualifier ;
-.
-icf:EnvironmentalFactors
-  rdf:type owl:Class ;
-  rdfs:label "Environmental Factors" ;
-  rdfs:subClassOf icf:ICFCategory ;
 .
 icf:ExtentOrMagnitudeOfImpairment
   rdf:type owl:Class ;
@@ -70,4 +50,49 @@ icf:Performance
   rdf:type owl:Class ;
   rdfs:label "Performance" ;
   rdfs:subClassOf icf:ICFQualifier ;
+.
+icf:b110-b139_Global_mental_functions
+  rdf:type owl:Class ;
+  rdfs:label "b110-b139_Global_mental_functions" ;
+  rdfs:subClassOf icf:b1_Chapter_1_Mental_Functions ;
+.
+icf:b140-b189_Specific_mental_functions
+  rdf:type owl:Class ;
+  rdfs:label "b140-b189. Specific mental functions" ;
+  rdfs:subClassOf icf:b1_Chapter_1_Mental_Functions ;
+.
+icf:b198_Mental_functions_other_specified
+  rdf:type owl:Class ;
+  rdfs:label "b198_Mental_functions_other_specified" ;
+  rdfs:subClassOf icf:b1_Chapter_1_Mental_Functions ;
+.
+icf:b199_Mental_functions_unspecified
+  rdf:type owl:Class ;
+  rdfs:label "b199. Mental functions, unspecified" ;
+  rdfs:subClassOf icf:b1_Chapter_1_Mental_Functions ;
+.
+icf:b1_Chapter_1_Mental_Functions
+  rdf:type owl:Class ;
+  rdfs:label "b1_Chapter_1_Mental_Functions" ;
+  rdfs:subClassOf icf:b_BodyFunction ;
+.
+icf:b_BodyFunction
+  rdf:type owl:Class ;
+  rdfs:label "Body Function " ;
+  rdfs:subClassOf icf:ICFCategory ;
+.
+icf:d_ActivitiesAndParticipation
+  rdf:type owl:Class ;
+  rdfs:label "Activities and Participation" ;
+  rdfs:subClassOf icf:ICFCategory ;
+.
+icf:e_EnvironmentalFactors
+  rdf:type owl:Class ;
+  rdfs:label "Environmental Factors" ;
+  rdfs:subClassOf icf:ICFCategory ;
+.
+icf:s_BodyStructures
+  rdf:type owl:Class ;
+  rdfs:label "Body Structures" ;
+  rdfs:subClassOf icf:ICFCategory ;
 .
