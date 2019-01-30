@@ -951,91 +951,76 @@ po:paletteCategoryOrderNumber
 .
 po:paletteConnectorArrowBaseBorderColor
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Border Color of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseBorderThickness
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Thickness of Arrow Base Border" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseColor
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Color of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseShape
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Shape of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseURLImage
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "URL of Arrow Base Image" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseUsesImage
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Use an Image for the Base Arrow" ;
   rdfs:range xsd:boolean ;
 .
 po:paletteConnectorArrowHeadBorderColor
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Border Color of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadBorderThickness
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Thickness of Arrow Head Border" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadColor
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Color of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadShape
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Shape of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadURLImage
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "URL of Arrow Head Image" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadUsesImage
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Use an Image for the Head Arrow" ;
   rdfs:range xsd:boolean ;
 .
 po:paletteConnectorLineColor
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Connector Line Color" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorLineThickness
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Palette Line Thickness" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorLineType
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteConnector ;
   rdfs:label "Connector Line Type" ;
   rdfs:range xsd:string ;
 .
