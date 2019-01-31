@@ -14,6 +14,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcmi-type-vocabulary: <http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary#> .
 @prefix dcterms: <http://purl.org/dcterms#> .
+@prefix dkmm: <http://fhnw.ch/modelingEnvironment/dkmm#> .
 @prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
 @prefix elements: <http://purl.org/dc/elements/1.1#> .
 @prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
@@ -30,16 +31,10 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dsml4ptm:ICFStandard
-  rdf:type rdfs:Class ;
-  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#ICFQualifier> ;
-  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#b_BodyFunction> ;
-  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#d_ActivitiesAndParticipation> ;
-  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#e_EnvironmentalFactors> ;
-  lo:isMappedWithDomainOntologyConcept <http://who.int/icf#s_BodyStructures> ;
-  rdfs:comment "This concept described…" ;
-  rdfs:label "ICF Standard" ;
-  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
+dsml4ptm:ICFStandardHasTimeStamp
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range xsd:dateTime ;
 .
 dsml4ptm:PrepaerKoGu
   rdf:type rdfs:Class ;
@@ -50,6 +45,36 @@ dsml4ptm:PrepareKoGu2
 .
 dsml4ptm:PrepareKoGu3
   rdfs:subClassOf bpmn:UserTask ;
+.
+dsml4ptm:isMappedWithActivityAndParticipation
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#d_ActivitiesAndParticipation> ;
+.
+dsml4ptm:isMappedWithBodyFunction
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#b_BodyFunction> ;
+.
+dsml4ptm:isMappedWithBodyStructures
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#s_BodyStructures> ;
+.
+dsml4ptm:isMappedWithEnvironmentalFactors
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#e_EnvironmentalFactors> ;
+.
+dsml4ptm:isMappedWithPerformance
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#Performance> ;
+.
+dsml4ptm:isPartOfKoGuDO
+  rdf:type rdf:Property ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range dsml4ptm:KoGuDataObject ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology>
   rdf:type owl:Ontology ;
@@ -71,6 +96,11 @@ dsml4ptm:PrepareKoGu3
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo 1.1 ;
+.
+lo:AnnotationProperty_1
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "Prova" ;
+  rdfs:range <http://who.int/icf#b_BodyFunction> ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0>
   rdf:type lo:ModelingLanguage ;
@@ -102,6 +132,10 @@ lo:DSML4PTM
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Domain Specific Modeling Language for Patient Transferal Management" ;
 .
+lo:Data_Document_1
+  rdf:type dkmm:Data_Document ;
+  rdfs:label "7" ;
+.
 lo:DatatypeProperty_1
   rdf:type owl:DatatypeProperty ;
   rdfs:label "datatype" ;
@@ -129,6 +163,18 @@ lo:ICFStandard_3
 lo:ICFStandard_4
   rdf:type dsml4ptm:ICFStandard ;
   rdfs:label "4" ;
+.
+lo:ICFStandard_5
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "5" ;
+.
+lo:ICFStandard_6
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "6" ;
+.
+lo:ICFStandard_7
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "7" ;
 .
 lo:MRhasNotAllowedCombination
   rdf:type owl:ObjectProperty ;
@@ -161,6 +207,11 @@ lo:ModelingLanguageConstruct
   rdf:type owl:Class ;
   rdfs:label "Modeling construct" ;
   rdfs:subClassOf owl:Thing ;
+.
+lo:ModelingLanguageConstruct_1
+  rdf:type owl:Class ;
+  rdfs:label "7" ;
+  rdfs:subClassOf lo:ModelingLanguageConstruct ;
 .
 lo:ModelingRelation
   rdf:type owl:Class ;
@@ -262,7 +313,7 @@ lo:notAllowedComb_Start-Start
   lo:combinationIsNotAllowedInMR bpmn:SequenceFlow ;
   rdfs:label "Start event cannot be directly connected with start event - Semantics defined in BPMN 2.0" ;
 .
-<http://fhnw.ch/modelingEnvironment/dkmm#Data_Document>
+dkmm:Data_Document
   rdfs:subClassOf lo:ModelingElement ;
 .
 bpmn:Artifact

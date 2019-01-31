@@ -23,14 +23,14 @@ po:Activity
   po:hasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
   po:hiddenFromPalette "true"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Task ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Call_Activity.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Call Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
@@ -98,14 +98,14 @@ po:CloseTransferCaseRecord
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:CloseTransferCaseRecord ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label """Close Transfer Case Record
  """ ;
 .
@@ -116,14 +116,14 @@ po:ConfirmTransfer
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:ConfirmTransfer ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Confirm Transfer" ;
 .
 po:DataDocument
@@ -139,14 +139,14 @@ po:DataInput
   po:hasParentPaletteConstruct po:DataObject ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:DataType ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataInput.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Data Input" ;
 .
 po:DataObject
@@ -156,14 +156,14 @@ po:DataObject
   po:hasPaletteThumbnail "DataObject.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:DataType ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataObject.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Data Object" ;
 .
 po:DataOutput
@@ -174,14 +174,14 @@ po:DataOutput
   po:hasParentPaletteConstruct po:DataObject ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:DataType ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataOutput.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Data Output" ;
 .
 po:DiscretionaryTask
@@ -192,14 +192,14 @@ po:DiscretionaryTask
   po:hasParentPaletteConstruct po:ManualTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Discretionary_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Discretionary Task" ;
 .
 po:Event
@@ -209,14 +209,14 @@ po:Event
   po:hasPaletteThumbnail "Event.PNG" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:StartEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 70 ;
   po:paletteElementBackgroundColor "#00AD5F" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Event.PNG" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 70 ;
   rdfs:label "Event" ;
 .
 po:EventBasedGateway
@@ -227,14 +227,14 @@ po:EventBasedGateway
   po:hasParentPaletteConstruct po:SimpleGateway ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Gateway ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Orange" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "EventBased_Gateway.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Event-based Gateway" ;
 .
 po:ExclusiveGateway
@@ -245,14 +245,14 @@ po:ExclusiveGateway
   po:hasParentPaletteConstruct po:SimpleGateway ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Gateway ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Orange" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Exclusive_Gateway.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Exclusive Gatweay" ;
 .
 po:FinalizeKoGu
@@ -262,14 +262,14 @@ po:FinalizeKoGu
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:FinalizeKoGu ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Finalize KoGu" ;
 .
 po:GeneratingCustomerBillingData
@@ -280,9 +280,9 @@ po:GeneratingCustomerBillingData
   po:hasParentPaletteConstruct po:Group ;
   po:hiddenFromPalette "false" ;
   po:isRelatedToModelingConstruct bpmn:GeneratingCustomerBillingData ;
-  po:paletteElementHeight "335" ;
+  po:paletteConstructHasHeight "335" ;
+  po:paletteConstructHasWidth "755" ;
   po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "755" ;
   rdfs:label "Generating Customer Billing Data" ;
 .
 po:Group
@@ -292,35 +292,24 @@ po:Group
   po:hasPaletteThumbnail "Group.jpg" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Group ;
+  po:paletteConstructHasHeight 575 ;
+  po:paletteConstructHasWidth 835 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 575 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Group.jpg" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 835 ;
   rdfs:label "Group" ;
-.
-po:ICFStandard
-  rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "gnICFStandardForCanvas.png" ;
-  po:hasPaletteThumbnail "gnICFStandardForPalette.png" ;
-  po:hasParentPaletteConstruct po:DataDocument ;
-  po:hasParentPaletteConstruct po:KoGuDataObject ;
-  po:isRelatedToModelingConstruct dsml4ptm:ICFStandard ;
-  rdfs:label "ICF Standard - instance for graphical notation" ;
 .
 po:ICFStandardHasModelThumbnail
   rdf:type rdf:Property ;
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:ICFStandard ;
   rdfs:range xsd:string ;
   rdfs:range "gnICFStandardForCanvas.png" ;
 .
 po:ICFStandardHasPaletteThumbnail
   rdf:type rdf:Property ;
-  rdfs:domain po:ICFStandard ;
   rdfs:range xsd:string ;
   rdfs:range "gnICFStandardForPalette.png" ;
 .
@@ -339,12 +328,12 @@ po:Lane
   po:hasPaletteThumbnail "Lane.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Lane ;
+  po:paletteConstructHasHeight 335 ;
+  po:paletteConstructHasWidth 1160 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 335 ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 1160 ;
   rdfs:label "Lane" ;
 .
 po:MakeDispositionOfCase
@@ -354,14 +343,14 @@ po:MakeDispositionOfCase
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:MakeDispositionOfCase ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Make Disposition Of Case" ;
 .
 po:ManagingCustomerRelationship
@@ -372,9 +361,9 @@ po:ManagingCustomerRelationship
   po:hasParentPaletteConstruct po:Group ;
   po:hiddenFromPalette "false" ;
   po:isRelatedToModelingConstruct bpmn:ManagingCustomerRelationship ;
-  po:paletteElementHeight "115" ;
+  po:paletteConstructHasHeight "115" ;
+  po:paletteConstructHasWidth "155" ;
   po:paletteElementUsesImage "null" ;
-  po:paletteElementWidth "155" ;
   rdfs:label "Managing Customer Relationship" ;
 .
 po:ManualTask
@@ -385,14 +374,14 @@ po:ManualTask
   po:hasParentPaletteConstruct po:Task ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:ManualTask ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Manual_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Manual Task" ;
 .
 po:MessageFlow
@@ -413,14 +402,14 @@ po:MessageIntermediate
   po:hasParentPaletteConstruct po:SimpleIntermediate ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:IntermediateEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Green" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Message_Intermediate.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Message Intermediate" ;
 .
 po:MessageStart
@@ -431,14 +420,14 @@ po:MessageStart
   po:hasParentPaletteConstruct po:SimpleStart ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:StartEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Green" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Message_Start.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Message Start" ;
 .
 po:PaletteCategory
@@ -486,14 +475,14 @@ po:ParallelGateway
   po:hasParentPaletteConstruct po:SimpleGateway ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:ParallelGateway ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Orange" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Parallel_Gateway.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Parallel Gateway" ;
 .
 po:Pool
@@ -503,12 +492,12 @@ po:Pool
   po:hasPaletteThumbnail "Pool.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Pool ;
+  po:paletteConstructHasHeight 465 ;
+  po:paletteConstructHasWidth 1165 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 465 ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 1165 ;
   rdfs:label "Pool" ;
 .
 po:PrepareKoGu
@@ -519,14 +508,14 @@ po:PrepareKoGu
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:PrepareKoGu ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Prepare KoGu" ;
 .
 po:PrepareMedicalRecordAdmission
@@ -536,14 +525,14 @@ po:PrepareMedicalRecordAdmission
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:PrepareMedicalAdmission ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label """Prepare Medical Record Admission
  """ ;
 .
@@ -554,14 +543,14 @@ po:PrepareRehabAdmission
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:PrepareRehabAdmission ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label """Prepare Rehab Admission
  """ ;
 .
@@ -573,14 +562,14 @@ po:ReceiveTask
   po:hasParentPaletteConstruct po:Task ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:SendTask ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Receive_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Receive Task" ;
 .
 po:ReleaseTransferCase
@@ -590,14 +579,14 @@ po:ReleaseTransferCase
   po:hasParentPaletteConstruct po:UserTask ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:ReleaseTransferCase ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label """Release Transfer Case
  """ ;
 .
@@ -609,14 +598,14 @@ po:SendTask
   po:hasParentPaletteConstruct po:Task ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:SendTask ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Send Task" ;
 .
 po:SequenceFlow
@@ -637,14 +626,14 @@ po:ServiceTask
   po:hasParentPaletteConstruct po:Task ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:ServiceTask ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Service_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Service Task" ;
 .
 po:SimpleEnd
@@ -655,14 +644,14 @@ po:SimpleEnd
   po:hasParentPaletteConstruct po:Event ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:EndEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Red" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Simple_End.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Simple End" ;
 .
 po:SimpleGateway
@@ -672,14 +661,14 @@ po:SimpleGateway
   po:hasPaletteThumbnail "Simple_Gateway.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Gateway ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "Orange" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Simple_Gateway.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Simple Gatweay" ;
 .
 po:SimpleIntermediate
@@ -690,14 +679,14 @@ po:SimpleIntermediate
   po:hasParentPaletteConstruct po:Event ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:IntermediateEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Simple_Intermediate.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Simple Intermediate" ;
 .
 po:SimpleStart
@@ -708,14 +697,14 @@ po:SimpleStart
   po:hasParentPaletteConstruct po:Event ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:StartEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#00AD5F" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Simple_Start.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Simple Start" ;
 .
 po:SubReceiveActivity
@@ -733,14 +722,14 @@ po:Subprocess
   po:hasPaletteThumbnail "Thumbnail_Subprocess.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:SubProcess ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Subprocess.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Subprocess" ;
 .
 po:Task
@@ -750,14 +739,14 @@ po:Task
   po:hasPaletteThumbnail "Thumbnail_Task.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:Task ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Task" ;
 .
 po:TestActivity
@@ -785,14 +774,14 @@ po:TimerIntermediate
   po:hasParentPaletteConstruct po:SimpleIntermediate ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:IntermediateEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Timer_Intermediate.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Timer Intermediate" ;
 .
 po:TimerStart
@@ -803,14 +792,14 @@ po:TimerStart
   po:hasParentPaletteConstruct po:SimpleStart ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:StartEvent ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Timer_Start.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "Timer Start" ;
 .
 po:TransmittingBillingData
@@ -821,9 +810,9 @@ po:TransmittingBillingData
   po:hasParentPaletteConstruct po:Group ;
   po:hiddenFromPalette "false" ;
   po:isRelatedToModelingConstruct bpmn:TransmittingBillingData ;
-  po:paletteElementHeight "115" ;
+  po:paletteConstructHasHeight "115" ;
+  po:paletteConstructHasWidth "155" ;
   po:paletteElementUsesImage "true" ;
-  po:paletteElementWidth "155" ;
   rdfs:label "Transmitting Billing Data" ;
 .
 po:UserTask
@@ -835,14 +824,14 @@ po:UserTask
   po:hasParentPaletteConstruct po:Task ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
   po:isRelatedToModelingConstruct bpmn:UserTask ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementHeight 70 ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Task.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  po:paletteElementWidth 100 ;
   rdfs:label "User Task" ;
 .
 po:Wholeprocess_sendinvoice
@@ -853,9 +842,9 @@ po:Wholeprocess_sendinvoice
   po:hasParentPaletteConstruct po:Group ;
   po:hiddenFromPalette "false" ;
   po:isRelatedToModelingConstruct bpmn:Wholeprocess_sendinvoice ;
-  po:paletteElementHeight "565" ;
+  po:paletteConstructHasHeight "565" ;
+  po:paletteConstructHasWidth "1120" ;
   po:paletteElementUsesImage "true" ;
-  po:paletteElementWidth "1120" ;
   rdfs:label "Whole process_send invoice" ;
 .
 po:belongsToModelingLanguage
@@ -904,7 +893,6 @@ po:hasPaletteThumbnail
 .
 po:hasParentDataDocument
   rdf:type rdf:Property ;
-  rdfs:domain po:ICFStandard ;
   rdfs:range po:DataDocument ;
 .
 po:hasParentPaletteConstruct
@@ -922,7 +910,6 @@ po:hiddenFromPalette
 .
 po:isRelatedToICFStandard
   rdf:type rdf:Property ;
-  rdfs:domain po:ICFStandard ;
   rdfs:range dsml4ptm:ICFStandard ;
 .
 po:isRelatedToModelingConstruct
@@ -1024,16 +1011,22 @@ po:paletteConnectorLineType
   rdfs:label "Connector Line Type" ;
   rdfs:range xsd:string ;
 .
+po:paletteConstructHasHeight
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Height" ;
+  rdfs:range xsd:integer ;
+.
+po:paletteConstructHasWidth
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Width" ;
+  rdfs:range xsd:integer ;
+.
 po:paletteElementBackgroundColor
   rdf:type owl:DatatypeProperty ;
   rdfs:label "Background Color" ;
   rdfs:range xsd:string ;
-.
-po:paletteElementHeight
-  rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteElement ;
-  rdfs:label "Height" ;
-  rdfs:range xsd:integer ;
 .
 po:paletteElementIconPosition
   rdf:type owl:DatatypeProperty ;
@@ -1059,12 +1052,6 @@ po:paletteElementUsesImage
   rdf:type owl:DatatypeProperty ;
   rdfs:label "Use Images instead of Shape" ;
   rdfs:range xsd:boolean ;
-.
-po:paletteElementWidth
-  rdf:type owl:DatatypeProperty ;
-  rdfs:domain po:PaletteElement ;
-  rdfs:label "Width" ;
-  rdfs:range xsd:integer ;
 .
 <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document>
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;

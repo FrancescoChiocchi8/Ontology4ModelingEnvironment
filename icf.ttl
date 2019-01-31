@@ -73,6 +73,7 @@ icf:b199_Mental_functions_unspecified
 .
 icf:b1_Chapter_1_Mental_Functions
   rdf:type owl:Class ;
+  rdfs:comment "permanent link: http://purl.bioontology.org/ontology/ICF?conceptid=http%3A%2F%2Fwho.int%2Ficf%23b1" ;
   rdfs:label "b1_Chapter_1_Mental_Functions" ;
   rdfs:subClassOf icf:b_BodyFunction ;
 .
