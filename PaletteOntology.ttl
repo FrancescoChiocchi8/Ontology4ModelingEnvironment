@@ -302,6 +302,14 @@ po:Group
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Group" ;
 .
+po:ICFStandard
+  rdf:type po:PaletteElement ;
+  po:hasModelThumbnail "gnICFStandardForCanvas.png" ;
+  po:hasPaletteThumbnail "gnICFStandardForPalette.png" ;
+  po:hasParentPaletteConstruct po:DataDocument ;
+  po:isRelatedToModelingConstruct dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard - instance for graphical notation" ;
+.
 po:ICFStandardHasModelThumbnail
   rdf:type rdf:Property ;
   rdf:type owl:DatatypeProperty ;
@@ -903,6 +911,7 @@ po:hasParentPaletteConstruct
 .
 po:hiddenFromPalette
   rdf:type owl:DatatypeProperty ;
+  po:value "Prova" ;
   rdfs:domain po:PaletteCategory ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Hide from Palette" ;

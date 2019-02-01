@@ -31,10 +31,20 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+dsml4ptm:ICFStandard
+  rdf:type rdfs:Class ;
+  dsml4ptm:isMappedWithPerformance <http://who.int/icf#Performance> ;
+  dsml4ptm:isMappedWithSomething <http://who.int/icf#Performance> ;
+  rdfs:comment "This concept describes…" ;
+  rdfs:label "ICF Standard" ;
+  rdfs:label "ICF test" ;
+  rdfs:subClassOf dkmm:Data_Document ;
+.
 dsml4ptm:ICFStandardHasTimeStamp
   rdf:type rdf:Property ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range xsd:dateTime ;
+  rdfs:range xsd:datetime ;
 .
 dsml4ptm:PrepaerKoGu
   rdf:type rdfs:Class ;
@@ -49,21 +59,25 @@ dsml4ptm:PrepareKoGu3
 dsml4ptm:isMappedWithActivityAndParticipation
   rdf:type rdf:Property ;
   rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#ActivitiesAndParticipation> ;
   rdfs:range <http://who.int/icf#d_ActivitiesAndParticipation> ;
 .
 dsml4ptm:isMappedWithBodyFunction
   rdf:type rdf:Property ;
   rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#BodyFunction> ;
   rdfs:range <http://who.int/icf#b_BodyFunction> ;
 .
 dsml4ptm:isMappedWithBodyStructures
   rdf:type rdf:Property ;
   rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#BodyStructures> ;
   rdfs:range <http://who.int/icf#s_BodyStructures> ;
 .
 dsml4ptm:isMappedWithEnvironmentalFactors
   rdf:type rdf:Property ;
   rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:range <http://who.int/icf#EnvironmentalFactors> ;
   rdfs:range <http://who.int/icf#e_EnvironmentalFactors> ;
 .
 dsml4ptm:isMappedWithPerformance
@@ -152,6 +166,12 @@ lo:ICFStandard_1
   rdf:type dsml4ptm:ICFStandard ;
   rdfs:label "Modeling Language Ontology is mapped with a Domain Ontology concept" ;
 .
+lo:ICFStandard_10
+  rdf:type dsml4ptm:ICFStandard ;
+.
+lo:ICFStandard_11
+  rdf:type dsml4ptm:ICFStandard ;
+.
 lo:ICFStandard_2
   rdf:type dsml4ptm:ICFStandard ;
   rdfs:label "b199. Mental functions, unspecified" ;
@@ -175,6 +195,14 @@ lo:ICFStandard_6
 lo:ICFStandard_7
   rdf:type dsml4ptm:ICFStandard ;
   rdfs:label "7" ;
+.
+lo:ICFStandard_8
+  rdf:type dsml4ptm:ICFStandard ;
+  rdfs:label "7" ;
+.
+lo:ICFStandard_9
+  rdf:type dsml4ptm:ICFStandard ;
+  dsml4ptm:isMappedWithBodyFunction <http://who.int/icf#b110-b139_Global_mental_functions> ;
 .
 lo:MRhasNotAllowedCombination
   rdf:type owl:ObjectProperty ;
@@ -277,7 +305,13 @@ lo:hasNewObjectProperty
 lo:hasNewProperty
   rdf:type rdf:Property ;
   rdf:type owl:DatatypeProperty ;
+  lo:hasValue xsd:string ;
+  lo:hasValue "Prova" ;
   rdfs:range xsd:decimal ;
+.
+lo:hasValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "hasValue" ;
 .
 lo:isMappedWithDomainOntologyConcept
   rdf:type owl:ObjectProperty ;
