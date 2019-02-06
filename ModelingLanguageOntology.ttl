@@ -334,6 +334,12 @@ lo:isMappedWithDomainOntologyConcept
   rdfs:label "Modeling Language Ontology is mapped with a Domain Ontology concept" ;
   rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
+lo:isPartOfModelingElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingElement ;
+  rdfs:label "Modeling element is connected with modeling element" ;
+  rdfs:range lo:ModelingElement ;
+.
 lo:metaModelHasModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
   rdfs:range lo:ModelingLanguageConstruct ;
