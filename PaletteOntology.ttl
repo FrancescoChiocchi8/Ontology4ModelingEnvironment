@@ -18,7 +18,7 @@
 .
 po:Activity
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Call_Activity.png" ;
+  po:hasModelImage "Call_Activity.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
   po:hiddenFromPalette "true"^^xsd:boolean ;
@@ -133,7 +133,7 @@ po:DataDocument
 .
 po:DataInput
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "DataInput.png" ;
+  po:hasModelImage "DataInput.png" ;
   po:hasPaletteCategory po:Category_Data ;
   po:hasPaletteThumbnail "DataInput.png" ;
   po:hasParentPaletteConstruct po:DataObject ;
@@ -151,7 +151,7 @@ po:DataInput
 .
 po:DataObject
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "DataObject.png" ;
+  po:hasModelImage "DataObject.png" ;
   po:hasPaletteCategory po:Category_Data ;
   po:hasPaletteThumbnail "DataObject.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -168,7 +168,7 @@ po:DataObject
 .
 po:DataOutput
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "DataOutput.png" ;
+  po:hasModelImage "DataOutput.png" ;
   po:hasPaletteCategory po:Category_Data ;
   po:hasPaletteThumbnail "DataOutput.png" ;
   po:hasParentPaletteConstruct po:DataObject ;
@@ -186,7 +186,7 @@ po:DataOutput
 .
 po:DiscretionaryTask
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Discretionary_Task.png" ;
+  po:hasModelImage "Discretionary_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Discretionary_Task.png" ;
   po:hasParentPaletteConstruct po:ManualTask ;
@@ -204,7 +204,7 @@ po:DiscretionaryTask
 .
 po:Event
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Event.PNG" ;
+  po:hasModelImage "Event.PNG" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Event.PNG" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -221,7 +221,7 @@ po:Event
 .
 po:EventBasedGateway
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "EventBased_Gateway.png" ;
+  po:hasModelImage "EventBased_Gateway.png" ;
   po:hasPaletteCategory po:Category_Gateways ;
   po:hasPaletteThumbnail "EventBased_Gateway.png" ;
   po:hasParentPaletteConstruct po:SimpleGateway ;
@@ -239,7 +239,7 @@ po:EventBasedGateway
 .
 po:ExclusiveGateway
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Exclusive_Gateway.png" ;
+  po:hasModelImage "Exclusive_Gateway.png" ;
   po:hasPaletteCategory po:Category_Gateways ;
   po:hasPaletteThumbnail "Exclusive_Gateway.png" ;
   po:hasParentPaletteConstruct po:SimpleGateway ;
@@ -274,7 +274,7 @@ po:FinalizeKoGu
 .
 po:GeneratingCustomerBillingData
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Group4Process.bmp" ;
+  po:hasModelImage "Group4Process.bmp" ;
   po:hasPaletteCategory po:Category_Groups ;
   po:hasPaletteThumbnail "Group_GeneratingCustBillData.jpg" ;
   po:hasParentPaletteConstruct po:Group ;
@@ -287,7 +287,7 @@ po:GeneratingCustomerBillingData
 .
 po:Group
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Group4Process.bmp" ;
+  po:hasModelImage "Group4Process.bmp" ;
   po:hasPaletteCategory po:Category_Groups ;
   po:hasPaletteThumbnail "Group.jpg" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -304,10 +304,14 @@ po:Group
 .
 po:ICFStandard
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "gnICFStandardForCanvas.png" ;
+  po:hasModelImage "NewICFStandardForModel" ;
+  po:hasModelImage "gnICFStandardForCanvas.png" ;
+  po:hasPaletteThumbnail "NewICFStandardForPalette.png" ;
   po:hasPaletteThumbnail "gnICFStandardForPalette.png" ;
   po:hasParentPaletteConstruct po:DataDocument ;
+  po:hiddenFromPalette "true"^^xsd:boolean ;
   po:isRelatedToModelingConstruct dsml4ptm:ICFStandard ;
+  rdfs:label "ICF International Standard" ;
   rdfs:label "ICF Standard - instance for graphical notation" ;
 .
 po:ICFStandardHasModelThumbnail
@@ -331,7 +335,7 @@ po:KoGuDataObject
 .
 po:Lane
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Lane_whole.png" ;
+  po:hasModelImage "Lane_whole.png" ;
   po:hasPaletteCategory po:Category_Swimlanes ;
   po:hasPaletteThumbnail "Lane.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -363,7 +367,7 @@ po:MakeDispositionOfCase
 .
 po:ManagingCustomerRelationship
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Group_TransmittingBillData.jpg" ;
+  po:hasModelImage "Group_TransmittingBillData.jpg" ;
   po:hasPaletteCategory po:Category_Groups ;
   po:hasPaletteThumbnail "Group_ManagingCR.jpg" ;
   po:hasParentPaletteConstruct po:Group ;
@@ -376,7 +380,7 @@ po:ManagingCustomerRelationship
 .
 po:ManualTask
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Manual_Task.png" ;
+  po:hasModelImage "Manual_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Manual_Task.png" ;
   po:hasParentPaletteConstruct po:Task ;
@@ -404,7 +408,7 @@ po:MessageFlow
 .
 po:MessageIntermediate
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Message_Intermediate.png" ;
+  po:hasModelImage "Message_Intermediate.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Message_Intermediate.png" ;
   po:hasParentPaletteConstruct po:SimpleIntermediate ;
@@ -422,7 +426,7 @@ po:MessageIntermediate
 .
 po:MessageStart
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Message_Start.png" ;
+  po:hasModelImage "Message_Start.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Message_Start.png" ;
   po:hasParentPaletteConstruct po:SimpleStart ;
@@ -477,7 +481,7 @@ po:PaletteElement
 .
 po:ParallelGateway
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Parallel_Gateway.png" ;
+  po:hasModelImage "Parallel_Gateway.png" ;
   po:hasPaletteCategory po:Category_Gateways ;
   po:hasPaletteThumbnail "Parallel_Gateway.png" ;
   po:hasParentPaletteConstruct po:SimpleGateway ;
@@ -495,7 +499,7 @@ po:ParallelGateway
 .
 po:Pool
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Pool_whole.png" ;
+  po:hasModelImage "Pool_whole.png" ;
   po:hasPaletteCategory po:Category_Swimlanes ;
   po:hasPaletteThumbnail "Pool.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -510,7 +514,7 @@ po:Pool
 .
 po:PrepareKoGu
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "User_Task.png" ;
+  po:hasModelImage "User_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:hasParentPaletteConstruct po:UserTask ;
@@ -564,7 +568,7 @@ po:PrepareRehabAdmission
 .
 po:ReceiveTask
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Receive_Task.png" ;
+  po:hasModelImage "Receive_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Receive_Task.png" ;
   po:hasParentPaletteConstruct po:Task ;
@@ -600,7 +604,7 @@ po:ReleaseTransferCase
 .
 po:SendTask
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Send_Task.png" ;
+  po:hasModelImage "Send_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Send_Task.png" ;
   po:hasParentPaletteConstruct po:Task ;
@@ -628,7 +632,7 @@ po:SequenceFlow
 .
 po:ServiceTask
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Service_Task.png" ;
+  po:hasModelImage "Service_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Service_Task.png" ;
   po:hasParentPaletteConstruct po:Task ;
@@ -646,7 +650,7 @@ po:ServiceTask
 .
 po:SimpleEnd
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Simple_End.png" ;
+  po:hasModelImage "Simple_End.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Simple_End.png" ;
   po:hasParentPaletteConstruct po:Event ;
@@ -664,7 +668,7 @@ po:SimpleEnd
 .
 po:SimpleGateway
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Simple_Gateway.png" ;
+  po:hasModelImage "Simple_Gateway.png" ;
   po:hasPaletteCategory po:Category_Gateways ;
   po:hasPaletteThumbnail "Simple_Gateway.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -681,7 +685,7 @@ po:SimpleGateway
 .
 po:SimpleIntermediate
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Simple_Intermediate.png" ;
+  po:hasModelImage "Simple_Intermediate.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Simple_Intermediate.png" ;
   po:hasParentPaletteConstruct po:Event ;
@@ -699,7 +703,7 @@ po:SimpleIntermediate
 .
 po:SimpleStart
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Simple_Start.png" ;
+  po:hasModelImage "Simple_Start.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Simple_Start.png" ;
   po:hasParentPaletteConstruct po:Event ;
@@ -725,7 +729,7 @@ po:SubReceiveActivity
 .
 po:Subprocess
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Subprocess.png" ;
+  po:hasModelImage "Subprocess.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Subprocess.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -742,7 +746,7 @@ po:Subprocess
 .
 po:Task
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Task.png" ;
+  po:hasModelImage "Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_Task.png" ;
   po:hiddenFromPalette "false"^^xsd:boolean ;
@@ -776,7 +780,7 @@ po:TestSub
 .
 po:TimerIntermediate
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Timer_Intermediate.png" ;
+  po:hasModelImage "Timer_Intermediate.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Timer_Intermediate.png" ;
   po:hasParentPaletteConstruct po:SimpleIntermediate ;
@@ -794,7 +798,7 @@ po:TimerIntermediate
 .
 po:TimerStart
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Timer_Start.png" ;
+  po:hasModelImage "Timer_Start.png" ;
   po:hasPaletteCategory po:Category_Events ;
   po:hasPaletteThumbnail "Timer_Start.png" ;
   po:hasParentPaletteConstruct po:SimpleStart ;
@@ -812,7 +816,7 @@ po:TimerStart
 .
 po:TransmittingBillingData
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "GroupOfAvtivities.png" ;
+  po:hasModelImage "GroupOfAvtivities.png" ;
   po:hasPaletteCategory po:Category_Groups ;
   po:hasPaletteThumbnail "Group_TransmittingBillData.jpg" ;
   po:hasParentPaletteConstruct po:Group ;
@@ -826,7 +830,7 @@ po:TransmittingBillingData
 po:UserTask
   rdf:type po:PaletteElement ;
   rdf:type bpmn:UserTask ;
-  po:hasModelThumbnail "User_Task.png" ;
+  po:hasModelImage "User_Task.png" ;
   po:hasPaletteCategory po:Category_Activities ;
   po:hasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:hasParentPaletteConstruct po:Task ;
@@ -844,7 +848,7 @@ po:UserTask
 .
 po:Wholeprocess_sendinvoice
   rdf:type po:PaletteElement ;
-  po:hasModelThumbnail "Group_whole_process.png" ;
+  po:hasModelImage "Group_whole_process.png" ;
   po:hasPaletteCategory po:Category_Groups ;
   po:hasPaletteThumbnail "Group.jpg" ;
   po:hasParentPaletteConstruct po:Group ;
@@ -881,10 +885,10 @@ po:graphicalElementY
   rdfs:label "Y coordinate" ;
   rdfs:range xsd:string ;
 .
-po:hasModelThumbnail
+po:hasModelImage
   rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteConstruct ;
-  rdfs:label "Thumbnail for the Model" ;
+  rdfs:label "Image for the Model" ;
   rdfs:range xsd:string ;
 .
 po:hasPaletteCategory
