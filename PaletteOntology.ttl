@@ -865,6 +865,12 @@ po:belongsToModelingLanguage
   rdfs:label "Palette construct belongs to modeling language" ;
   rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingLanguage> ;
 .
+po:belongsToModelingView
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Palette construct belongs to a modeling view" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingView> ;
+.
 po:graphicalElementClassType
   rdf:type owl:DatatypeProperty ;
   rdfs:domain owl:Thing ;
