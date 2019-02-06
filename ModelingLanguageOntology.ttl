@@ -254,6 +254,11 @@ lo:ModelingRelation_1
   rdf:type lo:ModelingRelation ;
   rdfs:label "prepareKoGu1" ;
 .
+lo:ModelingView
+  rdf:type owl:Class ;
+  rdfs:label "Modeling View" ;
+  rdfs:subClassOf owl:Thing ;
+.
 lo:OrganizationalModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Organizational Modeling Language" ;
@@ -301,6 +306,12 @@ lo:date_of_birth
   rdfs:label "data of birth" ;
   rdfs:range xsd:date ;
 .
+lo:hasModelingView
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingLanguage ;
+  rdfs:label "Modeling language has modeling view" ;
+  rdfs:range lo:ModelingView ;
+.
 lo:hasNewObjectProperty
   rdf:type owl:ObjectProperty ;
   rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Cost_Reimbursment> ;
@@ -329,7 +340,6 @@ lo:metaModelHasModelingLanguageConstruct
 .
 lo:modelingLanguageHasModelingConstruct
   rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:ModelingLanguage ;
   rdfs:label "Modeling Language has Modeling Construct" ;
 .
 lo:modelingRelationHasSourceModelingElement
