@@ -227,7 +227,6 @@ lo:ModelingElement
 .
 lo:ModelingElementBelongsToModelingContainer
   rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:ModelingElement ;
   rdfs:label "Modeling element belongs to modeling container" ;
 .
 lo:ModelingLanguage
@@ -239,11 +238,6 @@ lo:ModelingLanguageConstruct
   rdf:type owl:Class ;
   rdfs:label "Modeling construct" ;
   rdfs:subClassOf owl:Thing ;
-.
-lo:ModelingLanguageConstruct_1
-  rdf:type owl:Class ;
-  rdfs:label "7" ;
-  rdfs:subClassOf lo:ModelingLanguageConstruct ;
 .
 lo:ModelingRelation
   rdf:type owl:Class ;
@@ -306,11 +300,17 @@ lo:date_of_birth
   rdfs:label "data of birth" ;
   rdfs:range xsd:date ;
 .
-lo:hasBridgingConcept
+lo:elementHasBridgingConcept
   rdf:type owl:ObjectProperty ;
   rdfs:domain lo:ModelingElement ;
-  rdfs:label "Modeling element is connected with modeling element" ;
+  rdfs:label "Modeling element has bridging concept" ;
   rdfs:range lo:ModelingElement ;
+.
+lo:elementIsMappedWithDOConcept
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingElement ;
+  rdfs:label "Modeling element is mapped with a Domain Ontology concept" ;
+  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
 lo:hasModelingView
   rdf:type owl:ObjectProperty ;
@@ -330,15 +330,13 @@ lo:hasNewProperty
   lo:hasValue "Prova" ;
   rdfs:range xsd:decimal ;
 .
+lo:hasPaletteCategory
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "A modeling view has palette categories" ;
+.
 lo:hasValue
   rdf:type owl:DatatypeProperty ;
   rdfs:label "hasValue" ;
-.
-lo:isMappedWithDomainOntologyConcept
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain lo:ModelingLanguageConstruct ;
-  rdfs:label "Modeling Language Ontology is mapped with a Domain Ontology concept" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
 lo:metaModelHasModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
@@ -366,6 +364,12 @@ lo:notAllowedComb_Start-Start
   lo:combinationHasTarget bpmn:StartEvent ;
   lo:combinationIsNotAllowedInMR bpmn:SequenceFlow ;
   rdfs:label "Start event cannot be directly connected with start event - Semantics defined in BPMN 2.0" ;
+.
+lo:viewIsPartOfModelingLanguage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain lo:ModelingView ;
+  rdfs:label "Modeling view is part of modeling language" ;
+  rdfs:range lo:ModelingLanguage ;
 .
 dkmm:Data_Document
   rdfs:subClassOf lo:ModelingElement ;
