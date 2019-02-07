@@ -447,10 +447,6 @@ po:PaletteCategory
   <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
-po:PaletteCategory_1
-  rdf:type po:PaletteCategory ;
-  rdfs:label "Modeling view is part of modeling language" ;
-.
 po:PaletteCategory_ArchiMate
   rdf:type owl:Class ;
   rdfs:label "ArchiMate" ;
