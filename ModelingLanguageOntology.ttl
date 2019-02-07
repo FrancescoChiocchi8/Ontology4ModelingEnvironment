@@ -44,10 +44,12 @@ dsml4ptm:ICFStandard
 .
 dsml4ptm:ICFStandardHasTimeStamp
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:label "ICF Standard has default TimeStamp" ;
   rdfs:range xsd:datetime ;
   rdfs:range "2019-02-04T13:20:00"^^xsd:dateTime ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:PrepaerKoGu
   rdf:type rdfs:Class ;
@@ -61,38 +63,50 @@ dsml4ptm:PrepareKoGu3
 .
 dsml4ptm:isMappedWithActivityAndParticipation
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range <http://who.int/icf#ActivitiesAndParticipation> ;
   rdfs:range <http://who.int/icf#d_ActivitiesAndParticipation> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:isMappedWithBodyFunction
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range <http://who.int/icf#BodyFunction> ;
   rdfs:range <http://who.int/icf#b_BodyFunction> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:isMappedWithBodyStructures
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range <http://who.int/icf#BodyStructures> ;
   rdfs:range <http://who.int/icf#s_BodyStructures> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:isMappedWithEnvironmentalFactors
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range <http://who.int/icf#EnvironmentalFactors> ;
   rdfs:range <http://who.int/icf#e_EnvironmentalFactors> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:isMappedWithPerformance
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:range <http://who.int/icf#Performance> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
 .
 dsml4ptm:isPartOfKoGuDO
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
   rdfs:label "ICF Standard is part of Data Object" ;
   rdfs:range bpmn:DataObject ;
+  rdfs:subPropertyOf lo:elementHasBridgingConcept ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology>
   rdf:type owl:Ontology ;
