@@ -22,6 +22,7 @@ po:Activity
   po:paletteConstructHasModelImage "Call_Activity.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -33,12 +34,70 @@ po:Activity
   rdfs:label "Call Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
+po:Category_Activities
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  rdfs:label "Activities" ;
+.
+po:Category_Connectors
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#ControlElementModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#OrganizationalModelingLanguage> ;
+  rdfs:label "Connectors" ;
+.
+po:Category_Data
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
+  rdfs:label "Data" ;
+.
+po:Category_Events
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  rdfs:label "Events" ;
+.
+po:Category_Gateways
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  rdfs:label "Gateways" ;
+.
+po:Category_Groups
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
+  rdfs:label "Groups" ;
+.
+po:Category_Swimlanes
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  rdfs:label "Swimlanes" ;
+.
 po:CloseTransferCaseRecord
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:CloseTransferCaseRecord ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -56,6 +115,7 @@ po:ConfirmTransfer
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:ConfirmTransfer ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -78,6 +138,7 @@ po:DataInput
   po:paletteConstructHasPaletteThumbnail "DataInput.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -94,6 +155,7 @@ po:DataObject
   po:paletteConstructHasModelImage "DataObject.png" ;
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -111,6 +173,7 @@ po:DataOutput
   po:paletteConstructHasPaletteThumbnail "DataOutput.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -128,6 +191,7 @@ po:DiscretionaryTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Discretionary_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:ManualTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -144,6 +208,7 @@ po:Event
   po:paletteConstructHasModelImage "Event.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Event.PNG" ;
   po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
   po:paletteElementBackgroundColor "#00AD5F" ;
@@ -161,6 +226,7 @@ po:EventBasedGateway
   po:paletteConstructHasPaletteThumbnail "EventBased_Gateway.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleGateway ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Gateways ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Gateway ;
   po:paletteElementBackgroundColor "Orange" ;
@@ -178,6 +244,7 @@ po:ExclusiveGateway
   po:paletteConstructHasPaletteThumbnail "Exclusive_Gateway.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleGateway ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Gateways ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Gateway ;
   po:paletteElementBackgroundColor "Orange" ;
@@ -194,6 +261,7 @@ po:FinalizeKoGu
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:FinalizeKoGu ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -211,6 +279,7 @@ po:GeneratingCustomerBillingData
   po:paletteConstructHasPaletteThumbnail "Group_GeneratingCustBillData.jpg" ;
   po:paletteConstructHasParentPaletteConstruct po:Group ;
   po:paletteConstructHasWidth "755" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups ;
   po:paletteConstructIsHiddenFromPalette "false" ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:GeneratingCustomerBillingData ;
   po:paletteElementUsesImage "null" ;
@@ -222,6 +291,7 @@ po:Group
   po:paletteConstructHasModelImage "Group4Process.bmp" ;
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
   po:paletteConstructHasWidth 835 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -269,6 +339,7 @@ po:Lane
   po:paletteConstructHasModelImage "Lane_whole.png" ;
   po:paletteConstructHasPaletteThumbnail "Lane.png" ;
   po:paletteConstructHasWidth 1160 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Lane ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -283,6 +354,7 @@ po:MakeDispositionOfCase
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:MakeDispositionOfCase ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -300,6 +372,7 @@ po:ManagingCustomerRelationship
   po:paletteConstructHasPaletteThumbnail "Group_ManagingCR.jpg" ;
   po:paletteConstructHasParentPaletteConstruct po:Group ;
   po:paletteConstructHasWidth "155" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups ;
   po:paletteConstructIsHiddenFromPalette "false" ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ManagingCustomerRelationship ;
   po:paletteElementUsesImage "null" ;
@@ -312,6 +385,7 @@ po:ManualTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Manual_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ManualTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -326,6 +400,7 @@ po:MessageFlow
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasPaletteThumbnail "Message.png" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -338,6 +413,7 @@ po:MessageIntermediate
   po:paletteConstructHasPaletteThumbnail "Message_Intermediate.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleIntermediate ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
   po:paletteElementBackgroundColor "Green" ;
@@ -355,6 +431,7 @@ po:MessageStart
   po:paletteConstructHasPaletteThumbnail "Message_Start.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleStart ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
   po:paletteElementBackgroundColor "Green" ;
@@ -364,6 +441,26 @@ po:MessageStart
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Message Start" ;
+.
+po:PaletteCategory
+  rdf:type owl:Class ;
+  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  rdfs:subClassOf owl:Thing ;
+.
+po:PaletteCategory_ArchiMate
+  rdf:type owl:Class ;
+  rdfs:label "ArchiMate" ;
+  rdfs:subClassOf po:PaletteCategory ;
+.
+po:PaletteCategory_BPMN
+  rdf:type owl:Class ;
+  rdfs:label "BPMN" ;
+  rdfs:subClassOf po:PaletteCategory ;
+.
+po:PaletteCategory_CMMN
+  rdf:type owl:Class ;
+  rdfs:label "CMMN" ;
+  rdfs:subClassOf po:PaletteCategory ;
 .
 po:PaletteConnector
   rdf:type owl:Class ;
@@ -389,6 +486,7 @@ po:ParallelGateway
   po:paletteConstructHasPaletteThumbnail "Parallel_Gateway.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleGateway ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Gateways ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ParallelGateway ;
   po:paletteElementBackgroundColor "Orange" ;
@@ -405,6 +503,7 @@ po:Pool
   po:paletteConstructHasModelImage "Pool_whole.png" ;
   po:paletteConstructHasPaletteThumbnail "Pool.png" ;
   po:paletteConstructHasWidth 1165 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Pool ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -420,6 +519,7 @@ po:PrepareKoGu
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareKoGu ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -436,6 +536,7 @@ po:PrepareMedicalRecordAdmission
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareMedicalAdmission ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -453,6 +554,7 @@ po:PrepareRehabAdmission
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PrepareRehabAdmission ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -471,6 +573,7 @@ po:ReceiveTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Receive_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -487,6 +590,7 @@ po:ReleaseTransferCase
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:ReleaseTransferCase ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -505,6 +609,7 @@ po:SendTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Send_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -519,6 +624,7 @@ po:SequenceFlow
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasPaletteThumbnail "Sequence.png" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -531,6 +637,7 @@ po:ServiceTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Service_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ServiceTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -548,6 +655,7 @@ po:SimpleEnd
   po:paletteConstructHasPaletteThumbnail "Simple_End.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Event ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:EndEvent ;
   po:paletteElementBackgroundColor "Red" ;
@@ -564,6 +672,7 @@ po:SimpleGateway
   po:paletteConstructHasModelImage "Simple_Gateway.png" ;
   po:paletteConstructHasPaletteThumbnail "Simple_Gateway.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Gateways ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Gateway ;
   po:paletteElementBackgroundColor "Orange" ;
@@ -581,6 +690,7 @@ po:SimpleIntermediate
   po:paletteConstructHasPaletteThumbnail "Simple_Intermediate.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Event ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -598,6 +708,7 @@ po:SimpleStart
   po:paletteConstructHasPaletteThumbnail "Simple_Start.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Event ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
   po:paletteElementBackgroundColor "#00AD5F" ;
@@ -622,6 +733,7 @@ po:Subprocess
   po:paletteConstructHasModelImage "Subprocess.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Subprocess.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SubProcess ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -638,6 +750,7 @@ po:Task
   po:paletteConstructHasModelImage "Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Task.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -672,6 +785,7 @@ po:TimerIntermediate
   po:paletteConstructHasPaletteThumbnail "Timer_Intermediate.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleIntermediate ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -689,6 +803,7 @@ po:TimerStart
   po:paletteConstructHasPaletteThumbnail "Timer_Start.png" ;
   po:paletteConstructHasParentPaletteConstruct po:SimpleStart ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -706,6 +821,7 @@ po:TransmittingBillingData
   po:paletteConstructHasPaletteThumbnail "Group_TransmittingBillData.jpg" ;
   po:paletteConstructHasParentPaletteConstruct po:Group ;
   po:paletteConstructHasWidth "155" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups ;
   po:paletteConstructIsHiddenFromPalette "false" ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:TransmittingBillingData ;
   po:paletteElementUsesImage "true" ;
@@ -719,6 +835,7 @@ po:UserTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:UserTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -736,6 +853,7 @@ po:Wholeprocess_sendinvoice
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
   po:paletteConstructHasParentPaletteConstruct po:Group ;
   po:paletteConstructHasWidth "1120" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups ;
   po:paletteConstructIsHiddenFromPalette "false" ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Wholeprocess_sendinvoice ;
   po:paletteElementUsesImage "true" ;
@@ -743,6 +861,7 @@ po:Wholeprocess_sendinvoice
 .
 po:categoryIsShownInModelingView
   rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteCategory ;
   rdfs:label "A category in the palette is shown in a modeling view" ;
   rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingView> ;
 .
@@ -787,6 +906,7 @@ po:paletteCategoryIsUsedInModelingLanguage
 .
 po:paletteCategoryOrderNumber
   rdf:type owl:DatatypeProperty ;
+  rdfs:domain po:PaletteCategory ;
   rdfs:label "palette category order number" ;
   rdfs:range xsd:integer ;
 .
@@ -911,10 +1031,12 @@ po:paletteConstructIsGroupedInPaletteCategory
   rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Palette Construct Is Grouped In Palette Category" ;
+  rdfs:range po:PaletteCategory ;
 .
 po:paletteConstructIsHiddenFromPalette
   rdf:type owl:DatatypeProperty ;
   po:value "Prova" ;
+  rdfs:domain po:PaletteCategory ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Hide from Palette" ;
   rdfs:range xsd:boolean ;
