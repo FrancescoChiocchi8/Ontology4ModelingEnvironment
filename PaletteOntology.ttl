@@ -1,9 +1,9 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/PaletteOntology
-# imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # prefix: po
 
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,10 +12,6 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://fhnw.ch/modelingEnvironment/PaletteOntology>
-  rdf:type owl:Ontology ;
-  owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
-.
 po:Activity
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
