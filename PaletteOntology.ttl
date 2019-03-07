@@ -19,6 +19,7 @@
 po:Activity
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  po:belongsToModelingView lo:ProcessModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Call_Activity.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
@@ -37,6 +38,7 @@ po:Activity
 .
 po:Category_Activities
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
@@ -45,6 +47,7 @@ po:Category_Activities
 .
 po:Category_Connectors
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
@@ -57,6 +60,7 @@ po:Category_Connectors
 .
 po:Category_Data
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
@@ -65,6 +69,7 @@ po:Category_Data
 .
 po:Category_Events
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
@@ -72,6 +77,7 @@ po:Category_Events
 .
 po:Category_Gateways
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
@@ -79,6 +85,7 @@ po:Category_Gateways
 .
 po:Category_Groups
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
@@ -87,6 +94,7 @@ po:Category_Groups
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
+  po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
@@ -903,6 +911,18 @@ po:Wholeprocess_sendinvoice
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Wholeprocess_sendinvoice ;
   po:paletteElementUsesImage "true" ;
   rdfs:label "Whole process_send invoice" ;
+.
+po:belongsToModelingLanguage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Palette construct belongs to modeling language" ;
+  rdfs:range lo:ModelingLanguage ;
+.
+po:belongsToModelingView
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConstruct ;
+  rdfs:label "Palette Construct Belongs To Modeling View" ;
+  rdfs:range lo:ModelingView ;
 .
 po:categoryIsShownInModelingView
   rdf:type owl:ObjectProperty ;
