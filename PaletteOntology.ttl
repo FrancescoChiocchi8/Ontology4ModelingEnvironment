@@ -14,8 +14,6 @@
 
 po:Activity
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:belongsToModelingView lo:ProcessModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Call_Activity.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
@@ -34,71 +32,70 @@ po:Activity
 .
 po:Category_Activities
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Activities" ;
 .
 po:Category_Connectors
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#ControlElementModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:ControlElementModelingLanguage ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#OrganizationalModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:OrganizationalModelingLanguage ;
   rdfs:label "Connectors" ;
 .
 po:Category_Data
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Data" ;
 .
 po:Category_Events
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Events" ;
 .
 po:Category_Gateways
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Gateways" ;
 .
 po:Category_Groups
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DocumentAndKnowledgeModelingLanguage> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Groups" ;
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
-  po:categoryIsShownInModelingView lo:ProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPaaS_ModelingLanguage> ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DSML4PTM> ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Swimlanes" ;
 .
 po:CloseTransferCaseRecord
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -117,7 +114,6 @@ po:CloseTransferCaseRecord
 .
 po:ConfirmTransfer
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -135,13 +131,11 @@ po:ConfirmTransfer
 .
 po:DataDocument
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
   rdfs:label "Data Document " ;
 .
 po:DataInput
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DataInput.png" ;
   po:paletteConstructHasPaletteThumbnail "DataInput.png" ;
@@ -160,7 +154,6 @@ po:DataInput
 .
 po:DataObject
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DataObject.png" ;
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
@@ -178,7 +171,6 @@ po:DataObject
 .
 po:DataOutput
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DataOutput.png" ;
   po:paletteConstructHasPaletteThumbnail "DataOutput.png" ;
@@ -197,7 +189,6 @@ po:DataOutput
 .
 po:DiscretionaryTask
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Discretionary_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Discretionary_Task.png" ;
@@ -216,7 +207,6 @@ po:DiscretionaryTask
 .
 po:Event
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Event.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Event.PNG" ;
@@ -234,7 +224,6 @@ po:Event
 .
 po:EventBasedGateway
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "EventBased_Gateway.png" ;
   po:paletteConstructHasPaletteThumbnail "EventBased_Gateway.png" ;
@@ -253,7 +242,6 @@ po:EventBasedGateway
 .
 po:ExclusiveGateway
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Exclusive_Gateway.png" ;
   po:paletteConstructHasPaletteThumbnail "Exclusive_Gateway.png" ;
@@ -272,7 +260,6 @@ po:ExclusiveGateway
 .
 po:FinalizeKoGu
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -290,7 +277,6 @@ po:FinalizeKoGu
 .
 po:GeneratingCustomerBillingData
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight "335" ;
   po:paletteConstructHasModelImage "Group4Process.bmp" ;
   po:paletteConstructHasPaletteThumbnail "Group_GeneratingCustBillData.jpg" ;
@@ -304,7 +290,6 @@ po:GeneratingCustomerBillingData
 .
 po:Group
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 575 ;
   po:paletteConstructHasModelImage "Group4Process.bmp" ;
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
@@ -322,7 +307,6 @@ po:Group
 .
 po:ICFStandard
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasModelImage "NewICFStandardForModel" ;
   po:paletteConstructHasModelImage "gnICFStandardForCanvas.png" ;
   po:paletteConstructHasPaletteThumbnail "NewICFStandardForPalette.png" ;
@@ -349,13 +333,11 @@ po:ICFStandardhasModelThumbnail
 .
 po:KoGuDataObject
   rdf:type po:PaletteConstruct ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:KoGuDataObject ;
   rdfs:label "KoGu Data Object" ;
 .
 po:Lane
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 335 ;
   po:paletteConstructHasModelImage "Lane_whole.png" ;
   po:paletteConstructHasPaletteThumbnail "Lane.png" ;
@@ -371,7 +353,6 @@ po:Lane
 .
 po:MakeDispositionOfCase
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -389,7 +370,6 @@ po:MakeDispositionOfCase
 .
 po:ManagingCustomerRelationship
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "Group_TransmittingBillData.jpg" ;
   po:paletteConstructHasPaletteThumbnail "Group_ManagingCR.jpg" ;
@@ -403,7 +383,6 @@ po:ManagingCustomerRelationship
 .
 po:ManualTask
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Manual_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Manual_Task.png" ;
@@ -432,7 +411,6 @@ po:MessageFlow
 .
 po:MessageIntermediate
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Message_Intermediate.png" ;
   po:paletteConstructHasPaletteThumbnail "Message_Intermediate.png" ;
@@ -451,7 +429,6 @@ po:MessageIntermediate
 .
 po:MessageStart
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Message_Start.png" ;
   po:paletteConstructHasPaletteThumbnail "Message_Start.png" ;
@@ -470,7 +447,7 @@ po:MessageStart
 .
 po:PaletteCategory
   rdf:type owl:Class ;
-  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
 po:PaletteCategory_ArchiMate
@@ -490,24 +467,23 @@ po:PaletteCategory_CMMN
 .
 po:PaletteConnector
   rdf:type owl:Class ;
-  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:label "Palette Connector" ;
   rdfs:subClassOf po:PaletteConstruct ;
 .
 po:PaletteConstruct
   rdf:type owl:Class ;
-  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "true"^^xsd:boolean ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
 po:PaletteElement
   rdf:type owl:Class ;
-  <http://fhnw.ch/modelingEnvironment/LanguageOntology#excludeFromGraphicalSelection> "false"^^xsd:boolean ;
+  lo:excludeFromGraphicalSelection "false"^^xsd:boolean ;
   rdfs:label "Palette Element" ;
   rdfs:subClassOf po:PaletteConstruct ;
 .
 po:ParallelGateway
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Parallel_Gateway.png" ;
   po:paletteConstructHasPaletteThumbnail "Parallel_Gateway.png" ;
@@ -526,7 +502,6 @@ po:ParallelGateway
 .
 po:Pool
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 465 ;
   po:paletteConstructHasModelImage "Pool_whole.png" ;
   po:paletteConstructHasPaletteThumbnail "Pool.png" ;
@@ -542,7 +517,6 @@ po:Pool
 .
 po:PrepareKoGu
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "User_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
@@ -561,7 +535,6 @@ po:PrepareKoGu
 .
 po:PrepareMedicalRecordAdmission
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -580,7 +553,6 @@ po:PrepareMedicalRecordAdmission
 .
 po:PrepareRehabAdmission
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -599,7 +571,6 @@ po:PrepareRehabAdmission
 .
 po:ReceiveTask
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Receive_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Receive_Task.png" ;
@@ -618,7 +589,6 @@ po:ReceiveTask
 .
 po:ReleaseTransferCase
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:UserTask ;
@@ -637,7 +607,6 @@ po:ReleaseTransferCase
 .
 po:SendTask
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Send_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Send_Task.png" ;
@@ -666,7 +635,6 @@ po:SequenceFlow
 .
 po:ServiceTask
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Service_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Service_Task.png" ;
@@ -685,7 +653,6 @@ po:ServiceTask
 .
 po:SimpleEnd
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Simple_End.png" ;
   po:paletteConstructHasPaletteThumbnail "Simple_End.png" ;
@@ -704,7 +671,6 @@ po:SimpleEnd
 .
 po:SimpleGateway
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Simple_Gateway.png" ;
   po:paletteConstructHasPaletteThumbnail "Simple_Gateway.png" ;
@@ -722,7 +688,6 @@ po:SimpleGateway
 .
 po:SimpleIntermediate
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Simple_Intermediate.png" ;
   po:paletteConstructHasPaletteThumbnail "Simple_Intermediate.png" ;
@@ -741,7 +706,6 @@ po:SimpleIntermediate
 .
 po:SimpleStart
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Simple_Start.png" ;
   po:paletteConstructHasPaletteThumbnail "Simple_Start.png" ;
@@ -760,7 +724,6 @@ po:SimpleStart
 .
 po:SubReceiveActivity
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasParentPaletteConstruct "http://fhnw.ch/modelingEnvironment/LanguageOntology#ReceiveTask" ;
   po:paletteConstructIsGroupedInPaletteCategory "lo:Category_Activities" ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -769,7 +732,6 @@ po:SubReceiveActivity
 .
 po:Subprocess
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Subprocess.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Subprocess.png" ;
@@ -787,7 +749,6 @@ po:Subprocess
 .
 po:Task
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Task.png" ;
@@ -805,7 +766,6 @@ po:Task
 .
 po:TestActivity
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasParentPaletteConstruct "lo:ManualTask" ;
   po:paletteConstructIsGroupedInPaletteCategory "lo:Category_Activities" ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -814,7 +774,6 @@ po:TestActivity
 .
 po:TestSub
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasParentPaletteConstruct "http://fhnw.ch/modelingEnvironment/LanguageOntology#Subprocess" ;
   po:paletteConstructIsGroupedInPaletteCategory "http://fhnw.ch/modelingEnvironment/LanguageOntology#Category_Activities" ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -824,7 +783,6 @@ po:TestSub
 .
 po:TimerIntermediate
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Timer_Intermediate.png" ;
   po:paletteConstructHasPaletteThumbnail "Timer_Intermediate.png" ;
@@ -843,7 +801,6 @@ po:TimerIntermediate
 .
 po:TimerStart
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Timer_Start.png" ;
   po:paletteConstructHasPaletteThumbnail "Timer_Start.png" ;
@@ -862,7 +819,6 @@ po:TimerStart
 .
 po:TransmittingBillingData
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "GroupOfAvtivities.png" ;
   po:paletteConstructHasPaletteThumbnail "Group_TransmittingBillData.jpg" ;
@@ -877,7 +833,6 @@ po:TransmittingBillingData
 po:UserTask
   rdf:type po:PaletteElement ;
   rdf:type bpmn:UserTask ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "User_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
@@ -896,7 +851,6 @@ po:UserTask
 .
 po:Wholeprocess_sendinvoice
   rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteConstructHasHeight "565" ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
@@ -907,24 +861,6 @@ po:Wholeprocess_sendinvoice
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Wholeprocess_sendinvoice ;
   po:paletteElementUsesImage "true" ;
   rdfs:label "Whole process_send invoice" ;
-.
-po:belongsToModelingLanguage
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain po:PaletteConstruct ;
-  rdfs:label "Palette construct belongs to modeling language" ;
-  rdfs:range lo:ModelingLanguage ;
-.
-po:belongsToModelingView
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain po:PaletteConstruct ;
-  rdfs:label "Palette Construct Belongs To Modeling View" ;
-  rdfs:range lo:ModelingView ;
-.
-po:categoryIsShownInModelingView
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain po:PaletteCategory ;
-  rdfs:label "A category in the palette is shown in a modeling view" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingView> ;
 .
 po:graphicalElementClassType
   rdf:type owl:DatatypeProperty ;
@@ -960,10 +896,16 @@ po:languageElementIsRelatedToDomainElement
   rdfs:label "Domain Ontology Class" ;
   rdfs:range owl:Thing ;
 .
+po:paletteCategoryIsShownInModelingView
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteCategory ;
+  rdfs:label "A category in the palette is shown in a modeling view" ;
+  rdfs:range lo:ModelingView ;
+.
 po:paletteCategoryIsUsedInModelingLanguage
   rdf:type owl:ObjectProperty ;
   rdfs:label "Palette category is used in modeling language/DSML" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingLanguage> ;
+  rdfs:range lo:ModelingLanguage ;
 .
 po:paletteCategoryOrderNumber
   rdf:type owl:DatatypeProperty ;
@@ -1046,17 +988,11 @@ po:paletteConnectorLineType
   rdfs:label "Connector Line Type" ;
   rdfs:range xsd:string ;
 .
-po:paletteConstructBelongsToModelingLanguage
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain po:PaletteConstruct ;
-  rdfs:label "Palette construct belongs to modeling language" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingLanguage> ;
-.
 po:paletteConstructBelongsToModelingView
   rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Palette Construct Belongs To Modeling View" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingView> ;
+  rdfs:range lo:ModelingView ;
 .
 po:paletteConstructHasHeight
   rdf:type owl:DatatypeProperty ;
@@ -1106,7 +1042,7 @@ po:paletteConstructIsRelatedToModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "palette construct is related to language construct" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingLanguageConstruct> ;
+  rdfs:range lo:ModelingLanguageConstruct ;
 .
 po:paletteElementBackgroundColor
   rdf:type owl:DatatypeProperty ;
