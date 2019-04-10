@@ -33,65 +33,36 @@ po:Activity
 po:Category_Activities
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Activities" ;
 .
 po:Category_Connectors
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:ControlElementModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:OrganizationalModelingLanguage ;
   rdfs:label "Connectors" ;
 .
 po:Category_Data
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Data" ;
 .
 po:Category_Events
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Events" ;
 .
 po:Category_Gateways
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Gateways" ;
 .
 po:Category_Groups
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Groups" ;
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
-  po:paletteCategoryIsUsedInModelingLanguage lo:DSML4PTM ;
   rdfs:label "Swimlanes" ;
 .
 po:CloseTransferCaseRecord
@@ -902,11 +873,6 @@ po:paletteCategoryIsShownInModelingView
   rdfs:label "A category in the palette is shown in a modeling view" ;
   rdfs:range lo:ModelingView ;
 .
-po:paletteCategoryIsUsedInModelingLanguage
-  rdf:type owl:ObjectProperty ;
-  rdfs:label "Palette category is used in modeling language/DSML" ;
-  rdfs:range lo:ModelingLanguage ;
-.
 po:paletteCategoryOrderNumber
   rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteCategory ;
@@ -987,12 +953,6 @@ po:paletteConnectorLineType
   rdf:type owl:DatatypeProperty ;
   rdfs:label "Connector Line Type" ;
   rdfs:range xsd:string ;
-.
-po:paletteConstructBelongsToModelingView
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain po:PaletteConstruct ;
-  rdfs:label "Palette Construct Belongs To Modeling View" ;
-  rdfs:range lo:ModelingView ;
 .
 po:paletteConstructHasHeight
   rdf:type owl:DatatypeProperty ;
