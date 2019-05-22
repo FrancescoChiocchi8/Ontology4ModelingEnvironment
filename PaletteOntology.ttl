@@ -421,21 +421,6 @@ po:PaletteCategory
   lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
-po:PaletteCategory_ArchiMate
-  rdf:type owl:Class ;
-  rdfs:label "ArchiMate" ;
-  rdfs:subClassOf po:PaletteCategory ;
-.
-po:PaletteCategory_BPMN
-  rdf:type owl:Class ;
-  rdfs:label "BPMN" ;
-  rdfs:subClassOf po:PaletteCategory ;
-.
-po:PaletteCategory_CMMN
-  rdf:type owl:Class ;
-  rdfs:label "CMMN" ;
-  rdfs:subClassOf po:PaletteCategory ;
-.
 po:PaletteConnector
   rdf:type owl:Class ;
   lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
