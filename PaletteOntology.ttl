@@ -874,21 +874,18 @@ po:Wholeprocess_sendinvoice
 .
 po:graphicalElementClassType
   rdf:type owl:DatatypeProperty ;
-  rdfs:domain owl:Thing ;
   rdfs:label "Class Type" ;
   rdfs:range xsd:string ;
 .
 po:graphicalElementX
   rdf:type owl:DatatypeProperty ;
   rdfs:comment "The X coordinate of an element instantiated in the Canvas" ;
-  rdfs:domain owl:Thing ;
   rdfs:label "X coordinate" ;
   rdfs:range xsd:string ;
 .
 po:graphicalElementY
   rdf:type owl:DatatypeProperty ;
   rdfs:comment "the Y coordinate of an element instantiated in the Canvas" ;
-  rdfs:domain owl:Thing ;
   rdfs:label "Y coordinate" ;
   rdfs:range xsd:string ;
 .
@@ -902,7 +899,6 @@ po:isRelatedToICFStandard
 .
 po:languageElementIsRelatedToDomainElement
   rdf:type owl:ObjectProperty ;
-  rdfs:domain owl:Thing ;
   rdfs:label "Domain Ontology Class" ;
   rdfs:range owl:Thing ;
 .
