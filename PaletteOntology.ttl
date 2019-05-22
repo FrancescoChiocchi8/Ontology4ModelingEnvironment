@@ -1,4 +1,5 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/PaletteOntology
+# imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # prefix: po
 
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
@@ -12,6 +13,9 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://fhnw.ch/modelingEnvironment/PaletteOntology>
+  owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
+.
 po:Activity
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -95,6 +99,10 @@ po:Category_Performer
 po:Category_Role
   rdf:type po:PaletteCategory ;
   rdfs:label "Roles" ;
+.
+po:Category_SAPScenes
+  rdf:type po:PaletteCategory ;
+  rdfs:label "SAP Scenes" ;
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
