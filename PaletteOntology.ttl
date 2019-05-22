@@ -46,6 +46,7 @@ po:Category_BusinessKnowledge
 .
 po:Category_Conditions
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ControlElementModelingView ;
   rdfs:label "Conditions" ;
 .
 po:Category_Connectors
@@ -60,14 +61,17 @@ po:Category_Data
 .
 po:Category_Decision
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
   rdfs:label "Decisions" ;
 .
 po:Category_DecisionTable
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
   rdfs:label "Decision Tables" ;
 .
 po:Category_Document
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DocumentKnowledgeModelingView ;
   rdfs:label "Documents" ;
 .
 po:Category_Events
@@ -87,22 +91,27 @@ po:Category_Groups
 .
 po:Category_InputData
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
   rdfs:label "Input Data" ;
 .
 po:Category_KnowledgeSource
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
   rdfs:label "Knowledge Source" ;
 .
 po:Category_OrganizationalUnit
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
   rdfs:label "Organizational Units" ;
 .
 po:Category_Performer
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
   rdfs:label "Performers" ;
 .
 po:Category_Role
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
   rdfs:label "Roles" ;
 .
 po:Category_SAPScenes
@@ -112,6 +121,7 @@ po:Category_SAPScenes
 .
 po:Category_Sentry
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ControlElementModelingView ;
   rdfs:label "Sentry" ;
 .
 po:Category_Swimlanes
