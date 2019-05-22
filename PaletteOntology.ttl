@@ -41,7 +41,12 @@ po:Category_Activities
 .
 po:Category_BusinessKnowledge
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
   rdfs:label "Business Knowledge" ;
+.
+po:Category_Conditions
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Conditions" ;
 .
 po:Category_Connectors
   rdf:type po:PaletteCategory ;
@@ -102,7 +107,12 @@ po:Category_Role
 .
 po:Category_SAPScenes
   rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
   rdfs:label "SAP Scenes" ;
+.
+po:Category_Sentry
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Sentry" ;
 .
 po:Category_Swimlanes
   rdf:type po:PaletteCategory ;
