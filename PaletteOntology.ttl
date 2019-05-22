@@ -45,6 +45,14 @@ po:Category_Data
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   rdfs:label "Data" ;
 .
+po:Category_Decision
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Decisions" ;
+.
+po:Category_Document
+  rdf:type po:PaletteCategory ;
+  rdfs:label "Documents" ;
+.
 po:Category_Events
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;

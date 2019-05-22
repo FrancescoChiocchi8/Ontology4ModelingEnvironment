@@ -319,6 +319,15 @@ lo:ProcessModelingView
   rdfs:label "ModelingView_ForBPMN" ;
   rdfs:label "Process Modeling View" ;
 .
+lo:SAPScene
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "SAP Scene" ;
+.
+lo:SAPSceneModelingView
+  rdf:type lo:ModelingView ;
+  lo:viewIsPartOfModelingLanguage lo:SAPScene ;
+  rdfs:label "SAP Scenes Modeling View" ;
+.
 lo:SequenceFlow_1
   rdf:type bpmn:SequenceFlow ;
   rdfs:label "sf" ;
