@@ -1,0 +1,75 @@
+# baseURI: http://fhnw.ch/OrganizationalModel
+
+@prefix : <http://fhnw.ch/OrganizationalModel#> .
+@prefix orgm: <http://fhnw.ch/OrganizationalModel/orgm#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/OrganizationalModel>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:OUbelongsToOU
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:OrganizationalUnit ;
+  rdfs:label "Organizational unit belongs to organizational unit" ;
+  rdfs:range orgm:OrganizationalUnit ;
+.
+:aggregatesOU
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Team ;
+  rdfs:label "aggregates organizational unit" ;
+  rdfs:range orgm:OrganizationalUnit ;
+.
+:aggregatesPerformer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Team ;
+  rdfs:label "aggregates performer" ;
+  rdfs:range orgm:Performer ;
+.
+:aggregatesRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Team ;
+  rdfs:label "aggregates role" ;
+  rdfs:range orgm:Role ;
+.
+:belongsToOU
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Role ;
+  rdfs:label "role belongs to organizational unit" ;
+  rdfs:range orgm:OrganizationalUnit ;
+.
+:hasRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Performer ;
+  rdfs:label "Performer has role" ;
+  rdfs:range orgm:Role ;
+.
+:isManagerOfOU
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain orgm:Performer ;
+  rdfs:label "Performer is manager of organizational unit" ;
+  rdfs:range orgm:OrganizationalUnit ;
+.
+orgm:OrganizationalUnit
+  rdf:type owl:Class ;
+  rdfs:label "Organizational Unit" ;
+  rdfs:subClassOf owl:Thing ;
+.
+orgm:Performer
+  rdf:type owl:Class ;
+  rdfs:label "Performer" ;
+  rdfs:subClassOf owl:Thing ;
+.
+orgm:Role
+  rdf:type owl:Class ;
+  rdfs:label "Role" ;
+  rdfs:subClassOf owl:Thing ;
+.
+orgm:Team
+  rdf:type owl:Class ;
+  rdfs:label "Team" ;
+  rdfs:subClassOf owl:Thing ;
+.

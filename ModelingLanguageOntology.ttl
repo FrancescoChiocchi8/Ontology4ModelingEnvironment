@@ -328,10 +328,6 @@ lo:SAPSceneModelingView
   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
   rdfs:label "SAP Scenes Modeling View" ;
 .
-lo:SequenceFlow_1
-  rdf:type bpmn:SequenceFlow ;
-  rdfs:label "sf" ;
-.
 lo:StartTest
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpmn:UserTask ;
