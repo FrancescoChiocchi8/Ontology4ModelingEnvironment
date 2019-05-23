@@ -489,7 +489,7 @@ po:IsManager_OrgM
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Subordination> ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#ManagerAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "is Manager" ;
 .
