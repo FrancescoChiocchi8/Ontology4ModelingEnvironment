@@ -596,6 +596,24 @@ po:ManualTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Manual Task" ;
 .
+po:MessageEndEvent
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "message_end_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "message_end_event.png.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:EndEvent ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageEndEvent ;
+  po:paletteElementBackgroundColor "#00AD5F" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "message_end_event.PNG" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Message End Event" ;
+.
 po:MessageFlow_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
@@ -609,40 +627,41 @@ po:MessageFlow_BPMN
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Message Flow" ;
 .
-po:MessageIntermediate
+po:MessageIntermediateEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Message_Intermediate.png" ;
-  po:paletteConstructHasPaletteThumbnail "Message_Intermediate.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:SimpleIntermediate ;
+  po:paletteConstructHasModelImage "intermediate_message_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "intermediate_message_event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:IntermediateEvent ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
-  po:paletteElementBackgroundColor "Green" ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageIntermediateEvent ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "Message_Intermediate.png" ;
+  po:paletteElementIconURL "Timer_Intermediate.png" ;
   po:paletteElementLabelPosition "inside" ;
-  po:paletteElementShape "Circle" ;
+  po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Message Intermediate" ;
+  rdfs:label "Message Intermediate Event" ;
 .
-po:MessageStart
+po:MessageStartEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Message_Start.png" ;
-  po:paletteConstructHasPaletteThumbnail "Message_Start.png" ;
-  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructHasModelImage "starting-message-event.png" ;
+  po:paletteConstructHasPaletteThumbnail "starting-message-event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:StartEvent ;
+  po:paletteConstructHasWidth 70 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
-  po:paletteElementBackgroundColor "Green" ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageStartEvent ;
+  po:paletteElementBackgroundColor "#00AD5F" ;
   po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "Message_Start.png" ;
+  po:paletteElementIconURL "Event.PNG" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Message Start" ;
+  rdfs:label "Message Start Event" ;
 .
 po:NoneEvent
   rdf:type po:PaletteElement ;
@@ -919,24 +938,6 @@ po:ServiceTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Service Task" ;
 .
-po:SimpleIntermediate
-  rdf:type po:PaletteElement ;
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Simple_Intermediate.png" ;
-  po:paletteConstructHasPaletteThumbnail "Simple_Intermediate.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:StartEvent ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
-  po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "Simple_Intermediate.png" ;
-  po:paletteElementLabelPosition "inside" ;
-  po:paletteElementShape "Diamond" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Simple Intermediate" ;
-.
 po:StartEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -997,6 +998,24 @@ po:Task
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Task" ;
 .
+po:TerminateEvent
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "terminate_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "terminate_event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:EndEvent ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:TerminateEndEvent ;
+  po:paletteElementBackgroundColor "#00AD5F" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Event.PNG" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Terminate Event" ;
+.
 po:TestActivity
   rdf:type po:PaletteElement ;
   po:paletteConstructHasParentPaletteConstruct "lo:ManualTask" ;
@@ -1014,40 +1033,41 @@ po:TestSub
   po:paletteElementUsesImage "null" ;
   rdfs:label "Test Sub" ;
 .
-po:TimerIntermediate
+po:TimerIntermediateEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Timer_Intermediate.png" ;
-  po:paletteConstructHasPaletteThumbnail "Timer_Intermediate.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:SimpleIntermediate ;
+  po:paletteConstructHasModelImage "intermediate_timer_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "intermediate_timer_event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:IntermediateEvent ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:TimerIntermediateEvent ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Timer_Intermediate.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Timer Intermediate" ;
+  rdfs:label "Timer Intermediate Event" ;
 .
-po:TimerStart
+po:TimerStartEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Timer_Start.png" ;
-  po:paletteConstructHasPaletteThumbnail "Timer_Start.png" ;
+  po:paletteConstructHasModelImage "timer_start_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "timer_start_event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:StartEvent ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Events ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:StartEvent ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:TimerStartEvent ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Timer_Start.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Timer Start" ;
+  rdfs:label "Timer Start Event" ;
 .
 po:TransferlManagerRole
   rdf:type po:PaletteElement ;
