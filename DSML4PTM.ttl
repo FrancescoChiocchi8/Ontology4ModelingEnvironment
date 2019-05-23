@@ -32,6 +32,12 @@ dsml4ptm:APLleadsToAPR
   rdfs:label "Acute Physician Lane leads to Acute Physician Role" ;
   rdfs:range dsml4ptm:AcutePhysicianRole ;
 .
+dsml4ptm:ASLleadsToASR
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:AdministrativeStaffLane ;
+  rdfs:label "Administrative Staff Lane leads to Administrative Staff Role" ;
+  rdfs:range dsml4ptm:AdministrativeStaffRole ;
+.
 dsml4ptm:AcuteHospitalOU
   rdf:type owl:Class ;
   rdfs:label "AcuteHospitalOU" ;
@@ -56,6 +62,16 @@ dsml4ptm:AdministrativeDataObject
   rdf:type owl:Class ;
   rdfs:label "Administrative Data Object" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#DataInput> ;
+.
+dsml4ptm:AdministrativeStaffLane
+  rdf:type owl:Class ;
+  rdfs:label "Administrative Staff" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Lane> ;
+.
+dsml4ptm:AdministrativeStaffRole
+  rdf:type owl:Class ;
+  rdfs:label "Administrative Staff Role" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#Role> ;
 .
 dsml4ptm:ApplyDefRehaCriteria
   rdf:type owl:Class ;
@@ -185,6 +201,12 @@ dsml4ptm:PDLleadsToPDR
   rdfs:label "Patient disposition lane leads to patient disposition role" ;
   rdfs:range dsml4ptm:PatientDispositionRole ;
 .
+dsml4ptm:PLleadsToPR
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:PatientLane ;
+  rdfs:label "Patient Lane leads to Patient Role" ;
+  rdfs:range dsml4ptm:PatientRole ;
+.
 dsml4ptm:PatientAdmissionAvailable
   rdf:type owl:Class ;
   rdfs:label "Patient Admission Available" ;
@@ -204,6 +226,16 @@ dsml4ptm:PatientInRehab
   rdf:type owl:Class ;
   rdfs:label "Patient in Rehab" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#CatchingMessageIntermediateEvent> ;
+.
+dsml4ptm:PatientLane
+  rdf:type owl:Class ;
+  rdfs:label "Patient Lane" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Lane> ;
+.
+dsml4ptm:PatientRole
+  rdf:type owl:Class ;
+  rdfs:label "Patient Role" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#Role> ;
 .
 dsml4ptm:PerformPhysicalAdmission
   rdf:type owl:Class ;

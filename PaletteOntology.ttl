@@ -34,6 +34,28 @@ po:Activity
   rdfs:label "Call Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
+po:AcutePhysicianRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RoleAcutePhysician-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RoleAcutePhysician-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcutePhysicianRole ;
+  rdfs:label "Acute Physician Role" ;
+.
+po:AdministrativeStaffRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RoleAdministrativeStaff-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RoleAdministrativeStaff-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AdministrativeStaffRole ;
+  rdfs:label "Administrative Staff Role" ;
+.
 po:Association_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
@@ -639,6 +661,17 @@ po:NoneEvent
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "None Event" ;
 .
+po:NurseRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RoleNurse-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RoleNurse-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:NurseRole ;
+  rdfs:label "Nurse Role" ;
+.
 po:PaletteCategory
   rdf:type owl:Class ;
   lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
@@ -678,6 +711,38 @@ po:ParallelGateway
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Parallel Gateway" ;
+.
+po:PatientDispositionRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RolePatientDisposition-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RolePatientDisposition-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PatientDispositionRole ;
+  rdfs:label "Patient Disposition Role" ;
+.
+po:PatientRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RolePatient-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RolePatient-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PatientRole ;
+  rdfs:label "Patient Role" ;
+.
+po:Performer
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Performer-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Performer-OM.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Performer ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Performer> ;
+  rdfs:label "Performer" ;
 .
 po:Pool
   rdf:type po:PaletteElement ;
@@ -766,6 +831,17 @@ po:ReceiveTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Receive Task" ;
 .
+po:RehabilitationPhysicianRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RoleRehabilitationPhysician-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RoleRehabilitationPhysician-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:RehabilitationPhysicianRole ;
+  rdfs:label "Rehabilitation Physician Role" ;
+.
 po:ReleaseTransferCase
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -783,6 +859,16 @@ po:ReleaseTransferCase
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label """Release Transfer Case
  """ ;
+.
+po:Role
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "Role-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Role-OM.png" ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Role> ;
+  rdfs:label "Role" ;
 .
 po:SendTask
   rdf:type po:PaletteElement ;
@@ -962,6 +1048,17 @@ po:TimerStart
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Timer Start" ;
+.
+po:TransferlManagerRole
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "RoleTransferalManager-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "RoleTransferalManager-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Role ;
+  po:paletteConstructHasWidth 50 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:TransferalManagerRole ;
+  rdfs:label "Transferl Manager Role" ;
 .
 po:TransmittingBillingData
   rdf:type po:PaletteElement ;
