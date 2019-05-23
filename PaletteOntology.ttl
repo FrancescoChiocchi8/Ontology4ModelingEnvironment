@@ -34,7 +34,7 @@ po:Activity
   rdfs:label "Call Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
-po:Association
+po:Association_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
@@ -47,7 +47,7 @@ po:Association
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Association" ;
 .
-po:BelongsTo
+po:BelongsTo_DKM
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
@@ -57,6 +57,19 @@ po:BelongsTo
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "belongs to" ;
+.
+po:BelongsTo_OrgM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "BelongsTo-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "BelongsTo-OM.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Belonging> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "belongs to" ;
 .
@@ -391,6 +404,19 @@ po:Group
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Group" ;
 .
+po:HasRole_OrgM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "HasRole-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "HasRole-OM.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#RoleAssignment> ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "has Role" ;
+.
 po:ICFStandard
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 100 ;
@@ -453,6 +479,32 @@ po:IntermediateEvent
   po:paletteElementShape "Circle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Intermediate Event" ;
+.
+po:IsManager_OrgM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "IsManager-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "IsManager-OM.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Subordination> ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "is Manager" ;
+.
+po:IsSubordinated_OrgM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "IsSubordinated-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "IsSubordinated-OM.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Subordination> ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "is Subordinated" ;
 .
 po:KoGuDataObject
   rdf:type po:PaletteConstruct ;
@@ -522,7 +574,7 @@ po:ManualTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Manual Task" ;
 .
-po:MessageFlow
+po:MessageFlow_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
@@ -750,7 +802,7 @@ po:SendTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Send Task" ;
 .
-po:SequenceFlow
+po:SequenceFlow_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;

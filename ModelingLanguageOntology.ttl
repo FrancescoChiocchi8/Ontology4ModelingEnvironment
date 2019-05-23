@@ -1,4 +1,5 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
+# imports: http://fhnw.ch/OrganizationalModel
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
 # imports: http://fhnw.ch/modelingEnvironment/DomainOntology
 # imports: http://ikm-group.ch/archimeo
@@ -6,6 +7,7 @@
 # prefix: lo
 
 @prefix : <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix archimeo: <http://ikm-group.ch/archiMEO#> .
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
@@ -31,6 +33,12 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://fhnw.ch/OrganizationalModel/orgm#OrganizationalModelConnector>
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+<http://fhnw.ch/OrganizationalModel/orgm#OrganizationalModelElement>
+  rdfs:subClassOf lo:ModelingElement ;
+.
 dsml4ptm:ICFStandard
   rdf:type rdfs:Class ;
   dsml4ptm:isMappedWithPerformance <http://who.int/icf#Performance> ;
@@ -123,6 +131,7 @@ dsml4ptm:isPartOfKoGuDO
   dc:rights "Copyright 2018 FHNW" ;
   dc:title "The Language Ontology"@en ;
   rdfs:comment "Version 1.1: Initial import"@en ;
+  owl:imports <http://fhnw.ch/OrganizationalModel> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DomainOntology> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
