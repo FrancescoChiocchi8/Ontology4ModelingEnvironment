@@ -46,6 +46,18 @@ po:AcuteHospitalOU
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcuteHospitalOU ;
   rdfs:label "Acute Hospital" ;
 .
+po:AcuteHospitalPool
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "Hospital.png" ;
+  po:paletteConstructHasPaletteThumbnail "Hospital.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Pool ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcuteHospitalPool ;
+  rdfs:label "Acute Hospital" ;
+.
 po:AcutePhysicianRole
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 50 ;
@@ -949,6 +961,18 @@ po:RehabilitationClinicOU
   po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:RehabilitationClinicOU ;
+  rdfs:label "Rehabilitation Clinic " ;
+.
+po:RehabilitationClinicPool
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "Rehabilitation Clinic.png" ;
+  po:paletteConstructHasPaletteThumbnail "Rehabilitation Clinic.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Pool ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:RehabilitationClinicPool ;
   rdfs:label "Rehabilitation Clinic " ;
 .
 po:RehabilitationPhysicianRole
