@@ -78,6 +78,12 @@ dsml4ptm:ApplyDefRehaCriteria
   rdfs:label "Apply DefReha Criteria" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#BusinessRuleTask> ;
 .
+dsml4ptm:CUPleadsToCUOU
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:CareUnitPool ;
+  rdfs:label "Care Unit Pool leads to Care Unit Organizational Unit" ;
+  rdfs:range dsml4ptm:CareUnitOU ;
+.
 dsml4ptm:CareStatusDataObject
   rdf:type owl:Class ;
   rdfs:label "Care Status Data Object" ;
