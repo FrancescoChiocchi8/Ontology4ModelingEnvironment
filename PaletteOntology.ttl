@@ -31,7 +31,7 @@ po:Activity
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  rdfs:label "Call Activity" ;
+  rdfs:label "Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
 po:AcutePhysicianRole
@@ -42,6 +42,7 @@ po:AcutePhysicianRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcutePhysicianRole ;
   rdfs:label "Acute Physician Role" ;
 .
@@ -53,6 +54,7 @@ po:AdministrativeStaffRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AdministrativeStaffRole ;
   rdfs:label "Administrative Staff Role" ;
 .
@@ -688,6 +690,7 @@ po:NurseRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:NurseRole ;
   rdfs:label "Nurse Role" ;
 .
@@ -739,6 +742,7 @@ po:PatientDispositionRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PatientDispositionRole ;
   rdfs:label "Patient Disposition Role" ;
 .
@@ -750,6 +754,7 @@ po:PatientRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:PatientRole ;
   rdfs:label "Patient Role" ;
 .
@@ -760,6 +765,7 @@ po:Performer
   po:paletteConstructHasPaletteThumbnail "Performer-OM.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Performer ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Performer> ;
   rdfs:label "Performer" ;
 .
@@ -858,6 +864,7 @@ po:RehabilitationPhysicianRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:RehabilitationPhysicianRole ;
   rdfs:label "Rehabilitation Physician Role" ;
 .
@@ -886,6 +893,7 @@ po:Role
   po:paletteConstructHasPaletteThumbnail "Role-OM.png" ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Role> ;
   rdfs:label "Role" ;
 .
@@ -1077,6 +1085,7 @@ po:TransferlManagerRole
   po:paletteConstructHasParentPaletteConstruct po:Role ;
   po:paletteConstructHasWidth 50 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Role ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:TransferalManagerRole ;
   rdfs:label "Transferl Manager Role" ;
 .
