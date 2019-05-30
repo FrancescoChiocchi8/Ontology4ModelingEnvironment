@@ -324,7 +324,6 @@ lo:ProcessModelingView
   lo:viewIsPartOfModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
-  rdfs:label "ModelingView_ForBPMN" ;
   rdfs:label "Process Modeling View" ;
 .
 lo:SAPScene
