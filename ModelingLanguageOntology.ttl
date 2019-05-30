@@ -313,11 +313,10 @@ lo:OrganizationalModelingLanguage
 .
 lo:OrganizationalView
   rdf:type lo:ModelingView ;
-  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   lo:viewIsPartOfModelingLanguage lo:OrganizationalModelingLanguage ;
   rdfs:label "Organizational View" ;
-  rdfs:label "OrganizationalView" ;
 .
 lo:ProcessModelingView
   rdf:type lo:ModelingView ;
