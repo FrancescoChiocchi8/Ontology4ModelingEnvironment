@@ -34,6 +34,18 @@ po:Activity
   rdfs:label "Activity" ;
   rdfs:subClassOf po:PaletteElement ;
 .
+po:AcuteHospitalOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitAcuteHospital-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitAcuteHospital-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcuteHospitalOU ;
+  rdfs:label "Acute Hospital" ;
+.
 po:AcutePhysicianRole
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 50 ;
@@ -96,6 +108,18 @@ po:BelongsTo_OrgM
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Belonging> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "belongs to" ;
+.
+po:CareUnitOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitCareUnit-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitCareUnit-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:CareUnitOU ;
+  rdfs:label "Care Unit " ;
 .
 po:Category_Activities
   rdf:type po:PaletteCategory ;
@@ -309,6 +333,18 @@ po:DiscretionaryTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Discretionary Task" ;
 .
+po:EmergencyRoomOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitEmergencyRoom-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitEmergencyRoom-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:EmergencyRoomOU ;
+  rdfs:label "Emergency Room OU" ;
+.
 po:EndEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -441,6 +477,18 @@ po:HasRole_OrgM
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "has Role" ;
 .
+po:HealthInsuranceOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitHealthInsurance-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitHealthInsurance-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:HealthInsuranceOU ;
+  rdfs:label "Health Insurance " ;
+.
 po:ICFStandard
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 100 ;
@@ -485,6 +533,18 @@ po:InclusiveGateway
   po:paletteElementShape "Diamond" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Inclusive Gateway" ;
+.
+po:IntensiveCareUnitOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitIntensiveCareUnit-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitIntensiveCareUnit-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:IntensiveCareUnitOU ;
+  rdfs:label "Intensive Care Unit" ;
 .
 po:IntermediateEvent
   rdf:type po:PaletteElement ;
@@ -665,6 +725,18 @@ po:MessageStartEvent
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Message Start Event" ;
 .
+po:NonIntensiveCareUnitOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitNonIntensiveCareUnit-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitNonIntensiveCareUnit-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:NonIntensiveCareUnitOU ;
+  rdfs:label "Non Intensive Care Unit OM" ;
+.
 po:NoneEvent
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -693,6 +765,17 @@ po:NurseRole
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:NurseRole ;
   rdfs:label "Nurse Role" ;
+.
+po:OrganizationalUnit
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnit-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnit-OM.png" ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
+  rdfs:label "Organizational Unit" ;
 .
 po:PaletteCategory
   rdf:type owl:Class ;
@@ -856,6 +939,18 @@ po:ReceiveTask
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Receive Task" ;
 .
+po:RehabilitationClinicOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitRehabilitationClinic-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitRehabilitationClinic-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:RehabilitationClinicOU ;
+  rdfs:label "Rehabilitation Clinic " ;
+.
 po:RehabilitationPhysicianRole
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 50 ;
@@ -945,6 +1040,18 @@ po:ServiceTask
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Service Task" ;
+.
+po:SiteOfCareOU
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitSiteOfCare-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitSiteOfCare-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:SiteOfCareOU ;
+  rdfs:label "Site of Care OU" ;
 .
 po:StartEvent
   rdf:type po:PaletteElement ;

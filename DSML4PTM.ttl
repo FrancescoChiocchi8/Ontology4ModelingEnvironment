@@ -83,6 +83,16 @@ dsml4ptm:CareStatusDataObject
   rdfs:label "Care Status Data Object" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#DataInput> ;
 .
+dsml4ptm:CareUnitOU
+  rdf:type owl:Class ;
+  rdfs:label "Care Unit" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
+.
+dsml4ptm:CareUnitPool
+  rdf:type owl:Class ;
+  rdfs:label "Care Unit" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
 dsml4ptm:ChooseRehabClinic
   rdf:type owl:Class ;
   rdfs:label "Choose Rehab Clinic" ;
@@ -108,6 +118,16 @@ dsml4ptm:CreateTransferCaseRecord
   rdfs:label "Create Transfer Case Record" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#ManualTask> ;
 .
+dsml4ptm:EmergencyRoomOU
+  rdf:type owl:Class ;
+  rdfs:label "Emergency Room" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
+.
+dsml4ptm:EmergencyRoomPool
+  rdf:type owl:Class ;
+  rdfs:label "Emergency Room" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
 dsml4ptm:FinalizeKoGu
   rdf:type owl:Class ;
   rdfs:label "Finalize KoGu" ;
@@ -124,15 +144,35 @@ dsml4ptm:HealthInsuranceLane
   rdfs:label "Health Insurance Lane" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Lane> ;
 .
+dsml4ptm:HealthInsuranceOU
+  rdf:type owl:Class ;
+  rdfs:label "Health Insurance" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
+.
 dsml4ptm:HealthInsuranceRole
   rdf:type owl:Class ;
   rdfs:label "Health Insurance Role" ;
   rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#Role> ;
 .
+dsml4ptm:HelathInsurancePool
+  rdf:type owl:Class ;
+  rdfs:label "Health Insurance" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
 dsml4ptm:HospitalizationDataObject
   rdf:type owl:Class ;
   rdfs:label "Hospitalization Data Object" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#DataInput> ;
+.
+dsml4ptm:IntensiveCarePool
+  rdf:type owl:Class ;
+  rdfs:label "Intensive Care" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
+dsml4ptm:IntensiveCareUnitOU
+  rdf:type owl:Class ;
+  rdfs:label "Intensive Care Unit" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
 .
 dsml4ptm:KoGuAccepted
   rdf:type owl:Class ;
@@ -179,6 +219,16 @@ dsml4ptm:NLleadsToNR
   rdfs:domain dsml4ptm:NurseLane ;
   rdfs:label "Nurse lane leads to nurse role" ;
   rdfs:range dsml4ptm:NurseRole ;
+.
+dsml4ptm:NonIntensiveCarePool
+  rdf:type owl:Class ;
+  rdfs:label "Non Intensive Care" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
+.
+dsml4ptm:NonIntensiveCareUnitOU
+  rdf:type owl:Class ;
+  rdfs:label "Non Intensive Care Unit" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
 .
 dsml4ptm:NurseLane
   rdf:type owl:Class ;
@@ -313,6 +363,16 @@ dsml4ptm:ReleaseTransferCase
   rdf:type owl:Class ;
   rdfs:label "Release transfer case" ;
   rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#UserTask> ;
+.
+dsml4ptm:SiteOfCareOU
+  rdf:type owl:Class ;
+  rdfs:label "Site of Care" ;
+  rdfs:subClassOf <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit> ;
+.
+dsml4ptm:SiteOfCarePool
+  rdf:type owl:Class ;
+  rdfs:label "Site Of Care" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/BPMN#Pool> ;
 .
 dsml4ptm:TMLleadsToTMR
   rdf:type owl:ObjectProperty ;
