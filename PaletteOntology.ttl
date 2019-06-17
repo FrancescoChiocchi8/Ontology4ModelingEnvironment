@@ -87,7 +87,7 @@ po:Association_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "BPMN_association.png" ;
-  po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_BPMN_association.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -100,7 +100,7 @@ po:BelongsTo_DKM
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "belongsTo-dkm.png" ;
-  po:paletteConstructHasPaletteThumbnail "belongsTo-dkm.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_belongsTo-dkm.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -113,7 +113,7 @@ po:BelongsTo_OrgM
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "BelongsTo-OM.png" ;
-  po:paletteConstructHasPaletteThumbnail "BelongsTo-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_BelongsTo-OM.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -481,7 +481,7 @@ po:HasRole_OrgM
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "HasRole-OM.png" ;
-  po:paletteConstructHasPaletteThumbnail "HasRole-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_HasRole-OM.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -581,7 +581,7 @@ po:IsManager_OrgM
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "IsManager-OM.png" ;
-  po:paletteConstructHasPaletteThumbnail "IsManager-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_IsManager-OM.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -594,7 +594,7 @@ po:IsSubordinated_OrgM
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "IsSubordinated-OM.png" ;
-  po:paletteConstructHasPaletteThumbnail "IsSubordinated-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_IsSubordinated-OM.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -693,7 +693,7 @@ po:MessageFlow_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "message_flow.png" ;
-  po:paletteConstructHasPaletteThumbnail "message_flow.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_message_flow.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -1039,7 +1039,7 @@ po:SequenceFlow_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "SequenceFlow-bpmn.png" ;
-  po:paletteConstructHasPaletteThumbnail "SequenceFlow-bpmn.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
