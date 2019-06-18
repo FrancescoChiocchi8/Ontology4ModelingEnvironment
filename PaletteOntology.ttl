@@ -159,6 +159,7 @@ po:Category_Connectors4DecisionModelingView
 po:Category_Connectors4OrganizationalView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
+  po:paletteCategoryOrderNumber 4 ;
   rdfs:label "Connectors" ;
 .
 po:Category_Connectors4ProcessModelingView
@@ -215,16 +216,19 @@ po:Category_KnowledgeSource
 po:Category_OrganizationalUnit
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
+  po:paletteCategoryOrderNumber 1 ;
   rdfs:label "Organizational Units" ;
 .
 po:Category_Performer
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
+  po:paletteCategoryOrderNumber 3 ;
   rdfs:label "Performers" ;
 .
 po:Category_Role
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
+  po:paletteCategoryOrderNumber 2 ;
   rdfs:label "Roles" ;
 .
 po:Category_SAPScenes
