@@ -87,7 +87,7 @@ po:Association_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "BPMN_association.png" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_BPMN_association.png" ;
+  po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
