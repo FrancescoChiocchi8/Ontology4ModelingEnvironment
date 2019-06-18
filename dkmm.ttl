@@ -11,6 +11,11 @@
   rdf:type owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
+dkmm:Belongs_To
+  rdf:type owl:Class ;
+  rdfs:label "Belongs to " ;
+  rdfs:subClassOf owl:Thing ;
+.
 dkmm:Data_Document
   rdf:type owl:Class ;
   rdfs:label "Data Document" ;
