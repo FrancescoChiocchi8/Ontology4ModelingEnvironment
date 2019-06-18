@@ -357,7 +357,6 @@ lo:WorkflowModelingView
   lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Workflow Modeling View" ;
-  rdfs:label "WorkflowModelingView" ;
 .
 lo:combinationHasSource
   rdf:type owl:ObjectProperty ;

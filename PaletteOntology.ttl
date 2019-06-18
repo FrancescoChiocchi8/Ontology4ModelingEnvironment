@@ -89,7 +89,7 @@ po:Association_BPMN
   po:paletteConstructHasModelImage "BPMN_association.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_BPMN_association.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -102,7 +102,7 @@ po:BelongsTo_DKM
   po:paletteConstructHasModelImage "belongsTo-dkm.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_belongsTo-dkm.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -115,7 +115,7 @@ po:BelongsTo_OrgM
   po:paletteConstructHasModelImage "BelongsTo-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_BelongsTo-OM.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Belonging> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -148,10 +148,26 @@ po:Category_Conditions
   po:paletteCategoryIsShownInModelingView lo:ControlElementModelingView ;
   rdfs:label "Conditions" ;
 .
-po:Category_Connectors
+po:Category_Connectors4ControlElementModelingView
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ControlElementModelingView ;
+  rdfs:label "Connectors fro Control Element Modeling View" ;
+.
+po:Category_Connectors4DecisionModelingView
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
+  rdfs:label "Connectors for Decision Modeling View" ;
+.
+po:Category_Connectors4OrganizationalView
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
+  rdfs:label "Connectors fro Organizational View" ;
+.
+po:Category_Connectors4ProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
-  rdfs:label "Connectors" ;
+  po:paletteCategoryIsShownInModelingView lo:WorkflowModelingView ;
+  rdfs:label "Connectors fro Process Modeling View" ;
 .
 po:Category_Data
   rdf:type po:PaletteCategory ;
@@ -483,7 +499,7 @@ po:HasRole_OrgM
   po:paletteConstructHasModelImage "HasRole-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_HasRole-OM.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#RoleAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -583,7 +599,7 @@ po:IsManager_OrgM
   po:paletteConstructHasModelImage "IsManager-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_IsManager-OM.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#ManagerAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -596,7 +612,7 @@ po:IsSubordinated_OrgM
   po:paletteConstructHasModelImage "IsSubordinated-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_IsSubordinated-OM.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Subordination> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -695,7 +711,7 @@ po:MessageFlow_BPMN
   po:paletteConstructHasModelImage "message_flow.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_message_flow.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -1041,7 +1057,7 @@ po:SequenceFlow_BPMN
   po:paletteConstructHasModelImage "SequenceFlow-bpmn.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4ProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
