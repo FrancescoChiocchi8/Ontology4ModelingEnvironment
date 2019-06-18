@@ -151,23 +151,23 @@ po:Category_Conditions
 po:Category_Connectors4ControlElementModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ControlElementModelingView ;
-  rdfs:label "Connectors fro Control Element Modeling View" ;
+  rdfs:label "Connectors" ;
 .
 po:Category_Connectors4DecisionModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DecisionModelingView ;
-  rdfs:label "Connectors for Decision Modeling View" ;
+  rdfs:label "Connectors" ;
 .
 po:Category_Connectors4OrganizationalView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:OrganizationalView ;
-  rdfs:label "Connectors fro Organizational View" ;
+  rdfs:label "Connectors" ;
 .
 po:Category_Connectors4ProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:WorkflowModelingView ;
-  rdfs:label "Connectors fro Process Modeling View" ;
+  rdfs:label "Connectors" ;
 .
 po:Category_Data
   rdf:type po:PaletteCategory ;
