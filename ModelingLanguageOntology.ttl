@@ -143,9 +143,21 @@ lo:AnnotationProperty_1
   rdfs:label "Prova" ;
   rdfs:range <http://who.int/icf#b_BodyFunction> ;
 .
+lo:BPMNProcessModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
+  rdfs:label "Process Modeling View" ;
+.
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0>
   rdf:type lo:ModelingLanguage ;
   rdfs:label "BPMN 2.0" ;
+.
+lo:BPaaSProcessModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
+  rdfs:label "Process Modeling View" ;
 .
 lo:BPaaS_ModelingLanguage
   rdf:type lo:ModelingLanguage ;
@@ -156,7 +168,6 @@ lo:BusinessProcessRequirementModelingView
   lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Business Process Requirement Modeling View" ;
-  rdfs:label "WorkflowModelingView" ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1>
   rdf:type lo:ModelingLanguage ;
@@ -172,13 +183,6 @@ lo:ControlElementModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Control Element Modeling Language" ;
 .
-lo:ControlElementModelingView
-  rdf:type lo:ModelingView ;
-  lo:isMainModelingView "false"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:ControlElementModelingLanguage ;
-  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
-  rdfs:label "Control Element Modeling View" ;
-.
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1>
   rdf:type lo:ModelingLanguage ;
   rdfs:label "DMN 1.1" ;
@@ -186,6 +190,36 @@ lo:ControlElementModelingView
 lo:DSML4PTM
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Domain Specific Modeling Language for Patient Transferal Management" ;
+.
+lo:DSML4PTMControlElementModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
+  rdfs:label "Control Element Modeling View" ;
+.
+lo:DSML4PTMDecisionModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
+  rdfs:label "Decision Modeling View" ;
+.
+lo:DSML4PTMDocumentKnowledgeModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
+  rdfs:label "Document Knowledge Modeling View" ;
+.
+lo:DSML4PTMOrganizationalView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
+  rdfs:label "Organizational View" ;
+.
+lo:DSML4PTMProcessModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
+  rdfs:label "DSML4PTM Process Modeling View" ;
 .
 lo:Data_Document_1
   rdf:type dkmm:Data_Document ;
@@ -196,25 +230,15 @@ lo:DatatypeProperty_1
   rdfs:label "datatype" ;
   rdfs:range xsd:boolean ;
 .
-lo:DecisionModelingView
-  rdf:type lo:ModelingView ;
-  lo:isMainModelingView "false"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1> ;
-  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
-  rdfs:label "ControlElementModelingView" ;
-  rdfs:label "Decision Modeling View" ;
-.
 lo:DocumentAndKnowledgeModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Document and Knowledge Modeling Language" ;
 .
-lo:DocumentKnowledgeModelingView
+lo:DocumentKnolwedgeModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "false"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   lo:viewIsPartOfModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Document Knowledge Modeling View" ;
-  rdfs:label "DocumentKnowledgeModelingView" ;
 .
 lo:ICFStandardHasTimeStamp
   rdfs:label "Time Stamp" ;
@@ -317,14 +341,6 @@ lo:OrganizationalView
   lo:viewIsPartOfModelingLanguage lo:OrganizationalModelingLanguage ;
   rdfs:label "Organizational View" ;
 .
-lo:ProcessModelingView
-  rdf:type lo:ModelingView ;
-  lo:isMainModelingView "true"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
-  lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
-  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
-  rdfs:label "Process Modeling View" ;
-.
 lo:SAPScene
   rdf:type lo:ModelingLanguage ;
   rdfs:label "SAP Scene" ;
@@ -349,7 +365,6 @@ lo:WorkflowDescriptionModelingView
   lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Workflow Description Modeling View" ;
-  rdfs:label "WorkflowDescriptionModelingView" ;
 .
 lo:WorkflowModelingView
   rdf:type lo:ModelingView ;
