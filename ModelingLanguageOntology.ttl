@@ -178,7 +178,6 @@ lo:ControlElementModelingView
   lo:viewIsPartOfModelingLanguage lo:ControlElementModelingLanguage ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Control Element Modeling View" ;
-  rdfs:label "ControlElementModelingView" ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1>
   rdf:type lo:ModelingLanguage ;
