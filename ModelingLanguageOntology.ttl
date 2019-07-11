@@ -544,3 +544,35 @@ owl:Class
 owl:Thing
   rdf:type owl:Class ;
 .
+lo:Architecture
+  a owl:Class ;
+  rdfs:label "Architecture" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:ArchitectureDimensions
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Architecture ;
+  rdfs:label "Architecture Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:Character
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:DoubleDoorFridge
+  a owl:Class ;
+  rdfs:label "Double Door Fridge" ;
+  rdfs:subClassOf lo:Fridge ;
+.
+lo:ElectricAppliances
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:SingleDoorFridge
+  a owl:Class ;
+  rdfs:label "Single Door Fridge" ;
+  rdfs:subClassOf lo:Fridge ;
+.
+lo:Window
+  a owl:Class ;
+  rdfs:label "Window" ;
+  rdfs:subClassOf lo:Architecture ;
+.
