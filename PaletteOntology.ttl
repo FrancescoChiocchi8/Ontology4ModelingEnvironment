@@ -9,10 +9,10 @@
 @prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenesOntology#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix sapscenes: <http://fhnw.ch/SAPScenesOntology#> .
 
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
@@ -1007,6 +1007,7 @@ po:ExclusiveGateway
 po:Executes
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasModelImage "Thumbnail_Executes.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Executes.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -2051,12 +2052,12 @@ po:Role
 po:SAPScenesElements
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
-  rdfs:label "SAP Scenes" ;
+  rdfs:label "SAP Scenes Elements" ;
 .
 po:SAPScenesRelations
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
-  rdfs:label "SAP Scenes" ;
+  rdfs:label "SAP Scenes Relations" ;
 .
 po:SendTask
   rdf:type po:PaletteElement ;
@@ -2797,6 +2798,7 @@ po:graphicalElementY
 po:hasNote
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasModelImage "Thumbnail_hasNote.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -2810,6 +2812,7 @@ po:hasParentDataDocument
 po:hasRelation
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasModelImage "Thumbnail_hasRelation.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasRelation.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
