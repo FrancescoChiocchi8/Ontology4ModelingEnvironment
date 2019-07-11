@@ -1273,9 +1273,7 @@ po:Group
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
   po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
   po:paletteConstructHasWidth 835 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -1292,10 +1290,25 @@ po:Group_4BPaaS
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
   po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
   po:paletteConstructHasWidth 835 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Group.jpg" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Group" ;
+.
+po:Group_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 575 ;
+  po:paletteConstructHasModelImage "Group_whole_process.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
+  po:paletteConstructHasWidth 835 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
@@ -2143,7 +2156,7 @@ po:PrepareRehabAdmission
   rdfs:label """Prepare Rehab Admission
  """ ;
 .
-po:ReceiveTask
+po:ReceiveMessageTask
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Receive_Task.png" ;
@@ -2160,7 +2173,25 @@ po:ReceiveTask
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Receive Task" ;
+  rdfs:label "Receive Message Task" ;
+.
+po:ReceiveMessageTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Receive_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Receive_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ReceiveTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Receive_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Receive Message Task" ;
 .
 po:RehabilitationClinicOU
   rdf:type po:PaletteElement ;
@@ -2317,7 +2348,7 @@ po:SequenceFlow_BPMN
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Sequence Flow" ;
 .
-po:ServiceMessageTask
+po:ServiceTask
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Service_Task.png" ;
@@ -2333,9 +2364,9 @@ po:ServiceMessageTask
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Service Message Task" ;
+  rdfs:label "Service Task" ;
 .
-po:ServiceMessageTask_4DSML4PTM
+po:ServiceTask_4DSML4PTM
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Service_Task.png" ;
