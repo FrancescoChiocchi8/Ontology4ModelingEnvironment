@@ -45,7 +45,6 @@ po:Activity
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Activity" ;
-  rdfs:subClassOf po:PaletteElement ;
 .
 po:Activity_4DSML4PTM
   rdf:type po:PaletteElement ;
@@ -63,7 +62,6 @@ po:Activity_4DSML4PTM
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Activity" ;
-  rdfs:subClassOf po:PaletteElement ;
 .
 po:AcuteHospitalOU
   rdf:type po:PaletteElement ;
@@ -150,6 +148,19 @@ po:Arrow
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Arrow ;
   rdfs:label "Arrow" ;
 .
+po:Association_4DSML4PTM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "BPMN_association.png" ;
+  po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Association" ;
+.
 po:Association_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
@@ -158,7 +169,6 @@ po:Association_BPMN
   po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -1731,6 +1741,19 @@ po:MessageEndEvent
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Message End Event" ;
 .
+po:MessageFlow_4DSML4PTM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "message_flow.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_message_flow.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Message Flow" ;
+.
 po:MessageFlow_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
@@ -1739,7 +1762,6 @@ po:MessageFlow_BPMN
   po:paletteConstructHasPaletteThumbnail "Thumbnail_message_flow.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -2269,6 +2291,19 @@ po:SendMessageTask_4DSML4PTM
   po:paletteElementUsesImage "false"^^xsd:boolean ;
   rdfs:label "Send Message Task" ;
 .
+po:SequenceFlow_4DSML4PTM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "SequenceFlow-bpmn.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Sequence Flow" ;
+.
 po:SequenceFlow_BPMN
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
@@ -2277,7 +2312,6 @@ po:SequenceFlow_BPMN
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
