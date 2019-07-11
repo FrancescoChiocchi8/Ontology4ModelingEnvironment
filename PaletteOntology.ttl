@@ -90,6 +90,7 @@ po:Association_BPMN
   po:paletteConstructHasModelImage "BPMN_association.png" ;
   po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
@@ -767,6 +768,7 @@ po:MessageFlow_BPMN
   po:paletteConstructHasModelImage "message_flow.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_message_flow.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
@@ -1126,6 +1128,7 @@ po:SequenceFlow_BPMN
   po:paletteConstructHasModelImage "SequenceFlow-bpmn.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
