@@ -1007,8 +1007,10 @@ po:ExclusiveGateway
 po:Executes
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Thumbnail_Executes.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Executes.PNG" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Executes ;
@@ -2798,8 +2800,10 @@ po:graphicalElementY
 po:hasNote
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Thumbnail_hasNote.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:hasNote ;
@@ -2812,8 +2816,10 @@ po:hasParentDataDocument
 po:hasRelation
   rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Thumbnail_hasRelation.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasRelation.PNG" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:hasRelation ;
