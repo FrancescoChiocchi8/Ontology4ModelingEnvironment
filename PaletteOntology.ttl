@@ -314,25 +314,6 @@ po:ConfirmTransfer
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Confirm Transfer" ;
 .
-po:DataCollection
-  rdf:type po:PaletteElement ;
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "data_collection.png" ;
-  po:paletteConstructHasPaletteThumbnail "data_collection.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:DataObject ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
-  po:paletteElementBackgroundColor "#c9dcf5" ;
-  po:paletteElementIconPosition "top-left" ;
-  po:paletteElementIconURL "DataInput.png" ;
-  po:paletteElementLabelPosition "inside" ;
-  po:paletteElementShape "roundrectangle" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Data Collection" ;
-.
 po:DataDocument
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -354,7 +335,7 @@ po:DataInput
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataInput ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataInput.png" ;
@@ -372,7 +353,7 @@ po:DataObject
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataObject.png" ;
@@ -391,7 +372,7 @@ po:DataOutput
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataOutput ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataOutput.png" ;
@@ -415,7 +396,7 @@ po:DataStore
   po:paletteElementIconURL "DataObject.png" ;
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
-  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Data Store" ;
 .
 po:DiscretionaryTask
