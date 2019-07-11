@@ -541,7 +541,7 @@ po:Group
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 575 ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
-  po:paletteConstructHasPaletteThumbnail "SmallGroup1.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
   po:paletteConstructHasWidth 835 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPMNProcessModelingView ;
