@@ -688,7 +688,7 @@ po:Lane
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 335 ;
   po:paletteConstructHasModelImage "Lane_whole.png" ;
-  po:paletteConstructHasPaletteThumbnail "Lane.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallLane.PNG" ;
   po:paletteConstructHasWidth 1160 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4BPMN ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
@@ -959,7 +959,7 @@ po:Pool
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 465 ;
   po:paletteConstructHasModelImage "Pool_whole.png" ;
-  po:paletteConstructHasPaletteThumbnail "Pool.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallPool.PNG" ;
   po:paletteConstructHasWidth 1165 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4BPMN ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
