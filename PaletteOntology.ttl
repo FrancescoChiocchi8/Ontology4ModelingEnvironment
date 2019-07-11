@@ -265,6 +265,11 @@ po:Category_SAPScenes
   po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
   rdfs:label "SAP Scenes" ;
 .
+po:Category_SAPScenesConnectors
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
+  rdfs:label "SAP Scenes" ;
+.
 po:Category_Sentry
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMControlElementModelingView ;
@@ -385,13 +390,13 @@ po:DataOutput
 po:DataStore
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "DataStorage.png" ;
-  po:paletteConstructHasPaletteThumbnail "DataStorage.png" ;
+  po:paletteConstructHasModelImage "data_storage.png" ;
+  po:paletteConstructHasPaletteThumbnail "data_storage.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataStore ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "DataObject.png" ;
