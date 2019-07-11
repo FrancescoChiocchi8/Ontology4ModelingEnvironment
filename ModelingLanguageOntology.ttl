@@ -343,10 +343,12 @@ lo:OrganizationalView
 .
 lo:SAPScene
   rdf:type lo:ModelingLanguage ;
+  lo:hasModelingView lo:SAPSceneModelingView ;
   rdfs:label "SAP Scene" ;
 .
 lo:SAPSceneModelingView
   rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
   rdfs:label "SAP Scenes Modeling View" ;
 .
