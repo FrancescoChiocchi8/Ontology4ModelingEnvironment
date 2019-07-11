@@ -36,6 +36,23 @@ po:Activity
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Call_Activity.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Activity" ;
+  rdfs:subClassOf po:PaletteElement ;
+.
+po:Activity_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Call_Activity.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Call_Activity.png" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
@@ -65,7 +82,7 @@ po:AcuteHospitalPool
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "Hospital.png" ;
   po:paletteConstructHasPaletteThumbnail "Hospital.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:Pool ;
+  po:paletteConstructHasParentPaletteConstruct po:Pool_4DSML4PTM ;
   po:paletteConstructHasWidth 70 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -285,6 +302,42 @@ po:BusinessMan
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:BusinessMan ;
   rdfs:label "Business Man" ;
+.
+po:BusinessRuleTask
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Business_Rule_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Business_Rule_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:BusinessRuleTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Business Rule Task" ;
+.
+po:BusinessRuleTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Business_Rule_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Business_Rule_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:BusinessRuleTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Business Rule Task" ;
 .
 po:BusinessWoman
   rdf:type po:PaletteElement ;
@@ -721,11 +774,28 @@ po:DataDocument
 po:DataInput
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "DataInput.png" ;
-  po:paletteConstructHasPaletteThumbnail "DataInput.png" ;
+  po:paletteConstructHasModelImage "data_input.png" ;
+  po:paletteConstructHasPaletteThumbnail "data_input.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataInput ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataInput.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Data Input" ;
+.
+po:DataInput_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "data_input.png" ;
+  po:paletteConstructHasPaletteThumbnail "data_input.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:DataObject_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataInput ;
@@ -744,6 +814,22 @@ po:DataObject
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataObject.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Data Object" ;
+.
+po:DataObject_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DataObject.png" ;
+  po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
@@ -758,11 +844,28 @@ po:DataObject
 po:DataOutput
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "DataOutput.png" ;
-  po:paletteConstructHasPaletteThumbnail "DataOutput.png" ;
+  po:paletteConstructHasModelImage "data_output.png" ;
+  po:paletteConstructHasPaletteThumbnail "data_output.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataOutput ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "DataOutput.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Data Output" ;
+.
+po:DataOutput_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "data_output.png" ;
+  po:paletteConstructHasPaletteThumbnail "data_output.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:DataObject_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataOutput ;
@@ -835,7 +938,7 @@ po:DiscretionaryTask
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Discretionary_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Discretionary_Task.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:ManualTask ;
+  po:paletteConstructHasParentPaletteConstruct po:ManualTask_4DSML4PTM ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -1133,7 +1236,7 @@ po:GeneratingCustomerBillingData
   po:paletteConstructHasHeight "335" ;
   po:paletteConstructHasModelImage "Group4Process.bmp" ;
   po:paletteConstructHasPaletteThumbnail "Group_GeneratingCustBillData.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group ;
+  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "755" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -1155,6 +1258,25 @@ po:Gong
   rdfs:label "Gong" ;
 .
 po:Group
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 575 ;
+  po:paletteConstructHasModelImage "Group_whole_process.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
+  po:paletteConstructHasWidth 835 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPMNProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Group.jpg" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Group" ;
+.
+po:Group_4BPaaS
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 575 ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
@@ -1534,7 +1656,7 @@ po:ManagingCustomerRelationship
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "Group_TransmittingBillData.jpg" ;
   po:paletteConstructHasPaletteThumbnail "Group_ManagingCR.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group ;
+  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "155" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -1548,6 +1670,24 @@ po:ManualTask
   po:paletteConstructHasModelImage "Manual_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Manual_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ManualTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Manual_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Manual Task" ;
+.
+po:ManualTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Manual_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Manual_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task_4DSML4PTM ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -1904,6 +2044,20 @@ po:Pool
   po:paletteConstructHasPaletteThumbnail "SmallPool.PNG" ;
   po:paletteConstructHasWidth 1165 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4BPMN ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Pool ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Pool" ;
+.
+po:Pool_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 465 ;
+  po:paletteConstructHasModelImage "Pool_whole.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallPool.PNG" ;
+  po:paletteConstructHasWidth 1165 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Pool ;
@@ -2003,7 +2157,7 @@ po:RehabilitationClinicPool
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "Rehabilitation Clinic.png" ;
   po:paletteConstructHasPaletteThumbnail "Rehabilitation Clinic.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:Pool ;
+  po:paletteConstructHasParentPaletteConstruct po:Pool_4DSML4PTM ;
   po:paletteConstructHasWidth 70 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -2061,7 +2215,25 @@ po:SAPScenesRelations
   po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
   rdfs:label "SAP Scenes Relations" ;
 .
-po:SendTask
+po:ScriptTask
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Script_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Script_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ScriptTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Script Task" ;
+.
+po:SendMessageTask
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Send_Task.png" ;
@@ -2069,6 +2241,23 @@ po:SendTask
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Send_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Send Message Task" ;
+.
+po:SendMessageTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Send_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Send_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
@@ -2078,7 +2267,7 @@ po:SendTask
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Send Task" ;
+  rdfs:label "Send Message Task" ;
 .
 po:SequenceFlow_BPMN
   rdf:type po:PaletteConnector ;
@@ -2094,7 +2283,7 @@ po:SequenceFlow_BPMN
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Sequence Flow" ;
 .
-po:ServiceTask
+po:ServiceMessageTask
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Service_Task.png" ;
@@ -2102,6 +2291,23 @@ po:ServiceTask
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ServiceTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Service_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Service Message Task" ;
+.
+po:ServiceMessageTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Service_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Service_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ServiceTask ;
@@ -2111,7 +2317,7 @@ po:ServiceTask
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "false"^^xsd:boolean ;
-  rdfs:label "Service Task" ;
+  rdfs:label "Service Message Task" ;
 .
 po:ShippingDock
   rdf:type po:PaletteElement ;
@@ -2212,19 +2418,6 @@ po:SpeechBubble
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:SpeechBubble ;
-  rdfs:label "Speech Bubble" ;
-.
-po:Speech_Bubble
-  rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Speech_Bubble.PNG" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_Speech_Bubble.PNG" ;
-  po:paletteConstructHasParentPaletteConstruct po:SpeechBubble ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Speech_Bubble ;
   rdfs:label "Speech Bubble" ;
 .
 po:StartEvent
@@ -2382,6 +2575,22 @@ po:Task
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Task.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Task" ;
+.
+po:Task_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Task.png" ;
+  po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
@@ -2545,7 +2754,7 @@ po:TransmittingBillingData
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "GroupOfAvtivities.png" ;
   po:paletteConstructHasPaletteThumbnail "Group_TransmittingBillData.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group ;
+  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "155" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
@@ -2632,15 +2841,31 @@ po:Up
 .
 po:UserTask
   rdf:type po:PaletteElement ;
-  rdf:type bpmn:UserTask ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "User_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:UserTask ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thumbnail_Task.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "User Task" ;
+.
+po:UserTask_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "User_Task.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:Task_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:UserTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
@@ -2733,7 +2958,7 @@ po:Wholeprocess_sendinvoice
   po:paletteConstructHasHeight "565" ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group ;
+  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "1120" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
