@@ -1027,9 +1027,10 @@ po:ReceiveTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Receive_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ReceiveTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Thumbnail_Receive_Task.png" ;
@@ -1110,6 +1111,7 @@ po:SendTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Send_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SendTask ;
@@ -1142,6 +1144,7 @@ po:ServiceTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Service_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ServiceTask ;
@@ -1197,6 +1200,7 @@ po:Subprocess
   po:paletteConstructHasModelImage "Subprocess.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Subprocess.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SubProcess ;
@@ -1214,6 +1218,7 @@ po:Task
   po:paletteConstructHasModelImage "Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Task.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
@@ -1329,6 +1334,7 @@ po:UserTask
   po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:UserTask ;
