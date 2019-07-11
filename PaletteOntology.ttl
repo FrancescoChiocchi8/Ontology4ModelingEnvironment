@@ -12,6 +12,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
 
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
