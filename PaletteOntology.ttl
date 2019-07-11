@@ -540,8 +540,8 @@ po:GeneratingCustomerBillingData
 po:Group
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 575 ;
-  po:paletteConstructHasModelImage "Group4Process.bmp" ;
-  po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
+  po:paletteConstructHasModelImage "Group_whole_process.png" ;
+  po:paletteConstructHasPaletteThumbnail "smallGroup.png" ;
   po:paletteConstructHasWidth 835 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPMNProcessModelingView ;
