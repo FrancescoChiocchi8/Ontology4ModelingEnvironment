@@ -1,4 +1,5 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
+
 # imports: http://fhnw.ch/OrganizationalModel
 # imports: http://fhnw.ch/SAPScenesOntology
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
