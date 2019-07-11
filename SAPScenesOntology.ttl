@@ -321,14 +321,9 @@ SAPScenes:Gong
 SAPScenes:Grey
   rdf:type SAPScenes:Colour ;
 .
-SAPScenes:HasNote
+SAPScenes:hasNote
   rdf:type owl:Class ;
   rdfs:label "has Note" ;
-  rdfs:subClassOf lo:ModelingRelation ;
-.
-SAPScenes:HasRelation
-  rdf:type owl:Class ;
-  rdfs:label "Has Relation" ;
   rdfs:subClassOf lo:ModelingRelation ;
 .
 SAPScenes:Heater
@@ -619,6 +614,11 @@ SAPScenes:Window
   rdf:type owl:Class ;
   rdfs:label "Window" ;
   rdfs:subClassOf SAPScenes:Architecture ;
+.
+SAPScenes:hasRelation
+  rdf:type owl:Class ;
+  rdfs:label "Has Relation" ;
+  rdfs:subClassOf lo:ModelingRelation ;
 .
 <http://fhnw.ch/SAPScenesOntology>
   rdf:type owl:Ontology ;
