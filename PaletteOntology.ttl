@@ -333,7 +333,7 @@ po:DataInput
   po:paletteConstructHasPaletteThumbnail "DataInput.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataInput ;
@@ -351,7 +351,7 @@ po:DataObject
   po:paletteConstructHasModelImage "DataObject.png" ;
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
@@ -370,7 +370,7 @@ po:DataOutput
   po:paletteConstructHasPaletteThumbnail "DataOutput.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataOutput ;
@@ -388,7 +388,7 @@ po:DataStore
   po:paletteConstructHasModelImage "DataStorage.png" ;
   po:paletteConstructHasPaletteThumbnail "DataStorage.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4BPMNProcessModelingView ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataType ;
