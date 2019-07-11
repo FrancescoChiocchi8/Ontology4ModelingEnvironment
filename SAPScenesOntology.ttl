@@ -1,0 +1,634 @@
+# baseURI: http://fhnw.ch/SAPScenesOntology
+
+@prefix : <http://fhnw.ch/SAPScenesOntology#> .
+@prefix SAPScenes: <http://fhnw.ch/SAPScenes#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+SAPScenes:Accessory
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Age
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Character ;
+  rdfs:label "Age" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:Airport
+  rdf:type owl:Class ;
+  rdfs:label "Airport" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:AnnotationProperty_1
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "Prova" ;
+  rdfs:range <http://who.int/icf#b_BodyFunction> ;
+.
+SAPScenes:ApplianceDimensions
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:ElectricAppliances ;
+  rdfs:label "Appliance Dimensions" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:ApplianceInstallationHeight
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:ElectricAppliances ;
+  rdfs:label "Appliance Installation Height" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:Architecture
+  rdf:type owl:Class ;
+  rdfs:label "Architecture" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:ArchitectureDimensions
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Architecture ;
+  rdfs:label "Architecture Dimensions" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:ArchitectureInstallationHeight
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Architecture ;
+  rdfs:label "Architecture Installation Height" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:Arrow
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Background
+  rdf:type owl:Class ;
+  rdfs:label "Background" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Bar
+  rdf:type owl:Class ;
+  rdfs:label "Bar" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Bench
+  rdf:type owl:Class ;
+  rdfs:label "Bench" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:BigHouse
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:BigSign
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Sign ;
+.
+SAPScenes:Bike
+  rdf:type owl:Class ;
+  rdfs:label "Bike" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:Black
+  rdf:type SAPScenes:Colour ;
+.
+SAPScenes:Bosch
+  rdf:type SAPScenes:Brand ;
+  rdfs:label "Bosch" ;
+.
+SAPScenes:Brand
+  rdf:type owl:Class ;
+  rdfs:label "Brand" ;
+  rdfs:subClassOf owl:Thing ;
+.
+SAPScenes:Brown
+  rdf:type SAPScenes:Colour ;
+.
+SAPScenes:Building
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Bus
+  rdf:type owl:Class ;
+  rdfs:label "Bus" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:BusinessMan
+  rdf:type owl:Class ;
+  rdfs:label "Business Man" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:BusinessWoman
+  rdf:type owl:Class ;
+  rdfs:label "Business Woman" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:CabinetDimensions
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain owl:Ontology ;
+  rdfs:label "Cabinet Dimensions" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:CabinetFunctions
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Cabinets ;
+  rdfs:label "Cabinet Functions" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:CabinetInstallationHeight
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Cabinets ;
+  rdfs:label "Cabinet Installation Height" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:Cabinets
+  rdf:type owl:Class ;
+  rdfs:label "Cabinets" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Cafe
+  rdf:type owl:Class ;
+  rdfs:label "Cafe" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Car
+  rdf:type owl:Class ;
+  rdfs:label "Car" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:CashRegisterTable
+  rdf:type owl:Class ;
+  rdfs:label "Cash Register Table" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:CashRegisterTable_1
+  rdf:type SAPScenes:CashRegisterTable ;
+  rdfs:label "CashRegisterTable_1" ;
+.
+SAPScenes:Chair
+  rdf:type owl:Class ;
+  rdfs:label "Chair" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Character
+  rdf:type owl:Class ;
+  rdfs:label "Character" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:City
+  rdf:type owl:Class ;
+  rdfs:label "City" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:CoffeeCorner
+  rdf:type owl:Class ;
+  rdfs:label "Coffee Corner" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:CoffeeCup
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:Colour
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+SAPScenes:CookingRange
+  rdf:type owl:Class ;
+  rdfs:label "Cooking Range" ;
+  rdfs:subClassOf SAPScenes:ElectricAppliances ;
+.
+SAPScenes:Couch
+  rdf:type owl:Class ;
+  rdfs:label "Couch" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Couch_1
+  rdf:type SAPScenes:Couch ;
+  rdfs:label "Couch_1" ;
+.
+SAPScenes:Countryside
+  rdf:type owl:Class ;
+  rdfs:label "Countryside" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:CryingBubble
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SpeechBubble ;
+.
+SAPScenes:DesktopSetting
+  rdf:type owl:Class ;
+  rdfs:label "Desktop Setting" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Device
+  rdf:type owl:Class ;
+  rdfs:label "Device" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:DirectionSign
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Sign ;
+.
+SAPScenes:Dishwasher
+  rdf:type owl:Class ;
+  rdfs:label "Dishwasher" ;
+  rdfs:subClassOf SAPScenes:ElectricAppliances ;
+.
+SAPScenes:Doctor
+  rdf:type owl:Class ;
+  rdfs:label "Doctor" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:DoubleDoorFridge
+  rdf:type owl:Class ;
+  rdfs:label "Double Door Fridge" ;
+  rdfs:subClassOf SAPScenes:Fridge ;
+.
+SAPScenes:Down
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Arrow ;
+.
+SAPScenes:Dresser
+  rdf:type owl:Class ;
+  rdfs:label "Dresser" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Drone
+  rdf:type owl:Class ;
+  rdfs:label "Drone" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:Drone_1
+  rdf:type SAPScenes:Drone ;
+  rdfs:label "Drone_1" ;
+.
+SAPScenes:ElectricAppliances
+  rdf:type owl:Class ;
+  rdfs:label "Electric Appliances" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Electrolux
+  rdf:type SAPScenes:Brand ;
+  rdfs:label "Electrolux" ;
+.
+SAPScenes:Executes
+  rdf:type owl:Class ;
+  rdfs:label "Executes" ;
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+SAPScenes:ExtractorHood
+  rdf:type owl:Class ;
+  rdfs:label "Extractor Hood" ;
+  rdfs:subClassOf SAPScenes:ElectricAppliances ;
+.
+SAPScenes:Factory
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:Flipchart
+  rdf:type owl:Class ;
+  rdfs:label "Flipchart" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Forklift
+  rdf:type owl:Class ;
+  rdfs:label "Forklift" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:Fridge
+  rdf:type owl:Class ;
+  rdfs:label "Fridge" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Furniture
+  rdf:type owl:Class ;
+  rdfs:label "Furniture" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:FurnitureDimensions
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain SAPScenes:Furniture ;
+  rdfs:label "Furniture Dimensions" ;
+  rdfs:range xsd:string ;
+.
+SAPScenes:Gong
+  rdf:type owl:Class ;
+  rdfs:label "Gong" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Grey
+  rdf:type SAPScenes:Colour ;
+.
+SAPScenes:HasNote
+  rdf:type owl:Class ;
+  rdfs:label "has Note" ;
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+SAPScenes:HasRelation
+  rdf:type owl:Class ;
+  rdfs:label "Has Relation" ;
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+SAPScenes:Heater
+  rdf:type owl:Class ;
+  rdfs:label "Heater" ;
+  rdfs:subClassOf SAPScenes:ElectricAppliances ;
+.
+SAPScenes:HighCabinet
+  rdf:type owl:Class ;
+  rdfs:label "High Cabinet" ;
+  rdfs:subClassOf SAPScenes:Cabinets ;
+.
+SAPScenes:HighCabinetForStorage
+  rdf:type owl:Class ;
+  rdfs:label "High Cabinet for Storage" ;
+  rdfs:subClassOf SAPScenes:HighCabinet ;
+.
+SAPScenes:HighCabinetWithOven
+  rdf:type owl:Class ;
+  rdfs:label "High Cabinet with Oven" ;
+  rdfs:subClassOf SAPScenes:HighCabinet ;
+.
+SAPScenes:House
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:Kitchen
+  rdf:type owl:Class ;
+  rdfs:label "Kitchen" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Laptop
+  rdf:type owl:Class ;
+  rdfs:label "Laptop" ;
+  rdfs:subClassOf SAPScenes:Device ;
+.
+SAPScenes:LaptopSetting
+  rdf:type owl:Class ;
+  rdfs:label "Laptop Setting" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Left
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Arrow ;
+.
+SAPScenes:LowerCabinet
+  rdf:type owl:Class ;
+  rdfs:label "Lower Cabinet" ;
+  rdfs:subClassOf SAPScenes:Cabinets ;
+.
+SAPScenes:LowerCabinetWithCookingRange
+  rdf:type owl:Class ;
+  rdfs:label "Lower Cabinet with Cooking Range" ;
+  rdfs:subClassOf SAPScenes:LowerCabinet ;
+.
+SAPScenes:LowerCabinetWithShelves
+  rdf:type owl:Class ;
+  rdfs:label "Lower Cabinet with Shelves" ;
+  rdfs:subClassOf SAPScenes:LowerCabinet ;
+.
+SAPScenes:LowerCabinetWithSinkAndWasteDisposal
+  rdf:type owl:Class ;
+  rdfs:label "Lower Cabinet with Sink and Waste Disposal" ;
+  rdfs:subClassOf SAPScenes:LowerCabinet ;
+.
+SAPScenes:MallInside
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Man
+  rdf:type owl:Class ;
+  rdfs:label "Man" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:MeetingRoom
+  rdf:type owl:Class ;
+  rdfs:label "Meeting Room" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:MobilePhone
+  rdf:type owl:Class ;
+  rdfs:label "Mobile Phone" ;
+  rdfs:subClassOf SAPScenes:Device ;
+.
+SAPScenes:Monitor
+  rdf:type owl:Class ;
+  rdfs:label "Monitor" ;
+  rdfs:subClassOf SAPScenes:Device ;
+.
+SAPScenes:Office
+  rdf:type owl:Class ;
+  rdfs:label "Office" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:OfficeBuilding
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:OldMan
+  rdf:type owl:Class ;
+  rdfs:label "Old Man" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:OldWoman
+  rdf:type owl:Class ;
+  rdfs:label "Old Woman" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:Oven
+  rdf:type owl:Class ;
+  rdfs:label "Oven" ;
+  rdfs:subClassOf SAPScenes:ElectricAppliances ;
+.
+SAPScenes:PackageBig
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:PackageMedium
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:PackageSmall
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:PalletStack
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:Process
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Right
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Arrow ;
+.
+SAPScenes:RobotArm
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Accessory ;
+.
+SAPScenes:SAPScenesModelingView
+  rdf:type lo:ModelingView ;
+  rdfs:label "SAPScenesModelingView" ;
+.
+SAPScenes:SceneObject
+  rdf:type owl:Class ;
+  rdfs:label "SceneObject" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+SAPScenes:ShippingDock
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:ShoppingCart
+  rdf:type owl:Class ;
+  rdfs:label "Shopping Cart" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Siemens
+  rdf:type SAPScenes:Brand ;
+  rdfs:label "Siemens" ;
+.
+SAPScenes:Sign
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:SingleDoorFridge
+  rdf:type owl:Class ;
+  rdfs:label "Single Door Fridge" ;
+  rdfs:subClassOf SAPScenes:Fridge ;
+.
+SAPScenes:SmallSign
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Sign ;
+.
+SAPScenes:SodaMaschine
+  rdf:type owl:Class ;
+  rdfs:label "Soda Maschine" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:SpeechBubble
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Speech_Bubble
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SpeechBubble ;
+.
+SAPScenes:Stool
+  rdf:type owl:Class ;
+  rdfs:label "Stool" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:StorageRoom
+  rdf:type owl:Class ;
+  rdfs:label "Storage Room" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Store
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:StoreAisle
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Student
+  rdf:type owl:Class ;
+  rdfs:label "Student" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:Subway
+  rdf:type owl:Class ;
+  rdfs:label "Subway" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:Table
+  rdf:type owl:Class ;
+  rdfs:label "Table" ;
+  rdfs:subClassOf SAPScenes:Furniture ;
+.
+SAPScenes:Tablet
+  rdf:type owl:Class ;
+  rdfs:label "Tablet" ;
+  rdfs:subClassOf SAPScenes:Device ;
+.
+SAPScenes:Team
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:ThinkingBubble
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:SpeechBubble ;
+.
+SAPScenes:TowerBuilding
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:Train
+  rdf:type owl:Class ;
+  rdfs:label "Train" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:TrainStation
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Building ;
+.
+SAPScenes:TransportationElement
+  rdf:type owl:Class ;
+  rdfs:label "Transportation Element" ;
+  rdfs:subClassOf SAPScenes:SceneObject ;
+.
+SAPScenes:Trolley
+  rdf:type owl:Class ;
+  rdfs:label "Trolley" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:Truck
+  rdf:type owl:Class ;
+  rdfs:label "Truck" ;
+  rdfs:subClassOf SAPScenes:TransportationElement ;
+.
+SAPScenes:TruckDock
+  rdf:type owl:Class ;
+  rdfs:label "Truck Dock" ;
+  rdfs:subClassOf SAPScenes:Background ;
+.
+SAPScenes:TruckDriver
+  rdf:type owl:Class ;
+  rdfs:label "Truck Driver" ;
+  rdfs:subClassOf SAPScenes:Character ;
+.
+SAPScenes:Up
+  rdf:type owl:Class ;
+  rdfs:subClassOf SAPScenes:Arrow ;
+.
+SAPScenes:V-Zug
+  rdf:type SAPScenes:Brand ;
+  rdfs:label "VZug" ;
+.
+SAPScenes:WallCabinet
+  rdf:type owl:Class ;
+  rdfs:label "Wall Cabinet" ;
+  rdfs:subClassOf SAPScenes:Cabinets ;
+.
+SAPScenes:Window
+  rdf:type owl:Class ;
+  rdfs:label "Window" ;
+  rdfs:subClassOf SAPScenes:Architecture ;
+.
+<http://fhnw.ch/SAPScenesOntology>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
+  rdf:type SAPScenes:Warranty ;
+  rdfs:label "1 Year" ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
+  rdf:type SAPScenes:Warranty ;
+  rdfs:label "2 Years" ;
+.

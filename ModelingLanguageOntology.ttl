@@ -1,13 +1,16 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # imports: http://fhnw.ch/OrganizationalModel
+# imports: http://fhnw.ch/SAPScenesOntology
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
 # imports: http://fhnw.ch/modelingEnvironment/DomainOntology
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/bpaas
 # prefix: lo
 
-@prefix : <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix : <http://fhnw.ch/modelingEnvironment/ModelingLanguageOntology#> .
+@prefix DomainOntology: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
+@prefix SAPScenesOntology: <http://fhnw.ch/SAPScenesOntology#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix archimeo: <http://ikm-group.ch/archiMEO#> .
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
@@ -132,6 +135,7 @@ dsml4ptm:isPartOfKoGuDO
   dc:title "The Language Ontology"@en ;
   rdfs:comment "Version 1.1: Initial import"@en ;
   owl:imports <http://fhnw.ch/OrganizationalModel> ;
+  owl:imports <http://fhnw.ch/SAPScenesOntology> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DomainOntology> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
@@ -413,7 +417,7 @@ lo:elementIsMappedWithDOConcept
   rdf:type owl:ObjectProperty ;
   rdfs:domain lo:ModelingElement ;
   rdfs:label "Modeling element is mapped with a Domain Ontology concept" ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+  rdfs:range DomainOntology:DomainOntologyConcept ;
 .
 lo:hasModelingView
   rdf:type owl:ObjectProperty ;
@@ -423,8 +427,8 @@ lo:hasModelingView
 .
 lo:hasNewObjectProperty
   rdf:type owl:ObjectProperty ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Cost_Reimbursment> ;
-  rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#Prepare> ;
+  rdfs:range DomainOntology:Cost_Reimbursment ;
+  rdfs:range DomainOntology:Prepare ;
 .
 lo:hasNewProperty
   rdf:type rdf:Property ;
@@ -520,7 +524,7 @@ eo:EnterpriseObject
   rdfs:subClassOf lo:ModelingElement ;
 .
 nco:NCO
-  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
+  rdfs:subClassOf DomainOntology:DomainOntologyConcept ;
 .
 <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
   rdf:type rdfs:Class ;
@@ -533,7 +537,7 @@ nco:NCO
   rdfs:subClassOf lo:ModelingElement ;
 .
 <http://ikm-group.ch/archimeo/iso42010#ADMetaModel>
-  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#Standard> ;
+  rdfs:subClassOf DomainOntology:Standard ;
 .
 rdf:Property
   rdf:type owl:Class ;
@@ -543,36 +547,4 @@ owl:Class
 .
 owl:Thing
   rdf:type owl:Class ;
-.
-lo:Architecture
-  a owl:Class ;
-  rdfs:label "Architecture" ;
-  rdfs:subClassOf lo:SceneObject ;
-.
-lo:ArchitectureDimensions
-  a owl:DatatypeProperty ;
-  rdfs:domain lo:Architecture ;
-  rdfs:label "Architecture Dimensions" ;
-  rdfs:range xsd:string ;
-.
-lo:Character
-  rdfs:subClassOf lo:SceneObject ;
-.
-lo:DoubleDoorFridge
-  a owl:Class ;
-  rdfs:label "Double Door Fridge" ;
-  rdfs:subClassOf lo:Fridge ;
-.
-lo:ElectricAppliances
-  rdfs:subClassOf lo:SceneObject ;
-.
-lo:SingleDoorFridge
-  a owl:Class ;
-  rdfs:label "Single Door Fridge" ;
-  rdfs:subClassOf lo:Fridge ;
-.
-lo:Window
-  a owl:Class ;
-  rdfs:label "Window" ;
-  rdfs:subClassOf lo:Architecture ;
 .
