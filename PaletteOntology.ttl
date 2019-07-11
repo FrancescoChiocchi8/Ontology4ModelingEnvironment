@@ -166,7 +166,7 @@ po:Association_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "BPMN_association.png" ;
-  po:paletteConstructHasPaletteThumbnail "BPMN_association.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_DataAssociation.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4BPMNProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -2309,7 +2309,7 @@ po:SequenceFlow_BPMN
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasModelImage "SequenceFlow-bpmn.png" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_SequenceFlow-bpmn.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Sequence.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4BPMNProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
