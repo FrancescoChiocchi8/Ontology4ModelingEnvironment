@@ -1,16 +1,17 @@
 # baseURI: http://fhnw.ch/SAPScenesOntology
 
 @prefix : <http://fhnw.ch/SAPScenesOntology#> .
-@prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sapscenes:Accessory
   rdf:type owl:Class ;
+  rdfs:label "Robot Arm" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Age
@@ -188,6 +189,7 @@ sapscenes:CoffeeCorner
 .
 sapscenes:CoffeeCup
   rdf:type owl:Class ;
+  rdfs:label "Coffee Cup" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:Colour
@@ -321,11 +323,6 @@ sapscenes:Gong
 sapscenes:Grey
   rdf:type sapscenes:Colour ;
 .
-sapscenes:hasNote
-  rdf:type owl:Class ;
-  rdfs:label "has Note" ;
-  rdfs:subClassOf lo:ModelingRelation ;
-.
 sapscenes:Heater
   rdf:type owl:Class ;
   rdfs:label "Heater" ;
@@ -439,18 +436,22 @@ sapscenes:Oven
 .
 sapscenes:PackageBig
   rdf:type owl:Class ;
+  rdfs:label "Package Big" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PackageMedium
   rdf:type owl:Class ;
+  rdfs:label "Package Medium" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PackageSmall
   rdf:type owl:Class ;
+  rdfs:label "Package Small" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PalletStack
   rdf:type owl:Class ;
+  rdfs:label "Pallet Stack" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:Process
@@ -463,6 +464,7 @@ sapscenes:Right
 .
 sapscenes:RobotArm
   rdf:type owl:Class ;
+  rdfs:label "Robot Arm" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:SAPScenesModelingView
@@ -614,6 +616,11 @@ sapscenes:Window
   rdf:type owl:Class ;
   rdfs:label "Window" ;
   rdfs:subClassOf sapscenes:Architecture ;
+.
+sapscenes:hasNote
+  rdf:type owl:Class ;
+  rdfs:label "has Note" ;
+  rdfs:subClassOf lo:ModelingRelation ;
 .
 sapscenes:hasRelation
   rdf:type owl:Class ;

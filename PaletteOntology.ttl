@@ -2247,6 +2247,19 @@ po:ReleaseTransferCase
   rdfs:label """Release Transfer Case
  """ ;
 .
+po:RobotArm
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "RobotArm.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_RobotArm.PNG" ;
+  po:paletteConstructHasParentPaletteConstruct po:Accessory ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:RobotArm ;
+  rdfs:label "Robot Arm" ;
+.
 po:Role
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 50 ;
