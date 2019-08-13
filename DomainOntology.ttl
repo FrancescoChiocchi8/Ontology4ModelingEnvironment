@@ -25,39 +25,23 @@
   owl:imports <http://who.int/icf> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
-do:Action
-  rdf:type owl:Class ;
-  rdfs:label "Action" ;
-  rdfs:subClassOf do:DomainOntologyConcept ;
-.
-do:Cost_Reimbursment
-  rdf:type owl:Class ;
-  rdfs:label "Cost Reimbursement" ;
-  rdfs:subClassOf do:Object ;
-.
 do:DomainOntologyConcept
   rdf:type owl:Class ;
   rdfs:label "Domain Ontology Concept" ;
   rdfs:subClassOf owl:Thing ;
 .
-do:Object
-  rdf:type owl:Class ;
-  rdfs:label "Object" ;
-  rdfs:subClassOf do:DomainOntologyConcept ;
-.
-do:Prepare
-  rdf:type owl:Class ;
-  rdfs:label "Prepare" ;
-  rdfs:subClassOf do:Action ;
-.
-do:Standard
-  rdf:type owl:Class ;
-  rdfs:label "Standard" ;
-  rdfs:subClassOf do:DomainOntologyConcept ;
-.
 <http://ikm-group.ch/archiMEO/top#TopLevelElements>
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
 apqc:AmericanProductivityAndQualityCenter
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<http://ikm-group.ch/archimeo/fbpdo#FunctionalBusinessProcessDescription>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<http://who.int/icf#ICFCategory>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<http://who.int/icf#ICFQualifier>
   rdfs:subClassOf do:DomainOntologyConcept ;
 .

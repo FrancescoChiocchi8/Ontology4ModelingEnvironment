@@ -1,9 +1,9 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
-
 # imports: http://fhnw.ch/OrganizationalModel
 # imports: http://fhnw.ch/SAPScenesOntology
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
 # imports: http://fhnw.ch/modelingEnvironment/DomainOntology
+# imports: http://fhnw.ch/modelingEnvironment/dkmm
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/bpaas
 # prefix: lo
@@ -11,7 +11,6 @@
 @prefix : <http://fhnw.ch/modelingEnvironment/ModelingLanguageOntology#> .
 @prefix DomainOntology: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
-@prefix sapscenes: <http://fhnw.ch/SAPScenesOntology#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix archimeo: <http://ikm-group.ch/archiMEO#> .
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
@@ -34,6 +33,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenesOntology#> .
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -47,12 +47,8 @@ dsml4ptm:ICFStandard
   rdf:type rdfs:Class ;
   dsml4ptm:isMappedWithPerformance <http://who.int/icf#Performance> ;
   dsml4ptm:isMappedWithSomething <http://who.int/icf#Performance> ;
-  rdfs:comment "The ICF Standard describes…" ;
-  rdfs:comment "This concept describes…" ;
+  rdfs:comment "International Classification of Functioning, Disability and Health https://bioportal.bioontology.org/ontologies/ICF?p=classes" ;
   rdfs:label "ICF International Standard" ;
-  rdfs:label "ICF Standard" ;
-  rdfs:label "ICF test" ;
-  rdfs:subClassOf dkmm:Data_Document ;
 .
 dsml4ptm:ICFStandardHasTimeStamp
   rdf:type rdf:Property ;
@@ -139,6 +135,7 @@ dsml4ptm:isPartOfKoGuDO
   owl:imports <http://fhnw.ch/SAPScenesOntology> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DomainOntology> ;
+  owl:imports <http://fhnw.ch/modelingEnvironment/dkmm> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo 1.1 ;
@@ -217,14 +214,13 @@ lo:DSML4PTMDocumentKnowledgeModelingView
 lo:DSML4PTMOrganizationalView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "true"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Organizational View" ;
 .
 lo:DSML4PTMProcessModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
-  rdfs:label "DSML4PTM Process Modeling View" ;
+  rdfs:label "Process Modeling View" ;
 .
 lo:Data_Document_1
   rdf:type dkmm:Data_Document ;
@@ -489,6 +485,9 @@ lo:viewIsPartOfModelingLanguage
   rdf:type owl:Ontology ;
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
 .
+dkmm:Belongs_To
+  rdfs:subClassOf lo:ModelingRelation ;
+.
 dkmm:Data_Document
   rdfs:subClassOf lo:ModelingElement ;
 .
@@ -529,7 +528,6 @@ nco:NCO
 .
 <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
   rdf:type rdfs:Class ;
-  rdfs:subClassOf bpmn:ManualTask ;
 .
 <http://ikm-group.ch/archimeo/cmmn#Sentry>
   rdfs:subClassOf lo:ModelingElement ;

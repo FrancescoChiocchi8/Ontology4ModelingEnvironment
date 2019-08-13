@@ -37,7 +37,7 @@ po:Activity
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Activity ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Call_Activity.png" ;
@@ -54,7 +54,7 @@ po:Activity_4DSML4PTM
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Task ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Activity ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
   po:paletteElementIconURL "Call_Activity.png" ;
@@ -206,6 +206,7 @@ po:BelongsTo_DKM
   po:paletteConstructHasModelImage "belongsTo-dkm.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_belongsTo-dkm.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DKModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/modelingEnvironment/dkmm#Belongs_To> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -472,12 +473,20 @@ po:Category_Connectors
 po:Category_Connectors4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:WorkflowModelingView ;
   rdfs:label "Connectors" ;
 .
 po:Category_Connectors4ControlElementModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMControlElementModelingView ;
+  rdfs:label "Connectors" ;
+.
+po:Category_Connectors4DKModelingView
+  rdf:type po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:DSML4PTMDocumentKnowledgeModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:DocumentKnolwedgeModelingView ;
+  po:paletteCategoryOrderNumber 2 ;
   rdfs:label "Connectors" ;
 .
 po:Category_Connectors4DSML4PTMProcessModelingView
@@ -508,6 +517,7 @@ po:Category_Data
 po:Category_Data4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   rdfs:label "Data" ;
 .
 po:Category_Data4DSML4PTMProcessModelingView
@@ -528,11 +538,13 @@ po:Category_DecisionTable
 po:Category_Document4DKModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DocumentKnolwedgeModelingView ;
+  po:paletteCategoryOrderNumber 1 ;
   rdfs:label "Documents" ;
 .
 po:Category_Document4DSML4PTMDocumentView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMDocumentKnowledgeModelingView ;
+  po:paletteCategoryOrderNumber 1 ;
   rdfs:label "Documents" ;
 .
 po:Category_Events
@@ -546,6 +558,8 @@ po:Category_Events
 po:Category_Events4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
   rdfs:label "Events" ;
 .
 po:Category_Gateways
@@ -559,6 +573,8 @@ po:Category_Gateways
 po:Category_Gateways4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
   rdfs:label "Gateways" ;
 .
 po:Category_Groups
@@ -625,6 +641,7 @@ po:Category_Swimlanes
 po:Category_Swimlanes4BPMN
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
+  po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   rdfs:label "Swimlanes" ;
 .
 po:Category_Swimlanes4DSML
@@ -840,7 +857,6 @@ po:DataObject_4DSML4PTM
   po:paletteConstructHasModelImage "DataObject.png" ;
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -876,7 +892,6 @@ po:DataOutput_4DSML4PTM
   po:paletteConstructHasPaletteThumbnail "data_output.png" ;
   po:paletteConstructHasParentPaletteConstruct po:DataObject_4DSML4PTM ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataOutput ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -948,9 +963,7 @@ po:DiscretionaryTask
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Discretionary_Task.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Discretionary_Task.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:ManualTask_4DSML4PTM ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask> ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -1250,7 +1263,7 @@ po:GeneratingCustomerBillingData
   po:paletteConstructHasWidth "755" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:GeneratingCustomerBillingData ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/bpaas#GeneratingCustomerBillingData> ;
   po:paletteElementUsesImage "null" ;
   rdfs:label "Generating Customer Billing Data" ;
 .
@@ -1288,7 +1301,7 @@ po:Group_4BPaaS
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 575 ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
-  po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "SmallGroup.png" ;
   po:paletteConstructHasWidth 835 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -1305,10 +1318,9 @@ po:Group_4DSML4PTM
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 575 ;
   po:paletteConstructHasModelImage "Group_whole_process.png" ;
-  po:paletteConstructHasPaletteThumbnail "SmallGroup.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "SmallGroup.png" ;
   po:paletteConstructHasWidth 835 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
-  po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Group ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
@@ -1316,7 +1328,7 @@ po:Group_4DSML4PTM
   po:paletteElementLabelPosition "inside" ;
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
-  rdfs:label "Group" ;
+  rdfs:label "Group to be used in case of specific groups for DSML4PTM" ;
 .
 po:HasRole_OrgM
   rdf:type po:PaletteConnector ;
@@ -1329,6 +1341,19 @@ po:HasRole_OrgM
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#RoleAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "has Role" ;
+.
+po:HasSubDocument_DKM
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "hasSubDocument-dkm.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_hasSubDocument-dkm.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4DKModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/modelingEnvironment/dkmm#HasSubDocument> ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "has sub-document" ;
 .
 po:HealthInsuranceOU
   rdf:type po:PaletteElement ;
@@ -1406,19 +1431,6 @@ po:House
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:House ;
   rdfs:label "House" ;
-.
-po:ICFStandard
-  rdf:type po:PaletteElement ;
-  po:paletteConstructHasHeight 100 ;
-  po:paletteConstructHasModelImage "ICFstandard-dkm.png" ;
-  po:paletteConstructHasPaletteThumbnail "ICFstandard-dkm.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:DataDocument ;
-  po:paletteConstructHasWidth 70 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Document4DSML4PTMDocumentView ;
-  po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:ICFStandard ;
-  rdfs:label "ICF International Standard" ;
-  rdfs:label "ICF Standard - instance for graphical notation" ;
 .
 po:ICFStandardHasModelThumbnail
   rdf:type rdf:Property ;
@@ -1524,6 +1536,24 @@ po:KoGuDataObject
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:KoGuDataObject ;
   rdfs:label "KoGu Data Object" ;
 .
+po:KoGuDataObject_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "KoGu.png" ;
+  po:paletteConstructHasPaletteThumbnail "KoGu.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:DataObject_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:KoGuDataObject ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "KoGu.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "KoGu Data Object" ;
+.
 po:Lane
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 335 ;
@@ -1531,6 +1561,20 @@ po:Lane
   po:paletteConstructHasPaletteThumbnail "SmallLane.PNG" ;
   po:paletteConstructHasWidth 1160 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4BPMN ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Lane ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Lane" ;
+.
+po:Lane_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 335 ;
+  po:paletteConstructHasModelImage "Lane_whole.png" ;
+  po:paletteConstructHasPaletteThumbnail "SmallLane.PNG" ;
+  po:paletteConstructHasWidth 1160 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Swimlanes4DSML ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Lane ;
@@ -1679,11 +1723,9 @@ po:ManagingCustomerRelationship
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "Group_TransmittingBillData.jpg" ;
   po:paletteConstructHasPaletteThumbnail "Group_ManagingCR.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "155" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ManagingCustomerRelationship ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/bpaas#ManagingCustomerRelationship> ;
   po:paletteElementUsesImage "null" ;
   rdfs:label "Managing Customer Relationship" ;
 .
@@ -2105,9 +2147,9 @@ po:Pool_4DSML4PTM
 po:PrepareKoGu
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "User_Task.png" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_User_Task.png" ;
-  po:paletteConstructHasParentPaletteConstruct po:UserTask ;
+  po:paletteConstructHasModelImage "Prepare_CostReimbursement.png" ;
+  po:paletteConstructHasPaletteThumbnail "Prepare_CostReimbursement.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:UserTask_4DSML4PTM ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -2164,7 +2206,6 @@ po:ReceiveMessageTask
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4BPMNProcessModelingView ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ReceiveTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -2183,7 +2224,7 @@ po:ReceiveMessageTask_4DSML4PTM
   po:paletteConstructHasParentPaletteConstruct po:Task ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Activities4DSML4PTMProcessModelingView ;
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsHiddenFromPalette "true"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:ReceiveTask ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
   po:paletteElementIconPosition "top-left" ;
@@ -2832,11 +2873,9 @@ po:TransmittingBillingData
   po:paletteConstructHasHeight "115" ;
   po:paletteConstructHasModelImage "GroupOfAvtivities.png" ;
   po:paletteConstructHasPaletteThumbnail "Group_TransmittingBillData.jpg" ;
-  po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "155" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:TransmittingBillingData ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/bpaas#TransmittingBillingData> ;
   po:paletteElementUsesImage "true" ;
   rdfs:label "Transmitting Billing Data" ;
 .
@@ -3038,9 +3077,8 @@ po:Wholeprocess_sendinvoice
   po:paletteConstructHasPaletteThumbnail "Group.jpg" ;
   po:paletteConstructHasParentPaletteConstruct po:Group_4BPaaS ;
   po:paletteConstructHasWidth "1120" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Groups4BPaaSProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false" ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Wholeprocess_sendinvoice ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://ikm-group.ch/archimeo/bpaas#Wholeprocess_sendinvoice> ;
   po:paletteElementUsesImage "true" ;
   rdfs:label "Whole process_send invoice" ;
 .
@@ -3313,9 +3351,6 @@ bpmn:DataType
 bpmn:UserTask
   rdfs:range xsd:string ;
   rdfs:range "true"^^xsd:boolean ;
-.
-<http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
-  rdfs:subClassOf bpmn:ManualTask ;
 .
 <http://ikm-group.ch/ontology-based-modelling-environment>
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;

@@ -14,9 +14,12 @@
 dkmm:Belongs_To
   rdf:type owl:Class ;
   rdfs:label "Belongs to " ;
-  rdfs:subClassOf owl:Thing ;
 .
 dkmm:Data_Document
   rdf:type owl:Class ;
   rdfs:label "Data Document" ;
+.
+dkmm:HasSubDocument
+  rdf:type owl:Class ;
+  rdfs:label "Has Sub-Document" ;
 .

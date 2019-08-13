@@ -34,12 +34,10 @@ icf:ExtentOrMagnitudeOfImpairment
 icf:ICFCategory
   rdf:type owl:Class ;
   rdfs:label "ICF Category" ;
-  rdfs:subClassOf owl:Thing ;
 .
 icf:ICFQualifier
   rdf:type owl:Class ;
   rdfs:label "ICF Qualifier" ;
-  rdfs:subClassOf owl:Thing ;
 .
 icf:NatureOfChangeInBodyStructure
   rdf:type owl:Class ;

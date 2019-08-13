@@ -424,7 +424,6 @@ fbpdo:FreightForwarding
 fbpdo:FunctionalBusinessProcessDescription
   rdf:type owl:Class ;
   rdfs:label "Functional Business Process Description" ;
-  rdfs:subClassOf owl:Thing ;
 .
 fbpdo:Funding
   rdf:type owl:Class ;
