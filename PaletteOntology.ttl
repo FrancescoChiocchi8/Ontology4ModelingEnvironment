@@ -14,6 +14,9 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+dsml4ptm:ICFStandard
+  rdf:type owl:Class ;
+.
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
 .
@@ -219,6 +222,7 @@ po:BelongsTo_OrgM
   po:paletteConstructHasModelImage "BelongsTo-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_BelongsTo-OM.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4OrganizationalView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Belonging> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -440,11 +444,13 @@ po:Category_Activities4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryOrderNumber 1 ;
   rdfs:label "Activities" ;
 .
 po:Category_Activities4DSML4PTMProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 1 ;
   rdfs:label "Activities" ;
 .
 po:Category_BusinessKnowledge
@@ -475,6 +481,7 @@ po:Category_Connectors4BPMNProcessModelingView
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:WorkflowModelingView ;
+  po:paletteCategoryOrderNumber 7 ;
   rdfs:label "Connectors" ;
 .
 po:Category_Connectors4ControlElementModelingView
@@ -492,6 +499,7 @@ po:Category_Connectors4DKModelingView
 po:Category_Connectors4DSML4PTMProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 7 ;
   rdfs:label "Connectors" ;
 .
 po:Category_Connectors4DecisionModelingView
@@ -518,11 +526,13 @@ po:Category_Data4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryOrderNumber 2 ;
   rdfs:label "Data" ;
 .
 po:Category_Data4DSML4PTMProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 2 ;
   rdfs:label "Data" ;
 .
 po:Category_Decision
@@ -560,6 +570,7 @@ po:Category_Events4BPMNProcessModelingView
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 3 ;
   rdfs:label "Events" ;
 .
 po:Category_Gateways
@@ -575,6 +586,7 @@ po:Category_Gateways4BPMNProcessModelingView
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 4 ;
   rdfs:label "Gateways" ;
 .
 po:Category_Groups
@@ -590,11 +602,13 @@ po:Category_Groups4BPMNProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 5 ;
   rdfs:label "Groups" ;
 .
 po:Category_Groups4BPaaSProcessModelingView
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryOrderNumber 5 ;
   rdfs:label "Groups" ;
 .
 po:Category_InputData
@@ -642,11 +656,13 @@ po:Category_Swimlanes4BPMN
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:BPMNProcessModelingView ;
   po:paletteCategoryIsShownInModelingView lo:BPaaSProcessModelingView ;
+  po:paletteCategoryOrderNumber 6 ;
   rdfs:label "Swimlanes" ;
 .
 po:Category_Swimlanes4DSML
   rdf:type po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:DSML4PTMProcessModelingView ;
+  po:paletteCategoryOrderNumber 6 ;
   rdfs:label "Swimlanes" ;
 .
 po:Chair
@@ -793,10 +809,21 @@ po:DataDocument
   po:paletteConstructHasModelImage "DataDoucment-dkm.png" ;
   po:paletteConstructHasPaletteThumbnail "DataDoucment-dkm.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Document4DSML4PTMDocumentView ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Document4DKModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
   rdfs:label "Data Document " ;
+.
+po:DataDocument_4DSML4PTM
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DataDoucment-dkm.png" ;
+  po:paletteConstructHasPaletteThumbnail "DataDoucment-dkm.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Document4DSML4PTMDocumentView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/modelingEnvironment/dkmm#Data_Document> ;
+  rdfs:label "Data Document" ;
 .
 po:DataInput
   rdf:type po:PaletteElement ;
@@ -857,6 +884,7 @@ po:DataObject_4DSML4PTM
   po:paletteConstructHasModelImage "DataObject.png" ;
   po:paletteConstructHasPaletteThumbnail "DataObject.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Data4DSML4PTMProcessModelingView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:DataObject ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -1337,6 +1365,7 @@ po:HasRole_OrgM
   po:paletteConstructHasModelImage "HasRole-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_HasRole-OM.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4OrganizationalView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#RoleAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -1432,6 +1461,18 @@ po:House
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:House ;
   rdfs:label "House" ;
 .
+po:ICFStandard
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ICFstandard-dkm.png" ;
+  po:paletteConstructHasPaletteThumbnail "ICFstandard-dkm.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:DataDocument_4DSML4PTM ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Document4DSML4PTMDocumentView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:ICFStandard ;
+  rdfs:label "ICF International Standard" ;
+.
 po:ICFStandardHasModelThumbnail
   rdf:type rdf:Property ;
   rdf:type owl:DatatypeProperty ;
@@ -1501,6 +1542,7 @@ po:IsManager_OrgM
   po:paletteConstructHasModelImage "IsManager-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_IsManager-OM.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4OrganizationalView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#ManagerAssignment> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;
@@ -1513,6 +1555,7 @@ po:IsSubordinated_OrgM
   po:paletteConstructHasModelImage "IsSubordinated-OM.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_IsSubordinated-OM.png" ;
   po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors4OrganizationalView ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Subordination> ;
   po:paletteElementUsesImage "true"^^xsd:boolean ;

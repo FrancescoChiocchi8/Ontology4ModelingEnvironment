@@ -44,20 +44,56 @@
   rdfs:subClassOf lo:ModelingElement ;
 .
 dsml4ptm:ICFStandard
-  rdf:type rdfs:Class ;
-  dsml4ptm:isMappedWithPerformance <http://who.int/icf#Performance> ;
-  dsml4ptm:isMappedWithSomething <http://who.int/icf#Performance> ;
   rdfs:comment "International Classification of Functioning, Disability and Health https://bioportal.bioontology.org/ontologies/ICF?p=classes" ;
   rdfs:label "ICF International Standard" ;
+  rdfs:subClassOf dkmm:Data_Document ;
 .
 dsml4ptm:ICFStandardHasTimeStamp
-  rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard has Time Stamp" ;
+  rdfs:range xsd:dateTime ;
+.
+dsml4ptm:ICFStandardIsMappedWithActivityAndParticipation
   rdf:type owl:ObjectProperty ;
   rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:label "ICF Standard has default TimeStamp" ;
-  rdfs:range xsd:datetime ;
-  rdfs:range "2019-02-04T13:20:00"^^xsd:dateTime ;
+  rdfs:label "ICF Standard Is Mapped With Activity And Participation" ;
+  rdfs:range <http://who.int/icf#d_ActivitiesAndParticipation> ;
   rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
+.
+dsml4ptm:ICFStandardIsMappedWithBodyFunction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard Is Mapped With Body Function" ;
+  rdfs:range <http://who.int/icf#b_BodyFunction> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
+.
+dsml4ptm:ICFStandardIsMappedWithBodyStructures
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard Is Mapped With Body Structures" ;
+  rdfs:range <http://who.int/icf#s_BodyStructures> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
+.
+dsml4ptm:ICFStandardIsMappedWithEnvironmentalFactors
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard Is Mapped With Environmental Factors" ;
+  rdfs:range <http://who.int/icf#e_EnvironmentalFactors> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
+.
+dsml4ptm:ICFStandardIsMappedWithPerformance
+  rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  rdfs:range <http://who.int/icf#Performance> ;
+  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
+.
+dsml4ptm:ICFStandardIsPartOfKoGuDataObject
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dsml4ptm:ICFStandard ;
+  rdfs:label "ICF Standard is part of KoGu Data Object" ;
+  rdfs:range dsml4ptm:ICFStandard ;
+  rdfs:subPropertyOf lo:elementHasBridgingConcept ;
 .
 dsml4ptm:PrepaerKoGu
   rdf:type rdfs:Class ;
@@ -68,53 +104,6 @@ dsml4ptm:PrepareKoGu2
 .
 dsml4ptm:PrepareKoGu3
   rdfs:subClassOf bpmn:UserTask ;
-.
-dsml4ptm:isMappedWithActivityAndParticipation
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:range <http://who.int/icf#ActivitiesAndParticipation> ;
-  rdfs:range <http://who.int/icf#d_ActivitiesAndParticipation> ;
-  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
-.
-dsml4ptm:isMappedWithBodyFunction
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:range <http://who.int/icf#BodyFunction> ;
-  rdfs:range <http://who.int/icf#b_BodyFunction> ;
-  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
-.
-dsml4ptm:isMappedWithBodyStructures
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:range <http://who.int/icf#BodyStructures> ;
-  rdfs:range <http://who.int/icf#s_BodyStructures> ;
-  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
-.
-dsml4ptm:isMappedWithEnvironmentalFactors
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:range <http://who.int/icf#EnvironmentalFactors> ;
-  rdfs:range <http://who.int/icf#e_EnvironmentalFactors> ;
-  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
-.
-dsml4ptm:isMappedWithPerformance
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:range <http://who.int/icf#Performance> ;
-  rdfs:subPropertyOf lo:elementIsMappedWithDOConcept ;
-.
-dsml4ptm:isPartOfKoGuDO
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain dsml4ptm:ICFStandard ;
-  rdfs:label "ICF Standard is part of Data Object" ;
-  rdfs:range bpmn:DataObject ;
-  rdfs:subPropertyOf lo:elementHasBridgingConcept ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology>
   rdf:type owl:Ontology ;
@@ -171,10 +160,6 @@ lo:BusinessProcessRequirementModelingView
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Business Process Requirement Modeling View" ;
 .
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#CMMN_1.1>
-  rdf:type lo:ModelingLanguage ;
-  rdfs:label "CMMN 1.1" ;
-.
 lo:CombinationNotAllowed
   rdf:type owl:Class ;
   rdfs:label "Not Allowed Source-Target Combination" ;
@@ -184,10 +169,6 @@ lo:CombinationNotAllowed
 lo:ControlElementModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Control Element Modeling Language" ;
-.
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#DMN_1.1>
-  rdf:type lo:ModelingLanguage ;
-  rdfs:label "DMN 1.1" ;
 .
 lo:DSML4PTM
   rdf:type lo:ModelingLanguage ;
@@ -284,7 +265,7 @@ lo:ICFStandard_8
 .
 lo:ICFStandard_9
   rdf:type dsml4ptm:ICFStandard ;
-  dsml4ptm:isMappedWithBodyFunction <http://who.int/icf#b110-b139_Global_mental_functions> ;
+  dsml4ptm:ICFStandardIsMappedWithBodyFunction <http://who.int/icf#b110-b139_Global_mental_functions> ;
 .
 lo:MRhasNotAllowedCombination
   rdf:type owl:ObjectProperty ;
