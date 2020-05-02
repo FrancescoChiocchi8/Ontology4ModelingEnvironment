@@ -2,7 +2,7 @@
 # imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # prefix: om
 
-@prefix LanguageOntology: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix om: <http://fhnw.ch/modelingEnvironment/OntologyModel#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,11 +10,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://fhnw.ch/modelingEnvironment/OntologyModel>
-  rdf:type owl:Ontology ;
-  owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
-.
 om:BPMNModel
   rdf:type owl:Class ;
   rdfs:label "BPMN Models" ;
