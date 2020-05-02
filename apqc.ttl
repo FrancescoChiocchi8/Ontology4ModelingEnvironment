@@ -1,7 +1,6 @@
 # baseURI: http://ikm-group.ch/archimeo/apqc
 # prefix: apqc
 
-@prefix : <http://ikm-group.ch/archimeo/apqc#> .
 @prefix apqc: <http://ikm-group.ch/archimeo/apqc#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

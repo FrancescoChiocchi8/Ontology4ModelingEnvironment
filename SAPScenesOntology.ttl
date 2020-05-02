@@ -10,632 +10,628 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sapscenes:Accessory
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Robot Arm" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Age
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Character ;
   rdfs:label "Age" ;
   rdfs:range xsd:string ;
 .
 sapscenes:Airport
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Airport" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:AnnotationProperty_1
-  rdf:type owl:AnnotationProperty ;
+  a owl:AnnotationProperty ;
   rdfs:label "Prova" ;
   rdfs:range <http://who.int/icf#b_BodyFunction> ;
 .
 sapscenes:ApplianceDimensions
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:ElectricAppliances ;
   rdfs:label "Appliance Dimensions" ;
   rdfs:range xsd:string ;
 .
 sapscenes:ApplianceInstallationHeight
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:ElectricAppliances ;
   rdfs:label "Appliance Installation Height" ;
   rdfs:range xsd:string ;
 .
 sapscenes:Architecture
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Architecture" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:ArchitectureDimensions
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Architecture ;
   rdfs:label "Architecture Dimensions" ;
   rdfs:range xsd:string ;
 .
 sapscenes:ArchitectureInstallationHeight
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Architecture ;
   rdfs:label "Architecture Installation Height" ;
   rdfs:range xsd:string ;
 .
 sapscenes:Arrow
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Background
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Background" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Bar
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Bar" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Bench
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Bench" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:BigHouse
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:BigSign
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Sign ;
 .
 sapscenes:Bike
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Bike" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:Black
-  rdf:type sapscenes:Colour ;
+  a sapscenes:Colour ;
 .
 sapscenes:Bosch
-  rdf:type sapscenes:Brand ;
+  a sapscenes:Brand ;
   rdfs:label "Bosch" ;
 .
 sapscenes:Brand
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Brand" ;
   rdfs:subClassOf owl:Thing ;
 .
 sapscenes:Brown
-  rdf:type sapscenes:Colour ;
+  a sapscenes:Colour ;
 .
 sapscenes:Building
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Bus
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Bus" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:BusinessMan
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Business Man" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:BusinessWoman
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Business Woman" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:CabinetDimensions
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain owl:Ontology ;
   rdfs:label "Cabinet Dimensions" ;
   rdfs:range xsd:string ;
 .
 sapscenes:CabinetFunctions
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Cabinets ;
   rdfs:label "Cabinet Functions" ;
   rdfs:range xsd:string ;
 .
 sapscenes:CabinetInstallationHeight
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Cabinets ;
   rdfs:label "Cabinet Installation Height" ;
   rdfs:range xsd:string ;
 .
 sapscenes:Cabinets
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Cabinets" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Cafe
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Cafe" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Car
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Car" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:CashRegisterTable
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Cash Register Table" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:CashRegisterTable_1
-  rdf:type sapscenes:CashRegisterTable ;
+  a sapscenes:CashRegisterTable ;
   rdfs:label "CashRegisterTable_1" ;
 .
 sapscenes:Chair
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Chair" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Character
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Character" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:City
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "City" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:CoffeeCorner
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Coffee Corner" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:CoffeeCup
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Coffee Cup" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:Colour
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf owl:Thing ;
 .
 sapscenes:CookingRange
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Cooking Range" ;
   rdfs:subClassOf sapscenes:ElectricAppliances ;
 .
 sapscenes:Couch
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Couch" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Couch_1
-  rdf:type sapscenes:Couch ;
+  a sapscenes:Couch ;
   rdfs:label "Couch_1" ;
 .
 sapscenes:Countryside
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Countryside" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:CryingBubble
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SpeechBubble ;
 .
 sapscenes:DesktopSetting
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Desktop Setting" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Device
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Device" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:DirectionSign
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Sign ;
 .
 sapscenes:Dishwasher
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Dishwasher" ;
   rdfs:subClassOf sapscenes:ElectricAppliances ;
 .
 sapscenes:Doctor
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Doctor" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:DoubleDoorFridge
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Double Door Fridge" ;
   rdfs:subClassOf sapscenes:Fridge ;
 .
 sapscenes:Down
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Arrow ;
 .
 sapscenes:Dresser
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Dresser" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Drone
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Drone" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:Drone_1
-  rdf:type sapscenes:Drone ;
+  a sapscenes:Drone ;
   rdfs:label "Drone_1" ;
 .
 sapscenes:ElectricAppliances
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Electric Appliances" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Electrolux
-  rdf:type sapscenes:Brand ;
+  a sapscenes:Brand ;
   rdfs:label "Electrolux" ;
 .
 sapscenes:Executes
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Executes" ;
   rdfs:subClassOf lo:ModelingRelation ;
 .
 sapscenes:ExtractorHood
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Extractor Hood" ;
   rdfs:subClassOf sapscenes:ElectricAppliances ;
 .
 sapscenes:Factory
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:Flipchart
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Flipchart" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Forklift
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Forklift" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:Fridge
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Fridge" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Furniture
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Furniture" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:FurnitureDimensions
-  rdf:type owl:DatatypeProperty ;
+  a owl:DatatypeProperty ;
   rdfs:domain sapscenes:Furniture ;
   rdfs:label "Furniture Dimensions" ;
   rdfs:range xsd:string ;
 .
 sapscenes:Gong
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Gong" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Grey
-  rdf:type sapscenes:Colour ;
+  a sapscenes:Colour ;
 .
 sapscenes:Heater
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Heater" ;
   rdfs:subClassOf sapscenes:ElectricAppliances ;
 .
 sapscenes:HighCabinet
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "High Cabinet" ;
   rdfs:subClassOf sapscenes:Cabinets ;
 .
 sapscenes:HighCabinetForStorage
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "High Cabinet for Storage" ;
   rdfs:subClassOf sapscenes:HighCabinet ;
 .
 sapscenes:HighCabinetWithOven
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "High Cabinet with Oven" ;
   rdfs:subClassOf sapscenes:HighCabinet ;
 .
 sapscenes:House
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:Kitchen
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Kitchen" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Laptop
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Laptop" ;
   rdfs:subClassOf sapscenes:Device ;
 .
 sapscenes:LaptopSetting
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Laptop Setting" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Left
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Arrow ;
 .
 sapscenes:LowerCabinet
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Lower Cabinet" ;
   rdfs:subClassOf sapscenes:Cabinets ;
 .
 sapscenes:LowerCabinetWithCookingRange
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Lower Cabinet with Cooking Range" ;
   rdfs:subClassOf sapscenes:LowerCabinet ;
 .
 sapscenes:LowerCabinetWithShelves
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Lower Cabinet with Shelves" ;
   rdfs:subClassOf sapscenes:LowerCabinet ;
 .
 sapscenes:LowerCabinetWithSinkAndWasteDisposal
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Lower Cabinet with Sink and Waste Disposal" ;
   rdfs:subClassOf sapscenes:LowerCabinet ;
 .
 sapscenes:MallInside
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Man
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Man" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:MeetingRoom
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Meeting Room" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:MobilePhone
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Mobile Phone" ;
   rdfs:subClassOf sapscenes:Device ;
 .
 sapscenes:Monitor
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Monitor" ;
   rdfs:subClassOf sapscenes:Device ;
 .
 sapscenes:Office
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Office" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:OfficeBuilding
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:OldMan
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Old Man" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:OldWoman
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Old Woman" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:Oven
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Oven" ;
   rdfs:subClassOf sapscenes:ElectricAppliances ;
 .
 sapscenes:PackageBig
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Package Big" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PackageMedium
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Package Medium" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PackageSmall
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Package Small" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:PalletStack
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Pallet Stack" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
 sapscenes:Process
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Right
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Arrow ;
 .
 sapscenes:RobotArm
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Robot Arm" ;
   rdfs:subClassOf sapscenes:Accessory ;
 .
-sapscenes:SAPScenesModelingView
-  rdf:type lo:ModelingView ;
-  rdfs:label "SAPScenesModelingView" ;
-.
 sapscenes:SceneObject
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "SceneObject" ;
   rdfs:subClassOf lo:ModelingElement ;
 .
 sapscenes:ShippingDock
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:ShoppingCart
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Shopping Cart" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Siemens
-  rdf:type sapscenes:Brand ;
+  a sapscenes:Brand ;
   rdfs:label "Siemens" ;
 .
 sapscenes:Sign
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:SingleDoorFridge
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Single Door Fridge" ;
   rdfs:subClassOf sapscenes:Fridge ;
 .
 sapscenes:SmallSign
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Sign ;
 .
 sapscenes:SodaMaschine
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Soda Maschine" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:SpeechBubble
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Speech_Bubble
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SpeechBubble ;
 .
 sapscenes:Stool
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Stool" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:StorageRoom
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Storage Room" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Store
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:StoreAisle
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Student
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Student" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:Subway
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Subway" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:Table
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Table" ;
   rdfs:subClassOf sapscenes:Furniture ;
 .
 sapscenes:Tablet
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Tablet" ;
   rdfs:subClassOf sapscenes:Device ;
 .
 sapscenes:Team
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:ThinkingBubble
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:SpeechBubble ;
 .
 sapscenes:TowerBuilding
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:Train
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Train" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:TrainStation
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Building ;
 .
 sapscenes:TransportationElement
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Transportation Element" ;
   rdfs:subClassOf sapscenes:SceneObject ;
 .
 sapscenes:Trolley
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Trolley" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:Truck
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Truck" ;
   rdfs:subClassOf sapscenes:TransportationElement ;
 .
 sapscenes:TruckDock
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Truck Dock" ;
   rdfs:subClassOf sapscenes:Background ;
 .
 sapscenes:TruckDriver
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Truck Driver" ;
   rdfs:subClassOf sapscenes:Character ;
 .
 sapscenes:Up
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:subClassOf sapscenes:Arrow ;
 .
 sapscenes:V-Zug
-  rdf:type sapscenes:Brand ;
+  a sapscenes:Brand ;
   rdfs:label "VZug" ;
 .
 sapscenes:WallCabinet
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Wall Cabinet" ;
   rdfs:subClassOf sapscenes:Cabinets ;
 .
 sapscenes:Window
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Window" ;
   rdfs:subClassOf sapscenes:Architecture ;
 .
 sapscenes:hasNote
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "has Note" ;
   rdfs:subClassOf lo:ModelingRelation ;
 .
 sapscenes:hasRelation
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Has Relation" ;
   rdfs:subClassOf lo:ModelingRelation ;
 .
 <http://fhnw.ch/SAPScenesOntology>
-  rdf:type owl:Ontology ;
+  a owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
-  rdf:type sapscenes:Warranty ;
+  a sapscenes:Warranty ;
   rdfs:label "1 Year" ;
 .
 <http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
-  rdf:type sapscenes:Warranty ;
+  a sapscenes:Warranty ;
   rdfs:label "2 Years" ;
 .

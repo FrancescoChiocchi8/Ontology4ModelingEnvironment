@@ -2,7 +2,6 @@
 # imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # prefix: om
 
-@prefix : <http://fhnw.ch/modelingEnvironment/OntologyModel#> .
 @prefix LanguageOntology: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix om: <http://fhnw.ch/modelingEnvironment/OntologyModel#> .

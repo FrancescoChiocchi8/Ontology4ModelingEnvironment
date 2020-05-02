@@ -1,6 +1,5 @@
 # baseURI: http://fhnw.ch/OrganizationalModel
 
-@prefix : <http://fhnw.ch/OrganizationalModel#> .
 @prefix orgm: <http://fhnw.ch/OrganizationalModel/orgm#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

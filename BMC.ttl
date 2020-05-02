@@ -1,6 +1,5 @@
 # baseURI: http://fhnw.ch/BMC
 
-@prefix : <http://fhnw.ch/SAPScenesOntology#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
