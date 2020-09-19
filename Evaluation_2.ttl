@@ -1,0 +1,135 @@
+# baseURI: http://fhnw.ch/modelingEnvironment/EvaluationTwo
+# imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
+# prefix: eval2
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
+@prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
+@prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix eval2: <http://fhnw.ch/modelingEnvironment/EvaluationTwo#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/modelingEnvironment/EvaluationTwo>
+  owl:imports <http://fhnw.ch/modelingEnvironment/PaletteOntology> ;
+.
+eval2:ClassTargetType
+  rdf:type eval2:TargetType ;
+.
+eval2:Diagram
+  rdf:type owl:Class ;
+  rdfs:label "Diagram" ;
+  rdfs:subClassOf owl:Thing ;
+.
+eval2:InstanceTargetType
+  rdf:type eval2:TargetType ;
+.
+eval2:Model
+  rdf:type owl:Class ;
+  rdfs:label "Models" ;
+  rdfs:subClassOf owl:Thing ;
+.
+eval2:ModelConstructInstance
+  rdf:type owl:Class ;
+  rdfs:label "Model Elements" ;
+  rdfs:subClassOf owl:Thing ;
+.
+eval2:TargetType
+  rdf:type owl:Class ;
+  rdfs:label "Target Type - either class or instance" ;
+  rdfs:subClassOf owl:Thing ;
+.
+eval2:Task_2
+  rdf:type po:Task ;
+.
+eval2:diagramHasHeight
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range xsd:integer ;
+.
+eval2:diagramHasNote
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range xsd:string ;
+.
+eval2:diagramHasWidth
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range xsd:integer ;
+.
+eval2:diagramInstantiatesPaletteConstruct
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range po:PaletteConstruct ;
+.
+eval2:diagramPositionsOnCoordinateX
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range xsd:integer ;
+.
+eval2:diagramPositionsOnCoordinateY
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range xsd:integer ;
+.
+eval2:diagramRepresentsModel
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range eval2:Model ;
+.
+eval2:diagramVisualisesModelingLanguageConstructInstance
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Diagram ;
+  rdfs:range lo:ModelingLanguageConstruct ;
+.
+eval2:modelHasDiagram
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain eval2:Model ;
+  rdfs:range eval2:Diagram ;
+.
+eval2:modelInstantiatesAsTargetType
+  rdf:type owl:ObjectProperty ;
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  rdfs:domain eval2:Model ;
+  rdfs:range eval2:TargetType ;
+.
+eval2:modelingContainerContainsModelingLanguageConstruct
+  rdf:type owl:ObjectProperty ;
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  rdfs:domain lo:ModelingContainer ;
+  rdfs:range lo:ModelingLanguageConstruct ;
+.
+eval2:modelingLanguageInstantiatesAsTargetType
+  rdf:type owl:ObjectProperty ;
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  rdfs:domain lo:ModelingLanguage ;
+  rdfs:range eval2:TargetType ;
+.
+eval2:modelingViewInstantiatesAsTargetType
+  rdf:type owl:ObjectProperty ;
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  rdfs:domain lo:ModelingView ;
+  rdfs:range eval2:TargetType ;
+.
+eval2:objectPropertyIsShownInModel
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:ObjectProperty ;
+  rdfs:range xsd:boolean ;
+.
+lo:elementIsMappedWithDOConcept
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+.
+lo:modelingRelationHasSourceModelingElement
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+.
+lo:modelingRelationHasTargetModelingElement
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+.
+lo:elementHasBridgingConcept
+  eval2:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+.
