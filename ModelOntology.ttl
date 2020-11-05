@@ -48,17 +48,17 @@ mod:Task_2
   rdf:type po:Task ;
 .
 mod:shapeHasHeight
-  rdf:type owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain mod:Shape ;
   rdfs:range xsd:integer ;
 .
 mod:shapeHasNote
-  rdf:type owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain mod:Shape ;
   rdfs:range xsd:string ;
 .
 mod:shapeHasWidth
-  rdf:type owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain mod:Shape ;
   rdfs:range xsd:integer ;
 .
@@ -68,12 +68,12 @@ mod:shapeInstantiatesPaletteConstruct
   rdfs:range po:PaletteConstruct ;
 .
 mod:shapePositionsOnCoordinateX
-  rdf:type owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain mod:Shape ;
   rdfs:range xsd:integer ;
 .
 mod:shapePositionsOnCoordinateY
-  rdf:type owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain mod:Shape ;
   rdfs:range xsd:integer ;
 .
@@ -117,8 +117,8 @@ mod:modelingViewInstantiatesAsTargetType
   rdfs:range mod:TargetType ;
 .
 mod:objectPropertyIsShownInModel
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain owl:ObjectProperty ;
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain rdf:Property ;
   rdfs:range xsd:boolean ;
 .
 lo:elementIsMappedWithDOConcept
