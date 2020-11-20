@@ -78,7 +78,7 @@ mod:modelHasShape
   rdfs:domain mod:Model ;
   rdfs:range mod:Shape ;
 .
-mod:modelingContainerContainsModelingLanguageConstruct
+lo:modelingContainerContainsModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
   mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
   rdfs:domain lo:ModelingContainer ;
