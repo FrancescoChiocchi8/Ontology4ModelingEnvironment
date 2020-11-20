@@ -18,34 +18,20 @@
 <http://fhnw.ch/modelingEnvironment/ModelOntology>
   owl:imports <http://fhnw.ch/modelingEnvironment/PaletteOntology> ;
 .
-mod:ClassTargetType
-  rdf:type mod:TargetType ;
-.
 mod:Shape
   rdf:type owl:Class ;
   rdfs:label "Shape" ;
   rdfs:subClassOf owl:Thing ;
-.
-mod:InstanceTargetType
-  rdf:type mod:TargetType ;
 .
 mod:Model
   rdf:type owl:Class ;
   rdfs:label "Models" ;
   rdfs:subClassOf owl:Thing ;
 .
-mod:ModelConstructInstance
+mod:ConceptualElement
   rdf:type owl:Class ;
   rdfs:label "Model Elements" ;
   rdfs:subClassOf owl:Thing ;
-.
-mod:TargetType
-  rdf:type owl:Class ;
-  rdfs:label "Target Type - either class or instance" ;
-  rdfs:subClassOf owl:Thing ;
-.
-mod:Task_2
-  rdf:type po:Task ;
 .
 mod:shapeHasHeight
   rdf:type owl:DatatypeProperty ;
@@ -82,39 +68,21 @@ mod:shapeRepresentsModel
   rdfs:domain mod:Shape ;
   rdfs:range mod:Model ;
 .
-mod:shapeVisualisesModelingLanguageConstructInstance
+mod:shapeVisualisesConceptualElement
   rdf:type owl:ObjectProperty ;
   rdfs:domain mod:Shape ;
-  rdfs:range lo:ModelingLanguageConstruct ;
+  rdfs:range mod:ConceptualElement ;
 .
 mod:modelHasShape
   rdf:type owl:ObjectProperty ;
   rdfs:domain mod:Model ;
   rdfs:range mod:Shape ;
 .
-mod:modelInstantiatesAsTargetType
-  rdf:type owl:ObjectProperty ;
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
-  rdfs:domain mod:Model ;
-  rdfs:range mod:TargetType ;
-.
 mod:modelingContainerContainsModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
   mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
   rdfs:domain lo:ModelingContainer ;
   rdfs:range lo:ModelingLanguageConstruct ;
-.
-mod:modelingLanguageInstantiatesAsTargetType
-  rdf:type owl:ObjectProperty ;
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
-  rdfs:domain lo:ModelingLanguage ;
-  rdfs:range mod:TargetType ;
-.
-mod:modelingViewInstantiatesAsTargetType
-  rdf:type owl:ObjectProperty ;
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
-  rdfs:domain lo:ModelingView ;
-  rdfs:range mod:TargetType ;
 .
 mod:objectPropertyIsShownInModel
   rdf:type owl:DatatypeProperty ;
