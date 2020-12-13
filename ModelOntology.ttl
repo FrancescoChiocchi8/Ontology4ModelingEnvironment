@@ -2,11 +2,6 @@
 # imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
 # prefix: mod
 
-@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
-@prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
-@prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
-@prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
-@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
 @prefix mod: <http://fhnw.ch/modelingEnvironment/ModelOntology#> .
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
