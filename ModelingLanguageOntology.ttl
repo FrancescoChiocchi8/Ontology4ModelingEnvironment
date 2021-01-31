@@ -602,7 +602,6 @@ bpmn:FlowObject
 .
 bpmn:Swimlane
   rdfs:subClassOf lo:ModelingContainer ;
-  rdfs:subClassOf lo:ModelingElement ;
 .
 bpmn:UserTask
   rdfs:range xsd:string ;
