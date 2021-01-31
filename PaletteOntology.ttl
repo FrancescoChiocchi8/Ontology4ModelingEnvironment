@@ -14,6 +14,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 
 sapscenes:Canvases
   a owl:Class ;
@@ -225,6 +226,7 @@ po:Association_4DSML4PTM
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
   po:paletteElementUsesImage true ;
   rdfs:label "Association" ;
+  po:paletteConnectorConfiguresArrowStroke po:Dot ;
 .
 po:Association_BPMN
   a po:PaletteConnector ;
@@ -238,6 +240,7 @@ po:Association_BPMN
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:Association ;
   po:paletteElementUsesImage true ;
   rdfs:label "Association" ;
+  po:paletteConnectorConfiguresArrowStroke po:Dot ;
 .
 po:Background
   a po:PaletteElement ;
@@ -510,6 +513,12 @@ po:CashRegisterTable
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:CashRegisterTable ;
   rdfs:label "Cash Register Table" ;
+.
+po:ArchiMate_General
+  a po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ArchiMateView ;
+  po:paletteCategoryIsUsedInModelingLanguage lo:ArchiMate ;
+  rdfs:label "ArchiMate General" ;
 .
 po:Category_Activities
   a po:PaletteCategory_BPMN ;
@@ -2010,6 +2019,9 @@ po:MessageFlow_4DSML4PTM
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
   po:paletteElementUsesImage true ;
   rdfs:label "Message Flow" ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresFromArrowHead po:Circle ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
 .
 po:MessageFlow_BPMN
   a po:PaletteConnector ;
@@ -2023,6 +2035,9 @@ po:MessageFlow_BPMN
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
   po:paletteElementUsesImage true ;
   rdfs:label "Message Flow" ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresFromArrowHead po:Circle ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
 .
 po:MessageIntermediateEvent
   a po:PaletteElement ;
@@ -2595,6 +2610,8 @@ po:SequenceFlow_4DSML4PTM
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage true ;
   rdfs:label "Sequence Flow" ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+  po:paletteConnectorConfiguresArrowStroke po:Single ;
 .
 po:SequenceFlow_BPMN
   a po:PaletteConnector ;
@@ -2608,6 +2625,8 @@ po:SequenceFlow_BPMN
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
   po:paletteElementUsesImage true ;
   rdfs:label "Sequence Flow" ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+  po:paletteConnectorConfiguresArrowStroke po:Single ;
 .
 po:ServiceTask
   a po:PaletteElement ;
@@ -3292,6 +3311,147 @@ po:WallCabinet
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:WallCabinet ;
   rdfs:label "Wall Cabinet" ;
 .
+po:SystemSoftware
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "SystemSoftware.png" ;
+  po:paletteConstructHasPaletteThumbnail "SystemSoftware_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:SystemSoftware ;
+  rdfs:label "System Software" ;
+  po:paletteElementBackgroundColor "#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:InfrastructureService
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyService.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyService_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:InfrastructureService ;
+  rdfs:label "Infrastructure Service" ;
+  po:paletteElementBackgroundColor"#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:ApplicationComponent
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationComponent.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationComponent_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationComponent ;
+  rdfs:label "Application Component" ;
+  po:paletteElementBackgroundColor"#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:ApplicationService
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationService.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationService_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationService ;
+  rdfs:label "Application Service" ;
+  po:paletteElementBackgroundColor"#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:BusinessProcess
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessProcess.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessProcess_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessProcess ;
+  rdfs:label "Business Process" ;
+  po:paletteElementBackgroundColor"#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:BusinessObject
+  a po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:ArchiMateView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessObject.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessObject_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessObject ;
+  rdfs:label "Business Object" ;
+  po:paletteElementBackgroundColor"#c9dcf5";
+  po:paletteElementIconPosition "top-right";
+  po:paletteElementLabelPosition "inside";
+  po:paletteElementShape "roundrectangle";
+  po:paletteElementUsesImage false;
+.
+po:Realisation
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Realisation ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Realisation" ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+  po:paletteConnectorConfiguresArrowStroke po:Dot ;
+.
+po:Access
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Access ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Access" ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+.
+po:Serving
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_General ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Serving ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Serving" ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConnectorConfiguresArrowStroke po:Single ;
+.
 po:WallCabinetWithGlass
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -3667,4 +3827,431 @@ bpmn:UserTask
 .
 <http://ikm-group.ch/ontology-based-modelling-environment>
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
+.
+po:AccelerationArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "AccelerationArrow" ;
+.
+po:ArrowConstruct
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+po:ArrowHead
+  rdf:type owl:Class ;
+  rdfs:subClassOf po:ArrowConstruct ;
+.
+po:ArrowStroke
+  rdf:type owl:Class ;
+  rdfs:subClassOf po:ArrowConstruct ;
+.
+po:BackSlash
+  rdf:type po:ArrowHead ;
+  rdf:type po:ArrowStroke ;
+  rdfs:label "BackSlash" ;
+.
+po:Backward
+  rdf:type po:ArrowHead ;
+  rdfs:label "Backward" ;
+.
+po:BackwardBoomerang
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardBoomerang" ;
+.
+po:BackwardCircleFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardCircleFork" ;
+.
+po:BackwardCircleLineFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardCircleLineFork" ;
+.
+po:BackwardDoubleFeathers
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardDoubleFeathers" ;
+.
+po:BackwardFeather
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardFeather" ;
+.
+po:BackwardFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardFork" ;
+.
+po:BackwardHalfTriangleBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardHalfTriangleBottom" ;
+.
+po:BackwardHalfTriangleTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardHalfTriangleTop" ;
+.
+po:BackwardLineFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardLineFork" ;
+.
+po:BackwardOpenTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardOpenTriangle" ;
+.
+po:BackwardOpenTriangleBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardOpenTriangleBottom" ;
+.
+po:BackwardOpenTriangleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardOpenTriangleLine" ;
+.
+po:BackwardOpenTriangleTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardOpenTriangleTop" ;
+.
+po:BackwardSemiCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardSemiCircle" ;
+.
+po:BackwardTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardTriangle" ;
+.
+po:BackwardTripleFeathers
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardTripleFeathers" ;
+.
+po:BackwardV
+  rdf:type po:ArrowHead ;
+  rdfs:label "BackwardV" ;
+.
+po:BigCircle
+  rdf:type po:ArrowStroke ;
+  rdfs:label "BigCircle" ;
+.
+po:BigEndArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "BigEndArrow" ;
+.
+po:BlindHem
+  rdf:type po:ArrowStroke ;
+  rdfs:label "BlindHem" ;
+.
+po:Block
+  rdf:type po:ArrowHead ;
+  rdfs:label "Block" ;
+.
+po:Boomerang
+  rdf:type po:ArrowHead ;
+  rdfs:label "Boomerang" ;
+.
+po:BoxArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "BoxArrow" ;
+.
+po:Chevron
+  rdf:type po:ArrowHead ;
+  rdfs:label "Chevron" ;
+.
+po:Circle
+  rdf:type po:ArrowHead ;
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Circle" ;
+.
+po:CircleEndedArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "CircleEndedArrow" ;
+.
+po:CircleFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "CircleFork" ;
+.
+po:CircleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "CircleLine" ;
+.
+po:CircleLineFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "CircleLineFork" ;
+.
+po:Coil
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Coil" ;
+.
+po:ConcaveTailArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "ConcaveTailArrow" ;
+.
+po:Dash
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Dash" ;
+.
+po:Dentil
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Dentil" ;
+.
+po:Diamond
+  rdf:type po:ArrowHead ;
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Diamond" ;
+.
+po:DiamondCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "DiamondCircle" ;
+.
+po:Dot
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Dot" ;
+.
+po:Double
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Double" ;
+.
+po:DoubleBackSlash
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleBackSlash" ;
+.
+po:DoubleDash
+  rdf:type po:ArrowStroke ;
+  rdfs:label "DoubleDash" ;
+.
+po:DoubleDot
+  rdf:type po:ArrowStroke ;
+  rdfs:label "DoubleDot" ;
+.
+po:DoubleFeathers
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleFeathers" ;
+.
+po:DoubleForwardSlash
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleForwardSlash" ;
+.
+po:DoubleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleLine" ;
+.
+po:DoubleLineCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleLineCircle" ;
+.
+po:DoubleTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "DoubleTriangle" ;
+.
+po:DynamicWidthArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "DynamicWidthArrow" ;
+.
+po:EquilibriumArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "EquilibriumArrow" ;
+.
+po:FastForward
+  rdf:type po:ArrowHead ;
+  rdfs:label "FastForward" ;
+.
+po:Feather
+  rdf:type po:ArrowHead ;
+  rdfs:label "Feather" ;
+.
+po:Fork
+  rdf:type po:ArrowHead ;
+  rdfs:label "Fork" ;
+.
+po:ForwardSemiCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "ForwardSemiCircle" ;
+.
+po:ForwardSlash
+  rdf:type po:ArrowHead ;
+  rdfs:label "ForwardSlash" ;
+.
+po:Greek
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Greek" ;
+.
+po:HalfArrowBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "HalfArrowBottom" ;
+.
+po:HalfArrowTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "HalfArrowTop" ;
+.
+po:HalfTriangleBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "HalfTriangleBottom" ;
+.
+po:HalfTriangleTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "HalfTriangleTop" ;
+.
+po:Herringbone
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Herringbone" ;
+.
+po:Kite
+  rdf:type po:ArrowHead ;
+  rdfs:label "Kite" ;
+.
+po:Line
+  rdf:type po:ArrowHead ;
+  rdfs:label "Line" ;
+.
+po:LineCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "LineCircle" ;
+.
+po:LineFork
+  rdf:type po:ArrowHead ;
+  rdfs:label "LineFork" ;
+.
+po:NormalArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "NormalArrow" ;
+.
+po:OpenRightTriangleBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenRightTriangleBottom" ;
+.
+po:OpenRightTriangleTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenRightTriangleTop" ;
+.
+po:OpenTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenTriangle" ;
+.
+po:OpenTriangleBottom
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenTriangleBottom" ;
+.
+po:OpenTriangleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenTriangleLine" ;
+.
+po:OpenTriangleTop
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpenTriangleTop" ;
+.
+po:OpposingDirectionDoubleArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "OpposingDirectionDoubleArrow" ;
+.
+po:PartialDoubleTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "PartialDoubleTriangle" ;
+.
+po:PentagonArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "PentagonArrow" ;
+.
+po:PlusCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "PlusCircle" ;
+.
+po:RoundedTriangle
+  rdf:type po:ArrowHead ;
+  rdfs:label "RoundedTriangle" ;
+.
+po:Sawtooth
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Sawtooth" ;
+.
+po:Seed
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Seed" ;
+.
+po:SemiCircle
+  rdf:type po:ArrowStroke ;
+  rdfs:label "SemiCircle" ;
+.
+po:SidewaysV
+  rdf:type po:ArrowHead ;
+  rdfs:label "SidewaysV" ;
+.
+po:SimpleArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "SimpleArrow" ;
+.
+po:Single
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Single" ;
+.
+po:Slash
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Slash" ;
+.
+po:Square
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Square" ;
+.
+po:Standard
+  rdf:type po:ArrowHead ;
+  rdfs:label "Standard" ;
+.
+po:StretchedChevron
+  rdf:type po:ArrowHead ;
+  rdfs:label "StretchedChevron" ;
+.
+po:StretchedDiamond
+  rdf:type po:ArrowHead ;
+  rdfs:label "StretchedDiamond" ;
+.
+po:TailedNormalArrow
+  rdf:type po:ArrowHead ;
+  rdfs:label "TailedNormalArrow" ;
+.
+po:Triangle
+  rdf:type po:ArrowHead ;
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Triangle" ;
+.
+po:TriangleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "TriangleLine" ;
+.
+po:Triple
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Triple" ;
+.
+po:TripleBackSlash
+  rdf:type po:ArrowHead ;
+  rdfs:label "TripleBackSlash" ;
+.
+po:TripleFeathers
+  rdf:type po:ArrowHead ;
+  rdfs:label "TripleFeathers" ;
+.
+po:TripleForwardSlash
+  rdf:type po:ArrowHead ;
+  rdfs:label "TripleForwardSlash" ;
+.
+po:TripleLine
+  rdf:type po:ArrowHead ;
+  rdfs:label "TripleLine" ;
+.
+po:TripleLineCircle
+  rdf:type po:ArrowHead ;
+  rdfs:label "TripleLineCircle" ;
+.
+po:X
+  rdf:type po:ArrowHead ;
+  rdfs:label "X" ;
+.
+po:Zipper
+  rdf:type po:ArrowStroke ;
+  rdfs:label "Zipper" ;
+.
+po:paletteConnectorConfiguresArrowStroke
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:range po:ArrowStroke ;
+.
+po:paletteConnectorConfiguresFromArrowHead
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:range po:ArrowHead ;
+.
+po:paletteConnectorConfiguresToArrowHead
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain po:PaletteConnector ;
+  rdfs:range po:ArrowHead ;
 .

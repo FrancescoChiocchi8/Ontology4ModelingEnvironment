@@ -278,6 +278,10 @@ archi:Junction
 \"A junction is used to connect relationships of the same type.\" (OpenGroup 2009)""" ;
   rdfs:subClassOf archi:OtherRelationships ;
 .
+archi:Serving
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:OtherRelationships ;
+.
 archi:LibraryViewpoint
   rdf:type owl:Class ;
   rdfs:subClassOf <http://ikm-group.ch/archimeo/iso42010#ADMetaModel> ;
