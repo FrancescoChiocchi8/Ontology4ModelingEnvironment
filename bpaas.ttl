@@ -1,10 +1,10 @@
 # baseURI: http://ikm-group.ch/archimeo/bpaas
+# imports: http://ikm-group.ch/archiMEO/BMM
+# imports: http://ikm-group.ch/archiMEO/nco
 # imports: http://ikm-group.ch/archiMEO/questionnaire
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/apqc
-# imports: http://ikm-group.ch/archimeo/bmm
 # imports: http://ikm-group.ch/archimeo/fbpdo
-# imports: http://ikm-group.ch/archimeo/nco
 # imports: http://spinrdf.org/spl
 # prefix: bpaas
 
@@ -33,12 +33,12 @@ apqc:AmericanProductivityAndQualityCenter
 .
 <http://ikm-group.ch/archimeo/bpaas>
   rdf:type owl:Ontology ;
+  owl:imports <http://ikm-group.ch/archiMEO/BMM> ;
+  owl:imports <http://ikm-group.ch/archiMEO/nco> ;
   owl:imports <http://ikm-group.ch/archiMEO/questionnaire> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:imports <http://ikm-group.ch/archimeo/apqc> ;
-  owl:imports <http://ikm-group.ch/archimeo/bmm> ;
   owl:imports <http://ikm-group.ch/archimeo/fbpdo> ;
-  owl:imports <http://ikm-group.ch/archimeo/nco> ;
   owl:imports <http://spinrdf.org/spl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
