@@ -557,7 +557,7 @@ sapscenes:Feel_insecure
 .
 sapscenes:Feel_insurance_children
   a sapscenes:Feel ;
-  sapscenes:leadsTo sapscenes::Gain_simple_ui ;
+  sapscenes:leadsTo sapscenes:Gain_simple_ui ;
   rdfs:label "Wants to insure children" ;
 .
 sapscenes:Gain_simple_ui
@@ -570,12 +570,12 @@ sapscenes:Pain_expensive
 .
 sapscenes:Seeing_money_disapearing
   a sapscenes:Seeing ;
-  sapscenes:leadsTo sapscenes::Pain_expensive ;
+  sapscenes:leadsTo sapscenes:Pain_expensive ;
   rdfs:label "Seeing money disapearing" ;
 .
-sapscenes::Seeing_progress_webapp
+sapscenes:Seeing_progress_webapp
   a sapscenes:Seeing ;
-  sapscenes:leadsTo sapscenes::Gain_simple_ui ;
+  sapscenes:leadsTo sapscenes:Gain_simple_ui ;
   rdfs:label "Seeing settings in the webapp" ;
 .
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
