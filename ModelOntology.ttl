@@ -75,24 +75,24 @@ mod:modelHasShape
 .
 lo:modelingContainerContainsModelingLanguageConstruct
   rdf:type owl:ObjectProperty ;
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  mod:propertyIsShownInModel "true"^^xsd:boolean ;
   rdfs:domain lo:ModelingContainer ;
   rdfs:range lo:ModelingLanguageConstruct ;
 .
-mod:objectPropertyIsShownInModel
+mod:propertyIsShownInModel
   rdf:type owl:DatatypeProperty ;
   rdfs:domain rdf:Property ;
   rdfs:range xsd:boolean ;
 .
 lo:elementIsMappedWithDOConcept
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  mod:propertyIsShownInModel "true"^^xsd:boolean ;
 .
 lo:modelingRelationHasSourceModelingElement
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  mod:propertyIsShownInModel "true"^^xsd:boolean ;
 .
 lo:modelingRelationHasTargetModelingElement
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  mod:propertyIsShownInModel "true"^^xsd:boolean ;
 .
 lo:elementHasBridgingConcept
-  mod:objectPropertyIsShownInModel "true"^^xsd:boolean ;
+  mod:propertyIsShownInModel "true"^^xsd:boolean ;
 .
