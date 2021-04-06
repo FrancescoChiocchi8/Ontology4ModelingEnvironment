@@ -154,7 +154,7 @@ emo:ArchimateConsistsOfInfrastructureInterface
 .
 emo:ArchimateConsistsOfInfrastructureService
   rdf:type owl:ObjectProperty ;
-  rdfs:range archi:InfrastructureService ;
+  rdfs:range archi:TechnologyService ;
   rdfs:subPropertyOf emo:modelTypeConsistsOfEnterpriseObject ;
 .
 emo:ArchimateConsistsOfMeaning

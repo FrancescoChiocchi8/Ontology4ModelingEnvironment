@@ -260,12 +260,6 @@ archi:InfrastructureInterface
 \"A point of access where the functionality offered by a node can be accessed by other nodes and application components.\" (OpenGroup 2009)""" ;
   rdfs:subClassOf archi:Interface ;
 .
-archi:InfrastructureService
-  rdf:type owl:Class ;
-  rdfs:comment """Archimate V1.0 Technology Layer Concept.
-\"An externally visible unit of functionality, provided by one or more nodes, exposed through well-defined interfaces, and meaningful to the environment.\" (OpenGroup 2009)""" ;
-  rdfs:subClassOf archi:Service ;
-.
 archi:Interface
   rdf:type owl:Class ;
   rdfs:comment """Archimate V1.0 Core Concept.
@@ -276,10 +270,6 @@ archi:Junction
   rdf:type owl:Class ;
   rdfs:comment """Archimate Relation.
 \"A junction is used to connect relationships of the same type.\" (OpenGroup 2009)""" ;
-  rdfs:subClassOf archi:OtherRelationships ;
-.
-archi:Serving
-  rdf:type owl:Class ;
   rdfs:subClassOf archi:OtherRelationships ;
 .
 archi:LibraryViewpoint
@@ -346,6 +336,10 @@ archi:Service
 \"The service concept represents a unit of essential functionality that a system exposes to its environment, and it provides a certain value (monetary or otherwise), which thus provides the motivation for the service’s existence. For the external users, only this external functionality and value, together with non-functional aspects such as the quality of service, costs, etc., are relevant. These can be specified in a contract or Service Level Agreement (SLA).\" (OpenGroup 2009)""" ;
   rdfs:subClassOf eo:EnterpriseObject ;
 .
+archi:Serving
+  rdf:type owl:Class ;
+  rdfs:subClassOf archi:OtherRelationships ;
+.
 archi:Specialisation
   rdf:type owl:Class ;
   rdfs:comment """Archimate Relation.
@@ -363,6 +357,12 @@ archi:SystemSoftware
 \"A software environment for specific types of components and objects that are deployed on it in the form of artifacts.\" (OpenGroup 2009)""" ;
   rdfs:subClassOf archi:BehaviourElement ;
   rdfs:subClassOf archi:Node ;
+.
+archi:TechnologyService
+  rdf:type owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"An externally visible unit of functionality, provided by one or more nodes, exposed through well-defined interfaces, and meaningful to the environment.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:Service ;
 .
 archi:Triggering
   rdf:type owl:Class ;
