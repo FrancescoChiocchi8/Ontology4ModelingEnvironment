@@ -16,6 +16,7 @@
 @prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix iso42010: <http://ikm-group.ch/archimeo/iso42010#> .
 
 <http://ikm-group.ch/archiMEO/archimate>
   rdf:type owl:Ontology ;
