@@ -313,23 +313,4 @@ bpmn:bpmnProcessRepresentsBusinessProcess
 emo:BPMNConsistsOfGroup
   rdfs:range bpmn:Group ;
 .
-<http://ikm-group.ch/archimeo/bpaas#GeneratingCustomerBillingData>
-  rdf:type rdfs:Class ;
-  rdfs:label "GeneratingCustomerBillingData" ;
-  rdfs:subClassOf bpmn:Group ;
-.
-<http://ikm-group.ch/archimeo/bpaas#ManagingCustomerRelationship>
-  rdf:type rdfs:Class ;
-  rdfs:label "ManagingCustomerRelationship" ;
-  rdfs:subClassOf bpmn:Group ;
-.
-<http://ikm-group.ch/archimeo/bpaas#TransmittingBillingData>
-  rdf:type rdfs:Class ;
-  rdfs:label "TransmittingBillingData" ;
-  rdfs:subClassOf bpmn:Group ;
-.
-<http://ikm-group.ch/archimeo/bpaas#Wholeprocess_sendinvoice>
-  rdf:type rdfs:Class ;
-  rdfs:label "Wholeprocess_sendinvoice" ;
-  rdfs:subClassOf bpmn:Group ;
-.
+
