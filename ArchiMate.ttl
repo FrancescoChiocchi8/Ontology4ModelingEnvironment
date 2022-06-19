@@ -50,6 +50,20 @@ archi:Access
 \"The access relationship models the access of behavioral concepts to business or data objects.\" (OpenGroup 2009)"""^^xsd:string ;
   rdfs:subClassOf archi:DependencyRelationships ;
 .
+# TODO: to be tested
+archi:Access_Read
+  rdf:type owl:Class ;
+  rdfs:comment """Archimate Relation.
+\"The access relationship models the access of behavioral concepts to business or data objects.\" (OpenGroup 2009)"""^^xsd:string ;
+  rdfs:subClassOf archi:Access ;
+.
+# TODO: to be tested
+archi:Access_Write
+  rdf:type owl:Class ;
+  rdfs:comment """Archimate Relation.
+\"The access relationship models the access of behavioral concepts to business or data objects.\" (OpenGroup 2009)"""^^xsd:string ;
+  rdfs:subClassOf archi:Access ;
+.
 archi:ActiveStructureElement
   rdf:type owl:Class ;
   rdfs:comment """Archimate V1.0 Core Concept.
@@ -115,8 +129,8 @@ archi:Artifact
 .
 archi:Assignment
   rdf:type owl:Class ;
-  rdfs:comment """Archimate Relation.
-\"The assignment relationship links units of behavior with active elements (e.g., roles, components) that perform them, or roles with actors that fulfill them.\"  (OpenGroup 2009)"""^^xsd:string ;
+#   rdfs:comment """Archimate Relation.
+# \"The assignment relationship links units of behavior with active elements (e.g., roles, components) that perform them, or roles with actors that fulfill them.\"  (OpenGroup 2009)"""^^xsd:string ;
   rdfs:subClassOf archi:StructuralRelationships ;
 .
 archi:Association
@@ -210,8 +224,8 @@ archi:CommunicationPath
 .
 archi:Composition
   rdf:type owl:Class ;
-  rdfs:comment """Archimate Relation.
-\"The composition relationship indicates that an object consists of a number of other objects.\" (OpenGroup 2009)"""^^xsd:string ;
+#   rdfs:comment """Archimate Relation.
+# \"The composition relationship indicates that an object consists of a number of other objects.\" (OpenGroup 2009)"""^^xsd:string ;
   rdfs:subClassOf archi:StructuralRelationships ;
 .
 archi:Contract
@@ -653,8 +667,14 @@ archi:Influence
 .
 archi:Serving
   rdf:type owl:Class ;
-  rdfs:comment """Archimate Relation.
-\"The serving relationship represents that an element provides its functionality to another element.\" (OpenGroup 2019)"""^^xsd:string ;
+#   rdfs:comment """Archimate Relation.
+# \"The serving relationship represents that an element provides its functionality to another element.\" (OpenGroup 2019)"""^^xsd:string ;
+  rdfs:subClassOf archi:DependencyRelationships ;
+.
+archi:Serve
+  rdf:type owl:Class ;
+#   rdfs:comment """Archimate Relation.
+# \"The serving relationship represents that an element provides its functionality to another element.\" (OpenGroup 2019)"""^^xsd:string ;
   rdfs:subClassOf archi:DependencyRelationships ;
 .
 archi:RelationshipConnector
