@@ -681,3 +681,14 @@ lo:BPMN4PP
   rdf:type lo:ModelingLanguage ;
   rdfs:label "BPMN4PP" ;
 .
+
+lo:GPMLModellingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:GPML ;
+  rdfs:label "GPML View" ;
+.
+lo:GPML
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "GPML" ;
+.

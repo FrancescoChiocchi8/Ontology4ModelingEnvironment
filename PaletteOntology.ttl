@@ -19,6 +19,7 @@
 @prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
 @prefix orgm: <http://fhnw.ch/OrganizationalModel/orgm#> .
 @prefix bpaas: <http://ikm-group.ch/archimeo/bpaas#> .
+@prefix gpml: <http://ikm-group.ch/archiMEO/gpml#> .
 
 #todo?
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
@@ -4988,4 +4989,28 @@ po:paletteElementUsesImage
   a owl:DatatypeProperty ;
   rdfs:label "Use Images instead of Shape" ;
   rdfs:range xsd:boolean ;
+.
+po:Thing
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Thing.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thing.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_GPMLModellingELement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct gpml:Thing_1 ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Thing.png" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
+  rdfs:label "Thing" ;
+.
+
+po:Category_GPMLModellingELement
+  a po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:GPMLModellingView ; 
+  po:paletteCategoryOrderNumber 1 ;
+  rdfs:label "Modelling Element" ;
 .
