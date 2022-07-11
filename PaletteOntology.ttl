@@ -4996,7 +4996,7 @@ po:Thing
   po:paletteConstructHasModelImage "Thing.png" ;
   po:paletteConstructHasPaletteThumbnail "Thing.png" ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_GPMLModellingELement ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_GPMLModellingElement ;
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct gpml:Thing_1 ;
   po:paletteElementBackgroundColor "#c9dcf5" ;
@@ -5008,7 +5008,7 @@ po:Thing
   rdfs:label "Thing" ;
 .
 
-po:Category_GPMLModellingELement
+po:Category_GPMLModellingElement
   a po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:GPMLModellingView ; 
   po:paletteCategoryOrderNumber 1 ;
