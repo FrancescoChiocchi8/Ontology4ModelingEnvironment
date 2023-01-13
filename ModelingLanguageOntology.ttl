@@ -6,10 +6,8 @@
 # imports: http://fhnw.ch/modelingEnvironment/dkmm
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/bpaas
-
 # prefix: lo
 
-@prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
 @prefix DomainOntology: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
@@ -17,6 +15,7 @@
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcmi-type-vocabulary: <http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary#> .
 @prefix dcterms: <http://purl.org/dcterms#> .
@@ -229,7 +228,6 @@ dsml4ptm:PrepareKoGu3
   owl:imports <http://fhnw.ch/modelingEnvironment/dkmm> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
-  
   owl:versionInfo 1.1 ;
 .
 lo:AnnotationProperty_1
@@ -262,6 +260,16 @@ lo:ArchiMate_TechnologyView
   lo:isMainModelingView "false"^^xsd:boolean ;
   rdfs:label "Technology View" ;
 .
+lo:BPMN4PP
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "BPMN4PP" ;
+.
+lo:BPMN4PPProcessModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:BPMN4PP ;
+  rdfs:label "Process Modeling View" ;
+.
 lo:BPMNProcessModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "true"^^xsd:boolean ;
@@ -272,19 +280,16 @@ lo:BPMN_2_0
   rdf:type lo:ModelingLanguage ;
   rdfs:label "BPMN 2.0" ;
 .
-#Todo: the following process modeling view is empty
 lo:BPaaSProcessModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Process Modeling View" ;
 .
-
 lo:BPaaS_ModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "BPaaS ModelingLanguage" ;
 .
-#Todo: the following process modeling view is empty
 lo:BusinessProcessRequirementModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "false"^^xsd:boolean ;
@@ -293,6 +298,7 @@ lo:BusinessProcessRequirementModelingView
 .
 lo:CanvasView
   rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
   rdfs:label "Canvas View" ;
 .
@@ -302,7 +308,6 @@ lo:CombinationNotAllowed
   rdfs:label "This concept has the purpose to represent all the source-target combinations between instance elements that an instance relation should be not allowed" ;
   rdfs:subClassOf owl:Thing ;
 .
-#Todo: the following Modeling Language is empty
 lo:ControlElementModelingLanguage
   rdf:type lo:ModelingLanguage ;
   rdfs:label "Control Element Modeling Language" ;
@@ -317,7 +322,6 @@ lo:DSML4PTMControlElementModelingView
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Control Element Modeling View" ;
 .
-#Todo: the following Modeling Language is empty
 lo:DSML4PTMDecisionModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "false"^^xsd:boolean ;
@@ -341,12 +345,10 @@ lo:DSML4PTMProcessModelingView
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Process Modeling View" ;
 .
-#todo what is this?
 lo:Data_Document_1
   rdf:type dkmm:Data_Document ;
   rdfs:label "7" ;
 .
-#todo what is this?
 lo:DatatypeProperty_1
   rdf:type owl:DatatypeProperty ;
   rdfs:label "datatype" ;
@@ -361,6 +363,32 @@ lo:DocumentKnolwedgeModelingView
   lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Document Knowledge Modeling View" ;
+.
+lo:FloWare
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "FloWare" ;
+.
+lo:FloWarePIMView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:FloWare ;
+  rdfs:label "FloWare Platform Independent Model View" ;
+.
+lo:FloWarePSMView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:FloWare ;
+  rdfs:label "FloWare Platform Specific Model View" ;
+.
+lo:GPML
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "GPML" ;
+.
+lo:GPMLModellingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:GPML ;
+  rdfs:label "GPML View" ;
 .
 lo:ICFStandardHasTimeStamp
   rdfs:label "Time Stamp" ;
@@ -480,7 +508,6 @@ lo:UserTask_1
   rdf:type bpmn:UserTask ;
   rdfs:label "" ;
 .
-#Todo: the following process modeling view is empty
 lo:WorkflowDescriptionModelingView
   rdf:type lo:ModelingView ;
   lo:isMainModelingView "false"^^xsd:boolean ;
@@ -667,28 +694,4 @@ owl:Class
 .
 owl:Thing
   rdf:type owl:Class ;
-.
-lo:CanvasView
-  lo:isMainModelingView true ;
-.
-lo:BPMN4PPProcessModelingView
-  rdf:type lo:ModelingView ;
-  lo:isMainModelingView "true"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:BPMN4PP ;
-  rdfs:label "Process Modeling View" ;
-.
-lo:BPMN4PP
-  rdf:type lo:ModelingLanguage ;
-  rdfs:label "BPMN4PP" ;
-.
-
-lo:GPMLModellingView
-  rdf:type lo:ModelingView ;
-  lo:isMainModelingView "true"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:GPML ;
-  rdfs:label "GPML View" ;
-.
-lo:GPML
-  rdf:type lo:ModelingLanguage ;
-  rdfs:label "GPML" ;
 .
