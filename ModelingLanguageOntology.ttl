@@ -1,4 +1,5 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/LanguageOntology
+# imports: http://fhnw.ch/FloWare
 # imports: http://fhnw.ch/OrganizationalModel
 # imports: http://fhnw.ch/SAPScenesOntology
 # imports: http://fhnw.ch/modelingEnvironment/DSML4PTM
@@ -9,6 +10,7 @@
 # prefix: lo
 
 @prefix DomainOntology: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix FloWare: <http://fhnw.ch/FloWare#> .
 @prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix archimeo: <http://ikm-group.ch/archiMEO#> .
@@ -38,6 +40,30 @@
 @prefix top: <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+FloWare:ANDConnection
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+FloWare:Device
+  rdfs:subClassOf lo:ModelingElement ;
+.
+FloWare:Elements
+  rdfs:subClassOf lo:ModelingElement ;
+.
+FloWare:Feature
+  rdfs:subClassOf lo:ModelingElement ;
+.
+FloWare:ORConnection
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+FloWare:Relations
+  rdfs:subClassOf lo:ModelingRelation ;
+.
+FloWare:SubSystem
+  rdfs:subClassOf lo:ModelingElement ;
+.
+FloWare:System
+  rdfs:subClassOf lo:ModelingElement ;
+.
 <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalModelConnector>
   rdfs:subClassOf lo:ModelingRelation ;
 .
@@ -221,6 +247,7 @@ dsml4ptm:PrepareKoGu3
   dc:rights "Copyright 2018 FHNW" ;
   dc:title "The Language Ontology"@en ;
   rdfs:comment "Version 1.1: Initial import"@en ;
+  owl:imports <http://fhnw.ch/FloWare> ;
   owl:imports <http://fhnw.ch/OrganizationalModel> ;
   owl:imports <http://fhnw.ch/SAPScenesOntology> ;
   owl:imports <http://fhnw.ch/modelingEnvironment/DSML4PTM> ;
