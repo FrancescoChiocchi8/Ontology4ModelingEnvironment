@@ -2,8 +2,8 @@
 # imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
 # prefix: mod
 
-@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix mod: <http://fhnw.ch/modelingEnvironment/ModelOntology#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -34,9 +34,9 @@ lo:modelingRelationHasTargetModelingElement
 <http://fhnw.ch/modelingEnvironment/ModelOntology>
   owl:imports <http://fhnw.ch/modelingEnvironment/PaletteOntology> ;
 .
-mod:ConceptualElement
+mod:Shape
   rdf:type owl:Class ;
-  rdfs:label "Model Elements" ;
+  rdfs:label "Shape" ;
   rdfs:subClassOf owl:Thing ;
 .
 mod:Model
@@ -44,9 +44,9 @@ mod:Model
   rdfs:label "Models" ;
   rdfs:subClassOf owl:Thing ;
 .
-mod:Shape
+mod:ConceptualElement
   rdf:type owl:Class ;
-  rdfs:label "Shape" ;
+  rdfs:label "Model Elements" ;
   rdfs:subClassOf owl:Thing ;
 .
 mod:modelHasShape

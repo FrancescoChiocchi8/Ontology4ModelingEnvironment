@@ -1,0 +1,845 @@
+# baseURI: http://fhnw.ch/userstoryontology
+# imports: http://datashapes.org/dash
+# prefix: uso
+
+@prefix : <http://fhnw.ch/userstoryontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix uso: <http://fhnw.ch/userstoryontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://fhnw.ch/userstoryontology>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+uso:AcceptanceCriterion
+  rdf:type owl:Class ;
+  rdfs:label "acceptance criterion" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:AcceptanceCriterionHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:AcceptanceCriterion ;
+  rdfs:label "acceptance criterion has description" ;
+  rdfs:range xsd:string ;
+.
+uso:Action
+  rdf:type owl:Class ;
+  rdfs:label "action"^^rdfs:Literal ;
+  rdfs:subClassOf uso:UserStory ;
+.
+uso:ActionHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Action ;
+  rdfs:label "action has description" ;
+  rdfs:range xsd:string ;
+.
+uso:Actor
+  rdf:type owl:Class ;
+  rdfs:label "actor" ;
+  rdfs:subClassOf uso:UserPersona ;
+  rdfs:subClassOf uso:UserStory ;
+.
+uso:ActorHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Actor ;
+  rdfs:label "actor has name" ;
+  rdfs:range xsd:string ;
+.
+uso:AppManager
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:Application
+  rdf:type owl:Class ;
+  rdfs:label "application" ;
+.
+uso:Assignee
+  rdf:type owl:Class ;
+  rdfs:label "assignee" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:AssigneeIsDeveloper
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Assignee ;
+  rdfs:label "is" ;
+  rdfs:range uso:Developer ;
+.
+uso:AttributeIsAcceptanceCriterion
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Attributes ;
+  rdfs:label "Attribute is" ;
+  rdfs:range uso:AcceptanceCriterion ;
+.
+uso:AttributeIsCurrentState
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Attributes ;
+  rdfs:label "Attribute is" ;
+  rdfs:range uso:CurrentState ;
+.
+uso:AttributeIsDocument
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Attributes ;
+  rdfs:label "Attribute is" ;
+  rdfs:range uso:Document ;
+.
+uso:AttributeIsNamingConvention
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Attributes ;
+  rdfs:label "Attribute is" ;
+  rdfs:range uso:NamingConvention ;
+.
+uso:AttributeIsNote
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Attributes ;
+  rdfs:label "Attribute is" ;
+  rdfs:range uso:Notes ;
+.
+uso:Attributes
+  rdf:type owl:Class ;
+  rdfs:label "Attributes" ;
+  rdfs:subClassOf owl:Thing ;
+.
+uso:Button
+  rdf:type owl:Class ;
+  rdfs:label "button" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:Chart
+  rdf:type owl:Class ;
+  rdfs:label "chart" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:ContentManager
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:ContentManagerHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:AppManager ;
+.
+uso:ContentManagerHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:label "ContentManagerHasSimilarityWithCustomer" ;
+  rdfs:range uso:Customer ;
+.
+uso:ContentManagerHasSimilarityWithDataManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:DataManager ;
+.
+uso:ContentManagerHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:Developer ;
+.
+uso:ContentManagerHasSimilarityWithLogistician
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:Logistician ;
+.
+uso:ContentManagerHasSimilarityWithSAPManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:SAPManager ;
+.
+uso:ContentManagerHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:label "ContentManagerHasSimilarityWithCustomer" ;
+  rdfs:range uso:WebAnalyst ;
+.
+uso:Credentials
+  rdf:type owl:Class ;
+  rdfs:label "credentials" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:CurrentState
+  rdf:type owl:Class ;
+  rdfs:label "current state" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:CurrentStateHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:CurrentState ;
+  rdfs:label "current state has description" ;
+  rdfs:range xsd:string ;
+.
+uso:Customer
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "Customer" ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:DataManager
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:Developer
+  rdf:type owl:Class ;
+  rdfs:label "developer" ;
+  rdfs:subClassOf uso:Assignee ;
+  rdfs:subClassOf uso:Person ;
+  rdfs:subClassOf uso:Stakeholder ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:DeveloperBelongsToScrumTeam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Developer ;
+  rdfs:label "belongs to" ;
+  rdfs:range uso:ScrumTeam ;
+.
+uso:DeveloperCreatesSolution
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Developer ;
+  rdfs:label "develops" ;
+  rdfs:range uso:Solution ;
+.
+uso:DeveloperHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Developer ;
+  rdfs:label "developer has name" ;
+  rdfs:range xsd:string ;
+.
+uso:Document
+  rdf:type owl:Class ;
+  rdfs:label "document" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:Dropdown
+  rdf:type owl:Class ;
+  rdfs:label "dropdown" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:Epic
+  rdf:type owl:Class ;
+  rdfs:label "epic" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:EpicIncludesUserStory ;
+    ] ;
+.
+uso:EpicHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Epic ;
+  rdfs:label "epic has name" ;
+  rdfs:range xsd:string ;
+.
+uso:EpicIncludesUserStory
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Epic ;
+  rdfs:label "incldues" ;
+  rdfs:range uso:UserStory ;
+.
+uso:Frame
+  rdf:type owl:Class ;
+  rdfs:label "frame" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:FreeText
+  rdf:type owl:Class ;
+  rdfs:label "free text" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:Function
+  rdf:type owl:Class ;
+  rdfs:label "function" ;
+  rdfs:subClassOf uso:Solution ;
+.
+uso:FunctionHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Function ;
+  rdfs:label "function has description" ;
+  rdfs:range xsd:string ;
+.
+uso:FunctionHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Function ;
+  rdfs:label "function has name" ;
+  rdfs:range xsd:string ;
+.
+uso:Image
+  rdf:type owl:Class ;
+  rdfs:label "image" ;
+  rdfs:subClassOf uso:Mockup ;
+  rdfs:subClassOf owl:Thing ;
+.
+uso:Logistician
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:Mockup
+  rdf:type owl:Class ;
+  rdfs:label "mockup" ;
+  rdfs:subClassOf uso:Prototype ;
+.
+uso:MockupHasButton
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:Button ;
+.
+uso:MockupHasDropdown
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:Dropdown ;
+.
+uso:MockupHasFrame
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:Frame ;
+.
+uso:MockupHasFreeText
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:FreeText ;
+.
+uso:MockupHasImage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:Image ;
+.
+uso:MockupHasPhoneScreen
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:PhoneScreen ;
+.
+uso:MockupHasTextfield
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Mockup ;
+  rdfs:label "has" ;
+  rdfs:range uso:Textfield ;
+.
+uso:Model
+  rdf:type owl:Class ;
+  rdfs:label "model" ;
+  rdfs:subClassOf uso:Solution ;
+.
+uso:ModelHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Model ;
+  rdfs:label "model has name" ;
+  rdfs:range xsd:string ;
+.
+uso:NamingConvention
+  rdf:type owl:Class ;
+  rdfs:label "naming convention" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:NamingConventionHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:NamingConvention ;
+  rdfs:label "naming convention has description" ;
+  rdfs:range xsd:string ;
+.
+uso:NoteHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Notes ;
+  rdfs:label "note has description" ;
+  rdfs:range xsd:string ;
+.
+uso:Notes
+  rdf:type owl:Class ;
+  rdfs:comment "Can be a comment or detaild information" ;
+  rdfs:label "notes" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:Object
+  rdf:type owl:Class ;
+  rdfs:label "object" ;
+  rdfs:subClassOf uso:UserStory ;
+  rdfs:subClassOf owl:Thing ;
+.
+uso:ObjectHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "object has description" ;
+  rdfs:range xsd:string ;
+.
+uso:ObjectIncludesChart
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Chart ;
+.
+uso:ObjectIncludesCredentials
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Credentials ;
+.
+uso:ObjectIncludesPackage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Package ;
+.
+uso:ObjectIncludesShippingContainer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:ShippingContainer ;
+.
+uso:ObjectIncludesTable
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Table ;
+.
+uso:ObjectIncludesTemperature
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Object ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Temperature ;
+.
+uso:Package
+  rdf:type owl:Class ;
+  rdfs:label "package" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:Person
+  rdf:type owl:Class ;
+  rdfs:label "person" ;
+  rdfs:subClassOf owl:Thing ;
+.
+uso:PersonIsDeveloper
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Person ;
+  rdfs:label "is" ;
+  rdfs:range uso:Developer ;
+.
+uso:PersonIsProductOwner
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Person ;
+  rdfs:label "is" ;
+  rdfs:range uso:ProductOwner ;
+.
+uso:PersonIsScrumMaster
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Person ;
+  rdfs:label "is" ;
+  rdfs:range uso:ScrumMaster ;
+.
+uso:PersonIsStakeholder
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Person ;
+  rdfs:label "is" ;
+  rdfs:range uso:Stakeholder ;
+.
+uso:PersonIsUserPersona
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Person ;
+  rdfs:label "is" ;
+  rdfs:range uso:UserPersona ;
+.
+uso:PhoneScreen
+  rdf:type owl:Class ;
+  rdfs:label "phone screen" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:ProductBacklog
+  rdf:type owl:Class ;
+  rdfs:label "product backlog" ;
+.
+uso:ProductBacklogIncludesEpic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:ProductBacklog ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Epic ;
+.
+uso:ProductBacklogIncludesUserStory
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:ProductBacklog ;
+  rdfs:label "includes" ;
+  rdfs:range uso:UserStory ;
+.
+uso:ProductOwner
+  rdf:type owl:Class ;
+  rdfs:label "product owner" ;
+  rdfs:subClassOf uso:Person ;
+  rdfs:subClassOf uso:Stakeholder ;
+.
+uso:ProductOwnerBelongsToScrumTeam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:ProductOwner ;
+  rdfs:label "belongs to" ;
+  rdfs:range uso:ScrumTeam ;
+.
+uso:ProductOwnerPrioritizesProductBacklog
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:ProductOwner ;
+  rdfs:label "prioritizes" ;
+  rdfs:range uso:ProductBacklog ;
+.
+uso:Prototype
+  rdf:type owl:Class ;
+  rdfs:label "prototype" ;
+  rdfs:subClassOf uso:Solution ;
+.
+uso:PrototypeHasMockup
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Prototype ;
+  rdfs:label "has" ;
+  rdfs:range uso:Mockup ;
+.
+uso:PrototypeHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Prototype ;
+  rdfs:label "prototype has name" ;
+  rdfs:range xsd:string ;
+.
+uso:Reason
+  rdf:type owl:Class ;
+  rdfs:label "reason" ;
+  rdfs:subClassOf uso:UserStory ;
+.
+uso:ReasonhasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Reason ;
+  rdfs:label "reason has description" ;
+  rdfs:range xsd:string ;
+.
+uso:Release
+  rdf:type owl:Class ;
+  rdfs:label "release" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:ReleaseHasUserStory ;
+    ] ;
+.
+uso:ReleaseHasDate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Release ;
+  rdfs:label "release has date" ;
+  rdfs:range xsd:date ;
+.
+uso:ReleaseHasUserStory
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Release ;
+  rdfs:label "consists of" ;
+  rdfs:range uso:UserStory ;
+.
+uso:SAPManager
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:ScrumMaster
+  rdf:type owl:Class ;
+  rdfs:label "scrum master" ;
+  rdfs:subClassOf uso:Person ;
+  rdfs:subClassOf uso:Stakeholder ;
+.
+uso:ScrumMasterBelongsToScrumTeam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:ScrumMaster ;
+  rdfs:label "belongs to" ;
+  rdfs:range uso:ScrumTeam ;
+.
+uso:ScrumTeam
+  rdf:type owl:Class ;
+  rdfs:label "scrum team" ;
+.
+uso:ScrumTeamHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:ScrumTeam ;
+  rdfs:label "scrum team has name" ;
+  rdfs:range xsd:string ;
+.
+uso:Service
+  rdf:type owl:Class ;
+  rdfs:label "service" ;
+  rdfs:subClassOf uso:Solution ;
+.
+uso:ServiceHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Service ;
+  rdfs:label "service has description" ;
+  rdfs:range xsd:string ;
+.
+uso:ServiceHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:Service ;
+  rdfs:label "service has name" ;
+  rdfs:range xsd:string ;
+.
+uso:ShippingContainer
+  rdf:type owl:Class ;
+  rdfs:label "shipping container" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:Solution
+  rdf:type owl:Class ;
+  rdfs:label "solution" ;
+.
+uso:SolutionCanBeFunction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "is" ;
+  rdfs:range uso:Function ;
+.
+uso:SolutionCanBeModel
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "is" ;
+  rdfs:range uso:Model ;
+.
+uso:SolutionCanBePrototype
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "is" ;
+  rdfs:range uso:Prototype ;
+.
+uso:SolutionCanBeService
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "is" ;
+  rdfs:range uso:Service ;
+.
+uso:SolutionIsImplementedInApplication
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "implemented in" ;
+  rdfs:range uso:Application ;
+.
+uso:SolutionhasNamingConvention
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Solution ;
+  rdfs:label "has" ;
+  rdfs:range uso:NamingConvention ;
+.
+uso:Stakeholder
+  rdf:type owl:Class ;
+  rdfs:label "stakeholder" ;
+  rdfs:subClassOf uso:Person ;
+.
+uso:StakeholderFeedback
+  rdf:type owl:Class ;
+  rdfs:label "stakeholder feedback" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:StakeholderFeedbackHasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:StakeholderFeedback ;
+  rdfs:label "has feedback description" ;
+  rdfs:range xsd:string ;
+.
+uso:StakeholderGivesFeedback
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:Stakeholder ;
+  rdfs:label "gives" ;
+  rdfs:range uso:StakeholderFeedback ;
+.
+uso:StoryPoints
+  rdf:type owl:Class ;
+  rdfs:label "story points" ;
+  rdfs:subClassOf uso:Attributes ;
+.
+uso:StorypointsHasValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:StoryPoints ;
+  rdfs:label "storypoints have value" ;
+  rdfs:range xsd:integer ;
+.
+uso:Table
+  rdf:type owl:Class ;
+  rdfs:label "table" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:Temperature
+  rdf:type owl:Class ;
+  rdfs:label "temperature" ;
+  rdfs:subClassOf uso:Object ;
+.
+uso:Textfield
+  rdf:type owl:Class ;
+  rdfs:label "textfield" ;
+  rdfs:subClassOf uso:Mockup ;
+.
+uso:UserPersona
+  rdf:type owl:Class ;
+  rdfs:label "user persona" ;
+  rdfs:subClassOf uso:Person ;
+  rdfs:subClassOf uso:Stakeholder ;
+.
+uso:UserPersonaUsesApplication
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserPersona ;
+  rdfs:label "uses" ;
+  rdfs:range uso:Application ;
+.
+uso:UserStory
+  rdf:type owl:Class ;
+  rdfs:label "User Story" ;
+  rdfs:subClassOf uso:Epic ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryIncludesAction ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryIncludesActor ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryIncludesReason ;
+    ] ;
+.
+uso:UserStoryAction
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryBusinessValue
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryDescription
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf owl:Thing ;
+.
+uso:UserStoryElement
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryHasAcceptanceCriterion
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:AcceptanceCriterion ;
+.
+uso:UserStoryHasAssignee
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "is assigned to" ;
+  rdfs:range uso:Developer ;
+.
+uso:UserStoryHasCurrentState
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:CurrentState ;
+.
+uso:UserStoryHasDocument
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:Document ;
+.
+uso:UserStoryHasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "user story has name" ;
+  rdfs:range xsd:string ;
+.
+uso:UserStoryHasNotes
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:Notes ;
+.
+uso:UserStoryHasStakeholderFeedback
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:StakeholderFeedback ;
+.
+uso:UserStoryHasStatement
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "user story has statement" ;
+  rdfs:range xsd:string ;
+.
+uso:UserStoryIncludesAction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Action ;
+.
+uso:UserStoryIncludesActor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Actor ;
+.
+uso:UserStoryIncludesObject
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Object ;
+.
+uso:UserStoryIncludesReason
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "includes" ;
+  rdfs:range uso:Reason ;
+.
+uso:UserStoryReleasedInRelease
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "released in" ;
+  rdfs:range uso:Release ;
+.
+uso:UserStoryRole
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStorySolvedBySolution
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "is solved by" ;
+  rdfs:range uso:Solution ;
+.
+uso:UserStorySystem
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryhasStoryPoints
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "has" ;
+  rdfs:range uso:StoryPoints ;
+.
+uso:WebAnalyst
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:hasSimilarity
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "characteristic has similarity" ;
+  rdfs:range xsd:decimal ;
+.
