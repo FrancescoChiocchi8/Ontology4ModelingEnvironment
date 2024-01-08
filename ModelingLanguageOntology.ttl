@@ -58,9 +58,6 @@ FloWare:ORConnection
 FloWare:Relations
   rdfs:subClassOf lo:ModelingRelation ;
 .
-FloWare:SubSystem
-  rdfs:subClassOf lo:ModelingElement ;
-.
 FloWare:System
   rdfs:subClassOf lo:ModelingElement ;
 .
@@ -397,14 +394,13 @@ lo:FloWare
 .
 lo:FloWarePIMView
   rdf:type lo:ModelingView ;
-  lo:isMainModelingView "false"^^xsd:boolean ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:FloWare ;
   rdfs:label "FloWare Platform Independent Model View" ;
 .
 lo:FloWarePSMView
   rdf:type lo:ModelingView ;
-  lo:isMainModelingView "true"^^xsd:boolean ;
-  lo:viewIsPartOfModelingLanguage lo:FloWare ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   rdfs:label "FloWare Platform Specific Model View" ;
 .
 lo:GPML

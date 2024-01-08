@@ -2,13 +2,13 @@
 # imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
 # prefix: po
 
-@prefix fw: <http://fhnw.ch/FloWare#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix bpaas: <http://ikm-group.ch/archimeo/bpaas#> .
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix cmmn: <http://ikm-group.ch/archimeo/cmmn#> .
 @prefix dkmm: <http://fhnw.ch/modelingEnvironment/dkmm#> .
 @prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix fw: <http://fhnw.ch/FloWare#> .
 @prefix gpml: <http://ikm-group.ch/archiMEO/gpml#> .
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix orgm: <http://fhnw.ch/OrganizationalModel/orgm#> .
@@ -2252,7 +2252,8 @@ po:FloWare_AND
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresFromArrowHead po:Kite ;
+  po:paletteConnectorConfiguresFromArrowHead po:CircleBlank ;
+  po:paletteConnectorConfiguresToArrowHead po:Standard ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Relationships ;
@@ -2277,7 +2278,8 @@ po:FloWare_Exclude
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresToArrowHead po:SidewaysV ;
+  po:paletteConnectorConfiguresFromArrowHead po:Line ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Relationships ;
@@ -2290,8 +2292,8 @@ po:FloWare_Include
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresFromArrowHead po:BackwardV ;
-  po:paletteConnectorConfiguresToArrowHead po:SidewaysV ;
+  po:paletteConnectorConfiguresFromArrowHead po:BackwardOpenTriangle ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Relationships ;
@@ -2317,7 +2319,8 @@ po:FloWare_OR
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresFromArrowHead po:AccelerationArrow ;
+  po:paletteConnectorConfiguresFromArrowHead po:Circle ;
+  po:paletteConnectorConfiguresToArrowHead po:Standard ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Relationships ;
@@ -2349,7 +2352,7 @@ po:FloWare_Requires
   rdf:type po:PaletteConnector ;
   po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresToArrowHead po:SidewaysV ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
   po:paletteConstructHasHeight 50 ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Relationships ;
