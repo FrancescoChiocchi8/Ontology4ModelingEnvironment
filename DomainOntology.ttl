@@ -6,6 +6,7 @@
 # imports: http://ikm-group.ch/archimeo/apqc
 # imports: http://ikm-group.ch/archimeo/fbpdo
 # imports: http://who.int/icf
+# imports: https://brickschema.org/schema/1.3/Brick
 # prefix: do
 
 @prefix apqc: <http://ikm-group.ch/archimeo/apqc#> .
@@ -24,6 +25,7 @@
   owl:imports <http://ikm-group.ch/archimeo/apqc> ;
   owl:imports <http://ikm-group.ch/archimeo/fbpdo> ;
   owl:imports <http://who.int/icf> ;
+  owl:imports <https://brickschema.org/schema/1.3/Brick> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 do:DomainOntologyConcept
@@ -44,5 +46,14 @@ apqc:AmericanProductivityAndQualityCenter
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
 <http://who.int/icf#ICFQualifier>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Class>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Entity>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Tag>
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
