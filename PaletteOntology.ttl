@@ -1,25 +1,24 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/PaletteOntology
 # imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
-# prefix: po
 
 @prefix fw:       <http://fhnw.ch/FloWare#> .
-@prefix archi:    <http://ikm-group.ch/archiMEO/archimate#> .
-@prefix bpaas:    <http://ikm-group.ch/archimeo/bpaas#> .
-@prefix bpmn:     <http://ikm-group.ch/archiMEO/BPMN#> .
-@prefix cmmn:     <http://ikm-group.ch/archimeo/cmmn#> .
-@prefix dkmm:     <http://fhnw.ch/modelingEnvironment/dkmm#> .
-@prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix archi:   <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix bpaas:   <http://ikm-group.ch/archimeo/bpaas#> .
+@prefix bpmn:    <http://ikm-group.ch/archiMEO/BPMN#> .
+@prefix cmmn:    <http://ikm-group.ch/archimeo/cmmn#> .
+@prefix dkmm:    <http://fhnw.ch/modelingEnvironment/dkmm#> .
+@prefix dsml4ptm:  <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
 @prefix gpml:     <http://ikm-group.ch/archiMEO/gpml#> .
-@prefix lo:       <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
-@prefix orgm:     <http://fhnw.ch/OrganizationalModel/orgm#> .
-@prefix owl:      <http://www.w3.org/2002/07/owl#> .
-@prefix po:       <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix lo:      <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix orgm:    <http://fhnw.ch/OrganizationalModel/orgm#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix po:      <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix questionnaire:  <http://ikm-group.ch/archiMEO/questionnaire#> .
-@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sapscenes:  <http://fhnw.ch/SAPScenesOntology#> .
-@prefix sh:       <http://www.w3.org/ns/shacl#> .
-@prefix top:      <http://ikm-group.ch/archiMEO/top#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix top:     <http://ikm-group.ch/archiMEO/top#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 fw:Exclude
@@ -138,6 +137,260 @@ po:Action
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
+              
+po:UserStoryAction
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStoryAction> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+              
+po:UserStoryActionDisable
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Disable"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Disable> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionDisplay
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Display"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Display> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionDo
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Do"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Do> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionEdit
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Edit"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Edit> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionExtend
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Extend"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Extend> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionSee
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action See"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#See> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryActionTrack
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Action Track"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "action.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryAction ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Track> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "action.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
 
 po:Activity
       rdf:type po:PaletteElement ;
@@ -228,6 +481,236 @@ po:Actor
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
+              
+po:UserStoryRole
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStoryRole> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleAppManager
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role App Manager" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#AppManager> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleContentManager
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role Content Manager" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#ContentManager> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleCustomer
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role Customer" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Customer> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleDeveloper
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role Developer" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Developer> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleStakeholderUSD
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role StakeholderUSD" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#StakeholderUSD> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryRoleWebAnalyst
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Role Web Analyst" ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "actor.png" ;
+      po:paletteConstructHasPaletteThumbnail
+              "actor.png" ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryRole ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#WebAnalyst> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "actor.png" ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
 
 po:AcuteHospitalOU
       rdf:type po:PaletteElement ;
@@ -2368,6 +2851,14 @@ po:Category_UserStoryGeneral
               lo:UserStoryModellingView ;
       po:paletteCategoryOrderNumber
               2 .
+              
+po:Category_UserStoryDescription
+      rdf:type po:PaletteCategory ;
+      rdfs:label "Description Elements"^^xsd:string ;
+      po:paletteCategoryIsShownInModelingView
+              lo:UserStoryModellingView ;
+      po:paletteCategoryOrderNumber
+              5 .
 
 po:Category_UserStorySolution
       rdf:type po:PaletteCategory ;
@@ -5641,6 +6132,764 @@ po:Object
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
+              
+po:UserStoryElement
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStoryElement> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementCallToAction
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Call To Action"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#CallToAction> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementComponent
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Component"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Component> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementData
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Data"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Data> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementDocumentUSD
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element DocumentUSD"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#DocumentUSD> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementImages
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Images"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Images> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementText
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Text"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Text> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementTool
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Tool"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Tool> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryElementVideo
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Element Video"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryElement ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Video> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystem
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStorySystem> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+              
+po:UserStorySystemBackOffice
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System BackOffice"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#BackOffice> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemCartCheckout
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System Cart Checkout"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#CartCheckout> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemDIVAOnboarding
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System DIVA Onboarding"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#DIVAOnboarding> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemFilteringSorting
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System Filtering Sorting"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#FilteringSorting> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemInspirationPage
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System Inspiration Page"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#InspirationPage> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemMyAccount
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System MyAccount"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#MyAccount> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemNavigation
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System Navigation"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Navigation> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemPDP
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System PDP"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#PDP> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemPIMVKP
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System PIM VKP"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#PIMVKP> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemPLP
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System PLP"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#PLP> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemSAP
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System SAP"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#SAP> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemSearch
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System Search"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#Search> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStorySystemSmartEdit
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story System SmartEdit"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "application.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStorySystem ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#SmartEdit> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "objectgeneral.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "below"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+
+
 
 po:Office
       rdf:type po:PaletteElement ;
@@ -6291,6 +7540,334 @@ po:Reason
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
+
+po:UserStoryBusinessValue
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStoryBusinessValue> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryBusinessValueContentCorrectness
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Content Correctness"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#ContentCorrectness> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryBusinessValueCustomerInspiration
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Customer Inspiration"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#CustomerInspiration> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+po:UserStoryBusinessValueDataQualityIncrease
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Data Quality Increase"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#DataQualityIncrease> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValueEfficiencyIncrease
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Efficiency Increase"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#EfficiencyIncrease> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValueErrorHandling
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Error Handling"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#ErrorHandling> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValueMaintainabilityIncrease
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value MaintainabilityIncrease"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#MaintainabilityIncrease> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValuePerformanceIncrease
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Performance Increase"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#PerformanceIncrease> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValuePurchaseDecision
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Purchase Decision"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#PurchaseDecision> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+po:UserStoryBusinessValueWebshopUsability
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Business Value Webshop Usability"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "reason.png"^^xsd:string ;
+      po:paletteConstructHasParentPaletteConstruct
+              po:UserStoryBusinessValue ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryDescription ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#WebshopUsability> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "reason.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "true"^^xsd:boolean .
+
+
+
+
 
 po:ReceiveMessageTask
       rdf:type po:PaletteElement ;
@@ -8354,6 +9931,36 @@ po:UserStory
               "top-left" ;
       po:paletteElementIconURL
               "userstorycard.png"^^xsd:string ;
+      po:paletteElementLabelPosition
+              "down"^^xsd:string ;
+      po:paletteElementShape
+              "roundrectangle" ;
+      po:paletteElementUsesImage
+              "false"^^xsd:boolean .
+
+po:UserStoryDescription
+      rdf:type po:PaletteElement ;
+      rdfs:label "User Story Description"^^xsd:string ;
+      po:paletteConstructHasHeight
+              64 ;
+      po:paletteConstructHasModelImage
+              "redcard.png"^^xsd:string ;
+      po:paletteConstructHasPaletteThumbnail
+              "redcard.png"^^xsd:string ;
+      po:paletteConstructHasWidth
+              64 ;
+      po:paletteConstructIsGroupedInPaletteCategory
+              po:Category_UserStoryCards ;
+      po:paletteConstructIsHiddenFromPalette
+              "false"^^xsd:boolean ;
+      po:paletteConstructIsRelatedToModelingLanguageConstruct
+              <http://fhnw.ch/userstoryontology#UserStoryDescription> ;
+      po:paletteElementBackgroundColor
+              "#c9dcf5" ;
+      po:paletteElementIconPosition
+              "top-left" ;
+      po:paletteElementIconURL
+              "redcard.png"^^xsd:string ;
       po:paletteElementLabelPosition
               "down"^^xsd:string ;
       po:paletteElementShape

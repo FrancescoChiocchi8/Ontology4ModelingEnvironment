@@ -52,7 +52,44 @@ uso:ActorHasName
 uso:AppManager
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Role App Manager" ;
   rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:AppManagerHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:AppManager ;
+.
+uso:AppManagerHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:ContentManager ;
+.
+uso:AppManagerHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:Customer ;
+.
+uso:AppManagerHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:Developer ;
+.
+uso:AppManagerHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:AppManagerHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:AppManager ;
+  rdfs:range uso:WebAnalyst ;
 .
 uso:Application
   rdf:type owl:Class ;
@@ -104,19 +141,356 @@ uso:Attributes
   rdfs:label "Attributes" ;
   rdfs:subClassOf owl:Thing ;
 .
+uso:BackOffice
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System BackOffice" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:BackOfficeHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:BackOffice ;
+.
+uso:BackOfficeHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:BackOfficeHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:BackOfficeHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:BackOfficeHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:BackOfficeHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:MyAccount ;
+.
+uso:BackOfficeHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:Navigation ;
+.
+uso:BackOfficeHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:PDP ;
+.
+uso:BackOfficeHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:BackOfficeHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:PLP ;
+.
+uso:BackOfficeHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:SAP ;
+.
+uso:BackOfficeHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:Search ;
+.
+uso:BackOfficeHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:BackOffice ;
+  rdfs:range uso:SmartEdit ;
+.
 uso:Button
   rdf:type owl:Class ;
   rdfs:label "button" ;
   rdfs:subClassOf uso:Mockup ;
+.
+uso:CallToAction
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Call To Action" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:CallToActionHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:CallToAction ;
+.
+uso:CallToActionHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Component ;
+.
+uso:CallToActionHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Data ;
+.
+uso:CallToActionHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:CallToActionHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Images ;
+.
+uso:CallToActionHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Text ;
+.
+uso:CallToActionHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Tool ;
+.
+uso:CallToActionHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CallToAction ;
+  rdfs:range uso:Video ;
+.
+uso:CartCheckout
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System Cart Checkout" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:CartCheckoutHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:BackOffice ;
+.
+uso:CartCheckoutHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:CartCheckoutHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:CartCheckoutHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:CartCheckoutHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:CartCheckoutHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:MyAccount ;
+.
+uso:CartCheckoutHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:Navigation ;
+.
+uso:CartCheckoutHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:PDP ;
+.
+uso:CartCheckoutHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:CartCheckoutHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:PLP ;
+.
+uso:CartCheckoutHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:SAP ;
+.
+uso:CartCheckoutHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:Search ;
+.
+uso:CartCheckoutHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:CartCheckout ;
+  rdfs:range uso:SmartEdit ;
 .
 uso:Chart
   rdf:type owl:Class ;
   rdfs:label "chart" ;
   rdfs:subClassOf uso:Object ;
 .
+uso:Component
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Component" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:ComponentHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:CallToAction ;
+.
+uso:ComponentHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Component ;
+.
+uso:ComponentHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Data ;
+.
+uso:ComponentHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:ComponentHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Images ;
+.
+uso:ComponentHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Text ;
+.
+uso:ComponentHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Tool ;
+.
+uso:ComponentHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Component ;
+  rdfs:range uso:Video ;
+.
+uso:ContentCorrectness
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Content Correctness" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:ContentCorrectnessHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:ContentCorrectnessHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:ContentCorrectnessHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:ContentCorrectnessHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:ContentCorrectnessHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:ContentCorrectnessHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:ContentCorrectnessHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:ContentCorrectnessHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:ContentCorrectnessHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:ContentCorrectness ;
+  rdfs:range uso:WebshopUsability ;
+.
 uso:ContentManager
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Role Content Manager" ;
   rdfs:subClassOf uso:UserStoryRole ;
 .
 uso:ContentManagerHasSimilarityWithAppManager
@@ -125,9 +499,15 @@ uso:ContentManagerHasSimilarityWithAppManager
   rdfs:domain uso:ContentManager ;
   rdfs:range uso:AppManager ;
 .
+uso:ContentManagerHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:ContentManager ;
+.
 uso:ContentManagerHasSimilarityWithCustomer
   rdf:type owl:ObjectProperty ;
-  uso:hasSimilarity 0.3 ;
+  uso:hasSimilarity 0.5 ;
   rdfs:domain uso:ContentManager ;
   rdfs:label "ContentManagerHasSimilarityWithCustomer" ;
   rdfs:range uso:Customer ;
@@ -140,7 +520,7 @@ uso:ContentManagerHasSimilarityWithDataManager
 .
 uso:ContentManagerHasSimilarityWithDeveloper
   rdf:type owl:ObjectProperty ;
-  uso:hasSimilarity 0.2 ;
+  uso:hasSimilarity 0.1 ;
   rdfs:domain uso:ContentManager ;
   rdfs:range uso:Developer ;
 .
@@ -156,9 +536,15 @@ uso:ContentManagerHasSimilarityWithSAPManager
   rdfs:domain uso:ContentManager ;
   rdfs:range uso:SAPManager ;
 .
+uso:ContentManagerHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:ContentManager ;
+  rdfs:range uso:StakeholderUSD ;
+.
 uso:ContentManagerHasSimilarityWithWebAnalyst
   rdf:type owl:ObjectProperty ;
-  uso:hasSimilarity 0.3 ;
+  uso:hasSimilarity 0.2 ;
   rdfs:domain uso:ContentManager ;
   rdfs:label "ContentManagerHasSimilarityWithCustomer" ;
   rdfs:range uso:WebAnalyst ;
@@ -182,13 +568,315 @@ uso:CurrentStateHasDescription
 uso:Customer
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
-  rdfs:label "Customer" ;
+  rdfs:label "User Story Role Customer" ;
   rdfs:subClassOf uso:UserStoryRole ;
 .
 uso:DataManager
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
   rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:CustomerHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:AppManager ;
+.
+uso:CustomerHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:ContentManager ;
+.
+uso:CustomerHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:Customer ;
+.
+uso:CustomerHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:Developer ;
+.
+uso:CustomerHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:CustomerHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Customer ;
+  rdfs:range uso:WebAnalyst ;
+.
+uso:CustomerInspiration
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Customer Inspiration" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:CustomerInspirationHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:CustomerInspirationHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:CustomerInspirationHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:CustomerInspirationHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:CustomerInspirationHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:CustomerInspirationHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:CustomerInspirationHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:CustomerInspirationHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:CustomerInspirationHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:CustomerInspiration ;
+  rdfs:range uso:WebshopUsability ;
+.
+uso:DIVA-3040
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Extend ;
+  uso:UserStoryDescriptionHasBusinessValue uso:MaintainabilityIncrease ;
+  uso:UserStoryDescriptionHasElement uso:Data ;
+  uso:UserStoryDescriptionHasRole uso:AppManager ;
+  uso:UserStoryDescriptionHasSystem uso:DIVAOnboarding ;
+.
+uso:DIVAOnboarding
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System DIVA Onboarding" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:DIVAOnboardingHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:BackOffice ;
+.
+uso:DIVAOnboardingHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:DIVAOnboardingHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:DIVAOnboardingHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:DIVAOnboardingHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:DIVAOnboardingHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:MyAccount ;
+.
+uso:DIVAOnboardingHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:Navigation ;
+.
+uso:DIVAOnboardingHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:PDP ;
+.
+uso:DIVAOnboardingHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:DIVAOnboardingHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:PLP ;
+.
+uso:DIVAOnboardingHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:SAP ;
+.
+uso:DIVAOnboardingHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:Search ;
+.
+uso:DIVAOnboardingHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DIVAOnboarding ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:Data
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Data" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:DataHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:CallToAction ;
+.
+uso:DataHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Component ;
+.
+uso:DataHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Data ;
+.
+uso:DataHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:DataHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Images ;
+.
+uso:DataHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Text ;
+.
+uso:DataHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Tool ;
+.
+uso:DataHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Data ;
+  rdfs:range uso:Video ;
+.
+uso:DataQualityIncrease
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Data Quality Increase" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:DataQualityIncreaseHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:DataQualityIncreaseHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:DataQualityIncreaseHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:DataQualityIncreaseHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:DataQualityIncreaseHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:DataQualityIncreaseHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:DataQualityIncreaseHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:DataQualityIncreaseHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:DataQualityIncreaseHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:DataQualityIncrease ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:Developer
   rdf:type owl:Class ;
@@ -216,15 +904,356 @@ uso:DeveloperHasName
   rdfs:label "developer has name" ;
   rdfs:range xsd:string ;
 .
+uso:DeveloperHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:AppManager ;
+.
+uso:DeveloperHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:ContentManager ;
+.
+uso:DeveloperHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:Customer ;
+.
+uso:DeveloperHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:Developer ;
+.
+uso:DeveloperHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:DeveloperHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Developer ;
+  rdfs:range uso:WebAnalyst ;
+.
+uso:Disable
+  rdf:type owl:Class ;
+  rdfs:label "User Story Action Disable" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:DisableHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Disable ;
+.
+uso:DisableHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Display ;
+.
+uso:DisableHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Do ;
+.
+uso:DisableHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Edit ;
+.
+uso:DisableHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Extend ;
+.
+uso:DisableHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:See ;
+.
+uso:DisableHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Disable ;
+  rdfs:range uso:Track ;
+.
+uso:Display
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action Display" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:DisplayHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Disable ;
+.
+uso:DisplayHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity "1"^^xsd:decimal ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Display ;
+.
+uso:DisplayHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Do ;
+.
+uso:DisplayHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Edit ;
+.
+uso:DisplayHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Extend ;
+.
+uso:DisplayHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:See ;
+.
+uso:DisplayHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Display ;
+  rdfs:range uso:Track ;
+.
+uso:Do
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action Do" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:DoHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Disable ;
+.
+uso:DoHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Display ;
+.
+uso:DoHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Do ;
+.
+uso:DoHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Edit ;
+.
+uso:DoHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Extend ;
+.
+uso:DoHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:See ;
+.
+uso:DoHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Do ;
+  rdfs:range uso:Track ;
+.
 uso:Document
   rdf:type owl:Class ;
   rdfs:label "document" ;
   rdfs:subClassOf uso:Attributes ;
 .
+uso:DocumentUSD
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element DocumentUSD" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:DocumentUSDHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:CallToAction ;
+.
+uso:DocumentUSDHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Component ;
+.
+uso:DocumentUSDHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Data ;
+.
+uso:DocumentUSDHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:DocumentUSDHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Images ;
+.
+uso:DocumentUSDHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Text ;
+.
+uso:DocumentUSDHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Tool ;
+.
+uso:DocumentUSDHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:DocumentUSD ;
+  rdfs:range uso:Video ;
+.
 uso:Dropdown
   rdf:type owl:Class ;
   rdfs:label "dropdown" ;
   rdfs:subClassOf uso:Mockup ;
+.
+uso:Edit
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action Edit" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:EditHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Disable ;
+.
+uso:EditHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Display ;
+.
+uso:EditHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Do ;
+.
+uso:EditHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Edit ;
+.
+uso:EditHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Extend ;
+.
+uso:EditHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:See ;
+.
+uso:EditHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Edit ;
+  rdfs:range uso:Track ;
+.
+uso:EfficiencyIncrease
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Efficiency Increase" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:EfficiencyIncreaseHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:EfficiencyIncrease ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:Epic
   rdf:type owl:Class ;
@@ -247,6 +1276,198 @@ uso:EpicIncludesUserStory
   rdfs:domain uso:Epic ;
   rdfs:label "incldues" ;
   rdfs:range uso:UserStory ;
+.
+uso:ErrorHandling
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Error Handling" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:ErrorHandlingHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:ErrorHandlingHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:ErrorHandlingHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:ErrorHandlingHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:ErrorHandlingHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:ErrorHandlingHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:ErrorHandlingHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:ErrorHandlingHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:ErrorHandlingHasSimilarityWithWebShopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:ErrorHandling ;
+  rdfs:range uso:WebshopUsability ;
+.
+uso:Extend
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action Extend" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:ExtendHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Disable ;
+.
+uso:ExtendHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Display ;
+.
+uso:ExtendHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Do ;
+.
+uso:ExtendHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Edit ;
+.
+uso:ExtendHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Extend ;
+.
+uso:ExtendHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:See ;
+.
+uso:ExtendHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Extend ;
+  rdfs:range uso:Track ;
+.
+uso:FilteringSorting
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System Filtering Sorting" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:FilteringSortingHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:BackOffice ;
+.
+uso:FilteringSortingHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:FilteringSortingHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:FilteringSortingHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:FilteringSortingHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:FilteringSortingHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:MyAccount ;
+.
+uso:FilteringSortingHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:Navigation ;
+.
+uso:FilteringSortingHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:PDP ;
+.
+uso:FilteringSortingHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:FilteringSortingHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:PLP ;
+.
+uso:FilteringSortingHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:SAP ;
+.
+uso:FilteringSortingHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:Search ;
+.
+uso:FilteringSortingHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:FilteringSorting ;
+  rdfs:range uso:SmartEdit ;
 .
 uso:Frame
   rdf:type owl:Class ;
@@ -285,6 +1506,204 @@ uso:Logistician
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
   rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:Images
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Images" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:ImagesHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:CallToAction ;
+.
+uso:ImagesHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Component ;
+.
+uso:ImagesHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Data ;
+.
+uso:ImagesHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:ImagesHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Images ;
+.
+uso:ImagesHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Text ;
+.
+uso:ImagesHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Tool ;
+.
+uso:ImagesHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:Images ;
+  rdfs:range uso:Video ;
+.
+uso:InspirationPage
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System Inspiration Page" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:InspirationPageHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:BackOffice ;
+.
+uso:InspirationPageHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:InspirationPageHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:InspirationPageHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:InspirationPageHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:InspirationPageHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:MyAccount ;
+.
+uso:InspirationPageHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:Navigation ;
+.
+uso:InspirationPageHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:PDP ;
+.
+uso:InspirationPageHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:InspirationPageHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:PLP ;
+.
+uso:InspirationPageHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:SAP ;
+.
+uso:InspirationPageHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:Search ;
+.
+uso:InspirationPageHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:InspirationPage ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:MaintainabilityIncrease
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Maintainability Increase" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:MaintainabilityIncreaseHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:MaintainabilityIncrease ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:Mockup
   rdf:type owl:Class ;
@@ -344,6 +1763,90 @@ uso:ModelHasName
   rdfs:label "model has name" ;
   rdfs:range xsd:string ;
 .
+uso:MyAccount
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System MyAccount" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:MyAccountHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:BackOffice ;
+.
+uso:MyAccountHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:MyAccountHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:MyAccountHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:MyAccountHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:MyAccountHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:MyAccount ;
+.
+uso:MyAccountHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:Navigation ;
+.
+uso:MyAccountHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:PDP ;
+.
+uso:MyAccountHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:MyAccountHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:PLP ;
+.
+uso:MyAccountHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:SAP ;
+.
+uso:MyAccountHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:Search ;
+.
+uso:MyAccountHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:MyAccount ;
+  rdfs:range uso:SmartEdit ;
+.
 uso:NamingConvention
   rdf:type owl:Class ;
   rdfs:label "naming convention" ;
@@ -354,6 +1857,90 @@ uso:NamingConventionHasDescription
   rdfs:domain uso:NamingConvention ;
   rdfs:label "naming convention has description" ;
   rdfs:range xsd:string ;
+.
+uso:Navigation
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System Navigation" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:NavigationHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:BackOffice ;
+.
+uso:NavigationHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:NavigationHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:NavigationHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:NavigationHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:NavigationHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:MyAccount ;
+.
+uso:NavigationHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:Navigation ;
+.
+uso:NavigationHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:PDP ;
+.
+uso:NavigationHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:NavigationHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:PLP ;
+.
+uso:NavigationHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:SAP ;
+.
+uso:NavigationHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:Search ;
+.
+uso:NavigationHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Navigation ;
+  rdfs:range uso:SmartEdit ;
 .
 uso:NoteHasDescription
   rdf:type owl:DatatypeProperty ;
@@ -415,10 +2002,330 @@ uso:ObjectIncludesTemperature
   rdfs:label "includes" ;
   rdfs:range uso:Temperature ;
 .
+uso:PDP
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System PDP" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:PDPHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:BackOffice ;
+.
+uso:PDPHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:PDPHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:PDPHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:PDPHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:PDPHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:MyAccount ;
+.
+uso:PDPHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:Navigation ;
+.
+uso:PDPHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:PDP ;
+.
+uso:PDPHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:PDPHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:PLP ;
+.
+uso:PDPHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:SAP ;
+.
+uso:PDPHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:Search ;
+.
+uso:PDPHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:PDP ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:PIMVKP
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System PIM VKP" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:PIMVKPHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:BackOffice ;
+.
+uso:PIMVKPHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:PIMVKPHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:PIMVKPHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:PIMVKPHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:PIMVKPHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:MyAccount ;
+.
+uso:PIMVKPHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:Navigation ;
+.
+uso:PIMVKPHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:PDP ;
+.
+uso:PIMVKPHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:PIMVKPHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:PLP ;
+.
+uso:PIMVKPHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:SAP ;
+.
+uso:PIMVKPHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:Search ;
+.
+uso:PIMVKPHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PIMVKP ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:PLP
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System PLP" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:PLPHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:BackOffice ;
+.
+uso:PLPHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:PLPHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:PLPHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:PLPHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:PLPHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:MyAccount ;
+.
+uso:PLPHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:Navigation ;
+.
+uso:PLPHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:PDP ;
+.
+uso:PLPHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:PLPHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:PLP ;
+.
+uso:PLPHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:SAP ;
+.
+uso:PLPHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:Search ;
+.
+uso:PLPHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PLP ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:POD-10
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Do ;
+  uso:UserStoryDescriptionHasBusinessValue uso:MaintainabilityIncrease ;
+  uso:UserStoryDescriptionHasElement uso:DocumentUSD ;
+  uso:UserStoryDescriptionHasRole uso:AppManager ;
+  uso:UserStoryDescriptionHasSystem uso:DIVAOnboarding ;
+.
 uso:Package
   rdf:type owl:Class ;
   rdfs:label "package" ;
   rdfs:subClassOf uso:Object ;
+.
+uso:PerformanceIncrease
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Performance Increase" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:PerformanceIncreaseHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:PerformanceIncreaseHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:PerformanceIncreaseHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:PerformanceIncreaseHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:PerformanceIncreaseHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:PerformanceIncreaseHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:PerformanceIncreaseHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:PerformanceIncreaseHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:PerformanceIncreaseHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:PerformanceIncrease ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:Person
   rdf:type owl:Class ;
@@ -511,6 +2418,66 @@ uso:PrototypeHasName
   rdfs:label "prototype has name" ;
   rdfs:range xsd:string ;
 .
+uso:PurchaseDecision
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Purchase Decision" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:PurchaseDecisionHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:PurchaseDecisionHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:PurchaseDecisionHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:PurchaseDecisionHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:PurchaseDecisionHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:PurchaseDecisionHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:PurchaseDecisionHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:PurchaseDecisionHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:PurchaseDecisionHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:PurchaseDecision ;
+  rdfs:range uso:WebshopUsability ;
+.
 uso:Reason
   rdf:type owl:Class ;
   rdfs:label "reason" ;
@@ -549,6 +2516,162 @@ uso:SAPManager
   rdf:type sh:NodeShape ;
   rdfs:subClassOf uso:UserStoryRole ;
 .
+uso:SAP
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System SAP" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:SAP-1471
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Extend ;
+  uso:UserStoryDescriptionHasBusinessValue uso:DataQualityIncrease ;
+  uso:UserStoryDescriptionHasElement uso:Data ;
+  uso:UserStoryDescriptionHasRole uso:AppManager ;
+  uso:UserStoryDescriptionHasSystem uso:SAP ;
+.
+uso:SAP-1528
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:See ;
+  uso:UserStoryDescriptionHasBusinessValue uso:EfficiencyIncrease ;
+  uso:UserStoryDescriptionHasElement uso:Data ;
+  uso:UserStoryDescriptionHasRole uso:AppManager ;
+  uso:UserStoryDescriptionHasSystem uso:SAP ;
+.
+uso:SAPHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:BackOffice ;
+.
+uso:SAPHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:SAPHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:SAPHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:SAPHasSimilarityWithInspiratinPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:SAPHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:MyAccount ;
+.
+uso:SAPHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:Navigation ;
+.
+uso:SAPHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:PDP ;
+.
+uso:SAPHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:SAPHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:PLP ;
+.
+uso:SAPHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:SAP ;
+.
+uso:SAPHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:Search ;
+.
+uso:SAPHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SAP ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:SDE-334
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Display ;
+  uso:UserStoryDescriptionHasBusinessValue uso:CustomerInspiration ;
+  uso:UserStoryDescriptionHasElement uso:Component ;
+  uso:UserStoryDescriptionHasRole uso:ContentManager ;
+  uso:UserStoryDescriptionHasSystem uso:PLP ;
+.
+uso:SDE-456
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Disable ;
+  uso:UserStoryDescriptionHasBusinessValue uso:ErrorHandling ;
+  uso:UserStoryDescriptionHasElement uso:Component ;
+  uso:UserStoryDescriptionHasRole uso:Developer ;
+  uso:UserStoryDescriptionHasSystem uso:MyAccount ;
+.
+uso:SDE-48
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:See ;
+  uso:UserStoryDescriptionHasBusinessValue uso:WebshopUsability ;
+  uso:UserStoryDescriptionHasElement uso:Component ;
+  uso:UserStoryDescriptionHasRole uso:Customer ;
+  uso:UserStoryDescriptionHasSystem uso:MyAccount ;
+.
+uso:SDE-512
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Disable ;
+  uso:UserStoryDescriptionHasBusinessValue uso:ErrorHandling ;
+  uso:UserStoryDescriptionHasElement uso:Tool ;
+  uso:UserStoryDescriptionHasRole uso:Developer ;
+  uso:UserStoryDescriptionHasSystem uso:BackOffice ;
+.
+uso:SDE-726
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Do ;
+  uso:UserStoryDescriptionHasBusinessValue uso:ContentCorrectness ;
+  uso:UserStoryDescriptionHasElement uso:CallToAction ;
+  uso:UserStoryDescriptionHasRole uso:Customer ;
+  uso:UserStoryDescriptionHasSystem uso:PDP ;
+.
+uso:SDE-TestInstance
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:See ;
+  uso:UserStoryDescriptionHasBusinessValue uso:EfficiencyIncrease ;
+  uso:UserStoryDescriptionHasElement uso:Data ;
+  uso:UserStoryDescriptionHasRole uso:StakeholderUSD ;
+  uso:UserStoryDescriptionHasSystem uso:SAP ;
+.
+uso:SDE-TestInstance2
+  rdf:type uso:UserStoryDescription ;
+  uso:UserStoryDescriptionHasAction uso:Disable ;
+  uso:UserStoryDescriptionHasBusinessValue uso:ErrorHandling ;
+  uso:UserStoryDescriptionHasElement uso:Tool ;
+  uso:UserStoryDescriptionHasRole uso:WebAnalyst ;
+  uso:UserStoryDescriptionHasSystem uso:BackOffice ;
+.
 uso:ScrumMaster
   rdf:type owl:Class ;
   rdfs:label "scrum master" ;
@@ -571,6 +2694,138 @@ uso:ScrumTeamHasName
   rdfs:label "scrum team has name" ;
   rdfs:range xsd:string ;
 .
+uso:Search
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System Search" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:SearchHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:BackOffice ;
+.
+uso:SearchHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:SearchHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:SearchHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:SearchHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:SearchHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:MyAccount ;
+.
+uso:SearchHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:Navigation ;
+.
+uso:SearchHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:PDP ;
+.
+uso:SearchHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:SearchHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:PLP ;
+.
+uso:SearchHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:SAP ;
+.
+uso:SearchHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:Search ;
+.
+uso:SearchHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Search ;
+  rdfs:range uso:SmartEdit ;
+.
+uso:See
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action See" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:SeeHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Disable ;
+.
+uso:SeeHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Display ;
+.
+uso:SeeHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Do ;
+.
+uso:SeeHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Edit ;
+.
+uso:SeeHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Extend ;
+.
+uso:SeeHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:See ;
+.
+uso:SeeHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:See ;
+  rdfs:range uso:Track ;
+.
 uso:Service
   rdf:type owl:Class ;
   rdfs:label "service" ;
@@ -592,6 +2847,90 @@ uso:ShippingContainer
   rdf:type owl:Class ;
   rdfs:label "shipping container" ;
   rdfs:subClassOf uso:Object ;
+.
+uso:SmartEdit
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story System SmartEdit" ;
+  rdfs:subClassOf uso:UserStorySystem ;
+.
+uso:SmartEditHasSimilarityWithBackOffice
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:BackOffice ;
+.
+uso:SmartEditHasSimilarityWithCartCheckout
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:SmartEditHasSimilarityWithDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:SmartEditHasSimilarityWithFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:SmartEditHasSimilarityWithInspirationPage
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:SmartEditHasSimilarityWithMyAccount
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:MyAccount ;
+.
+uso:SmartEditHasSimilarityWithNavigation
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:Navigation ;
+.
+uso:SmartEditHasSimilarityWithPDP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:PDP ;
+.
+uso:SmartEditHasSimilarityWithPIMVKP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:SmartEditHasSimilarityWithPLP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:PLP ;
+.
+uso:SmartEditHasSimilarityWithSAP
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:SAP ;
+.
+uso:SmartEditHasSimilarityWithSearch
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:Search ;
+.
+uso:SmartEditHasSimilarityWithSmartEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:SmartEdit ;
+  rdfs:range uso:SmartEdit ;
 .
 uso:Solution
   rdf:type owl:Class ;
@@ -655,6 +2994,48 @@ uso:StakeholderGivesFeedback
   rdfs:label "gives" ;
   rdfs:range uso:StakeholderFeedback ;
 .
+uso:StakeholderUSD
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Role StakeholderUSD" ;
+  rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:StakeholderUSDHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:AppManager ;
+.
+uso:StakeholderUSDHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:ContentManager ;
+.
+uso:StakeholderUSDHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:Customer ;
+.
+uso:StakeholderUSDHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:Developer ;
+.
+uso:StakeholderUSDHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:StakeholderUSDHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:StakeholderUSD ;
+  rdfs:range uso:WebAnalyst ;
+.
 uso:StoryPoints
   rdf:type owl:Class ;
   rdfs:label "story points" ;
@@ -676,10 +3057,166 @@ uso:Temperature
   rdfs:label "temperature" ;
   rdfs:subClassOf uso:Object ;
 .
+uso:Text
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Text" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:TextHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:CallToAction ;
+.
+uso:TextHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Component ;
+.
+uso:TextHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Data ;
+.
+uso:TextHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:TextHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Images ;
+.
+uso:TextHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Text ;
+.
+uso:TextHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Tool ;
+.
+uso:TextHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Text ;
+  rdfs:range uso:Video ;
+.
 uso:Textfield
   rdf:type owl:Class ;
   rdfs:label "textfield" ;
   rdfs:subClassOf uso:Mockup ;
+.
+uso:Tool
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Tool" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:ToolHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:CallToAction ;
+.
+uso:ToolHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Component ;
+.
+uso:ToolHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Data ;
+.
+uso:ToolHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:ToolHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Images ;
+.
+uso:ToolHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Text ;
+.
+uso:ToolHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Tool ;
+.
+uso:ToolHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Tool ;
+  rdfs:range uso:Video ;
+.
+uso:Track
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action Track" ;
+  rdfs:subClassOf uso:UserStoryAction ;
+.
+uso:TrackHasSimilarityWithDisable
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Disable ;
+.
+uso:TrackHasSimilarityWithDisplay
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Display ;
+.
+uso:TrackHasSimilarityWithDo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Do ;
+.
+uso:TrackHasSimilarityWithEdit
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Edit ;
+.
+uso:TrackHasSimilarityWithExtend
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Extend ;
+.
+uso:TrackHasSimilarityWithSee
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:See ;
+.
+uso:TrackHasSimilarityWithTrack
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Track ;
+  rdfs:range uso:Track ;
 .
 uso:UserPersona
   rdf:type owl:Class ;
@@ -700,6 +3237,11 @@ uso:UserStory
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryHasUserStoryDescription ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty uso:UserStoryIncludesAction ;
     ] ;
   rdfs:subClassOf [
@@ -716,22 +3258,199 @@ uso:UserStory
 uso:UserStoryAction
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Action" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryActionIncludesDisable
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Disable ;
+.
+uso:UserStoryActionIncludesDisplay
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Display ;
+.
+uso:UserStoryActionIncludesDo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Do ;
+.
+uso:UserStoryActionIncludesEdit
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Edit ;
+.
+uso:UserStoryActionIncludesExtend
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Extend ;
+.
+uso:UserStoryActionIncludesSee
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:See ;
+.
+uso:UserStoryActionIncludesTrack
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryAction ;
+  rdfs:range uso:Track ;
 .
 uso:UserStoryBusinessValue
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryBusinessValueIncludesContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:UserStoryBusinessValueIncludesCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:UserStoryBusinessValueIncludesDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:UserStoryBusinessValueIncludesEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:UserStoryBusinessValueIncludesErrorHandling
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:UserStoryBusinessValueIncludesMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:UserStoryBusinessValueIncludesPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:UserStoryBusinessValueIncludesPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:UserStoryBusinessValueIncludesWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryBusinessValue ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:UserStoryDescription
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryDescriptionHasAction ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryDescriptionHasBusinessValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryDescriptionHasElement ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryDescriptionHasRole ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty uso:UserStoryDescriptionHasSystem ;
+    ] ;
+.
+uso:UserStoryDescriptionHasAction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryDescription ;
+  rdfs:range uso:UserStoryAction ;
+.
+uso:UserStoryDescriptionHasBusinessValue
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryDescription ;
+  rdfs:range uso:UserStoryBusinessValue ;
+.
+uso:UserStoryDescriptionHasElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryDescription ;
+  rdfs:range uso:UserStoryElement ;
+.
+uso:UserStoryDescriptionHasRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryDescription ;
+  rdfs:range uso:UserStoryRole ;
+.
+uso:UserStoryDescriptionHasSystem
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryDescription ;
+  rdfs:range uso:UserStorySystem ;
 .
 uso:UserStoryElement
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryElementIncludesCallToAction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:CallToAction ;
+.
+uso:UserStoryElementIncludesComponent
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Component ;
+.
+uso:UserStoryElementIncludesData
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Data ;
+.
+uso:UserStoryElementIncludesDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:UserStoryElementIncludesImages
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Images ;
+.
+uso:UserStoryElementIncludesText
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Text ;
+.
+uso:UserStoryElementIncludesTool
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Tool ;
+.
+uso:UserStoryElementIncludesVideo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryElement ;
+  rdfs:range uso:Video ;
 .
 uso:UserStoryHasAcceptanceCriterion
   rdf:type owl:ObjectProperty ;
@@ -781,6 +3500,12 @@ uso:UserStoryHasStatement
   rdfs:label "user story has statement" ;
   rdfs:range xsd:string ;
 .
+uso:UserStoryHasUserStoryDescription
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStory ;
+  rdfs:label "User Story has User Story Description" ;
+  rdfs:range uso:UserStoryDescription ;
+.
 uso:UserStoryIncludesAction
   rdf:type owl:ObjectProperty ;
   rdfs:domain uso:UserStory ;
@@ -814,7 +3539,39 @@ uso:UserStoryReleasedInRelease
 uso:UserStoryRole
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Role" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStoryRoleIncludesAppManager
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:AppManager ;
+.
+uso:UserStoryRoleIncludesContentManager
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:ContentManager ;
+.
+uso:UserStoryRoleIncludesCustomer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:Customer ;
+.
+uso:UserStoryRoleIncludesDeveloper
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:Developer ;
+.
+uso:UserStoryRoleIncludesStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:UserStoryRoleIncludesWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStoryRole ;
+  rdfs:range uso:WebAnalyst ;
 .
 uso:UserStorySolvedBySolution
   rdf:type owl:ObjectProperty ;
@@ -825,7 +3582,74 @@ uso:UserStorySolvedBySolution
 uso:UserStorySystem
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story System" ;
+  rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/LanguageOntology#ModelingElement> ;
   rdfs:subClassOf uso:UserStoryDescription ;
+.
+uso:UserStorySystemIncludesBackOffice
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:BackOffice ;
+.
+uso:UserStorySystemIncludesCartCheckout
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:CartCheckout ;
+.
+uso:UserStorySystemIncludesDIVAOnboarding
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:DIVAOnboarding ;
+.
+uso:UserStorySystemIncludesFilteringSorting
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:FilteringSorting ;
+.
+uso:UserStorySystemIncludesInspirationPage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:InspirationPage ;
+.
+uso:UserStorySystemIncludesMyAccount
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:MyAccount ;
+.
+uso:UserStorySystemIncludesNavigation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:Navigation ;
+.
+uso:UserStorySystemIncludesPDP
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:PDP ;
+.
+uso:UserStorySystemIncludesPIMVKP
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:PIMVKP ;
+.
+uso:UserStorySystemIncludesPLP
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:PLP ;
+.
+uso:UserStorySystemIncludesSAP
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:SAP ;
+.
+uso:UserStorySystemIncludesSearch
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:Search ;
+.
+uso:UserStorySystemIncludesSmartEdit
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain uso:UserStorySystem ;
+  rdfs:range uso:SmartEdit ;
 .
 uso:UserStoryhasStoryPoints
   rdf:type owl:ObjectProperty ;
@@ -833,13 +3657,167 @@ uso:UserStoryhasStoryPoints
   rdfs:label "has" ;
   rdfs:range uso:StoryPoints ;
 .
+uso:Video
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Element Video" ;
+  rdfs:subClassOf uso:UserStoryElement ;
+.
+uso:VideoHasSimilarityWithCallToAction
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:CallToAction ;
+.
+uso:VideoHasSimilarityWithComponent
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Component ;
+.
+uso:VideoHasSimilarityWithData
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Data ;
+.
+uso:VideoHasSimilarityWithDocumentUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:DocumentUSD ;
+.
+uso:VideoHasSimilarityWithImages
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Images ;
+.
+uso:VideoHasSimilarityWithText
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Text ;
+.
+uso:VideoHasSimilarityWithTool
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Tool ;
+.
+uso:VideoHasSimilarityWithVideo
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:Video ;
+  rdfs:range uso:Video ;
+.
 uso:WebAnalyst
   rdf:type owl:Class ;
   rdf:type sh:NodeShape ;
+  rdfs:label "User Story Role Web Analyst" ;
   rdfs:subClassOf uso:UserStoryRole ;
+.
+uso:WebAnalystHasSimilarityWithAppManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:AppManager ;
+.
+uso:WebAnalystHasSimilarityWithContentManager
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.2 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:ContentManager ;
+.
+uso:WebAnalystHasSimilarityWithCustomer
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:Customer ;
+.
+uso:WebAnalystHasSimilarityWithDeveloper
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.5 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:Developer ;
+.
+uso:WebAnalystHasSimilarityWithStakeholderUSD
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:StakeholderUSD ;
+.
+uso:WebAnalystHasSimilarityWithWebAnalyst
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:WebAnalyst ;
+  rdfs:range uso:WebAnalyst ;
+.
+uso:WebshopUsability
+  rdf:type owl:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "User Story Business Value Webshop Usability" ;
+  rdfs:subClassOf uso:UserStoryBusinessValue ;
+.
+uso:WebshopUsabiliyHasSimilarityWithContentCorrectness
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.6 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:ContentCorrectness ;
+.
+uso:WebshopUsabiliyHasSimilarityWithCustomerInspiration
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:CustomerInspiration ;
+.
+uso:WebshopUsabiliyHasSimilarityWithDataQualityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.4 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:DataQualityIncrease ;
+.
+uso:WebshopUsabiliyHasSimilarityWithEfficiencyIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.1 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:EfficiencyIncrease ;
+.
+uso:WebshopUsabiliyHasSimilarityWithErrorHandling
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.7 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:ErrorHandling ;
+.
+uso:WebshopUsabiliyHasSimilarityWithMaintainabilityIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.3 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:MaintainabilityIncrease ;
+.
+uso:WebshopUsabiliyHasSimilarityWithPerformanceIncrease
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.9 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:PerformanceIncrease ;
+.
+uso:WebshopUsabiliyHasSimilarityWithPurchaseDecision
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 0.8 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:PurchaseDecision ;
+.
+uso:WebshopUsabiliyHasSimilarityWithWebshopUsability
+  rdf:type owl:ObjectProperty ;
+  uso:hasSimilarity 1 ;
+  rdfs:domain uso:WebshopUsability ;
+  rdfs:range uso:WebshopUsability ;
 .
 uso:hasSimilarity
   rdf:type owl:DatatypeProperty ;
   rdfs:label "characteristic has similarity" ;
   rdfs:range xsd:decimal ;
+.
+owl:Thing
+  rdf:type sh:NodeShape ;
 .
