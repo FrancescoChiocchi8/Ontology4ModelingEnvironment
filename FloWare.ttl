@@ -77,8 +77,81 @@ fw:featureHasSystem
   rdfs:label "featureHasSystem" ;
   rdfs:range fw:System ;
 .
+fw:andRelation
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the AND relationship between a System and either another System or a Device" ;
+  rdfs:domain fw:System ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:orRelation
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the OR relationship between a System and either another System or a Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:hasMandatory
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the Mandatory relationship between Feature, System, or Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:hasOptional
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the Optional relationship between Feature, System, or Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:hasRequired
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the Required relationship between Feature, System, or Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:hasIncluded
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the Includes relationship between Feature, System, or Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
+fw:hasExcluded
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Represents the Excluded relationship between Feature, System, or Device" ;
+  rdfs:domain [ rdf:type owl:Class ;
+                owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+  rdfs:range [ rdf:type owl:Class ;
+               owl:unionOf (fw:Feature fw:System fw:Device) ] ;
+.
 fw:hasName
   rdf:type owl:DatatypeProperty ;
   rdfs:domain fw:Elements ;
   rdfs:range xsd:string ;
+.
+fw:AndOrRelationShape
+  rdf:type sh:NodeShape ;
+  sh:targetClass fw:System ;
+  sh:property [
+    rdf:type sh:PropertyShape ;
+    sh:path fw:andRelation ;
+    sh:minCount 2 ;
+    sh:message "An AND relation requires at least two connections." ;
+  ] ;
+  sh:property [
+    rdf:type sh:PropertyShape ;
+    sh:path fw:orRelation ;
+    sh:minCount 2 ;
+    sh:message "An OR relation requires at least two connections." ;
+  ] ;
 .
