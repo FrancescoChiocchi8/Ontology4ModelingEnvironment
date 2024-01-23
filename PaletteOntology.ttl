@@ -1,25 +1,26 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/PaletteOntology
 # imports: http://fhnw.ch/modelingEnvironment/LanguageOntology
+# prefix: po
 
 @prefix fw:       <http://fhnw.ch/FloWare#> .
-@prefix archi:   <http://ikm-group.ch/archiMEO/archimate#> .
-@prefix bpaas:   <http://ikm-group.ch/archimeo/bpaas#> .
-@prefix bpmn:    <http://ikm-group.ch/archiMEO/BPMN#> .
-@prefix cmmn:    <http://ikm-group.ch/archimeo/cmmn#> .
-@prefix dkmm:    <http://fhnw.ch/modelingEnvironment/dkmm#> .
-@prefix dsml4ptm:  <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix archi:    <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix bpaas:    <http://ikm-group.ch/archimeo/bpaas#> .
+@prefix bpmn:     <http://ikm-group.ch/archiMEO/BPMN#> .
+@prefix cmmn:     <http://ikm-group.ch/archimeo/cmmn#> .
+@prefix dkmm:     <http://fhnw.ch/modelingEnvironment/dkmm#> .
+@prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
 @prefix gpml:     <http://ikm-group.ch/archiMEO/gpml#> .
-@prefix lo:      <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
-@prefix orgm:    <http://fhnw.ch/OrganizationalModel/orgm#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix po:      <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix lo:       <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix orgm:     <http://fhnw.ch/OrganizationalModel/orgm#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix po:       <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix questionnaire:  <http://ikm-group.ch/archiMEO/questionnaire#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sapscenes:  <http://fhnw.ch/SAPScenesOntology#> .
-@prefix sh:      <http://www.w3.org/ns/shacl#> .
-@prefix top:     <http://ikm-group.ch/archiMEO/top#> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix top:      <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 
 fw:Exclude
   rdfs:subClassOf lo:ModelingRelation ;
@@ -137,7 +138,7 @@ po:Action
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
-              
+
 po:UserStoryAction
       rdf:type po:PaletteElement ;
       rdfs:label "User Story Action"^^xsd:string ;
@@ -167,7 +168,7 @@ po:UserStoryAction
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
-              
+
 po:UserStoryActionDisable
       rdf:type po:PaletteElement ;
       rdfs:label "User Story Action Disable"^^xsd:string ;
@@ -481,7 +482,7 @@ po:Actor
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
-              
+
 po:UserStoryRole
       rdf:type po:PaletteElement ;
       rdfs:label "User Story Role" ;
@@ -713,25 +714,17 @@ po:UserStoryRoleWebAnalyst
 
 
 po:AcuteHospitalOU
-      rdf:type po:PaletteElement ;
-      rdfs:label "Acute Hospital" ;
-      po:paletteConstructHasHeight
-              50 ;
-      po:paletteConstructHasModelImage
-              "OrganizationalUnitAcuteHospital-OM.png" ;
-      po:paletteConstructHasPaletteThumbnail
-              "OrganizationalUnitAcuteHospital-OM.png" ;
-      po:paletteConstructHasParentPaletteConstruct
-              po:OrganizationalUnit ;
-      po:paletteConstructHasWidth
-              70 ;
-      po:paletteConstructIsGroupedInPaletteCategory
-              po:Category_OrganizationalUnit ;
-      po:paletteConstructIsHiddenFromPalette
-              "false"^^xsd:boolean ;
-      po:paletteConstructIsRelatedToModelingLanguageConstruct
-              dsml4ptm:AcuteHospitalOU .
-
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasModelImage "OrganizationalUnitAcuteHospital-OM.png" ;
+  po:paletteConstructHasPaletteThumbnail "OrganizationalUnitAcuteHospital-OM.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:OrganizationalUnit ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_OrganizationalUnit ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AcuteHospitalOU ;
+  rdfs:label "Acute Hospital" ;
+.
 po:AcuteHospitalPool
       rdf:type po:PaletteElement ;
       rdfs:label "Acute Hospital" ;
@@ -2851,7 +2844,7 @@ po:Category_UserStoryGeneral
               lo:UserStoryModellingView ;
       po:paletteCategoryOrderNumber
               2 .
-              
+
 po:Category_UserStoryDescription
       rdf:type po:PaletteCategory ;
       rdfs:label "Description Elements"^^xsd:string ;
@@ -5078,37 +5071,34 @@ po:IntensiveCareUnitOU
               dsml4ptm:IntensiveCareUnitOU .
 
 po:IntermediateEvent
-      rdf:type po:PaletteElement ;
-      rdfs:label "Intermediate Event" ;
-      po:paletteConstructHasHeight
-              70 ;
-      po:paletteConstructHasModelImage
-              "intermediate_event.png" ;
-      po:paletteConstructHasPaletteThumbnail
-              "intermediate_event.png" ;
-      po:paletteConstructHasParentPaletteConstruct
-              po:NoneEvent ;
-      po:paletteConstructHasWidth
-              70 ;
-      po:paletteConstructIsGroupedInPaletteCategory
-              po:Category_Events4BPMNProcessModelingView ;
-      po:paletteConstructIsHiddenFromPalette
-              "false"^^xsd:boolean ;
-      po:paletteConstructIsRelatedToModelingLanguageConstruct
-              bpmn:IntermediateEvent ;
-      po:paletteElementBackgroundColor
-              "#00AD5F" ;
-      po:paletteElementIconPosition
-              "top-left" ;
-      po:paletteElementIconURL
-              "Event.PNG" ;
-      po:paletteElementLabelPosition
-              "inside" ;
-      po:paletteElementShape
-              "Circle" ;
-      po:paletteElementUsesImage
-              "false"^^xsd:boolean .
-
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "intermediate_event.png" ;
+  po:paletteConstructHasPaletteThumbnail "intermediate_event.png" ;
+  po:paletteConstructHasParentPaletteConstruct po:NoneEvent ;
+  po:paletteConstructHasWidth 70 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Category_Events4BPMNProcessModelingView ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:IntermediateEvent ;
+  po:paletteElementBackgroundColor "#00AD5F" ;
+  po:paletteElementIconPosition "top-left" ;
+  po:paletteElementIconURL "Event.PNG" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "Circle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Intermediate Event" ;
+.
+po:IoT_Device
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Device.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Device.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:FloWare_DeviceLayer ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct fw:Device ;
+  rdfs:label "IoT Device" ;
+.
 po:IsManager_OrgM
       rdf:type po:PaletteConnector ;
       rdfs:label "is Manager" ;
@@ -6132,7 +6122,7 @@ po:Object
               "roundrectangle" ;
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
-              
+
 po:UserStoryElement
       rdf:type po:PaletteElement ;
       rdfs:label "User Story Element"^^xsd:string ;
@@ -6458,7 +6448,7 @@ po:UserStorySystem
       po:paletteElementUsesImage
               "true"^^xsd:boolean .
 
-              
+
 po:UserStorySystemBackOffice
       rdf:type po:PaletteElement ;
       rdfs:label "User Story System BackOffice"^^xsd:string ;
@@ -7421,8 +7411,7 @@ po:PrepareKoGu
 
 po:PrepareMedicalRecordAdmission
       rdf:type po:PaletteElement ;
-      rdfs:label """Prepare Medical Record Admission
- """ ;
+      rdfs:label """Prepare Medical Record Admission """ ;
       po:paletteConstructHasHeight
               70 ;
       po:paletteConstructHasPaletteThumbnail
@@ -7452,8 +7441,7 @@ po:PrepareMedicalRecordAdmission
 
 po:PrepareRehabAdmission
       rdf:type po:PaletteElement ;
-      rdfs:label """Prepare Rehab Admission
- """ ;
+      rdfs:label """Prepare Rehab Admission """ ;
       po:paletteConstructHasHeight
               70 ;
       po:paletteConstructHasPaletteThumbnail
@@ -8866,17 +8854,23 @@ po:Student
               sapscenes:Student .
 
 po:SubReceiveActivity
-      rdf:type po:PaletteElement ;
-      rdfs:label "Subtask Receive Activity" ;
-      po:paletteConstructHasParentPaletteConstruct
-              lo:ReceiveTask ;
-      po:paletteConstructIsGroupedInPaletteCategory
-              lo:Category_Activities ;
-      po:paletteConstructIsHiddenFromPalette
-              "false" ;
-      po:paletteElementUsesImage
-              "null" .
-
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasParentPaletteConstruct lo:ReceiveTask ;
+  po:paletteConstructIsGroupedInPaletteCategory lo:Category_Activities ;
+  po:paletteConstructIsHiddenFromPalette "false" ;
+  po:paletteElementUsesImage "null" ;
+  rdfs:label "Subtask Receive Activity" ;
+.
+po:SubSystem
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "System.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_SubSystem.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct fw:SubSystem ;
+  rdfs:label "IoT Sub-System" ;
+.
 po:Subprocess
       rdf:type po:PaletteElement ;
       rdfs:label "Subprocess" ;
@@ -8908,27 +8902,29 @@ po:Subprocess
               "false"^^xsd:boolean .
 
 po:Subway
-      rdf:type po:PaletteElement ;
-      rdfs:label "Subway" ;
-      po:paletteConstructBelongsToModelingView
-              lo:SAPScenesModelingView ;
-      po:paletteConstructHasHeight
-              70 ;
-      po:paletteConstructHasModelImage
-              "Subway.PNG" ;
-      po:paletteConstructHasPaletteThumbnail
-              "Thumbnail_Subway.PNG" ;
-      po:paletteConstructHasParentPaletteConstruct
-              po:Background ;
-      po:paletteConstructHasWidth
-              100 ;
-      po:paletteConstructIsGroupedInPaletteCategory
-              po:SAPScenesElements ;
-      po:paletteConstructIsHiddenFromPalette
-              "false"^^xsd:boolean ;
-      po:paletteConstructIsRelatedToModelingLanguageConstruct
-              sapscenes:Subway .
-
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Subway.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Subway.PNG" ;
+  po:paletteConstructHasParentPaletteConstruct po:Background ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Subway ;
+  rdfs:label "Subway" ;
+.
+po:System
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "System.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_System.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:FloWare_SystemLayer ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct fw:System ;
+  rdfs:label "IoT System" ;
+.
 po:SystemSoftware
       rdf:type po:PaletteElement ;
       rdfs:label "System Software" ;
