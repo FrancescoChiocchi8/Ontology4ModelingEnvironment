@@ -1,4 +1,3 @@
-@prefix :      <http://fhnw.ch/userstoryontology#> .
 @prefix bmm:   <http://ikm-group.ch/archiMEO/BMM#> .
 @prefix lo:    <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix mod:   <http://fhnw.ch/modelingEnvironment/ModelOntology#> .
