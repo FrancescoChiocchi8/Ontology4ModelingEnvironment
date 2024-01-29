@@ -55,7 +55,7 @@
 @prefix po:    <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<http://fhnw.ch/FloWare#SubSystem>
+fw:SubSystem
   rdfs:subClassOf lo:ModelingElement ;
 .
 lo:elementHasBridgingConcept

@@ -4762,7 +4762,7 @@ po:Performer
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Performer ;
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#OrganizationalUnit:Performer> ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct orgm:OrganizationalUnit:Performer ;
   rdfs:label "Performer" ;
 .
 po:PhoneScreen
