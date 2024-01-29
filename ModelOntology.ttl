@@ -1,14 +1,59 @@
-# baseURI: http://fhnw.ch/modelingEnvironment/ModelOntology
-# imports: http://fhnw.ch/modelingEnvironment/PaletteOntology
-# prefix: mod
-
-@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
-@prefix mod: <http://fhnw.ch/modelingEnvironment/ModelOntology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bmm:   <http://ikm-group.ch/archiMEO/BMM#> .
+@prefix lo:    <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix mod:   <http://fhnw.ch/modelingEnvironment/ModelOntology#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix iso42010: <http://ikm-group.ch/archimeo/iso42010#> .
+@prefix do:    <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix icf:   <http://who.int/icf#> .
+@prefix uso:   <http://fhnw.ch/userstoryontology#> .
+@prefix bpmn4pp: <http://ikm-group.ch/archiMEO/BPMN4PP#> .
+@prefix CMMN:  <http://ikm-group.ch/archimeo/CMMN#> .
+@prefix archimeo: <http://ikm-group.ch/archiMEO#> .
+@prefix dcterms: <http://purl.org/dcterms#> .
+@prefix speco: <http://fhnw.ch/securityProtocolEnforcedForCovid19Ontology#> .
+@prefix foaf:  <http://xmlns.com/foaf/spec#> .
+@prefix bdata: <http://ikm-group.ch/archiMEO/bdata#> .
+@prefix cmmn:  <http://ikm-group.ch/archimeo/cmmn#> .
+@prefix eo:    <http://ikm-group.ch/archiMEO/eo#> .
+@prefix ontogov: <http://ch.fhnw.ontogov#> .
+@prefix j.1:   <http://fhnw.ch/SAPScenesOntology#> .
+@prefix apqc:  <http://ikm-group.ch/archimeo/apqc#> .
+@prefix j.0:   <http://ikm-group.ch/archiMEO/nco#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix generalpurposemodellinglanguage: <http://fhnw.ch/generalpurposemodellinglanguage#> .
+@prefix util:  <http://ikm-group.ch/archiMEO/util#> .
+@prefix orgm:  <http://fhnw.ch/OrganizationalModel/orgm#> .
+@prefix bpmn:  <http://ikm-group.ch/archiMEO/BPMN#> .
+@prefix media-types: <http://www.iana.org/assignments/media-types#> .
+@prefix questionnaire: <http://ikm-group.ch/archiMEO/questionnaire#> .
+@prefix OrganizationalModel: <http://fhnw.ch/OrganizationalModel#> .
+@prefix emo:   <http://ikm-group.ch/archiMEO/emo#> .
+@prefix dkmm:  <http://fhnw.ch/modelingEnvironment/dkmm#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dsml4ptm: <http://fhnw.ch/modelingEnvironment/DSML4PTM#> .
+@prefix fw:    <http://fhnw.ch/FloWare#> .
+@prefix top:   <http://ikm-group.ch/archiMEO/top#> .
+@prefix questiondata: <http://ikm-group.ch/archiMEO/questiondata#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix arg:   <http://spinrdf.org/arg#> .
+@prefix BMC:   <http://fhnw.ch/BMC#> .
+@prefix nco:   <http://ikm-group.ch/archiMEO/NCO#> .
+@prefix bpaas: <http://ikm-group.ch/archimeo/bpaas#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix DomainOntology: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+@prefix fbpdo: <http://ikm-group.ch/archimeo/fbpdo#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix elements: <http://purl.org/dc/elements/1.1#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix gpml:  <http://ikm-group.ch/archiMEO/gpml#> .
+@prefix dcmi-type-vocabulary: <http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary#> .
+@prefix po:    <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <http://fhnw.ch/FloWare#SubSystem>
   rdfs:subClassOf lo:ModelingElement ;
@@ -54,15 +99,724 @@ mod:modelHasShape
   rdfs:domain mod:Model ;
   rdfs:range mod:Shape ;
 .
+mod:UserStorySystemPDP_Shape_62883de1-1e89-6940-8938-939d40058350
+  a mod:Shape ;
+  rdfs:label "User Story System PDP" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemPDP ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:PDP_4d965019-df78-4bb5-ae35-4ad9b98d554e .
+mod:UserStory_Shape_790c67a5-3f21-0985-801a-1721f03c9fcf
+  a mod:Shape ;
+  rdfs:label "User Story" ;
+  mod:shapeHasHeight  581 ;
+  mod:shapeHasWidth   1540 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX -6 ;
+  mod:shapePositionsOnCoordinateY 320 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_14e25ba3-79d1-4f55-a925-7a5da16e445d .
+mod:Application_Shape_0c2ad9a6-19eb-7d7b-ff6f-c28e8072e2c1
+  a mod:Shape ;
+  rdfs:label "PriintSuite" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Application ;
+  mod:shapePositionsOnCoordinateX 90 ;
+  mod:shapePositionsOnCoordinateY 415 ;
+  mod:shapeVisualisesConceptualElement mod:Application_0f11fa5c-3631-4ba6-b1ad-df37e8af4c3f .
+mod:NamingConvention_15822943-c0a5-4605-bcdf-65b2c9d466e0
+  a       mod:ConceptualElement , uso:NamingConvention .
+mod:AcceptanceCriterion_84456c55-2b46-49ae-97e3-bed3da7a657b
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:Application_200fac0a-9aad-4063-a740-998386799086
+  a       mod:ConceptualElement , uso:Application .
+mod:Epic_fefc4996-cfc0-4b48-9559-c2f1fb6cc47f
+  a       mod:ConceptualElement , uso:Epic .
+mod:Document_f95b8466-845a-4ac1-b0a7-53e1c8b8cbfc
+  a       mod:ConceptualElement , uso:Document .
+mod:AcceptanceCriterion_Shape_6d4f17dd-dad2-0247-4f15-08d2ba981d75
+  a mod:Shape ;
+  rdfs:label "delivery option = ZTA --> Show surcharge small quantities" ;
+  mod:shapeHasHeight  85 ;
+  mod:shapeHasWidth   124 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 852 ;
+  mod:shapePositionsOnCoordinateY 108 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_02b5cb3b-2edb-4afb-a4e8-f6eaa8d4e990 .
+mod:Assignee_b408ba48-d729-4684-a48c-2b2181f80c81
+  a mod:ConceptualElement , uso:Assignee .
+mod:ContentCorrectness_2f4e5c69-bcd8-4eff-a099-30c5818d11e5
+  a uso:ContentCorrectness , mod:ConceptualElement .
+mod:NamingConvention_Shape_12751093-f152-1f5b-bb53-75e2b01823b2
+  a mod:Shape ;
+  rdfs:label "Naming Convention" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:NamingConvention ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:NamingConvention_15822943-c0a5-4605-bcdf-65b2c9d466e0 .
+mod:Solution_19902252-7eec-4e87-9296-d647a9c779f8
+  a mod:ConceptualElement , uso:Solution .
+mod:Model_5fe37528-4b0a-4fda-ae89-8fb1cbf6371f
+  a mod:Model ;
+  rdfs:label "SAP-1528 Assembly times capacity planning" ;
+  mod:modelHasShape  mod:UserStory_Shape_790c67a5-3f21-0985-801a-1721f03c9fcf , mod:Application_Shape_0734b0f3-67cc-2693-9284-a7a7145a7936 , mod:Reason_Shape_bb2f3a11-c7fd-0419-e1d4-eb9faf9757d2 , mod:Actor_Shape_aa932b78-4492-2498-6559-963c657f3161 , mod:Action_Shape_2406620d-2b78-b974-d5a8-08c92d4ed0c1 , mod:Notes_notecard_Shape_5accc9a4-39fe-02f2-dff0-8c4c8fb0144d , mod:Image_Shape_cd2654ba-cbfe-a666-6a25-510c6651d790 , mod:Function_Shape_f363054d-6277-4adb-02e4-6c0e1e711192 , mod:UserStoryRoleStakeholderUSD_Shape_SAP-1528 , mod:UserStoryActionSee_Shape_SAP-1528 , mod:UserStoryElementData_Shape_SAP-1528 , mod:UserStorySystemSAP_Shape_SAP-1528 , mod:UserStoryBusinessValueEfficiencyIncrease_Shape_SAP-1528 , mod:UserStoryDescription_Shape_SAP-1528 .
+mod:UserStoryRoleStakeholderUSD_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story Role StakeholderUSD" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleStakeholderUSD ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleStakeholderUSD_SAP-1528 .
+mod:UserStoryRoleStakeholderUSD_SAP-1528
+  a mod:ConceptualElement , uso:UserStoryRoleStakeholderUSD .
+mod:UserStoryActionSee_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story Action See" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionSee ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionSee_SAP-1528 .
+mod:UserStoryActionSee_SAP-1528
+  a mod:ConceptualElement , uso:UserStoryActionSee .
+mod:UserStoryElementData_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story Element Data" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementData ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementData_SAP-1528 .
+mod:UserStoryElementData_SAP-1528
+  a mod:ConceptualElement , uso:UserStoryElementData .
+mod:UserStorySystemSAP_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story System SAP" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemSAP ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemSAP_SAP-1528 .
+mod:UserStorySystemSAP_SAP-1528
+  a mod:ConceptualElement , uso:UserStorySystemSAP .
+mod:UserStoryBusinessValueEfficiencyIncrease_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story Business Value Efficiency Increase" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueEfficiencyIncrease ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueEfficiencyIncrease_SAP-1528 .
+mod:UserStoryBusinessValueEfficiencyIncrease_SAP-1528
+  a mod:ConceptualElement , uso:UserStoryBusinessValueEfficiencyIncrease .
+mod:UserStoryDescription_Shape_SAP-1528
+  a mod:Shape ;
+  rdfs:label "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_SAP-1528 .
+mod:UserStoryDescription_SAP-1528
+  a mod:ConceptualElement , uso:UserStoryDescription .
+mod:Credentials_bcce398e-0283-4b8c-ad0d-0a568d0bc676
+  a mod:ConceptualElement , uso:Credentials .
+mod:Document_Shape_ff826f4d-1b9d-4ee1-5edf-5d2947bfe8d4
+  a mod:Shape ;
+  rdfs:label "Screenshot of Link position" ;
+  mod:shapeHasHeight  175 ;
+  mod:shapeHasWidth   173 ;
+  mod:shapeInstantiatesPaletteConstruct po:Document ;
+  mod:shapePositionsOnCoordinateX 882 ;
+  mod:shapePositionsOnCoordinateY 264 ;
+  mod:shapeVisualisesConceptualElement mod:Document_c2e74c08-83a8-4375-a603-c5bf118d1284 .
+mod:AcceptanceCriterion_Shape_de362257-5994-a4a1-0cf0-9164c8c97ea9
+  a mod:Shape ;
+  rdfs:label "Kameleoon implementation can be disabled with a feature toggle" ;
+  mod:shapeHasHeight  205 ;
+  mod:shapeHasWidth   201 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 1055 ;
+  mod:shapePositionsOnCoordinateY 139 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_9020cba8-77d8-4de9-b286-02ec08bbd222 .
+mod:Assignee_Shape_ba1f64f3-6bf2-5936-0b16-9eb19d752bbf
+  a mod:Shape ;
+  rdfs:label "Assignee" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 904 ;
+  mod:shapePositionsOnCoordinateY 249 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Assignee_74bfc4e7-16c1-41be-9c86-e1cdaab09c16 .
+mod:Application_042033cb-050b-46d4-ab0a-3df6877c7e67
+  a mod:ConceptualElement , uso:Application .
+mod:Credentials_Shape_8ff5dbf7-88b8-ccb1-9379-cae5271e20a8
+  a mod:Shape ;
+  rdfs:label          "Using feature toggle" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Credentials ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Credentials_153715ac-15fb-4f77-999a-46e03c5ff4c7 .
+mod:UserStoryDescription_0e9f5124-dc7d-49e2-b5b5-36178d86949c
+  a mod:ConceptualElement , uso:UserStoryDescription .
+mod:Model_05140ef0-aea1-4d51-960c-c504fdcd2443
+  a mod:Model ;
+  rdfs:label         "POD-10 clean-up process" ;
+  mod:modelHasShape  mod:Application_Shape_0c2ad9a6-19eb-7d7b-ff6f-c28e8072e2c1 , mod:AcceptanceCriterion_Shape_b06dbb75-c435-e51e-be95-337eb5fc2159 , mod:Actor_Shape_007029c4-c40d-7102-99b3-7f990e56f78c , mod:Assignee_Shape_15300cc7-b5a1-02ce-d7c4-aaf72b65ee3c , mod:AcceptanceCriterion_Shape_f24795ca-b046-e0bc-d1bc-a367d3bba60b , mod:Action_Shape_ba6b68c1-00c6-7629-257e-e59f290d6675 , mod:UserStory_Shape_50959309-ae99-bbc7-84c1-ad788fbc5ba6 , mod:AcceptanceCriterion_Shape_228c825c-4627-b8a9-71e2-6e7c25b5e818 , mod:Service_Shape_9778e63e-c1ed-fb85-f9f6-4970eb663a7f , mod:Reason_Shape_6bf606ca-329e-4bb0-b9e1-2eb89f5cafd5 , mod:UserStoryRoleAppManager_Shape_POD-10 , mod:UserStoryActionDo_Shape_POD-10 , mod:UserStoryElementDocumentUSD_Shape_POD-10 , mod:UserStorySystemDIVAOnboarding_Shape_POD-10 , mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_POD-10 , mod:UserStoryDescription_Shape_POD-10 .
+mod:UserStoryRoleAppManager_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role App Manager" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleAppManager ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleAppManager_POD-10 .
+mod:UserStoryRoleAppManager_POD-10
+  a       mod:ConceptualElement , uso:UserStoryRoleAppManager .
+mod:UserStoryActionDo_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Do" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionDo ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionDo_POD-10 .
+mod:UserStoryActionDo_POD-10
+  a       mod:ConceptualElement , uso:UserStoryActionDo .
+mod:UserStoryElementDocumentUSD_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element DocumentUSD" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementDocumentUSD ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementDocumentUSD_POD-10 .
+mod:UserStoryElementDocumentUSD_POD-10
+  a       mod:ConceptualElement , uso:UserStoryElementDocumentUSD .
+mod:UserStorySystemDIVAOnboarding_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story System DIVA Onboarding" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemDIVAOnboarding ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemDIVAOnboarding_POD-10 .
+mod:UserStorySystemDIVAOnboarding_POD-10
+  a       mod:ConceptualElement , uso:UserStorySystemDIVAOnboarding .
+mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Maintainability Increase" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueMaintainabilityIncrease ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueMaintainabilityIncrease_POD-10 .
+mod:UserStoryBusinessValueMaintainabilityIncrease_POD-10
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueMaintainabilityIncrease .
+mod:UserStoryDescription_Shape_POD-10
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_POD-10 .
+mod:UserStoryDescription_POD-10
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:CallToAction_693fcffe-ce93-48dd-a9fa-1470cd8a5f61
+  a       mod:ConceptualElement , uso:CallToAction .
+mod:Reason_622fd024-9158-406e-b965-25709a81ed41
+  a       mod:ConceptualElement , uso:Reason .
+mod:Stakeholder_Shape_4549d792-eb0f-a43e-4cb2-ce18fd93a42e
+  a                   mod:Shape ;
+  rdfs:label          "Content Management" ;
+  mod:shapeHasHeight  79 ;
+  mod:shapeHasWidth   110 ;
+  mod:shapeInstantiatesPaletteConstruct po:Stakeholder ;
+  mod:shapePositionsOnCoordinateX 875 ;
+  mod:shapePositionsOnCoordinateY 467 ;
+  mod:shapeVisualisesConceptualElement mod:Stakeholder_f735a732-66ea-457b-9dbc-f48f38e4979b .
+mod:Service_77e54473-c4b6-45fd-a99b-87be8e27f870
+  a       mod:ConceptualElement , uso:Service .
+mod:Action_186b747c-b712-4b61-84e5-6e16fa1c8f34
+  a       mod:ConceptualElement , uso:Action ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:UserStory_e8b74a9d-1ab0-4068-beae-e808c6a11b12 .
+mod:UserStoryActionDo_Shape_b57416da-3764-127e-23eb-c8df4255b016
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Do" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionDo ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Do_adeeb3c8-bdc1-4428-a082-e1cd4acc127e .
+mod:Do_adeeb3c8-bdc1-4428-a082-e1cd4acc127e
+  a       mod:ConceptualElement , uso:Do .
+mod:Reason_5a69feec-e66c-47e8-8d92-7957210c5173
+  a       mod:ConceptualElement , uso:Reason .
+mod:Application_Shape_7114a97b-3ace-4368-edae-2acfb85597f4
+  a                   mod:Shape ;
+  rdfs:label          "Application" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Application ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Application_200fac0a-9aad-4063-a740-998386799086 .
+mod:shapePositionsOnCoordinateY
+  a            owl:DatatypeProperty ;
+  rdfs:domain  mod:Shape ;
+  rdfs:range   xsd:integer .
+mod:Stakeholder_f735a732-66ea-457b-9dbc-f48f38e4979b
+  a       mod:ConceptualElement , uso:Stakeholder .
+mod:UserStory_Shape_1ec2843f-c306-00e1-17aa-519cae250986
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  582 ;
+  mod:shapeHasWidth   1369 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 3 ;
+  mod:shapePositionsOnCoordinateY 31 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_e8b74a9d-1ab0-4068-beae-e808c6a11b12 .
+mod:Notes_notecard_Shape_2e25995b-f445-7392-c3c4-0a22b7a67f98
+  a                   mod:Shape ;
+  rdfs:label          "Wording and translation for headline, cording and links" ;
+  mod:shapeHasHeight  137 ;
+  mod:shapeHasWidth   197 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_9d9c38a0-a014-4597-9202-388d3e504ae6 .
+mod:Credentials_Shape_435426f7-ba31-55be-17c1-378254d180ee
+  a                   mod:Shape ;
+  rdfs:label          "Using feature toggle" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Credentials ;
+  mod:shapePositionsOnCoordinateX 473 ;
+  mod:shapePositionsOnCoordinateY 632 ;
+  mod:shapeVisualisesConceptualElement mod:Credentials_bcce398e-0283-4b8c-ad0d-0a568d0bc676 .
+mod:AcceptanceCriterion_Shape_ab6e2c32-bf3c-b346-f3b9-0c39f1439709
+  a                   mod:Shape ;
+  rdfs:label          "Acceptance Criterion" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_73de5ca6-05a3-4af4-aa3f-c14e02cbb461 .
+mod:UserStory_fbccc0c0-f221-44ac-8764-0a6d230845f8
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Credentials_bcce398e-0283-4b8c-ad0d-0a568d0bc676 , mod:Reason_5a69feec-e66c-47e8-8d92-7957210c5173 , mod:Assignee_74bfc4e7-16c1-41be-9c86-e1cdaab09c16 , mod:Actor_2c3fe51a-53b9-4bd7-9fe0-371ab8715892 , mod:Action_9ecaaf47-80b1-491a-9bcc-b45f84e18252 , mod:Actor_088fdb89-6e0d-4320-8d45-42b4b71afd45 , mod:AcceptanceCriterion_c0839f97-4016-40c3-9583-ab22d7020f21 .
+mod:Frame_36e9a3cb-0614-435a-9cc4-776b9f0921dd
+  a       mod:ConceptualElement , uso:Frame .
+mod:StakeholderFeedback_Shape_69870009-2193-d4c0-aada-068b1327ff66
+  a                   mod:Shape ;
+  rdfs:label          "Stakeholder Feedback" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:StakeholderFeedback ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:StakeholderFeedback_3d653fb5-f902-46a1-a5b5-792793b3bf0e .
+mod:Reason_72bf2a4e-6cfa-4bc0-b4b6-a8511e467669
+  a       mod:ConceptualElement , uso:Reason .
+mod:AcceptanceCriterion_Shape_b06dbb75-c435-e51e-be95-337eb5fc2159
+  a                   mod:Shape ;
+  rdfs:label          "elements in the trash are deleted after 30 days" ;
+  mod:shapeHasHeight  78 ;
+  mod:shapeHasWidth   109 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_11fdab12-a4dc-4c27-b1bc-36880e9dc92e .
+mod:StoryPoints_Shape_c621f318-5002-6db9-2ca2-097c125e06b1
+  a                   mod:Shape ;
+  rdfs:label          "2" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:StoryPoints ;
+  mod:shapePositionsOnCoordinateX 1072 ;
+  mod:shapePositionsOnCoordinateY 507 ;
+  mod:shapeVisualisesConceptualElement mod:StoryPoints_afea1b77-537b-4c7e-8af5-84d4fa335fbe .
+mod:Application_Shape_3921d275-4f2b-1326-9576-e62b712e9564
+  a                   mod:Shape ;
+  rdfs:label          "SAP" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Application ;
+  mod:shapePositionsOnCoordinateX 635 ;
+  mod:shapePositionsOnCoordinateY 98 ;
+  mod:shapeVisualisesConceptualElement mod:Application_042033cb-050b-46d4-ab0a-3df6877c7e67 .
+mod:UserStorySystemBackOffice_c33c6427-0d5a-4448-87dc-476e24e5badf
+  a       mod:ConceptualElement , uso:UserStorySystemBackOffice .
+mod:NamingConvention_Shape_61eb5aa9-c8c3-e61c-1aa7-7e778b58d6b5
+  a                   mod:Shape ;
+  rdfs:label          "IsArtName" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   160 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:NamingConvention ;
+  mod:shapePositionsOnCoordinateX
+                      867 ;
+  mod:shapePositionsOnCoordinateY
+                      288 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:NamingConvention_7a730e57-d17f-4f09-bf13-6d0d96281a59 .
+mod:Actor_6605253e-4270-428f-b509-ec3cbc43aa06
+  a       mod:ConceptualElement , uso:Actor .
+mod:Actor_01293b3a-b6f1-41df-9aca-af721bd16246
+  a       mod:ConceptualElement , uso:Actor .
+mod:AcceptanceCriterion_6e9b3ba9-f540-4e35-bb5b-4cc1cd2f1915
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:Application_Shape_b23376ee-1ab3-8088-2abb-7d69404bbd9a
+  a                   mod:Shape ;
+  rdfs:label          "Application" ;
+  mod:shapeHasHeight  81 ;
+  mod:shapeHasWidth   102 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Application ;
+  mod:shapePositionsOnCoordinateX
+                      662 ;
+  mod:shapePositionsOnCoordinateY
+                      127 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Application_a990b07a-e28c-4a71-b0a8-361e6b0362fd .
+mod:Action_Shape_28f3a670-fdab-4a9b-1b31-c476693ffdc8
+  rdfs:label          "deactivate kameleoon" ;
+  mod:shapeHasHeight  73 ;
+  mod:shapeHasWidth   400 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Action ;
+  mod:shapePositionsOnCoordinateX
+                      117 ;
+  mod:shapePositionsOnCoordinateY
+                      88 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Action_5cb48008-8095-4084-90bd-b37c7d0bff04 .
+mod:Application_Shape_1a255c7e-1046-50d5-d6d4-3ea35d64a36b
+  a                   mod:Shape ;
+  rdfs:label          "PIM" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Application ;
+  mod:shapePositionsOnCoordinateX
+                      851 ;
+  mod:shapePositionsOnCoordinateY
+                      367 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Application_4f811e2e-c227-4c6b-ab2b-2092299cc2ed .
+mod:AcceptanceCriterion_Shape_cb2cfbef-ed6c-3d0b-da2b-ada7e15af0ad
+  a                   mod:Shape ;
+  rdfs:label          "Classification is extended with attributes" ;
+  mod:shapeHasHeight  138 ;
+  mod:shapeHasWidth   149 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX
+                      361 ;
+  mod:shapePositionsOnCoordinateY
+                      492 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:AcceptanceCriterion_01c586ee-91a0-4054-82df-2d119e8ca76b .
+mod:Reason_69c228c6-56a3-42bb-8c25-4f6cf02113b7
+  a       mod:ConceptualElement , uso:Reason .
+mod:UserStoryRoleDeveloper_Shape_9f7aa980-47b5-ea91-3985-32228aaffa0d
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role Developer" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:UserStoryRoleDeveloper ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:UserStoryRole_7da3f05f-ce4e-48d9-a6d4-1cfa05fc64ff .
+mod:Image_Shape_f123fdf6-2ffd-742e-66fa-d0ebd944ccaf
+  a                   mod:Shape ;
+  rdfs:label          "Image" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Image ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Image_9c927e62-22f3-4684-8960-071d392c8a89 .
+mod:Assignee_Shape_083f913e-6173-5364-39b0-0c352bf20781
+  a                   mod:Shape ;
+  rdfs:label          "Assignee" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Assignee ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Assignee_0fd7eb50-112a-4510-be66-3ca48f632938 .
+mod:AcceptanceCriterion_Shape_1efd0335-c66d-cb8c-8990-8098c3e8235b
+  a                   mod:Shape ;
+  rdfs:label          "Acceptance Criterion" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX
+                      1007 ;
+  mod:shapePositionsOnCoordinateY
+                      727 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:AcceptanceCriterion_c0839f97-4016-40c3-9583-ab22d7020f21 .
+mod:shapeRepresentsModel
+  a            owl:ObjectProperty ;
+  rdfs:domain  mod:Shape ;
+  rdfs:range   mod:Model .
+mod:StoryPoints_Shape_1485e1a9-791e-b2c6-880c-09b8ddc674be
+  a                   mod:Shape ;
+  rdfs:label          "3" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:StoryPoints ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:StoryPoints_490f7c5f-8279-4ef5-a955-efd89d5e0a01 .
+mod:NamingConvention_7a730e57-d17f-4f09-bf13-6d0d96281a59
+  a       mod:ConceptualElement , uso:NamingConvention .
+mod:Reason_Shape_53cf360d-4921-3125-1428-766e51b5b5b4
+  a                   mod:Shape ;
+  rdfs:label          "Surcharge for small quantities is working and shown on order" ;
+  mod:shapeHasHeight  90 ;
+  mod:shapeHasWidth   122 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Reason ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Reason_28094395-c0c6-4c03-ba05-2236afa86588 .
+mod:Notes_aa0521b4-8aa1-4717-9494-3b3661324c05
+  a       mod:ConceptualElement , uso:Notes .
+mod:Assignee_185f2f13-80ed-4802-abe9-4c7e7571ae14
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Assignee_Shape_dc45ae95-7d2d-9767-367e-ab9e2561ed8f
+  a                   mod:Shape ;
+  rdfs:label          "DIVA Team" ;
+  mod:shapeHasHeight  77 ;
+  mod:shapeHasWidth   94 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:Assignee ;
+  mod:shapePositionsOnCoordinateX
+                      537 ;
+  mod:shapePositionsOnCoordinateY
+                      504 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:Assignee_b408ba48-d729-4684-a48c-2b2181f80c81 .
+mod:Reason_c0eb9384-53e3-4d46-8abc-da8962bc0c95
+  a       mod:ConceptualElement , uso:Reason .
+mod:UserStoryElementCallToAction_Shape_1eb0394a-e1c1-bb89-703f-70f5c164182d
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Call To Action" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:UserStoryElementCallToAction ;
+  mod:shapePositionsOnCoordinateX
+                      0 ;
+  mod:shapePositionsOnCoordinateY
+                      0 ;
+  mod:shapeVisualisesConceptualElement
+                      mod:CallToAction_693fcffe-ce93-48dd-a9fa-1470cd8a5f61 .
 mod:propertyIsShownInModel
   rdf:type owl:DatatypeProperty ;
   rdfs:domain rdf:Property ;
   rdfs:range xsd:boolean ;
 .
-mod:shapeHasHeight
-  rdf:type owl:DatatypeProperty ;
-  rdfs:domain mod:Shape ;
-  rdfs:range xsd:integer ;
+mod:UserStoryDescription_Shape_5aed5d58-c493-0430-f09f-d92dfb069bc3
+        a                   mod:Shape ;
+        rdfs:label          "User Story Description" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+        mod:shapePositionsOnCoordinateX 82 ;
+        mod:shapePositionsOnCoordinateY -2 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryDescription_64557639-a575-474f-b4a0-0781d049f711 .
+mod:Application_Shape_0734b0f3-67cc-2693-9284-a7a7145a7936
+        a                   mod:Shape ;
+        rdfs:label          "SAP" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:Application ;
+        mod:shapePositionsOnCoordinateX 663 ;
+        mod:shapePositionsOnCoordinateY 132 ;
+        mod:shapeVisualisesConceptualElement mod:Application_80549efc-b897-4c48-84b3-9b1e0218890d .
+mod:Reason_Shape_bb2f3a11-c7fd-0419-e1d4-eb9faf9757d2
+        a                   mod:Shape ;
+        rdfs:label          "Reason" ;
+        mod:shapeHasHeight  76 ;
+        mod:shapeHasWidth   82 ;
+        mod:shapeInstantiatesPaletteConstruct po:Reason ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:Reason_dfb49196-25bd-42ba-9930-d8b2c3f1c823 .
+mod:Action_25eaad59-66ff-4111-b250-9bf3e064bae4
+        a       mod:ConceptualElement , uso:Action .
+mod:Model_406eded7-5347-4706-a3a9-06949f455de0
+        a                  mod:Model ;
+        rdfs:label         "SDE-512 Kameleoon Feature Toggle" ;
+        mod:modelHasShape  mod:NamingConvention_Shape_12751093-f152-1f5b-bb53-75e2b01823b2 , mod:AcceptanceCriterion_Shape_de362257-5994-a4a1-0cf0-9164c8c97ea9 , mod:Credentials_Shape_8ff5dbf7-88b8-ccb1-9379-cae5271e20a8 , mod:StakeholderFeedback_Shape_69870009-2193-d4c0-aada-068b1327ff66 , mod:StoryPoints_Shape_1485e1a9-791e-b2c6-880c-09b8ddc674be , mod:Service_Shape_25ef4333-381e-21aa-a2a5-1e4b53d655cd , mod:Stakeholder_Shape_65470f05-fd25-35d6-abbb-edb7b6698f46 , mod:Function_Shape_129cc5fd-5dad-d588-1a2c-36c3861ab078 , mod:Solution_Shape_2d9288fd-94e7-d72e-c81c-b11a23e1aac1 , mod:Reason_Shape_a3504a27-f64b-5fd1-0869-e70a6154c770 , mod:NamingConvention_Shape_78c7e784-1702-fd44-fa58-c24e677ad066 , mod:Model_Shape_02867b31-2dbf-927a-72aa-d81b17ba2fbb , mod:UserStory_Shape_7c45e800-8629-781a-a385-c5e6bbc3856b , mod:Assignee_Shape_b74ba0ce-a0cf-5d8c-c000-1a862892c173 , mod:Notes_notecard_Shape_e5fb7c7e-19bb-1a6a-2f85-260eceefe088 , mod:Action_Shape_ca70472a-4245-b5c6-6204-b5086ab0fbca , mod:Document_Shape_95526e3f-1f6c-8f9c-b95c-d7b2844f649d , mod:Service_Shape_50f94b38-917e-376e-9f64-4dd2ead857e8 , mod:Application_Shape_b045d9e9-ad96-f440-57fc-50042780b5bd , mod:UserStoryRoleDeveloper_Shape_SDE-512 , mod:UserStoryActionDisable_Shape_SDE-512 , mod:UserStoryElementTool_Shape_SDE-512 , mod:UserStorySystemBackOffice_Shape_SDE-512 , mod:UserStoryBusinessValueErrorHandling_Shape_SDE-512 , mod:UserStoryDescription_Shape_SDE-512 .
+mod:UserStoryRoleDeveloper_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story Role Developer" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleDeveloper ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryRoleDeveloper_SDE-512 .
+mod:UserStoryRoleDeveloper_SDE-512
+        a       mod:ConceptualElement , uso:UserStoryRoleDeveloper .
+mod:UserStoryActionDisable_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story Action Disable" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryActionDisable ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryActionDisable_SDE-512 .
+mod:UserStoryActionDisable_SDE-512
+        a       mod:ConceptualElement , uso:UserStoryActionDisable .
+mod:UserStoryElementTool_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story Element Tool" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryElementTool ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryElementTool_SDE-512 .
+mod:UserStoryElementTool_SDE-512
+        a       mod:ConceptualElement , uso:UserStoryElementTool .
+mod:UserStorySystemBackOffice_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story System BackOffice" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStorySystemBackOffice ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStorySystemBackOffice_SDE-512 .
+mod:UserStorySystemBackOffice_SDE-512
+        a       mod:ConceptualElement , uso:UserStorySystemBackOffice .
+mod:UserStoryBusinessValueErrorHandling_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story Business Value Error Handling" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueErrorHandling ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueErrorHandling_SDE-512 .
+mod:UserStoryBusinessValueErrorHandling_SDE-512
+        a       mod:ConceptualElement , uso:UserStoryBusinessValueErrorHandling .
+mod:UserStoryDescription_Shape_SDE-512
+        a                   mod:Shape ;
+        rdfs:label          "User Story Description" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:UserStoryDescription_SDE-512 .
+mod:UserStoryDescription_SDE-512
+        a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:Action_d170d7a1-4809-4d91-99bb-bc8d9f7f7b6a
+        a       mod:ConceptualElement , uso:Action .
+mod:Actor_Shape_007029c4-c40d-7102-99b3-7f990e56f78c
+        a                   mod:Shape ;
+        rdfs:label          "Application Manger" ;
+        mod:shapeHasHeight  76 ;
+        mod:shapeHasWidth   86 ;
+        mod:shapeInstantiatesPaletteConstruct po:Actor ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:Actor_01293b3a-b6f1-41df-9aca-af721bd16246 .
+mod:Assignee_cb0d9660-5d91-4c59-a0b0-d6ebbc9f5373
+        a       mod:ConceptualElement , uso:Assignee .
+mod:Stakeholder_Shape_e247d85e-dc3d-261b-8f3f-66ea37d6d4e7
+        rdfs:label          "" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:Stakeholder ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:Stakeholder_b24c3d1e-350d-4598-9859-2edac1b408de .
+mod:Epic_b8d7de08-5e14-44d0-9297-e9a3e4812f22
+        a       mod:ConceptualElement , uso:Epic .
+mod:Document_Shape_fd5589d0-a93a-2ae5-6f95-96b472711242
+        a                   mod:Shape ;
+        rdfs:label          "Document" ;
+        mod:shapeHasHeight  64 ;
+        mod:shapeHasWidth   64 ;
+        mod:shapeInstantiatesPaletteConstruct po:Document ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:Document_7310ea0a-ca49-4530-a45c-323039df679a .
+mod:Reason_Shape_3701f507-009b-78f6-c562-7855fb7c1a78
+        a                   mod:Shape ;
+        rdfs:label          "Eliminate two CronJobs which cuase problems" ;
+        mod:shapeHasHeight  76 ;
+        mod:shapeHasWidth   120 ;
+        mod:shapeInstantiatesPaletteConstruct po:Reason ;
+        mod:shapePositionsOnCoordinateX 0 ;
+        mod:shapePositionsOnCoordinateY 0 ;
+        mod:shapeVisualisesConceptualElement mod:Reason_0544e260-8571-45ed-aadf-7a5150d834bc .
+mod:AcceptanceCriterion_11fdab12-a4dc-4c27-b1bc-36880e9dc92e
+        a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStoryElementTool_2e8b71af-bd05-4d08-80b5-6f9b1d546c0d
+        a       mod:ConceptualElement , uso:UserStoryElementTool .
+mod:UserStory_11b8d34c-7be9-4f13-9d29-ceb76b30b7df
+        a       mod:ConceptualElement , uso:UserStory ;
+        lo:modelingContainerContainsModelingLanguageConstruct
+                mod:AcceptanceCriterion_84456c55-2b46-49ae-97e3-bed3da7a657b , mod:Reason_622fd024-9158-406e-b965-25709a81ed41 , mod:Action_25eaad59-66ff-4111-b250-9bf3e064bae4 , mod:Assignee_cb0d9660-5d91-4c59-a0b0-d6ebbc9f5373 , mod:Actor_91c97a6f-0c1a-4cbd-91cc-1a9fce27d300 , mod:Notes_51c71b44-d315-4aac-89d6-e40c22dc91dc , mod:Document_c2e74c08-83a8-4375-a603-c5bf118d1284 .
+mod:shapeHasWidth
+        rdf:type owl:DatatypeProperty ;
+        rdfs:domain mod:Shape ;
+        rdfs:range xsd:integer ;
 .
 mod:shapeHasNote
   rdf:type owl:DatatypeProperty ;
@@ -99,6 +853,1253 @@ mod:shapeVisualisesConceptualElement
   rdfs:domain mod:Shape ;
   rdfs:range mod:ConceptualElement ;
 .
+mod:NamingConvention_f0e05fbf-36cf-4a8e-8ad0-b3d3f5f81620
+  a       mod:ConceptualElement , uso:NamingConvention .
+mod:UserStoryRoleCustomer_Shape_0889398f-29f2-12f7-f036-c64bba13acc8
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role Customer" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct
+                      po:UserStoryRoleCustomer ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Customer_25b812b6-16c0-4628-966f-a11dc0681f05 .
+mod:Function_95202257-e37d-4381-8e77-d6f2b5f9e472
+  a       mod:ConceptualElement , uso:Function .
+mod:Actor_91c97a6f-0c1a-4cbd-91cc-1a9fce27d300
+  a       mod:ConceptualElement , uso:Actor .
+mod:Reason_Shape_e32148e4-f87d-2729-7c29-1ff7e2522080
+  a                   mod:Shape ;
+  rdfs:label          "Prevent errors" ;
+  mod:shapeHasHeight  71 ;
+  mod:shapeHasWidth   85 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 552 ;
+  mod:shapePositionsOnCoordinateY 641 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_5a69feec-e66c-47e8-8d92-7957210c5173 .
+mod:Service_Shape_25ef4333-381e-21aa-a2a5-1e4b53d655cd
+  a                   mod:Shape ;
+  rdfs:label          "Service" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Service ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Service_2c34dc6a-f0a1-43ef-91c0-c01db818f28f .
+mod:AcceptanceCriterion_Shape_b7a06c30-ef92-97ce-84ad-82d997370e8c
+  a                   mod:Shape ;
+  rdfs:label          "delivery option = ZTL and delivery restriction 01 and 07 --> show shipping costs" ;
+  mod:shapeHasHeight  101 ;
+  mod:shapeHasWidth   123 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 851 ;
+  mod:shapePositionsOnCoordinateY 210 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_6e9b3ba9-f540-4e35-bb5b-4cc1cd2f1915 .
+mod:UserStoryDescription_Shape_dd708203-df2a-2450-1bd0-0cbe2b28916f
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_0e9f5124-dc7d-49e2-b5b5-36178d86949c .
+mod:Function_Shape_92b003cc-afb5-ab37-6174-5621dbb308eb
+  rdfs:label          "" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Function ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Function_4f6308c9-3c95-4acd-bcd6-45f33cdd8fb1 .
+mod:UserStory_14e25ba3-79d1-4f55-a925-7a5da16e445d
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Application_80549efc-b897-4c48-84b3-9b1e0218890d , mod:Function_04f3533b-31de-44c4-9d98-8e31c4e1d317 .
+mod:Frame_Shape_0e623672-37ea-0bfa-561c-04a37cc4bbbd
+  a                   mod:Shape ;
+  rdfs:label          "Frame" ;
+  mod:shapeHasHeight  63 ;
+  mod:shapeHasWidth   111 ;
+  mod:shapeInstantiatesPaletteConstruct po:Frame ;
+  mod:shapePositionsOnCoordinateX 1048 ;
+  mod:shapePositionsOnCoordinateY 195 ;
+  mod:shapeVisualisesConceptualElement mod:Frame_36e9a3cb-0614-435a-9cc4-776b9f0921dd .
+mod:UserStoryBusinessValueErrorHandling_3f99bf1b-c4d2-4906-984f-3ef4c246a2af
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueErrorHandling .
+mod:UserStoryBusinessValueErrorHandling_Shape_d53f7671-3e76-c019-d433-349be02f81d4
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Error Handling" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueErrorHandling ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueErrorHandling_7d5aa693-c953-4455-ad69-b621ae83e854 .
+mod:Actor_Shape_aa932b78-4492-2498-6559-963c657f3161
+  a                   mod:Shape ;
+  rdfs:label          "Logistician" ;
+  mod:shapeHasHeight  82 ;
+  mod:shapeHasWidth   97 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_c3a99545-67ad-4190-8a63-0ade0a557df8 .
+mod:Notes_51c71b44-d315-4aac-89d6-e40c22dc91dc
+  a       mod:ConceptualElement , uso:Notes .
+mod:NamingConvention_Shape_c97caf70-ac7e-3773-058e-3e9acec69a02
+  a                   mod:Shape ;
+  rdfs:label          "IsArtName" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   160 ;
+  mod:shapeInstantiatesPaletteConstruct po:NamingConvention ;
+  mod:shapePositionsOnCoordinateX 865 ;
+  mod:shapePositionsOnCoordinateY 204 ;
+  mod:shapeVisualisesConceptualElement mod:NamingConvention_7a730e57-d17f-4f09-bf13-6d0d96281a59 .
+mod:Action_Shape_0f76e019-215f-3fe9-3db0-0a5a9cd3459d
+  a                   mod:Shape ;
+  rdfs:label          "Action" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 195 ;
+  mod:shapePositionsOnCoordinateY 120 ;
+  mod:shapeVisualisesConceptualElement mod:Action_423a19f4-a298-43e7-bc35-7195edb0dbe7 .
+mod:Stakeholder_Shape_65470f05-fd25-35d6-abbb-edb7b6698f46
+  a                   mod:Shape ;
+  rdfs:label          "Stakeholder" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Stakeholder ;
+  mod:shapePositionsOnCoordinateX 841 ;
+  mod:shapePositionsOnCoordinateY 460 ;
+  mod:shapeVisualisesConceptualElement mod:Stakeholder_847f3702-296a-4969-9fbe-8d4d02c36c4c .
+mod:UserStory_10d73756-d54c-4195-bfde-2b23bfb48a7c
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Reason_63a9734a-9542-408f-ba0d-f0573ac326c4 , mod:Reason_71bda08c-cfdd-43f2-bae9-8bbea73681a4 , mod:AcceptanceCriterion_9020cba8-77d8-4de9-b286-02ec08bbd222 , mod:Credentials_9cc3b205-cb8a-4d75-83ac-00bfa03ec627 , mod:Action_5cb48008-8095-4084-90bd-b37c7d0bff04 , mod:Actor_1e2f2f40-86d8-4f22-bc26-7ebee72c4c8a , mod:Stakeholder_847f3702-296a-4969-9fbe-8d4d02c36c4c , mod:Function_c3de383a-8de0-4cef-b441-bf207fac1b2d , mod:Epic_8e49ef19-4c06-4da6-8e99-f1eb29208e17 , mod:Action_a465733b-2353-49a3-8ba4-316db02aeaae .
+mod:Image_05acf82e-6586-4004-a4d5-2fbb62ad86cf
+  a       mod:ConceptualElement , uso:Image .
+mod:Actor_a6fb2c89-ef83-45a5-878e-5561ba3bc27b
+  a       mod:ConceptualElement , uso:Actor .
+mod:CurrentStateDescription_Shape_76a1eaaf-1a61-4387-90e7-369bada58003
+  a                   mod:Shape ;
+  rdfs:label          "To many requests to the customer support and therefore costs and waiting time for customers --> reduced customer satisfaction" ;
+  mod:shapeHasHeight  245 ;
+  mod:shapeHasWidth   265 ;
+  mod:shapeInstantiatesPaletteConstruct po:CurrentStateDescription ;
+  mod:shapePositionsOnCoordinateX 835 ;
+  mod:shapePositionsOnCoordinateY 283 ;
+  mod:shapeVisualisesConceptualElement mod:CurrentState_e7cb3815-39a6-43bc-be1a-bd88007c91cf .
+mod:Reason_28094395-c0c6-4c03-ba05-2236afa86588
+  a       mod:ConceptualElement , uso:Reason .
+mod:Actor_Shape_9670e6aa-d678-a253-701c-5d4c5877730e
+  a                   mod:Shape ;
+  rdfs:label          "Content Manager" ;
+  mod:shapeHasHeight  68 ;
+  mod:shapeHasWidth   72 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 190 ;
+  mod:shapePositionsOnCoordinateY 211 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_a6fb2c89-ef83-45a5-878e-5561ba3bc27b .
+mod:Document_c2e74c08-83a8-4375-a603-c5bf118d1284
+  a       mod:ConceptualElement , uso:Document .
+mod:Application_4f811e2e-c227-4c6b-ab2b-2092299cc2ed
+  a       mod:ConceptualElement , uso:Application .
+mod:Reason_71bda08c-cfdd-43f2-bae9-8bbea73681a4
+  a       mod:ConceptualElement , uso:Reason .
+mod:AcceptanceCriterion_9020cba8-77d8-4de9-b286-02ec08bbd222
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:Assignee_15accbff-f9d6-47e7-bd62-74f4b9288754
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Action_Shape_2406620d-2b78-b974-d5a8-08c92d4ed0c1
+  a                   mod:Shape ;
+  rdfs:label          "See correct assembly times for capacity planning" ;
+  mod:shapeHasHeight  96 ;
+  mod:shapeHasWidth   140 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 230 ;
+  mod:shapePositionsOnCoordinateY 206 ;
+  mod:shapeVisualisesConceptualElement mod:Action_3f5ba753-72aa-45f2-900e-ad183a888e56 .
+mod:Application_a990b07a-e28c-4a71-b0a8-361e6b0362fd
+  a       mod:ConceptualElement , uso:Application .
+mod:AcceptanceCriterion_c9b5a68c-cba7-4c24-99bd-79ef5539e4d4
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:Reason_Shape_cdcd2608-5122-954b-0a29-75b125ff1f3d
+  a                   mod:Shape ;
+  rdfs:label          "make a purchase decission" ;
+  mod:shapeHasHeight  71 ;
+  mod:shapeHasWidth   92 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 466 ;
+  mod:shapePositionsOnCoordinateY 260 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_622fd024-9158-406e-b965-25709a81ed41 .
+mod:AcceptanceCriterion_Shape_332d31ff-6299-fea6-be12-71a72f21cb18
+  a                   mod:Shape ;
+  rdfs:label          "delivery option = ZTL and delivery restriction 04 --> show shipping costs" ;
+  mod:shapeHasHeight  101 ;
+  mod:shapeHasWidth   123 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 853 ;
+  mod:shapePositionsOnCoordinateY 321 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_6e9b3ba9-f540-4e35-bb5b-4cc1cd2f1915 .
+mod:modelHasShape  a  owl:ObjectProperty ;
+                   rdfs:domain  mod:Model ;
+                   rdfs:range   mod:Shape .
+mod:StakeholderFeedback_3d653fb5-f902-46a1-a5b5-792793b3bf0e
+  a       mod:ConceptualElement , uso:StakeholderFeedback .
+mod:Action_Shape_dfd321cc-3ff9-574f-7c70-51bff61895af
+  a                   mod:Shape ;
+  rdfs:label          "Extend classification with two attributes" ;
+  mod:shapeHasHeight  79 ;
+  mod:shapeHasWidth   116 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Action_d170d7a1-4809-4d91-99bb-bc8d9f7f7b6a .
+mod:Assignee_7d7b7a96-2562-41f5-a531-5c1e4f9af343
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Notes_notecard_Shape_5accc9a4-39fe-02f2-dff0-8c4c8fb0144d
+  a                   mod:Shape ;
+  rdfs:label          "Add two new columns" ;
+  mod:shapeHasHeight  83 ;
+  mod:shapeHasWidth   110 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_feffd3f3-88a5-4d36-af0e-27bd06d89d70 .
+mod:Reason_Shape_0fb76c8b-46df-195f-b5b5-49ddf9b0d1c5
+  a                   mod:Shape ;
+  rdfs:label          "promote campaings to user" ;
+  mod:shapeHasHeight  74 ;
+  mod:shapeHasWidth   95 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 446 ;
+  mod:shapePositionsOnCoordinateY 207 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_69c228c6-56a3-42bb-8c25-4f6cf02113b7 .
+mod:StoryPoints_Shape_0a330cff-6366-7076-f310-4c03283885ec
+  a                   mod:Shape ;
+  rdfs:label          "8" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:StoryPoints ;
+  mod:shapePositionsOnCoordinateX 1200 ;
+  mod:shapePositionsOnCoordinateY 452 ;
+  mod:shapeVisualisesConceptualElement mod:StoryPoints_7b101b81-1a66-45ee-8ad1-ff41f35cb993 .
+mod:Model_4a7fb50c-1bba-4ed1-b48e-0ea7cebc3b79
+  a                  mod:Model ;
+  rdfs:label         "SDE-334 SmartEdit: Create an Inspiration Box" ;
+  mod:modelHasShape  mod:Stakeholder_Shape_4549d792-eb0f-a43e-4cb2-ce18fd93a42e , mod:Application_Shape_7114a97b-3ace-4368-edae-2acfb85597f4 , mod:AcceptanceCriterion_Shape_ab6e2c32-bf3c-b346-f3b9-0c39f1439709 , mod:Image_Shape_f123fdf6-2ffd-742e-66fa-d0ebd944ccaf , mod:Frame_Shape_0e623672-37ea-0bfa-561c-04a37cc4bbbd , mod:Actor_Shape_9670e6aa-d678-a253-701c-5d4c5877730e , mod:Reason_Shape_0fb76c8b-46df-195f-b5b5-49ddf9b0d1c5 , mod:StoryPoints_Shape_0a330cff-6366-7076-f310-4c03283885ec , mod:Epic_Shape_12216f4a-b716-2419-dc8f-734b772a2b04 , mod:Assignee_Shape_7f0afc2f-b505-cb84-b9fa-959da7f6b42b , mod:Action_Shape_c79df699-c53d-031d-6c72-8ec159fb5a6b , mod:Function_Shape_773adeb1-3ffa-8497-18e4-80e710eba05d , mod:Image_Shape_5a6ded2a-84d4-ea69-1f8b-9f6e69044b4b , mod:Notes_notecard_Shape_54997cb0-0bf0-9070-85d0-a9a32e0821c5 , mod:Notes_Shape_f6958964-ae89-77a3-4afd-b5533a4ca969 , mod:UserStory_Shape_8f0c6a7f-8c24-5106-1e37-eb3844821ce1 , mod:Textfield_Shape_b887339d-480c-039a-6099-1f4ce6085566 , mod:PhoneScreen_Shape_9191a645-f1be-7656-950b-fb8d4b0fa0c6 , mod:AcceptanceCriterion_Shape_8ffab32d-1f27-3908-c78b-0affafdaa1e9 , mod:Assignee_Shape_303adf2c-d1ff-a0c6-25a6-d072bb978e0c , mod:UserStoryRoleContentManager_Shape_SDE-334 , mod:UserStoryActionDisplay_Shape_SDE-334 , mod:UserStoryElementComponent_Shape_SDE-334 , mod:UserStorySystemPLP_Shape_SDE-334 , mod:UserStoryBusinessValueCustomerInspiration_Shape_SDE-334 , mod:UserStoryDescription_Shape_SDE-334 .
+mod:UserStoryRoleContentManager_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role Content Manager" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleContentManager ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleContentManager_SDE-334 .
+mod:UserStoryRoleContentManager_SDE-334
+  a       mod:ConceptualElement , uso:UserStoryRoleContentManager .
+mod:UserStoryActionDisplay_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Display" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionDisplay ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionDisplay_SDE-334 .
+mod:UserStoryActionDisplay_SDE-334
+  a       mod:ConceptualElement , uso:UserStoryActionDisplay .
+mod:UserStoryElementComponent_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Component" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementComponent ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementComponent_SDE-334 .
+mod:UserStoryElementComponent_SDE-334
+  a       mod:ConceptualElement , uso:UserStoryElementComponent .
+mod:UserStorySystemPLP_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story System PLP" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemPLP ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemPLP_SDE-334 .
+mod:UserStorySystemPLP_SDE-334
+  a       mod:ConceptualElement , uso:UserStorySystemPLP .
+mod:UserStoryBusinessValueCustomerInspiration_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Customer Inspiration" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueCustomerInspiration ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueCustomerInspiration_SDE-334 .
+mod:UserStoryBusinessValueCustomerInspiration_SDE-334
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueCustomerInspiration .
+mod:UserStoryDescription_Shape_SDE-334
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_SDE-334 .
+mod:UserStoryDescription_SDE-334
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:UserStory_7e7cc18d-795f-4409-af8e-5706aa90bffe
+  a       mod:ConceptualElement , uso:UserStory .
+mod:Assignee_74bfc4e7-16c1-41be-9c86-e1cdaab09c16
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Epic_Shape_1c58f2da-9c56-8448-194e-733f69b3a9ce
+  a       mod:Shape .
+mod:Notes_a0352f2c-f95e-4e49-a50e-d4df270f04b7
+  a       mod:ConceptualElement , uso:Notes .
+mod:Actor_Shape_dd6cdab4-796a-4396-067d-c63405d3249d
+  a                   mod:Shape ;
+  rdfs:label          "Actor" ;
+  mod:shapeHasHeight  71 ;
+  mod:shapeHasWidth   85 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 166 ;
+  mod:shapePositionsOnCoordinateY 342 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_91c97a6f-0c1a-4cbd-91cc-1a9fce27d300 .
+mod:Document_7310ea0a-ca49-4530-a45c-323039df679a
+  a       mod:ConceptualElement , uso:Document .
+mod:Epic_Shape_12216f4a-b716-2419-dc8f-734b772a2b04
+  a                   mod:Shape ;
+  rdfs:label          "SDE-663: Inspiration Box" ;
+  mod:shapeHasHeight  86 ;
+  mod:shapeHasWidth   120 ;
+  mod:shapeInstantiatesPaletteConstruct po:Epic ;
+  mod:shapePositionsOnCoordinateX 1267 ;
+  mod:shapePositionsOnCoordinateY 448 ;
+  mod:shapeVisualisesConceptualElement mod:Epic_fefc4996-cfc0-4b48-9559-c2f1fb6cc47f .
+mod:Function_Shape_129cc5fd-5dad-d588-1a2c-36c3861ab078
+  a                   mod:Shape ;
+  rdfs:label          "Function" ;
+  mod:shapeHasHeight  85 ;
+  mod:shapeHasWidth   94 ;
+  mod:shapeInstantiatesPaletteConstruct po:Function ;
+  mod:shapePositionsOnCoordinateX 110 ;
+  mod:shapePositionsOnCoordinateY 152 ;
+  mod:shapeVisualisesConceptualElement mod:Function_c3de383a-8de0-4cef-b441-bf207fac1b2d .
+mod:Assignee_Shape_15300cc7-b5a1-02ce-d7c4-aaf72b65ee3c
+  a                   mod:Shape ;
+  rdfs:label          "Scripting" ;
+  mod:shapeHasHeight  84 ;
+  mod:shapeHasWidth   92 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 513 ;
+  mod:shapePositionsOnCoordinateY 432 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_15accbff-f9d6-47e7-bd62-74f4b9288754 .
+mod:Assignee_Shape_7f0afc2f-b505-cb84-b9fa-959da7f6b42b
+  a                   mod:Shape ;
+  rdfs:label          "Backend Team" ;
+  mod:shapeHasHeight  86 ;
+  mod:shapeHasWidth   88 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 1182 ;
+  mod:shapePositionsOnCoordinateY 468 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_185f2f13-80ed-4802-abe9-4c7e7571ae14 .
+mod:Model_155fea5b-51df-4adf-a539-ba01e0ca23bd
+  a                  mod:Model ;
+  rdfs:label         "SAP-1471 Adapt shipping surcharge form" ;
+  mod:modelHasShape  mod:AcceptanceCriterion_Shape_6d4f17dd-dad2-0247-4f15-08d2ba981d75 , mod:UserStory_Shape_1ec2843f-c306-00e1-17aa-519cae250986 , mod:Application_Shape_3921d275-4f2b-1326-9576-e62b712e9564 , mod:Reason_Shape_53cf360d-4921-3125-1428-766e51b5b5b4 , mod:AcceptanceCriterion_Shape_b7a06c30-ef92-97ce-84ad-82d997370e8c , mod:AcceptanceCriterion_Shape_332d31ff-6299-fea6-be12-71a72f21cb18 , mod:Action_Shape_6021489a-5c81-4ef8-30d8-6b0201e437b7 , mod:Actor_Shape_ed30ba29-c328-4625-5982-24653bc249f1 , mod:Notes_notecard_Shape_0ae917d3-e291-8cd5-8fdd-307df0061f15 , mod:Solution_Shape_a7f24545-87fd-83c7-7a45-3f8a4b11c2ea , mod:UserStoryRoleAppManager_Shape_SAP-1471 , mod:UserStoryActionExtend_Shape_SAP-1471 , mod:UserStoryElementData_Shape_SAP-1471 , mod:UserStorySystemSAP_Shape_SAP-1471 , mod:UserStoryBusinessValueDataQualityIncrease_Shape_SAP-1471 , mod:UserStoryDescription_Shape_SAP-1471 .
+mod:UserStoryRoleAppManager_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role App Manager" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleAppManager ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleAppManager_SAP-1471 .
+mod:UserStoryRoleAppManager_SAP-1471
+  a       mod:ConceptualElement , uso:UserStoryRoleAppManager .
+mod:UserStoryActionExtend_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Extend" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionExtend ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionExtend_SAP-1471 .
+mod:UserStoryActionExtend_SAP-1471
+  a       mod:ConceptualElement , uso:UserStoryActionExtend .
+mod:UserStoryElementData_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Data" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementData ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementData_SAP-1471 .
+mod:UserStoryElementData_SAP-1471
+  a       mod:ConceptualElement , uso:UserStoryElementData .
+mod:UserStorySystemSAP_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story System SAP" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemSAP ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemSAP_SAP-1471 .
+mod:UserStorySystemSAP_SAP-1471
+  a       mod:ConceptualElement , uso:UserStorySystemSAP .
+mod:UserStoryBusinessValueDataQualityIncrease_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Data Quality Increase" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueDataQualityIncrease ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueDataQualityIncrease_SAP-1471 .
+mod:UserStoryBusinessValueDataQualityIncrease_SAP-1471
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueDataQualityIncrease .
+mod:UserStoryDescription_Shape_SAP-1471
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_SAP-1471 .
+mod:UserStoryDescription_SAP-1471
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:Actor_2c3fe51a-53b9-4bd7-9fe0-371ab8715892
+  a       mod:ConceptualElement , uso:Actor .
+mod:Action_5cb48008-8095-4084-90bd-b37c7d0bff04
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Actor_1e2f2f40-86d8-4f22-bc26-7ebee72c4c8a .
+mod:Action_Shape_c79df699-c53d-031d-6c72-8ec159fb5a6b
+  a                   mod:Shape ;
+  rdfs:label          "Display important information and inspiration on PLP" ;
+  mod:shapeHasHeight  89 ;
+  mod:shapeHasWidth   129 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 289 ;
+  mod:shapePositionsOnCoordinateY 194 ;
+  mod:shapeVisualisesConceptualElement mod:Action_2e16bb29-d52e-4497-b52b-1d9bcd8c5128 .
+mod:Action_Shape_bb56bdd9-d27e-dcba-affb-f2f4c44997b5
+  a                   mod:Shape ;
+  rdfs:label          "Hide my account helpcenter box" ;
+  mod:shapeHasHeight  88 ;
+  mod:shapeHasWidth   138 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 305 ;
+  mod:shapePositionsOnCoordinateY 384 ;
+  mod:shapeVisualisesConceptualElement mod:Action_9ecaaf47-80b1-491a-9bcc-b45f84e18252 .
+mod:Function_Shape_773adeb1-3ffa-8497-18e4-80e710eba05d
+  a                   mod:Shape ;
+  rdfs:label          "Function" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Function ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Function_95202257-e37d-4381-8e77-d6f2b5f9e472 .
+mod:Actor_b7e2b455-efc9-4e9b-b5fc-263c688a9fc0
+  a       mod:ConceptualElement , uso:Actor .
+mod:Notes_9e826ef1-975c-4b3d-9e69-5ad6399dfcd9
+  a       mod:ConceptualElement , uso:Notes .
+mod:Assignee_Shape_47e2228d-b83a-f2e2-9a63-a15962752b7b
+  a                   mod:Shape ;
+  rdfs:label          "Frontend" ;
+  mod:shapeHasHeight  74 ;
+  mod:shapeHasWidth   87 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 889 ;
+  mod:shapePositionsOnCoordinateY 524 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_cb0d9660-5d91-4c59-a0b0-d6ebbc9f5373 .
+mod:UserStory_33c8597e-9168-425d-97a9-f78055b81448
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Function_cfcb87f3-fae8-4888-9520-2b0b2a046d42 , mod:Assignee_15accbff-f9d6-47e7-bd62-74f4b9288754 , mod:AcceptanceCriterion_dbb145fd-9c8c-4eee-8937-27d44889a7ad , mod:Application_0f11fa5c-3631-4ba6-b1ad-df37e8af4c3f , mod:AcceptanceCriterion_cf885483-e092-4b3f-adbb-c557a1d1992f , mod:Service_0046560f-3a56-43cb-bd56-578d169cfc1e .
+mod:Notes_d32db11c-bb63-4830-865e-97f36a785683
+  a       mod:ConceptualElement , uso:Notes .
+mod:AcceptanceCriterion_Shape_753726a7-8477-9b84-0728-c172fea341e7
+  rdfs:label          "Acceptance Criterion" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 780 ;
+  mod:shapePositionsOnCoordinateY 111 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_1aaaab38-233d-4a54-9352-e79a116f3b31 .
+mod:Solution_Shape_2d9288fd-94e7-d72e-c81c-b11a23e1aac1
+  a                   mod:Shape ;
+  rdfs:label          "Solution" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Solution ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Solution_19902252-7eec-4e87-9296-d647a9c779f8 .
+mod:StoryPoints_7b101b81-1a66-45ee-8ad1-ff41f35cb993
+  a       mod:ConceptualElement , uso:StoryPoints .
+mod:Image_Shape_5a6ded2a-84d4-ea69-1f8b-9f6e69044b4b
+  a                   mod:Shape ;
+  rdfs:label          "Image" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Image ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Image_9c927e62-22f3-4684-8960-071d392c8a89 .
+mod:Model_d9072509-d214-4567-8f7d-7f67028c7d06
+  a                  mod:Model ;
+  rdfs:label         "SDE-726: Change button link VOSE form" ;
+  mod:modelHasShape  mod:UserStorySystemPDP_Shape_62883de1-1e89-6940-8938-939d40058350 , mod:Document_Shape_ff826f4d-1b9d-4ee1-5edf-5d2947bfe8d4 , mod:UserStoryActionDo_Shape_b57416da-3764-127e-23eb-c8df4255b016 , mod:StoryPoints_Shape_c621f318-5002-6db9-2ca2-097c125e06b1 , mod:UserStoryElementCallToAction_Shape_1eb0394a-e1c1-bb89-703f-70f5c164182d , mod:UserStoryDescription_Shape_5aed5d58-c493-0430-f09f-d92dfb069bc3 , mod:UserStoryRoleCustomer_Shape_0889398f-29f2-12f7-f036-c64bba13acc8 , mod:Reason_Shape_cdcd2608-5122-954b-0a29-75b125ff1f3d , mod:Actor_Shape_dd6cdab4-796a-4396-067d-c63405d3249d , mod:Assignee_Shape_47e2228d-b83a-f2e2-9a63-a15962752b7b , mod:Action_Shape_56a0c700-e8d7-5626-0f00-8df219b3ca26 , mod:Notes_notecard_Shape_f8329c10-281b-0a7f-b3d3-0453e08c6ed6 , mod:UserStoryBusinessValueContentCorrectness_Shape_426dbf6c-cf44-c102-530d-30fb0dc8c4be , mod:UserStory_Shape_e17bcb98-5d72-d634-d6b6-1cac6628bc51 , mod:AcceptanceCriterion_Shape_710bb883-c348-afcd-c148-e5d52b1621c4 .
+mod:shapeHasHeight  a  owl:DatatypeProperty ;
+  rdfs:domain  mod:Shape ;
+  rdfs:range   xsd:integer .
+mod:Function_Shape_e7eab7cc-2c8a-80d8-6da1-9ff623d66683
+  rdfs:label          "" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Function ;
+  mod:shapePositionsOnCoordinateX 178 ;
+  mod:shapePositionsOnCoordinateY 409 ;
+  mod:shapeVisualisesConceptualElement mod:Function_cfcb87f3-fae8-4888-9520-2b0b2a046d42 .
+mod:Action_Shape_6021489a-5c81-4ef8-30d8-6b0201e437b7
+  a                   mod:Shape ;
+  rdfs:label          "Differenciate the shipping options on the order" ;
+  mod:shapeHasHeight  99 ;
+  mod:shapeHasWidth   113 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Action_186b747c-b712-4b61-84e5-6e16fa1c8f34 .
+mod:Application_80549efc-b897-4c48-84b3-9b1e0218890d
+  a       mod:ConceptualElement , uso:Application .
 po:FloWare_AND
   po:paletteConstructIsGroupedInPaletteCategory po:FloWare_Connectors ;
 .
+mod:Service_b3632e0f-f5b0-4278-adfb-282b6797e214
+  a       mod:ConceptualElement , uso:Service .
+mod:UserStoryActionDisable_Shape_af23abb5-4bf8-fcfc-4409-da54f56672de
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Disable" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionDisable ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionDisable_f335de94-b50d-4e04-8a68-2eb5a0b531d3 .
+mod:Action_Shape_56a0c700-e8d7-5626-0f00-8df219b3ca26
+  a                   mod:Shape ;
+  rdfs:label          "book consultation online" ;
+  mod:shapeHasHeight  70 ;
+  mod:shapeHasWidth   84 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 388 ;
+  mod:shapePositionsOnCoordinateY 396 ;
+  mod:shapeVisualisesConceptualElement mod:Action_25eaad59-66ff-4111-b250-9bf3e064bae4 .
+mod:CurrentState_e7cb3815-39a6-43bc-be1a-bd88007c91cf
+  a       mod:ConceptualElement , uso:CurrentState .
+mod:Solution_3b03d78c-3de6-4c38-9072-6029cb863a5c
+  a       mod:ConceptualElement , uso:Solution .
+mod:Notes_notecard_Shape_54997cb0-0bf0-9070-85d0-a9a32e0821c5
+  a                   mod:Shape ;
+  rdfs:label          "Sticky Note" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_a0352f2c-f95e-4e49-a50e-d4df270f04b7 .
+mod:Actor_Shape_e67e4384-0eec-8b68-23ab-60bd7acf600c
+  a                   mod:Shape ;
+  rdfs:label          "Data Manager" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_6605253e-4270-428f-b509-ec3cbc43aa06 .
+mod:AcceptanceCriterion_Shape_f24795ca-b046-e0bc-d1bc-a367d3bba60b
+  a                   mod:Shape ;
+  rdfs:label          "log files older than 3 monts are deleted" ;
+  mod:shapeHasHeight  78 ;
+  mod:shapeHasWidth   113 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 819 ;
+  mod:shapePositionsOnCoordinateY 103 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_cf885483-e092-4b3f-adbb-c557a1d1992f .
+mod:Notes_notecard_Shape_00229f92-b1b5-cee9-195d-0de7a20f9d3b
+  a                   mod:Shape ;
+  rdfs:label          "Change the hardcoded sript in PIM and extend the calssification with IsArtName and IsVariantName. There is already a place for IsVariantName which is not used at the moment." ;
+  mod:shapeHasHeight  286 ;
+  mod:shapeHasWidth   397 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_9e826ef1-975c-4b3d-9e69-5ad6399dfcd9 .
+mod:Notes_Shape_f6958964-ae89-77a3-4afd-b5533a4ca969
+  a                   mod:Shape ;
+  rdfs:label          "Notes" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_b89fcf80-b6e4-42be-96ae-0e3296ec7e30 .
+mod:Reason_Shape_a3504a27-f64b-5fd1-0869-e70a6154c770
+  a                   mod:Shape ;
+  rdfs:label          "Better error handling" ;
+  mod:shapeHasHeight  82 ;
+  mod:shapeHasWidth   83 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 496 ;
+  mod:shapePositionsOnCoordinateY 243 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_71bda08c-cfdd-43f2-bae9-8bbea73681a4 .
+mod:UserStorySystemBackOffice_Shape_85b58109-5b43-9425-0abc-60f5c9de7df5
+  a                   mod:Shape ;
+  rdfs:label          "User Story System BackOffice" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemBackOffice ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemBackOffice_c33c6427-0d5a-4448-87dc-476e24e5badf .
+mod:Reason_0544e260-8571-45ed-aadf-7a5150d834bc
+  a       mod:ConceptualElement , uso:Reason .
+mod:Reason_Shape_dee0896a-ed74-277f-7373-ee1415857684
+  a                   mod:Shape ;
+  rdfs:label          "Improve Customer Support" ;
+  mod:shapeHasHeight  76 ;
+  mod:shapeHasWidth   121 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 424 ;
+  mod:shapePositionsOnCoordinateY 149 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_72bf2a4e-6cfa-4bc0-b4b6-a8511e467669 .
+mod:Shape  a             owl:Class ;
+           rdfs:label       "Shape" ;
+           rdfs:subClassOf  owl:Thing .
+mod:Notes_9d9c38a0-a014-4597-9202-388d3e504ae6
+  a       mod:ConceptualElement , uso:Notes .
+mod:UserStory_Shape_6661f3ba-6af2-12c5-bf32-346869bc40db
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  649 ;
+  mod:shapeHasWidth   1573 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 138 ;
+  mod:shapePositionsOnCoordinateY 572 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_fbccc0c0-f221-44ac-8764-0a6d230845f8 .
+mod:AcceptanceCriterion_dbb145fd-9c8c-4eee-8937-27d44889a7ad
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStory_fbffa1bb-7832-477a-9ab8-6380e682a8f8
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Epic_fefc4996-cfc0-4b48-9559-c2f1fb6cc47f , mod:Stakeholder_f735a732-66ea-457b-9dbc-f48f38e4979b , mod:Frame_36e9a3cb-0614-435a-9cc4-776b9f0921dd , mod:Reason_69c228c6-56a3-42bb-8c25-4f6cf02113b7 , mod:Assignee_185f2f13-80ed-4802-abe9-4c7e7571ae14 , mod:Actor_a6fb2c89-ef83-45a5-878e-5561ba3bc27b , mod:StoryPoints_7b101b81-1a66-45ee-8ad1-ff41f35cb993 , mod:Action_2e16bb29-d52e-4497-b52b-1d9bcd8c5128 .
+mod:PhoneScreen_3f38cc66-5c3e-45e3-b51e-69bc33af1fea
+  a       mod:ConceptualElement , uso:PhoneScreen .
+mod:Action_Shape_ba6b68c1-00c6-7629-257e-e59f290d6675
+  a                   mod:Shape ;
+  rdfs:label          "Generated documents of import app are regularly cleanedup" ;
+  mod:shapeHasHeight  100 ;
+  mod:shapeHasWidth   124 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Action_79f90a6e-c21b-423e-a1c3-e774024fc7f5 .
+mod:Application_0f11fa5c-3631-4ba6-b1ad-df37e8af4c3f
+  a       mod:ConceptualElement , uso:Application .
+mod:UserStoryDescription_64557639-a575-474f-b4a0-0781d049f711
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:Action_9ecaaf47-80b1-491a-9bcc-b45f84e18252
+  a       mod:ConceptualElement , uso:Action .
+mod:NamingConvention_Shape_78c7e784-1702-fd44-fa58-c24e677ad066
+  a                   mod:Shape ;
+  rdfs:label          "Naming Convention" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:NamingConvention ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:NamingConvention_f0e05fbf-36cf-4a8e-8ad0-b3d3f5f81620 .
+mod:Credentials_153715ac-15fb-4f77-999a-46e03c5ff4c7
+  a       mod:ConceptualElement , uso:Credentials .
+mod:Image_Shape_cd2654ba-cbfe-a666-6a25-510c6651d790
+  a                   mod:Shape ;
+  rdfs:label          "Screenshot table" ;
+  mod:shapeHasHeight  198 ;
+  mod:shapeHasWidth   234 ;
+  mod:shapeInstantiatesPaletteConstruct po:Image ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Image_05acf82e-6586-4004-a4d5-2fbb62ad86cf .
+mod:AcceptanceCriterion_01c586ee-91a0-4054-82df-2d119e8ca76b
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:StoryPoints_afea1b77-537b-4c7e-8af5-84d4fa335fbe
+  a       mod:ConceptualElement , uso:StoryPoints .
+mod:Application_abd879ea-12b2-42c1-894e-67dfbf58a2ef
+  a       mod:ConceptualElement , uso:Application .
+mod:Action_79f90a6e-c21b-423e-a1c3-e774024fc7f5
+  a       mod:ConceptualElement , uso:Action .
+mod:Notes_notecard_Shape_f8329c10-281b-0a7f-b3d3-0453e08c6ed6
+  a                   mod:Shape ;
+  rdfs:label          "Sticky Note" ;
+  mod:shapeHasHeight  193 ;
+  mod:shapeHasWidth   314 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 1055 ;
+  mod:shapePositionsOnCoordinateY 193 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_51c71b44-d315-4aac-89d6-e40c22dc91dc .
+mod:Model_7f13aeef-60d1-4802-a541-ce12119c2c9e
+  a                  mod:Model ;
+  rdfs:label         "DIVA-3040 Extend classification" ;
+  mod:modelHasShape  mod:NamingConvention_Shape_61eb5aa9-c8c3-e61c-1aa7-7e778b58d6b5 , mod:Application_Shape_1a255c7e-1046-50d5-d6d4-3ea35d64a36b , mod:AcceptanceCriterion_Shape_cb2cfbef-ed6c-3d0b-da2b-ada7e15af0ad , mod:Assignee_Shape_dc45ae95-7d2d-9767-367e-ab9e2561ed8f , mod:Reason_Shape_3701f507-009b-78f6-c562-7855fb7c1a78 , mod:NamingConvention_Shape_c97caf70-ac7e-3773-058e-3e9acec69a02 , mod:Action_Shape_dfd321cc-3ff9-574f-7c70-51bff61895af , mod:Actor_Shape_e67e4384-0eec-8b68-23ab-60bd7acf600c , mod:Notes_notecard_Shape_00229f92-b1b5-cee9-195d-0de7a20f9d3b , mod:UserStory_Shape_b67316fd-797b-4919-b5b0-f2b5d4761dbd , mod:UserStoryRoleAppManager_Shape_DIVA-3040 , mod:UserStoryActionExtend_Shape_DIVA-3040 , mod:UserStoryElementData_Shape_DIVA-3040 , mod:UserStorySystemDIVAOnboarding_Shape_DIVA-3040 , mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_DIVA-3040 , mod:UserStoryDescription_Shape_DIVA-3040 .
+mod:UserStoryRoleAppManager_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role App Manager" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleAppManager ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleAppManager_DIVA-3040 .
+mod:UserStoryRoleAppManager_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStoryRoleAppManager .
+mod:UserStoryActionExtend_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action Extend" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionExtend ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionExtend_DIVA-3040 .
+mod:UserStoryActionExtend_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStoryActionExtend .
+mod:UserStoryElementData_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Data" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementData ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementData_DIVA-3040 .
+mod:UserStoryElementData_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStoryElementData .
+mod:UserStorySystemDIVAOnboarding_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story System DIVA Onboarding" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemDIVAOnboarding ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemDIVAOnboarding_DIVA-3040 .
+mod:UserStorySystemDIVAOnboarding_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStorySystemDIVAOnboarding .
+mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Maintainability Increase" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueMaintainabilityIncrease ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueMaintainabilityIncrease_DIVA-3040 .
+mod:UserStoryBusinessValueMaintainabilityIncrease_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueMaintainabilityIncrease .
+mod:UserStoryDescription_Shape_DIVA-3040
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_DIVA-3040 .
+mod:UserStoryDescription_DIVA-3040
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:StoryPoints_Shape_6c3c87a8-c041-c00d-5ac7-4261348ac1f4
+  a                   mod:Shape ;
+  rdfs:label          "Story Points" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:StoryPoints ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:StoryPoints_d83f33ad-0e44-4dba-b84d-dfcafa18f0ab .
+mod:AcceptanceCriterion_02b5cb3b-2edb-4afb-a4e8-f6eaa8d4e990
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStory_e8b74a9d-1ab0-4068-beae-e808c6a11b12
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Application_042033cb-050b-46d4-ab0a-3df6877c7e67 , mod:AcceptanceCriterion_6e9b3ba9-f540-4e35-bb5b-4cc1cd2f1915 , mod:Solution_3b03d78c-3de6-4c38-9072-6029cb863a5c .
+mod:UserStoryElementTool_Shape_4ad75605-9bb0-d7f3-ef9d-1aac02fb0d55
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Tool" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementTool ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementTool_2e8b71af-bd05-4d08-80b5-6f9b1d546c0d .
+mod:Action_3f5ba753-72aa-45f2-900e-ad183a888e56
+  a       mod:ConceptualElement , uso:Action .
+mod:AcceptanceCriterion_cf885483-e092-4b3f-adbb-c557a1d1992f
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStory_Shape_8f0c6a7f-8c24-5106-1e37-eb3844821ce1
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  611 ;
+  mod:shapeHasWidth   1455 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 11 ;
+  mod:shapePositionsOnCoordinateY 44 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_fbffa1bb-7832-477a-9ab8-6380e682a8f8 .
+mod:Textfield_Shape_b887339d-480c-039a-6099-1f4ce6085566
+  a                   mod:Shape ;
+  rdfs:label          "text field" ;
+  mod:shapeHasHeight  38 ;
+  mod:shapeHasWidth   184 ;
+  mod:shapeInstantiatesPaletteConstruct po:Textfield ;
+  mod:shapePositionsOnCoordinateX 962 ;
+  mod:shapePositionsOnCoordinateY 86 ;
+  mod:shapeVisualisesConceptualElement mod:Textfield_da740546-81d9-4fa3-a946-64406d5736c9 .
+mod:Image_6f03bbd8-99b6-47ff-9b36-541d05727aad
+  a       mod:ConceptualElement , uso:Image .
+mod:Textfield_da740546-81d9-4fa3-a946-64406d5736c9
+  a       mod:ConceptualElement , uso:Textfield .
+mod:UserStoryBusinessValueContentCorrectness_Shape_426dbf6c-cf44-c102-530d-30fb0dc8c4be
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Content Correctness" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueContentCorrectness ;
+  mod:shapePositionsOnCoordinateX 503 ;
+  mod:shapePositionsOnCoordinateY 1 ;
+  mod:shapeVisualisesConceptualElement mod:ContentCorrectness_2f4e5c69-bcd8-4eff-a099-30c5818d11e5 .
+mod:Actor_Shape_4d345715-c4e9-a7c7-51ab-a3fe82a17cfe
+  a                   mod:Shape ;
+  rdfs:label          "Developer" ;
+  mod:shapeHasHeight  85 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 226 ;
+  mod:shapePositionsOnCoordinateY 734 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_2c3fe51a-53b9-4bd7-9fe0-371ab8715892 .
+mod:Model_Shape_02867b31-2dbf-927a-72aa-d81b17ba2fbb
+  a                   mod:Shape ;
+  rdfs:label          "Model" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Model ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Model_dc48d07a-3a6a-4b54-ad9b-9b2f784ccd6c .
+mod:PDP_4d965019-df78-4bb5-ae35-4ad9b98d554e
+  a       mod:ConceptualElement , uso:PDP .
+mod:UserStoryActionDisable_f335de94-b50d-4e04-8a68-2eb5a0b531d3
+  a       uso:UserStoryActionDisable , mod:ConceptualElement .
+mod:UserStoryBusinessValueErrorHandling_7d5aa693-c953-4455-ad69-b621ae83e854
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueErrorHandling .
+mod:Model_c38b7b43-073a-4421-a4dd-f3ba6d4c6de8
+  a                  mod:Model ;
+  rdfs:label         "SDE-48 Add Helpcenter Box to MyAccount" ;
+  mod:modelHasShape  mod:Notes_notecard_Shape_2e25995b-f445-7392-c3c4-0a22b7a67f98 , mod:Application_Shape_b23376ee-1ab3-8088-2abb-7d69404bbd9a , mod:Assignee_Shape_083f913e-6173-5364-39b0-0c352bf20781 , mod:Document_Shape_fd5589d0-a93a-2ae5-6f95-96b472711242 , mod:Action_Shape_0f76e019-215f-3fe9-3db0-0a5a9cd3459d , mod:CurrentStateDescription_Shape_76a1eaaf-1a61-4387-90e7-369bada58003 , mod:Epic_Shape_1c58f2da-9c56-8448-194e-733f69b3a9ce , mod:Reason_Shape_dee0896a-ed74-277f-7373-ee1415857684 , mod:StoryPoints_Shape_6c3c87a8-c041-c00d-5ac7-4261348ac1f4 , mod:Image_Shape_93770b57-3479-09e1-81bf-333017d26cbd , mod:Service_Shape_42737f30-b73d-bdb3-f3f0-071bd91a2762 , mod:Actor_Shape_fb3dbcf3-0219-4a1a-2886-d2d4f59b9080 , mod:UserStory_Shape_c23c9f39-79d0-c460-f717-1932228a8f4b , mod:Assignee_Shape_8a31c807-7dfe-fc15-c126-2749cab25b90 , mod:UserStoryRoleCustomer_Shape_SDE-48 , mod:UserStoryActionSee_Shape_SDE-48 , mod:UserStoryElementComponent_Shape_SDE-48 , mod:UserStorySystemMyAccount_Shape_SDE-48 , mod:UserStoryBusinessValueWebshopUsability_Shape_SDE-48 , mod:UserStoryDescription_Shape_SDE-48 .
+mod:UserStoryRoleCustomer_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story Role Customer" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryRoleCustomer ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryRoleCustomer_SDE-48 .
+mod:UserStoryRoleCustomer_SDE-48
+  a       mod:ConceptualElement , uso:UserStoryRoleCustomer .
+mod:UserStoryActionSee_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story Action See" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryActionSee ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryActionSee_SDE-48 .
+mod:UserStoryActionSee_SDE-48
+  a       mod:ConceptualElement , uso:UserStoryActionSee .
+mod:UserStoryElementComponent_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story Element Component" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryElementComponent ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryElementComponent_SDE-48 .
+mod:UserStoryElementComponent_SDE-48
+  a       mod:ConceptualElement , uso:UserStoryElementComponent .
+mod:UserStorySystemMyAccount_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story System MyAccount" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStorySystemMyAccount ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStorySystemMyAccount_SDE-48 .
+mod:UserStorySystemMyAccount_SDE-48
+  a       mod:ConceptualElement , uso:UserStorySystemMyAccount .
+mod:UserStoryBusinessValueWebshopUsability_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story Business Value Webshop Usability" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryBusinessValueWebshopUsability ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryBusinessValueWebshopUsability_SDE-48 .
+mod:UserStoryBusinessValueWebshopUsability_SDE-48
+  a       mod:ConceptualElement , uso:UserStoryBusinessValueWebshopUsability .
+mod:UserStoryDescription_Shape_SDE-48
+  a                   mod:Shape ;
+  rdfs:label          "User Story Description" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStoryDescription ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStoryDescription_SDE-48 .
+mod:UserStoryDescription_SDE-48
+  a       mod:ConceptualElement , uso:UserStoryDescription .
+mod:Action_2e16bb29-d52e-4497-b52b-1d9bcd8c5128
+  a       mod:ConceptualElement , uso:Action .
+mod:Actor_c3a99545-67ad-4190-8a63-0ade0a557df8
+  a       mod:ConceptualElement , uso:Actor .
+mod:UserStory_Shape_50959309-ae99-bbc7-84c1-ad788fbc5ba6
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  579 ;
+  mod:shapeHasWidth   1437 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_33c8597e-9168-425d-97a9-f78055b81448 .
+mod:Customer_25b812b6-16c0-4628-966f-a11dc0681f05
+  a       mod:ConceptualElement , uso:Customer .
+mod:PhoneScreen_Shape_9191a645-f1be-7656-950b-fb8d4b0fa0c6
+  a                   mod:Shape ;
+  rdfs:label          "Phone Screen" ;
+  mod:shapeHasHeight  387 ;
+  mod:shapeHasWidth   245 ;
+  mod:shapeInstantiatesPaletteConstruct po:PhoneScreen ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:PhoneScreen_3f38cc66-5c3e-45e3-b51e-69bc33af1fea .
+mod:Image_Shape_93770b57-3479-09e1-81bf-333017d26cbd
+  a                   mod:Shape ;
+  rdfs:label          "Screenshot Design" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Image ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Image_6f03bbd8-99b6-47ff-9b36-541d05727aad .
+mod:Notes_b89fcf80-b6e4-42be-96ae-0e3296ec7e30
+  a       mod:ConceptualElement , uso:Notes .
+mod:StakeholderFeedback_Shape_a7f88c57-45ae-f241-c552-423c1155f4e2
+  rdfs:label          "Stakeholder Feedback" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:StakeholderFeedback ;
+  mod:shapePositionsOnCoordinateX 61 ;
+  mod:shapePositionsOnCoordinateY 80 ;
+  mod:shapeVisualisesConceptualElement mod:StakeholderFeedback_0254b59b-3102-48c8-94fb-ba4548455bdd .
+mod:AcceptanceCriterion_c0839f97-4016-40c3-9583-ab22d7020f21
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStory_d5fee7a5-3e5f-46d6-8365-720ecd51743d
+  a       mod:ConceptualElement , uso:UserStory ;
+  lo:modelingContainerContainsModelingLanguageConstruct
+          mod:Assignee_b408ba48-d729-4684-a48c-2b2181f80c81 , mod:Application_4f811e2e-c227-4c6b-ab2b-2092299cc2ed .
+mod:AcceptanceCriterion_73de5ca6-05a3-4af4-aa3f-c14e02cbb461
+  a       mod:ConceptualElement , uso:AcceptanceCriterion .
+mod:UserStory_Shape_7c45e800-8629-781a-a385-c5e6bbc3856b
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  589 ;
+  mod:shapeHasWidth   1332 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 15 ;
+  mod:shapePositionsOnCoordinateY 28 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_10d73756-d54c-4195-bfde-2b23bfb48a7c .
+mod:UserStory_Shape_e17bcb98-5d72-d634-d6b6-1cac6628bc51
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  566 ;
+  mod:shapeHasWidth   1578 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 2 ;
+  mod:shapePositionsOnCoordinateY 83 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_11b8d34c-7be9-4f13-9d29-ceb76b30b7df .
+mod:Assignee_Shape_b74ba0ce-a0cf-5d8c-c000-1a862892c173
+  a                   mod:Shape ;
+  rdfs:label          "Assignee" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_7d7b7a96-2562-41f5-a531-5c1e4f9af343 .
+mod:AcceptanceCriterion_Shape_228c825c-4627-b8a9-71e2-6e7c25b5e818
+  a                   mod:Shape ;
+  rdfs:label          "Acceptance Criterion" ;
+  mod:shapeHasHeight  99 ;
+  mod:shapeHasWidth   107 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 829 ;
+  mod:shapePositionsOnCoordinateY 290 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_dbb145fd-9c8c-4eee-8937-27d44889a7ad .
+mod:Stakeholder_847f3702-296a-4969-9fbe-8d4d02c36c4c
+  a       mod:ConceptualElement , uso:Stakeholder .
+mod:Reason_dfb49196-25bd-42ba-9930-d8b2c3f1c823
+  a       mod:ConceptualElement , uso:Reason .
+mod:Action_423a19f4-a298-43e7-bc35-7195edb0dbe7
+  a       mod:ConceptualElement , uso:Action .
+mod:Service_Shape_42737f30-b73d-bdb3-f3f0-071bd91a2762
+  a                   mod:Shape ;
+  rdfs:label          "Service" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Service ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Service_77e54473-c4b6-45fd-a99b-87be8e27f870 .
+mod:Notes_notecard_Shape_e5fb7c7e-19bb-1a6a-2f85-260eceefe088
+  a                   mod:Shape ;
+  rdfs:label          "Sticky Note" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_aa0521b4-8aa1-4717-9494-3b3661324c05 .
+mod:Actor_Shape_ed30ba29-c328-4625-5982-24653bc249f1
+  a                   mod:Shape ;
+  rdfs:label          "SAP Manager" ;
+  mod:shapeHasHeight  68 ;
+  mod:shapeHasWidth   81 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_d3d37bf2-44c1-4428-9b90-a84e922a75e0 .
+mod:Actor_d3d37bf2-44c1-4428-9b90-a84e922a75e0
+  a       mod:ConceptualElement , uso:Actor .
+mod:Function_c3de383a-8de0-4cef-b441-bf207fac1b2d
+  a       mod:ConceptualElement , uso:Function .
+mod:AcceptanceCriterion_Shape_710bb883-c348-afcd-c148-e5d52b1621c4
+  a                   mod:Shape ;
+  rdfs:label          "All links on PDP and PLP are changed" ;
+  mod:shapeHasHeight  83 ;
+  mod:shapeHasWidth   128 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 849 ;
+  mod:shapePositionsOnCoordinateY 153 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_84456c55-2b46-49ae-97e3-bed3da7a657b .
+mod:Service_0046560f-3a56-43cb-bd56-578d169cfc1e
+  a       mod:ConceptualElement , uso:Service .
+mod:Model_dc48d07a-3a6a-4b54-ad9b-9b2f784ccd6c
+  a       mod:ConceptualElement , uso:Model .
+mod:Notes_notecard_Shape_0ae917d3-e291-8cd5-8fdd-307df0061f15
+  a                   mod:Shape ;
+  rdfs:label          "Translations DE, FR and IT for wording" ;
+  mod:shapeHasHeight  127 ;
+  mod:shapeHasWidth   118 ;
+  mod:shapeInstantiatesPaletteConstruct po:Notes_notecard ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Notes_d32db11c-bb63-4830-865e-97f36a785683 .
+mod:Service_Shape_9778e63e-c1ed-fb85-f9f6-4970eb663a7f
+  a                   mod:Shape ;
+  rdfs:label          "Scripts which delete old documents and logs" ;
+  mod:shapeHasHeight  93 ;
+  mod:shapeHasWidth   110 ;
+  mod:shapeInstantiatesPaletteConstruct po:Service ;
+  mod:shapePositionsOnCoordinateX 188 ;
+  mod:shapePositionsOnCoordinateY 406 ;
+  mod:shapeVisualisesConceptualElement mod:Service_0046560f-3a56-43cb-bd56-578d169cfc1e .
+mod:shapeHasNote  a  owl:DatatypeProperty ;
+  rdfs:domain  mod:Shape ;
+  rdfs:range   xsd:string .
+mod:StoryPoints_d83f33ad-0e44-4dba-b84d-dfcafa18f0ab
+  a       mod:ConceptualElement , uso:StoryPoints .
+mod:StoryPoints_490f7c5f-8279-4ef5-a955-efd89d5e0a01
+  a       mod:ConceptualElement , uso:StoryPoints .
+mod:Action_Shape_ca70472a-4245-b5c6-6204-b5086ab0fbca
+  a                   mod:Shape ;
+  rdfs:label          "Deactivate kameleoon" ;
+  mod:shapeHasHeight  79 ;
+  mod:shapeHasWidth   92 ;
+  mod:shapeInstantiatesPaletteConstruct po:Action ;
+  mod:shapePositionsOnCoordinateX 292 ;
+  mod:shapePositionsOnCoordinateY 247 ;
+  mod:shapeVisualisesConceptualElement mod:Action_a465733b-2353-49a3-8ba4-316db02aeaae .
+mod:Service_2c34dc6a-f0a1-43ef-91c0-c01db818f28f
+  a       mod:ConceptualElement , uso:Service .
+mod:AcceptanceCriterion_Shape_8ffab32d-1f27-3908-c78b-0affafdaa1e9
+  a                   mod:Shape ;
+  rdfs:label          "Acceptance Criterion" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:AcceptanceCriterion ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:AcceptanceCriterion_c9b5a68c-cba7-4c24-99bd-79ef5539e4d4 .
+mod:Notes_feffd3f3-88a5-4d36-af0e-27bd06d89d70
+  a       mod:ConceptualElement , uso:Notes .
+mod:Reason_Shape_175b651d-3fb8-999f-8035-2722c60190bf
+  rdfs:label          "Better error handling" ;
+  mod:shapeHasHeight  218 ;
+  mod:shapeHasWidth   400 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 158 ;
+  mod:shapePositionsOnCoordinateY 128 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_63a9734a-9542-408f-ba0d-f0573ac326c4 .
+mod:Document_Shape_95526e3f-1f6c-8f9c-b95c-d7b2844f649d
+  a                   mod:Shape ;
+  rdfs:label          "Document" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Document ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Document_f95b8466-845a-4ac1-b0a7-53e1c8b8cbfc .
+mod:Service_Shape_50f94b38-917e-376e-9f64-4dd2ead857e8
+  a                   mod:Shape ;
+  rdfs:label          "Service" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Service ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Service_b3632e0f-f5b0-4278-adfb-282b6797e214 .
+mod:Application_Shape_b045d9e9-ad96-f440-57fc-50042780b5bd
+  a                   mod:Shape ;
+  rdfs:label          "Application" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Application ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Application_abd879ea-12b2-42c1-894e-67dfbf58a2ef .
+mod:Solution_Shape_a7f24545-87fd-83c7-7a45-3f8a4b11c2ea
+  a                   mod:Shape ;
+  rdfs:label          "Code Snippets" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Solution ;
+  mod:shapePositionsOnCoordinateX 642 ;
+  mod:shapePositionsOnCoordinateY 174 ;
+  mod:shapeVisualisesConceptualElement mod:Solution_3b03d78c-3de6-4c38-9072-6029cb863a5c .
+mod:UserStory_Shape_b67316fd-797b-4919-b5b0-f2b5d4761dbd
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  524 ;
+  mod:shapeHasWidth   1432 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX 12 ;
+  mod:shapePositionsOnCoordinateY 90 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_d5fee7a5-3e5f-46d6-8365-720ecd51743d .
+mod:Assignee_2aeb3e6d-1906-4d09-be06-8c9908206e4f
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Model_79259f8e-d032-41a3-a2fd-bbccd5553019
+  a                  mod:Model ;
+  rdfs:label         "SDE-456 My Account Feature Toggle" ;
+  mod:modelHasShape  mod:Assignee_Shape_ba1f64f3-6bf2-5936-0b16-9eb19d752bbf , mod:Credentials_Shape_435426f7-ba31-55be-17c1-378254d180ee , mod:UserStoryRoleDeveloper_Shape_9f7aa980-47b5-ea91-3985-32228aaffa0d , mod:AcceptanceCriterion_Shape_1efd0335-c66d-cb8c-8990-8098c3e8235b , mod:Reason_Shape_e32148e4-f87d-2729-7c29-1ff7e2522080 , mod:UserStoryDescription_Shape_dd708203-df2a-2450-1bd0-0cbe2b28916f , mod:UserStoryBusinessValueErrorHandling_Shape_d53f7671-3e76-c019-d433-349be02f81d4 , mod:Action_Shape_bb56bdd9-d27e-dcba-affb-f2f4c44997b5 , mod:UserStoryActionDisable_Shape_af23abb5-4bf8-fcfc-4409-da54f56672de , mod:UserStorySystemBackOffice_Shape_85b58109-5b43-9425-0abc-60f5c9de7df5 , mod:UserStory_Shape_6661f3ba-6af2-12c5-bf32-346869bc40db , mod:UserStoryElementTool_Shape_4ad75605-9bb0-d7f3-ef9d-1aac02fb0d55 , mod:Actor_Shape_4d345715-c4e9-a7c7-51ab-a3fe82a17cfe .
+mod:Assignee_0fd7eb50-112a-4510-be66-3ca48f632938
+  a       mod:ConceptualElement , uso:Assignee .
+mod:Actor_Shape_fb3dbcf3-0219-4a1a-2886-d2d4f59b9080
+  a                   mod:Shape ;
+  rdfs:label          "Actor" ;
+  mod:shapeHasHeight  77 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 84 ;
+  mod:shapePositionsOnCoordinateY 144 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_b7e2b455-efc9-4e9b-b5fc-263c688a9fc0 .
+mod:Image_9c927e62-22f3-4684-8960-071d392c8a89
+  a       mod:ConceptualElement , uso:Image .
+mod:Actor_Shape_3b8a3564-ed78-872d-247c-c009f9684f4a
+  rdfs:label          "Web Analyst" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Actor ;
+  mod:shapePositionsOnCoordinateX 316 ;
+  mod:shapePositionsOnCoordinateY 304 ;
+  mod:shapeVisualisesConceptualElement mod:Actor_1e2f2f40-86d8-4f22-bc26-7ebee72c4c8a .
+mod:Function_04f3533b-31de-44c4-9d98-8e31c4e1d317
+  a       mod:ConceptualElement , uso:Function .
+mod:Assignee_Shape_303adf2c-d1ff-a0c6-25a6-d072bb978e0c
+  a                   mod:Shape ;
+  rdfs:label          "Frontend Team" ;
+  mod:shapeHasHeight  86 ;
+  mod:shapeHasWidth   88 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 1095 ;
+  mod:shapePositionsOnCoordinateY 470 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_185f2f13-80ed-4802-abe9-4c7e7571ae14 .
+mod:UserStory_Shape_c23c9f39-79d0-c460-f717-1932228a8f4b
+  a                   mod:Shape ;
+  rdfs:label          "User Story" ;
+  mod:shapeHasHeight  491 ;
+  mod:shapeHasWidth   1270 ;
+  mod:shapeInstantiatesPaletteConstruct po:UserStory ;
+  mod:shapePositionsOnCoordinateX -3 ;
+  mod:shapePositionsOnCoordinateY 63 ;
+  mod:shapeVisualisesConceptualElement mod:UserStory_7e7cc18d-795f-4409-af8e-5706aa90bffe .
+mod:Reason_Shape_6bf606ca-329e-4bb0-b9e1-2eb89f5cafd5
+  a                   mod:Shape ;
+  rdfs:label          "Application is not overloaded with old documents, automated process safes manual work." ;
+  mod:shapeHasHeight  102 ;
+  mod:shapeHasWidth   139 ;
+  mod:shapeInstantiatesPaletteConstruct po:Reason ;
+  mod:shapePositionsOnCoordinateX 0 ;
+  mod:shapePositionsOnCoordinateY 0 ;
+  mod:shapeVisualisesConceptualElement mod:Reason_c0eb9384-53e3-4d46-8abc-da8962bc0c95 .
+mod:Model  a             owl:Class ;
+  rdfs:label       "Models" ;
+  rdfs:subClassOf  owl:Thing .
+mod:Function_Shape_f363054d-6277-4adb-02e4-6c0e1e711192
+  a                   mod:Shape ;
+  rdfs:label          "Query extension" ;
+  mod:shapeHasHeight  80 ;
+  mod:shapeHasWidth   85 ;
+  mod:shapeInstantiatesPaletteConstruct po:Function ;
+  mod:shapePositionsOnCoordinateX 657 ;
+  mod:shapePositionsOnCoordinateY 240 ;
+  mod:shapeVisualisesConceptualElement mod:Function_04f3533b-31de-44c4-9d98-8e31c4e1d317 .
+mod:Action_a465733b-2353-49a3-8ba4-316db02aeaae
+  a       mod:ConceptualElement , uso:Action .
+mod:Assignee_Shape_8a31c807-7dfe-fc15-c126-2749cab25b90
+  a                   mod:Shape ;
+  rdfs:label          "Assignee" ;
+  mod:shapeHasHeight  64 ;
+  mod:shapeHasWidth   64 ;
+  mod:shapeInstantiatesPaletteConstruct po:Assignee ;
+  mod:shapePositionsOnCoordinateX 261 ;
+  mod:shapePositionsOnCoordinateY 172 ;
+  mod:shapeVisualisesConceptualElement mod:Assignee_2aeb3e6d-1906-4d09-be06-8c9908206e4f .
+mod:UserStoryRole_7da3f05f-ce4e-48d9-a6d4-1cfa05fc64ff
+  a       mod:ConceptualElement , uso:UserStoryRole .

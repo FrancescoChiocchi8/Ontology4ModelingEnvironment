@@ -29,6 +29,7 @@
 @prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
 @prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
 @prefix foaf: <http://xmlns.com/foaf/spec#> .
+@prefix generalpurposemodellinglanguage:  <http://fhnw.ch/generalpurposemodellinglanguage#> .
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix media-types: <http://www.iana.org/assignments/media-types#> .
 @prefix nco: <http://ikm-group.ch/archiMEO/nco#> .
@@ -119,9 +120,6 @@ FloWare:ORConnection
 .
 FloWare:Relations
   rdfs:subClassOf lo:ModelingRelation ;
-.
-FloWare:SubSystem
-  rdfs:subClassOf lo:ModelingElement ;
 .
 FloWare:System
   rdfs:subClassOf lo:ModelingElement ;
@@ -230,6 +228,8 @@ sapscenes:leadsTo
   rdfs:label "leads to" ;
   rdfs:range sapscenes:ValuePropositionMapping ;
 .
+generalpurposemodellinglanguage:Thing_1
+  rdfs:subClassOf lo:ModelingElement .
 dsml4ptm:ICFStandard
   a owl:Class ;
   rdfs:comment "International Classification of Functioning, Disability and Health https://bioportal.bioontology.org/ontologies/ICF?p=classes" ;
@@ -331,23 +331,23 @@ lo:ArchiMate
 .
 lo:ArchiMateView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:ArchiMate ;
   rdfs:label "ArchiMate Demo All 3 Layers" ;
 .
 lo:ArchiMate_ApplicationView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   rdfs:label "Application View" ;
 .
 lo:ArchiMate_BusinessView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   rdfs:label "Business View" ;
 .
 lo:ArchiMate_TechnologyView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   rdfs:label "Technology View" ;
 .
 lo:BPMN4PP
@@ -356,13 +356,13 @@ lo:BPMN4PP
 .
 lo:BPMN4PPProcessModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPMN4PP ;
   rdfs:label "Process Modeling View" ;
 .
 lo:BPMNProcessModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPMN_2_0 ;
   rdfs:label "Process Modeling View" ;
 .
@@ -372,7 +372,7 @@ lo:BPMN_2_0
 .
 lo:BPaaSProcessModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Process Modeling View" ;
 .
@@ -382,13 +382,13 @@ lo:BPaaS_ModelingLanguage
 .
 lo:BusinessProcessRequirementModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Business Process Requirement Modeling View" ;
 .
 lo:CanvasView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
   rdfs:label "Canvas View" ;
 .
@@ -408,30 +408,30 @@ lo:DSML4PTM
 .
 lo:DSML4PTMControlElementModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Control Element Modeling View" ;
 .
 lo:DSML4PTMDecisionModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Decision Modeling View" ;
 .
 lo:DSML4PTMDocumentKnowledgeModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Document Knowledge Modeling View" ;
 .
 lo:DSML4PTMOrganizationalView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   rdfs:label "Organizational View" ;
 .
 lo:DSML4PTMProcessModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   rdfs:label "Process Modeling View" ;
 .
@@ -450,7 +450,7 @@ lo:DocumentAndKnowledgeModelingLanguage
 .
 lo:DocumentKnolwedgeModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DocumentAndKnowledgeModelingLanguage ;
   rdfs:label "Document Knowledge Modeling View" ;
 .
@@ -460,13 +460,13 @@ lo:FloWare
 .
 lo:FloWarePIMView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:FloWare ;
   rdfs:label "FloWare Platform Independent Model View" ;
 .
 lo:FloWarePSMView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:FloWare ;
   rdfs:label "FloWare Platform Specific Model View" ;
 .
@@ -476,7 +476,7 @@ lo:GPML
 .
 lo:GPMLModellingView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:GPML ;
   rdfs:label "GPML View" ;
 .
@@ -572,7 +572,7 @@ lo:OrganizationalModelingLanguage
 .
 lo:OrganizationalView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:DSML4PTM ;
   lo:viewIsPartOfModelingLanguage lo:OrganizationalModelingLanguage ;
   rdfs:label "Organizational View" ;
@@ -584,7 +584,7 @@ lo:SAPScene
 .
 lo:SAPSceneModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
   rdfs:label "SAP Scenes Modeling View" ;
 .
@@ -594,7 +594,7 @@ lo:ShapeVOWL
 .
 lo:ShapeVOWLView
   a lo:ModelingView ;
-  lo:isMainModelingView true ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:ShapeVOWL ;
   rdfs:label "ShapeVOWL View" ;
 .
@@ -604,19 +604,30 @@ lo:StartTest
   rdfs:label "Start time _ Test" ;
   rdfs:range xsd:dateTime ;
 .
+lo:UserStoryModellingLanguageAndNotation
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "User Story Modelling Language & Notation" .
+
+lo:UserStoryModellingView
+  rdf:type lo:ModelingView ;
+  rdfs:label "User Story Modelling View" ;
+  lo:isMainModelingView
+          "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage
+          lo:UserStoryModellingLanguageAndNotation .
 lo:UserTask_1
   a bpmn:UserTask ;
   rdfs:label "" ;
 .
 lo:WorkflowDescriptionModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Workflow Description Modeling View" ;
 .
 lo:WorkflowModelingView
   a lo:ModelingView ;
-  lo:isMainModelingView false ;
+  lo:isMainModelingView "false"^^xsd:boolean ;
   lo:viewIsPartOfModelingLanguage lo:BPaaS_ModelingLanguage ;
   rdfs:label "Workflow Modeling View" ;
 .
@@ -740,6 +751,44 @@ dkmm:Belongs_To
 dkmm:Data_Document
   rdfs:subClassOf lo:ModelingElement ;
 .
+<http://fhnw.ch/userstoryontology#AcceptanceCriterion>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Application>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Assignee>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#CurrentState>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Document>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Mockup>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#NamingConvention>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Notes>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Solution>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#Stakeholder>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#StakeholderFeedback>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#StoryPoints>
+  rdfs:subClassOf lo:ModelingElement .
+
+<http://fhnw.ch/userstoryontology#UserStory>
+  rdfs:subClassOf lo:ModelingContainer .
 bpmn:Artifact
   rdfs:subClassOf lo:ModelingElement ;
 .
@@ -757,7 +806,7 @@ bpmn:Swimlane
 .
 bpmn:UserTask
   rdfs:range xsd:string ;
-  rdfs:range true ;
+  rdfs:range "true"^^xsd:boolean ;
 .
 archi:Relationships
   rdfs:subClassOf lo:ModelingRelation ;

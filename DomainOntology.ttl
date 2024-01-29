@@ -1,13 +1,14 @@
 # baseURI: http://fhnw.ch/modelingEnvironment/DomainOntology
 # imports: http://fhnw.ch/modelingEnvironment/dkmm
+# imports: http://fhnw.ch/userstoryontology
 # imports: http://ikm-group.ch/archiMEO/eo
 # imports: http://ikm-group.ch/archiMEO/top
 # imports: http://ikm-group.ch/archimeo/apqc
 # imports: http://ikm-group.ch/archimeo/fbpdo
 # imports: http://who.int/icf
+# imports: https://brickschema.org/schema/1.3/Brick
 # prefix: do
 
-@prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix apqc: <http://ikm-group.ch/archimeo/apqc#> .
 @prefix do: <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -16,17 +17,19 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://fhnw.ch/modelingEnvironment/DomainOntology>
-  rdf:type owl:Ontology ;
+  a owl:Ontology ;
   owl:imports <http://fhnw.ch/modelingEnvironment/dkmm> ;
+  owl:imports <http://fhnw.ch/userstoryontology> ;
   owl:imports <http://ikm-group.ch/archiMEO/eo> ;
   owl:imports <http://ikm-group.ch/archiMEO/top> ;
   owl:imports <http://ikm-group.ch/archimeo/apqc> ;
   owl:imports <http://ikm-group.ch/archimeo/fbpdo> ;
   owl:imports <http://who.int/icf> ;
+  owl:imports <https://brickschema.org/schema/1.3/Brick> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 do:DomainOntologyConcept
-  rdf:type owl:Class ;
+  a owl:Class ;
   rdfs:label "Domain Ontology Concept" ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -43,5 +46,14 @@ apqc:AmericanProductivityAndQualityCenter
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
 <http://who.int/icf#ICFQualifier>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Class>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Entity>
+  rdfs:subClassOf do:DomainOntologyConcept ;
+.
+<https://brickschema.org/schema/Brick#Tag>
   rdfs:subClassOf do:DomainOntologyConcept ;
 .
