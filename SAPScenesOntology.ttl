@@ -627,11 +627,11 @@ sapscenes:hasRelation
   a owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
+lo:1Year
   a sapscenes:Warranty ;
   rdfs:label "1 Year" ;
 .
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
+lo:2Years
   a sapscenes:Warranty ;
   rdfs:label "2 Years" ;
 .
