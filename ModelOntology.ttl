@@ -160,10 +160,6 @@ mod:NamingConvention_Shape_12751093-f152-1f5b-bb53-75e2b01823b2
   mod:shapeVisualisesConceptualElement mod:NamingConvention_15822943-c0a5-4605-bcdf-65b2c9d466e0 .
 mod:Solution_19902252-7eec-4e87-9296-d647a9c779f8
   a mod:ConceptualElement , uso:Solution .
-mod:Model_5fe37528-4b0a-4fda-ae89-8fb1cbf6371f
-  a mod:Model ;
-  rdfs:label "SAP-1528 Assembly times capacity planning" ;
-  mod:modelHasShape  mod:UserStory_Shape_790c67a5-3f21-0985-801a-1721f03c9fcf , mod:Application_Shape_0734b0f3-67cc-2693-9284-a7a7145a7936 , mod:Reason_Shape_bb2f3a11-c7fd-0419-e1d4-eb9faf9757d2 , mod:Actor_Shape_aa932b78-4492-2498-6559-963c657f3161 , mod:Action_Shape_2406620d-2b78-b974-d5a8-08c92d4ed0c1 , mod:Notes_notecard_Shape_5accc9a4-39fe-02f2-dff0-8c4c8fb0144d , mod:Image_Shape_cd2654ba-cbfe-a666-6a25-510c6651d790 , mod:Function_Shape_f363054d-6277-4adb-02e4-6c0e1e711192 , mod:UserStoryRoleStakeholderUSD_Shape_SAP-1528 , mod:UserStoryActionSee_Shape_SAP-1528 , mod:UserStoryElementData_Shape_SAP-1528 , mod:UserStorySystemSAP_Shape_SAP-1528 , mod:UserStoryBusinessValueEfficiencyIncrease_Shape_SAP-1528 , mod:UserStoryDescription_Shape_SAP-1528 .
 mod:UserStoryRoleStakeholderUSD_Shape_SAP-1528
   a mod:Shape ;
   rdfs:label "User Story Role StakeholderUSD" ;
@@ -273,10 +269,6 @@ mod:Credentials_Shape_8ff5dbf7-88b8-ccb1-9379-cae5271e20a8
   mod:shapeVisualisesConceptualElement mod:Credentials_153715ac-15fb-4f77-999a-46e03c5ff4c7 .
 mod:UserStoryDescription_0e9f5124-dc7d-49e2-b5b5-36178d86949c
   a mod:ConceptualElement , uso:UserStoryDescription .
-mod:Model_05140ef0-aea1-4d51-960c-c504fdcd2443
-  a mod:Model ;
-  rdfs:label         "POD-10 clean-up process" ;
-  mod:modelHasShape  mod:Application_Shape_0c2ad9a6-19eb-7d7b-ff6f-c28e8072e2c1 , mod:AcceptanceCriterion_Shape_b06dbb75-c435-e51e-be95-337eb5fc2159 , mod:Actor_Shape_007029c4-c40d-7102-99b3-7f990e56f78c , mod:Assignee_Shape_15300cc7-b5a1-02ce-d7c4-aaf72b65ee3c , mod:AcceptanceCriterion_Shape_f24795ca-b046-e0bc-d1bc-a367d3bba60b , mod:Action_Shape_ba6b68c1-00c6-7629-257e-e59f290d6675 , mod:UserStory_Shape_50959309-ae99-bbc7-84c1-ad788fbc5ba6 , mod:AcceptanceCriterion_Shape_228c825c-4627-b8a9-71e2-6e7c25b5e818 , mod:Service_Shape_9778e63e-c1ed-fb85-f9f6-4970eb663a7f , mod:Reason_Shape_6bf606ca-329e-4bb0-b9e1-2eb89f5cafd5 , mod:UserStoryRoleAppManager_Shape_POD-10 , mod:UserStoryActionDo_Shape_POD-10 , mod:UserStoryElementDocumentUSD_Shape_POD-10 , mod:UserStorySystemDIVAOnboarding_Shape_POD-10 , mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_POD-10 , mod:UserStoryDescription_Shape_POD-10 .
 mod:UserStoryRoleAppManager_Shape_POD-10
   a                   mod:Shape ;
   rdfs:label          "User Story Role App Manager" ;
@@ -694,10 +686,6 @@ mod:Reason_Shape_bb2f3a11-c7fd-0419-e1d4-eb9faf9757d2
         mod:shapeVisualisesConceptualElement mod:Reason_dfb49196-25bd-42ba-9930-d8b2c3f1c823 .
 mod:Action_25eaad59-66ff-4111-b250-9bf3e064bae4
         a       mod:ConceptualElement , uso:Action .
-mod:Model_406eded7-5347-4706-a3a9-06949f455de0
-        a                  mod:Model ;
-        rdfs:label         "SDE-512 Kameleoon Feature Toggle" ;
-        mod:modelHasShape  mod:NamingConvention_Shape_12751093-f152-1f5b-bb53-75e2b01823b2 , mod:AcceptanceCriterion_Shape_de362257-5994-a4a1-0cf0-9164c8c97ea9 , mod:Credentials_Shape_8ff5dbf7-88b8-ccb1-9379-cae5271e20a8 , mod:StakeholderFeedback_Shape_69870009-2193-d4c0-aada-068b1327ff66 , mod:StoryPoints_Shape_1485e1a9-791e-b2c6-880c-09b8ddc674be , mod:Service_Shape_25ef4333-381e-21aa-a2a5-1e4b53d655cd , mod:Stakeholder_Shape_65470f05-fd25-35d6-abbb-edb7b6698f46 , mod:Function_Shape_129cc5fd-5dad-d588-1a2c-36c3861ab078 , mod:Solution_Shape_2d9288fd-94e7-d72e-c81c-b11a23e1aac1 , mod:Reason_Shape_a3504a27-f64b-5fd1-0869-e70a6154c770 , mod:NamingConvention_Shape_78c7e784-1702-fd44-fa58-c24e677ad066 , mod:Model_Shape_02867b31-2dbf-927a-72aa-d81b17ba2fbb , mod:UserStory_Shape_7c45e800-8629-781a-a385-c5e6bbc3856b , mod:Assignee_Shape_b74ba0ce-a0cf-5d8c-c000-1a862892c173 , mod:Notes_notecard_Shape_e5fb7c7e-19bb-1a6a-2f85-260eceefe088 , mod:Action_Shape_ca70472a-4245-b5c6-6204-b5086ab0fbca , mod:Document_Shape_95526e3f-1f6c-8f9c-b95c-d7b2844f649d , mod:Service_Shape_50f94b38-917e-376e-9f64-4dd2ead857e8 , mod:Application_Shape_b045d9e9-ad96-f440-57fc-50042780b5bd , mod:UserStoryRoleDeveloper_Shape_SDE-512 , mod:UserStoryActionDisable_Shape_SDE-512 , mod:UserStoryElementTool_Shape_SDE-512 , mod:UserStorySystemBackOffice_Shape_SDE-512 , mod:UserStoryBusinessValueErrorHandling_Shape_SDE-512 , mod:UserStoryDescription_Shape_SDE-512 .
 mod:UserStoryRoleDeveloper_Shape_SDE-512
         a                   mod:Shape ;
         rdfs:label          "User Story Role Developer" ;
@@ -1087,10 +1075,6 @@ mod:StoryPoints_Shape_0a330cff-6366-7076-f310-4c03283885ec
   mod:shapePositionsOnCoordinateX 1200 ;
   mod:shapePositionsOnCoordinateY 452 ;
   mod:shapeVisualisesConceptualElement mod:StoryPoints_7b101b81-1a66-45ee-8ad1-ff41f35cb993 .
-mod:Model_4a7fb50c-1bba-4ed1-b48e-0ea7cebc3b79
-  a                  mod:Model ;
-  rdfs:label         "SDE-334 SmartEdit: Create an Inspiration Box" ;
-  mod:modelHasShape  mod:Stakeholder_Shape_4549d792-eb0f-a43e-4cb2-ce18fd93a42e , mod:Application_Shape_7114a97b-3ace-4368-edae-2acfb85597f4 , mod:AcceptanceCriterion_Shape_ab6e2c32-bf3c-b346-f3b9-0c39f1439709 , mod:Image_Shape_f123fdf6-2ffd-742e-66fa-d0ebd944ccaf , mod:Frame_Shape_0e623672-37ea-0bfa-561c-04a37cc4bbbd , mod:Actor_Shape_9670e6aa-d678-a253-701c-5d4c5877730e , mod:Reason_Shape_0fb76c8b-46df-195f-b5b5-49ddf9b0d1c5 , mod:StoryPoints_Shape_0a330cff-6366-7076-f310-4c03283885ec , mod:Epic_Shape_12216f4a-b716-2419-dc8f-734b772a2b04 , mod:Assignee_Shape_7f0afc2f-b505-cb84-b9fa-959da7f6b42b , mod:Action_Shape_c79df699-c53d-031d-6c72-8ec159fb5a6b , mod:Function_Shape_773adeb1-3ffa-8497-18e4-80e710eba05d , mod:Image_Shape_5a6ded2a-84d4-ea69-1f8b-9f6e69044b4b , mod:Notes_notecard_Shape_54997cb0-0bf0-9070-85d0-a9a32e0821c5 , mod:Notes_Shape_f6958964-ae89-77a3-4afd-b5533a4ca969 , mod:UserStory_Shape_8f0c6a7f-8c24-5106-1e37-eb3844821ce1 , mod:Textfield_Shape_b887339d-480c-039a-6099-1f4ce6085566 , mod:PhoneScreen_Shape_9191a645-f1be-7656-950b-fb8d4b0fa0c6 , mod:AcceptanceCriterion_Shape_8ffab32d-1f27-3908-c78b-0affafdaa1e9 , mod:Assignee_Shape_303adf2c-d1ff-a0c6-25a6-d072bb978e0c , mod:UserStoryRoleContentManager_Shape_SDE-334 , mod:UserStoryActionDisplay_Shape_SDE-334 , mod:UserStoryElementComponent_Shape_SDE-334 , mod:UserStorySystemPLP_Shape_SDE-334 , mod:UserStoryBusinessValueCustomerInspiration_Shape_SDE-334 , mod:UserStoryDescription_Shape_SDE-334 .
 mod:UserStoryRoleContentManager_Shape_SDE-334
   a                   mod:Shape ;
   rdfs:label          "User Story Role Content Manager" ;
@@ -1212,10 +1196,6 @@ mod:Assignee_Shape_7f0afc2f-b505-cb84-b9fa-959da7f6b42b
   mod:shapePositionsOnCoordinateX 1182 ;
   mod:shapePositionsOnCoordinateY 468 ;
   mod:shapeVisualisesConceptualElement mod:Assignee_185f2f13-80ed-4802-abe9-4c7e7571ae14 .
-mod:Model_155fea5b-51df-4adf-a539-ba01e0ca23bd
-  a                  mod:Model ;
-  rdfs:label         "SAP-1471 Adapt shipping surcharge form" ;
-  mod:modelHasShape  mod:AcceptanceCriterion_Shape_6d4f17dd-dad2-0247-4f15-08d2ba981d75 , mod:UserStory_Shape_1ec2843f-c306-00e1-17aa-519cae250986 , mod:Application_Shape_3921d275-4f2b-1326-9576-e62b712e9564 , mod:Reason_Shape_53cf360d-4921-3125-1428-766e51b5b5b4 , mod:AcceptanceCriterion_Shape_b7a06c30-ef92-97ce-84ad-82d997370e8c , mod:AcceptanceCriterion_Shape_332d31ff-6299-fea6-be12-71a72f21cb18 , mod:Action_Shape_6021489a-5c81-4ef8-30d8-6b0201e437b7 , mod:Actor_Shape_ed30ba29-c328-4625-5982-24653bc249f1 , mod:Notes_notecard_Shape_0ae917d3-e291-8cd5-8fdd-307df0061f15 , mod:Solution_Shape_a7f24545-87fd-83c7-7a45-3f8a4b11c2ea , mod:UserStoryRoleAppManager_Shape_SAP-1471 , mod:UserStoryActionExtend_Shape_SAP-1471 , mod:UserStoryElementData_Shape_SAP-1471 , mod:UserStorySystemSAP_Shape_SAP-1471 , mod:UserStoryBusinessValueDataQualityIncrease_Shape_SAP-1471 , mod:UserStoryDescription_Shape_SAP-1471 .
 mod:UserStoryRoleAppManager_Shape_SAP-1471
   a                   mod:Shape ;
   rdfs:label          "User Story Role App Manager" ;
@@ -1361,10 +1341,6 @@ mod:Image_Shape_5a6ded2a-84d4-ea69-1f8b-9f6e69044b4b
   mod:shapePositionsOnCoordinateX 0 ;
   mod:shapePositionsOnCoordinateY 0 ;
   mod:shapeVisualisesConceptualElement mod:Image_9c927e62-22f3-4684-8960-071d392c8a89 .
-mod:Model_d9072509-d214-4567-8f7d-7f67028c7d06
-  a                  mod:Model ;
-  rdfs:label         "SDE-726: Change button link VOSE form" ;
-  mod:modelHasShape  mod:UserStorySystemPDP_Shape_62883de1-1e89-6940-8938-939d40058350 , mod:Document_Shape_ff826f4d-1b9d-4ee1-5edf-5d2947bfe8d4 , mod:UserStoryActionDo_Shape_b57416da-3764-127e-23eb-c8df4255b016 , mod:StoryPoints_Shape_c621f318-5002-6db9-2ca2-097c125e06b1 , mod:UserStoryElementCallToAction_Shape_1eb0394a-e1c1-bb89-703f-70f5c164182d , mod:UserStoryDescription_Shape_5aed5d58-c493-0430-f09f-d92dfb069bc3 , mod:UserStoryRoleCustomer_Shape_0889398f-29f2-12f7-f036-c64bba13acc8 , mod:Reason_Shape_cdcd2608-5122-954b-0a29-75b125ff1f3d , mod:Actor_Shape_dd6cdab4-796a-4396-067d-c63405d3249d , mod:Assignee_Shape_47e2228d-b83a-f2e2-9a63-a15962752b7b , mod:Action_Shape_56a0c700-e8d7-5626-0f00-8df219b3ca26 , mod:Notes_notecard_Shape_f8329c10-281b-0a7f-b3d3-0453e08c6ed6 , mod:UserStoryBusinessValueContentCorrectness_Shape_426dbf6c-cf44-c102-530d-30fb0dc8c4be , mod:UserStory_Shape_e17bcb98-5d72-d634-d6b6-1cac6628bc51 , mod:AcceptanceCriterion_Shape_710bb883-c348-afcd-c148-e5d52b1621c4 .
 mod:shapeHasHeight  a  owl:DatatypeProperty ;
   rdfs:domain  mod:Shape ;
   rdfs:range   xsd:integer .
@@ -1562,10 +1538,6 @@ mod:Notes_notecard_Shape_f8329c10-281b-0a7f-b3d3-0453e08c6ed6
   mod:shapePositionsOnCoordinateX 1055 ;
   mod:shapePositionsOnCoordinateY 193 ;
   mod:shapeVisualisesConceptualElement mod:Notes_51c71b44-d315-4aac-89d6-e40c22dc91dc .
-mod:Model_7f13aeef-60d1-4802-a541-ce12119c2c9e
-  a                  mod:Model ;
-  rdfs:label         "DIVA-3040 Extend classification" ;
-  mod:modelHasShape  mod:NamingConvention_Shape_61eb5aa9-c8c3-e61c-1aa7-7e778b58d6b5 , mod:Application_Shape_1a255c7e-1046-50d5-d6d4-3ea35d64a36b , mod:AcceptanceCriterion_Shape_cb2cfbef-ed6c-3d0b-da2b-ada7e15af0ad , mod:Assignee_Shape_dc45ae95-7d2d-9767-367e-ab9e2561ed8f , mod:Reason_Shape_3701f507-009b-78f6-c562-7855fb7c1a78 , mod:NamingConvention_Shape_c97caf70-ac7e-3773-058e-3e9acec69a02 , mod:Action_Shape_dfd321cc-3ff9-574f-7c70-51bff61895af , mod:Actor_Shape_e67e4384-0eec-8b68-23ab-60bd7acf600c , mod:Notes_notecard_Shape_00229f92-b1b5-cee9-195d-0de7a20f9d3b , mod:UserStory_Shape_b67316fd-797b-4919-b5b0-f2b5d4761dbd , mod:UserStoryRoleAppManager_Shape_DIVA-3040 , mod:UserStoryActionExtend_Shape_DIVA-3040 , mod:UserStoryElementData_Shape_DIVA-3040 , mod:UserStorySystemDIVAOnboarding_Shape_DIVA-3040 , mod:UserStoryBusinessValueMaintainabilityIncrease_Shape_DIVA-3040 , mod:UserStoryDescription_Shape_DIVA-3040 .
 mod:UserStoryRoleAppManager_Shape_DIVA-3040
   a                   mod:Shape ;
   rdfs:label          "User Story Role App Manager" ;
@@ -1715,10 +1687,6 @@ mod:UserStoryActionDisable_f335de94-b50d-4e04-8a68-2eb5a0b531d3
   a       uso:UserStoryActionDisable , mod:ConceptualElement .
 mod:UserStoryBusinessValueErrorHandling_7d5aa693-c953-4455-ad69-b621ae83e854
   a       mod:ConceptualElement , uso:UserStoryBusinessValueErrorHandling .
-mod:Model_c38b7b43-073a-4421-a4dd-f3ba6d4c6de8
-  a                  mod:Model ;
-  rdfs:label         "SDE-48 Add Helpcenter Box to MyAccount" ;
-  mod:modelHasShape  mod:Notes_notecard_Shape_2e25995b-f445-7392-c3c4-0a22b7a67f98 , mod:Application_Shape_b23376ee-1ab3-8088-2abb-7d69404bbd9a , mod:Assignee_Shape_083f913e-6173-5364-39b0-0c352bf20781 , mod:Document_Shape_fd5589d0-a93a-2ae5-6f95-96b472711242 , mod:Action_Shape_0f76e019-215f-3fe9-3db0-0a5a9cd3459d , mod:CurrentStateDescription_Shape_76a1eaaf-1a61-4387-90e7-369bada58003 , mod:Epic_Shape_1c58f2da-9c56-8448-194e-733f69b3a9ce , mod:Reason_Shape_dee0896a-ed74-277f-7373-ee1415857684 , mod:StoryPoints_Shape_6c3c87a8-c041-c00d-5ac7-4261348ac1f4 , mod:Image_Shape_93770b57-3479-09e1-81bf-333017d26cbd , mod:Service_Shape_42737f30-b73d-bdb3-f3f0-071bd91a2762 , mod:Actor_Shape_fb3dbcf3-0219-4a1a-2886-d2d4f59b9080 , mod:UserStory_Shape_c23c9f39-79d0-c460-f717-1932228a8f4b , mod:Assignee_Shape_8a31c807-7dfe-fc15-c126-2749cab25b90 , mod:UserStoryRoleCustomer_Shape_SDE-48 , mod:UserStoryActionSee_Shape_SDE-48 , mod:UserStoryElementComponent_Shape_SDE-48 , mod:UserStorySystemMyAccount_Shape_SDE-48 , mod:UserStoryBusinessValueWebshopUsability_Shape_SDE-48 , mod:UserStoryDescription_Shape_SDE-48 .
 mod:UserStoryRoleCustomer_Shape_SDE-48
   a                   mod:Shape ;
   rdfs:label          "User Story Role Customer" ;
@@ -2024,10 +1992,6 @@ mod:UserStory_Shape_b67316fd-797b-4919-b5b0-f2b5d4761dbd
   mod:shapeVisualisesConceptualElement mod:UserStory_d5fee7a5-3e5f-46d6-8365-720ecd51743d .
 mod:Assignee_2aeb3e6d-1906-4d09-be06-8c9908206e4f
   a       mod:ConceptualElement , uso:Assignee .
-mod:Model_79259f8e-d032-41a3-a2fd-bbccd5553019
-  a                  mod:Model ;
-  rdfs:label         "SDE-456 My Account Feature Toggle" ;
-  mod:modelHasShape  mod:Assignee_Shape_ba1f64f3-6bf2-5936-0b16-9eb19d752bbf , mod:Credentials_Shape_435426f7-ba31-55be-17c1-378254d180ee , mod:UserStoryRoleDeveloper_Shape_9f7aa980-47b5-ea91-3985-32228aaffa0d , mod:AcceptanceCriterion_Shape_1efd0335-c66d-cb8c-8990-8098c3e8235b , mod:Reason_Shape_e32148e4-f87d-2729-7c29-1ff7e2522080 , mod:UserStoryDescription_Shape_dd708203-df2a-2450-1bd0-0cbe2b28916f , mod:UserStoryBusinessValueErrorHandling_Shape_d53f7671-3e76-c019-d433-349be02f81d4 , mod:Action_Shape_bb56bdd9-d27e-dcba-affb-f2f4c44997b5 , mod:UserStoryActionDisable_Shape_af23abb5-4bf8-fcfc-4409-da54f56672de , mod:UserStorySystemBackOffice_Shape_85b58109-5b43-9425-0abc-60f5c9de7df5 , mod:UserStory_Shape_6661f3ba-6af2-12c5-bf32-346869bc40db , mod:UserStoryElementTool_Shape_4ad75605-9bb0-d7f3-ef9d-1aac02fb0d55 , mod:Actor_Shape_4d345715-c4e9-a7c7-51ab-a3fe82a17cfe .
 mod:Assignee_0fd7eb50-112a-4510-be66-3ca48f632938
   a       mod:ConceptualElement , uso:Assignee .
 mod:Actor_Shape_fb3dbcf3-0219-4a1a-2886-d2d4f59b9080
