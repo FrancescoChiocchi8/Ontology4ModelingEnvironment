@@ -2320,6 +2320,20 @@ BMC:Convenience  a       owl:Class ;
         rdfs:label       "Convenience" ;
         rdfs:subClassOf  lo:QualitativeVP .
 
+mod:SequenceFlow_BPMN_Shape_c99339f8-8e21-26e1-9011-e760230144e4
+        a                   mod:Shape ;
+        rdfs:label          "" ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                780 ;
+        mod:shapePositionsOnCoordinateY
+                58 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_679be503-2e19-479d-b9c4-cc782c6cb3c8 .
+
 uso:UserStoryRoleIncludesStakeholderUSD
         a            owl:ObjectProperty ;
         rdfs:domain  uso:UserStoryRole ;
@@ -4023,6 +4037,13 @@ po:PaletteConstruct  a   owl:Class ;
 fbpdo:Translate  a       owl:Class ;
         rdfs:label       "Translate" ;
         rdfs:subClassOf  fbpdo:Action .
+
+mod:SequenceFlow_fa582164-a6c8-472f-a9ad-d56a060fd6ed
+        a       mod:ConceptualElement , bpmn:SequenceFlow ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:StartEvent_d9734e61-31c8-41cc-b965-c43fd8f5f259 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e .
 
 mod:CallToAction_693fcffe-ce93-48dd-a9fa-1470cd8a5f61
         a       mod:ConceptualElement , uso:CallToAction .
@@ -6800,13 +6821,6 @@ questiondata:Data_location
         questionnaire:questionHasAnswers
                 bpaas:Denmark , bpaas:Germany , questionnaire:Not_Specified , bpaas:North_America , bpaas:French , bpaas:United_Kingdom , bpaas:China , bpaas:Finland , bpaas:USA , bpaas:Austria , bpaas:Asia , bpaas:EES , bpaas:Europe , bpaas:South_America , bpaas:Israel , bpaas:Switzerland , bpaas:Brazil , bpaas:Africa , bpaas:Italy , bpaas:The_Netherlands , bpaas:Romania .
 
-mod:SequenceFlow_1f2de1ae-42ac-4959-9d16-c02d1bc36f48
-        a       mod:ConceptualElement , bpmn:SequenceFlow ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e .
-
 BMC:AssetSale  a         owl:Class ;
         rdfs:label       "AssetSale" ;
         rdfs:subClassOf  lo:ModelingElement .
@@ -8509,7 +8523,7 @@ po:TimerStartEvent  a                   po:PaletteElement ;
 mod:Model_782184c3-6694-4632-96cd-e53e2ac80169
         a                  mod:Model ;
         rdfs:label         "Kebi_project" ;
-        mod:modelHasShape  mod:Pool_Shape_0c841ba7-f50e-8b0d-5f4b-2c6705b94e16 , mod:SequenceFlow_BPMN_Shape_a354618a-eb1c-ac3f-da70-c2ce4fc8f565 , mod:StartEvent_Shape_2846c74e-57fe-3f6d-0588-5d8a971c9cb1 , mod:Task_Shape_2666a4e9-c595-cec6-a582-d319c03e5f91 , mod:Lane_4DSML4PTM_Shape_92471c56-4393-19f0-61fc-08ff54420059 , mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_ec2dbf17-0c29-35d0-ee5a-bd3418185ab1 , mod:Task_Shape_bb6f5e74-1e3c-a2f2-0575-1c3e4b18e7f5 , mod:Task_Shape_2e14513b-03fd-7655-1b16-60eee1ba521d , mod:SequenceFlow_BPMN_Shape_204cbba0-2408-5267-0fcb-31a342b67a2d , mod:MessageEndEvent_Shape_4f4134ec-657c-725f-b648-4c8cb0dc68cf , mod:Lane_4DSML4PTM_Shape_dbe18806-6e7c-43fc-6b2a-8336459b628a , mod:SequenceFlow_BPMN_Shape_4ec85e2f-c022-1a9f-5666-e1b5a4ac4095 .
+        mod:modelHasShape  mod:SequenceFlow_BPMN_Shape_c99339f8-8e21-26e1-9011-e760230144e4 , mod:Pool_Shape_0c841ba7-f50e-8b0d-5f4b-2c6705b94e16 , mod:SequenceFlow_BPMN_Shape_b54fd494-7ef9-fa5e-93ae-f6952c10de01 , mod:EndEvent_Shape_7113b37a-b283-0d72-8504-685fa20fb448 , mod:Lane_4DSML4PTM_Shape_92471c56-4393-19f0-61fc-08ff54420059 , mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_ec2dbf17-0c29-35d0-ee5a-bd3418185ab1 , mod:SequenceFlow_BPMN_Shape_79e80eb5-401a-0bdf-8b66-77a939986f39 , mod:Task_Shape_bb6f5e74-1e3c-a2f2-0575-1c3e4b18e7f5 , mod:StartEvent_Shape_788bd631-0d27-dafb-e413-a2bfb2c4c740 , mod:Task_Shape_2e14513b-03fd-7655-1b16-60eee1ba521d , mod:Lane_4DSML4PTM_Shape_dbe18806-6e7c-43fc-6b2a-8336459b628a , mod:SequenceFlow_BPMN_Shape_948275d5-6b2a-c49c-2247-b118906ad093 .
 
 po:ManualTask_4DSML4PTM
         a                               po:PaletteElement ;
@@ -8843,20 +8857,6 @@ apqc:3_4_2_8_Establish_partner_and_alliance_management_goals_10142
         rdfs:subClassOf      apqc:3_4_2_Develop_sales_partner_alliance_relationships_10130 ;
         apqc:hasHierarchyID  "3.4.2.8" ;
         apqc:hasPCFID        "10142" .
-
-mod:SequenceFlow_BPMN_Shape_a354618a-eb1c-ac3f-da70-c2ce4fc8f565
-        a                   mod:Shape ;
-        rdfs:label          "" ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                262 ;
-        mod:shapePositionsOnCoordinateY
-                169 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_1f2de1ae-42ac-4959-9d16-c02d1bc36f48 .
 
 kebi2024:drink_hasKcal
         a            owl:DatatypeProperty ;
@@ -11142,6 +11142,13 @@ archi:Influence  a       owl:Class ;
         rdfs:comment     "Archimate V3.1 Relation.\r\n\"The influence relationship represents that an element affects the implementation or achievement of some motivation element.\" (OpenGroup 2019)" ;
         rdfs:subClassOf  archi:DependencyRelationships .
 
+mod:SequenceFlow_05587966-2001-4518-99e0-91c5808db1f1
+        a       mod:ConceptualElement , bpmn:SequenceFlow ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a .
+
 fbpdo:Training  a        owl:Class ;
         rdfs:label       "Training" ;
         rdfs:subClassOf  fbpdo:General .
@@ -11608,13 +11615,6 @@ mod:Image_Shape_f123fdf6-2ffd-742e-66fa-d0ebd944ccaf
         mod:shapeVisualisesConceptualElement
                 mod:Image_9c927e62-22f3-4684-8960-071d392c8a89 .
 
-mod:SequenceFlow_91489e76-338c-466a-9c26-6245f5bba082
-        a       mod:ConceptualElement , bpmn:SequenceFlow ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:StartEvent_02da5267-d58c-4991-aafa-6de4ab4cee4f ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d .
-
 uso:VideoHasSimilarityWithImages
         a                  owl:ObjectProperty ;
         rdfs:domain        uso:Video ;
@@ -11694,9 +11694,6 @@ apqc:4_1_2_4_Determine_available_to_promise_10238
         rdfs:subClassOf      apqc:4_1_2_Manage_demand_for_products_and_services_10222 ;
         apqc:hasHierarchyID  "4.1.2.4" ;
         apqc:hasPCFID        "10238" .
-
-mod:StartEvent_02da5267-d58c-4991-aafa-6de4ab4cee4f
-        a       mod:ConceptualElement , bpmn:StartEvent .
 
 apqc:3_3_6_3_Analyze_customer_purchase_patterns_16615
         a                    owl:Class ;
@@ -12974,6 +12971,20 @@ bmm:Objective  a         owl:Class ;
         rdfs:comment     "\"An Objective is a statement of an attainable, time-targeted, and measurable target that the enterprise seeks to meet in\r\norder to achieve its Goals.\" (OMG 2007)" ;
         rdfs:label       "Objective" ;
         rdfs:subClassOf  bmm:DesiredResult .
+
+mod:SequenceFlow_BPMN_Shape_b54fd494-7ef9-fa5e-93ae-f6952c10de01
+        a                   mod:Shape ;
+        rdfs:label          "" ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                149 ;
+        mod:shapePositionsOnCoordinateY
+                157 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_fa582164-a6c8-472f-a9ad-d56a060fd6ed .
 
 uso:DataHasSimilarityWithTool
         a                  owl:ObjectProperty ;
@@ -15699,9 +15710,6 @@ uso:UserStoryActionIncludesDisplay
         rdfs:domain  uso:UserStoryAction ;
         rdfs:range   uso:Display .
 
-mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d
-        a       bpmn:Task , mod:ConceptualElement .
-
 apqc:5_1_2_7_Define_service_delivery_workplace_layout_and_infrastructure_20039
         a                    owl:Class ;
         rdfs:label           "Define service delivery workplace layout and infrastructure" ;
@@ -16408,20 +16416,6 @@ bpaas:At_most_2_working_days
         owl:imports      <http://ikm-group.ch/bm> ;
         owl:versionInfo  "Created with TopBraid Composer" .
 
-mod:StartEvent_Shape_2846c74e-57fe-3f6d-0588-5d8a971c9cb1
-        a                   mod:Shape ;
-        rdfs:label          "" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   70 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:StartEvent ;
-        mod:shapePositionsOnCoordinateX
-                87 ;
-        mod:shapePositionsOnCoordinateY
-                161 ;
-        mod:shapeVisualisesConceptualElement
-                mod:StartEvent_02da5267-d58c-4991-aafa-6de4ab4cee4f .
-
 lo:CombinationNotAllowed
         a                owl:Class ;
         rdfs:label       "This concept has the purpose to represent all the source-target combinations between instance elements that an instance relation should be not allowed" , "Not Allowed Source-Target Combination" ;
@@ -16523,6 +16517,9 @@ apqc:13_6_3_2_Establish_monitoring_frequency_10271
         rdfs:subClassOf      apqc:13_6_3_Evaluate_process_performance_20147 ;
         apqc:hasHierarchyID  "13.6.3.2" ;
         apqc:hasPCFID        "10271" .
+
+mod:StartEvent_d9734e61-31c8-41cc-b965-c43fd8f5f259
+        a       mod:ConceptualElement , bpmn:StartEvent .
 
 kebi2024:ingredient_potato
         a                       owl:NamedIndividual , kebi2024:Tuber ;
@@ -16645,20 +16642,6 @@ apqc:3_5_1_8_Manage_customer_sales_calls_10184
         rdfs:subClassOf      apqc:3_5_1_Manage_leads_opportunities_10182 ;
         apqc:hasHierarchyID  "3.5.1.8" ;
         apqc:hasPCFID        "10184" .
-
-mod:Task_Shape_2666a4e9-c595-cec6-a582-d319c03e5f91
-        a                   mod:Shape ;
-        rdfs:label          "Task" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:Task ;
-        mod:shapePositionsOnCoordinateX
-                202 ;
-        mod:shapePositionsOnCoordinateY
-                168 ;
-        mod:shapeVisualisesConceptualElement
-                mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d .
 
 uso:MaintainabilityIncrease
         a                owl:Class , sh:NodeShape ;
@@ -18469,13 +18452,6 @@ bc:PersonalProfessionalExperience
         a                owl:Class ;
         rdfs:subClassOf  bc:HBCAcquisition .
 
-mod:SequenceFlow_c7336278-c984-433c-9bba-99cfb664b959
-        a       mod:ConceptualElement , bpmn:SequenceFlow ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 .
-
 po:Subway  a                          po:PaletteElement ;
         rdfs:label                    "Subway" ;
         po:paletteConstructBelongsToModelingView
@@ -18961,6 +18937,20 @@ mod:UserStoryRoleCustomer_Shape_0889398f-29f2-12f7-f036-c64bba13acc8
                 0 ;
         mod:shapeVisualisesConceptualElement
                 mod:Customer_25b812b6-16c0-4628-966f-a11dc0681f05 .
+
+mod:EndEvent_Shape_7113b37a-b283-0d72-8504-685fa20fb448
+        a                   mod:Shape ;
+        rdfs:label          "End Event" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   70 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:EndEvent ;
+        mod:shapePositionsOnCoordinateX
+                834 ;
+        mod:shapePositionsOnCoordinateY
+                192 ;
+        mod:shapeVisualisesConceptualElement
+                mod:EndEvent_40f5160c-7ddb-4e27-a03a-4433d3b97618 .
 
 po:paletteConstructIsHiddenFromPalette
         a            owl:DatatypeProperty ;
@@ -31645,6 +31635,19 @@ apqc:3_2_3_7_1_Define_omni-channel_strategy_16590
         apqc:hasHierarchyID  "3.2.3.7.1" ;
         apqc:hasPCFID        "16590" .
 
+mod:SequenceFlow_BPMN_Shape_79e80eb5-401a-0bdf-8b66-77a939986f39
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                366 ;
+        mod:shapePositionsOnCoordinateY
+                37 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_05587966-2001-4518-99e0-91c5808db1f1 .
+
 apqc:4_1_5_11_Manage_cost_of_supply_10262
         a                    owl:Class ;
         rdfs:label           "Manage cost of supply" ;
@@ -33199,7 +33202,7 @@ po:BusinessPartner  a                 po:PaletteElement ;
 mod:Lane_367c8803-1471-437b-87ca-5d109b2c3783
         a       mod:ConceptualElement , bpmn:Lane ;
         lo:modelingContainerContainsModelingLanguageConstruct
-                mod:SuggestMeal_d4417cf5-f104-4235-8eab-bc61c25f718b , mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a , mod:SuggestMeal_f9eeb8f8-a7a6-47ad-b450-7680bf065c44 , mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 , mod:Task_7e474f18-c54e-4dc6-b20a-5cf79ce9e5ea , mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 , mod:SuggestMeal_12780425-4bcf-46d8-8ca9-c59c7d70c780 .
+                mod:SuggestMeal_d4417cf5-f104-4235-8eab-bc61c25f718b , mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a , mod:SuggestMeal_f9eeb8f8-a7a6-47ad-b450-7680bf065c44 , mod:Task_7e474f18-c54e-4dc6-b20a-5cf79ce9e5ea , mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 , mod:SuggestMeal_12780425-4bcf-46d8-8ca9-c59c7d70c780 .
 
 lo:OrganizationalModelingLanguage
         a           lo:ModelingLanguage ;
@@ -35410,6 +35413,20 @@ mod:Notes_9e826ef1-975c-4b3d-9e69-5ad6399dfcd9
 bpaas:PaymentPlanHasTarget
         a           owl:DatatypeProperty ;
         rdfs:range  bpaas:TargetMarket .
+
+mod:StartEvent_Shape_788bd631-0d27-dafb-e413-a2bfb2c4c740
+        a                   mod:Shape ;
+        rdfs:label          "Scan QR Code" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   70 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:StartEvent ;
+        mod:shapePositionsOnCoordinateX
+                120 ;
+        mod:shapePositionsOnCoordinateY
+                190 ;
+        mod:shapeVisualisesConceptualElement
+                mod:StartEvent_d9734e61-31c8-41cc-b965-c43fd8f5f259 .
 
 apqc:4_3_2_5_Monitor_and_optimize_production_process_19566
         a                    owl:Class ;
@@ -45710,7 +45727,7 @@ apqc:2_3_3_1_Design_and_obtain_necessary_capabilities_materials_and_equipment_10
 mod:Lane_a3f9e192-0d0e-47cc-b3e4-79c6c479b88f
         a       mod:ConceptualElement , bpmn:Lane ;
         lo:modelingContainerContainsModelingLanguageConstruct
-                mod:StartEvent_02da5267-d58c-4991-aafa-6de4ab4cee4f , mod:Task_b7248739-bdec-46fb-bd35-d002982b1149 , mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d , mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e , mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 .
+                mod:StartEvent_02da5267-d58c-4991-aafa-6de4ab4cee4f , mod:Task_b7248739-bdec-46fb-bd35-d002982b1149 , mod:Task_493adf12-71ae-44e5-a895-b3e65256f83d , mod:StartEvent_d9734e61-31c8-41cc-b965-c43fd8f5f259 , mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e , mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 , mod:EndEvent_40f5160c-7ddb-4e27-a03a-4433d3b97618 .
 
 questiondata:SupportChannel
         a           questionnaire:CloudServiceElement , questionnaire:MultiSelection ;
@@ -47148,7 +47165,7 @@ mod:Task_Shape_2e14513b-03fd-7655-1b16-60eee1ba521d
         mod:shapeInstantiatesPaletteConstruct
                 po:Task ;
         mod:shapePositionsOnCoordinateX
-                377 ;
+                330 ;
         mod:shapePositionsOnCoordinateY
                 174 ;
         mod:shapeVisualisesConceptualElement
@@ -47266,9 +47283,6 @@ dsml4ptm:ICFStandardIsMappedWithActivityAndParticipation
         rdfs:label          "ICF Standard Is Mapped With Activity And Participation" ;
         rdfs:range          icf:d_ActivitiesAndParticipation ;
         rdfs:subPropertyOf  lo:elementIsMappedWithDOConcept .
-
-mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759
-        a       mod:ConceptualElement , bpmn:MessageEndEvent .
 
 apqc:7_1_1_2_Define_HR_and_business_function_roles_and_accountability_10419
         a                    owl:Class ;
@@ -47980,20 +47994,6 @@ fbpdo:Video  a           owl:Class ;
         rdfs:label       "Video" ;
         rdfs:subClassOf  fbpdo:Podcast .
 
-mod:SequenceFlow_BPMN_Shape_204cbba0-2408-5267-0fcb-31a342b67a2d
-        a                   mod:Shape ;
-        rdfs:label          "" ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                794 ;
-        mod:shapePositionsOnCoordinateY
-                63 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_c7336278-c984-433c-9bba-99cfb664b959 .
-
 dsml4ptm:ASLleadsToASR
         a            owl:ObjectProperty ;
         rdfs:domain  dsml4ptm:AdministrativeStaffLane ;
@@ -48200,20 +48200,6 @@ sapscenes:TruckDriver
         a                owl:Class ;
         rdfs:label       "Truck Driver" ;
         rdfs:subClassOf  sapscenes:Character .
-
-mod:MessageEndEvent_Shape_4f4134ec-657c-725f-b648-4c8cb0dc68cf
-        a                   mod:Shape ;
-        rdfs:label          "" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   70 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:MessageEndEvent ;
-        mod:shapePositionsOnCoordinateX
-                849 ;
-        mod:shapePositionsOnCoordinateY
-                162 ;
-        mod:shapeVisualisesConceptualElement
-                mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 .
 
 apqc:3_3_2_1_Confirm_marketing_alignment_to_business_strategy_10155
         a                    owl:Class ;
@@ -48626,6 +48612,13 @@ dsml4ptm:CloseTransferCaseRecord
         a                owl:Class ;
         rdfs:label       "Close transfer case record" ;
         rdfs:subClassOf  bpmn:UserTask .
+
+mod:SequenceFlow_679be503-2e19-479d-b9c4-cc782c6cb3c8
+        a       mod:ConceptualElement , bpmn:SequenceFlow ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:EndEvent_40f5160c-7ddb-4e27-a03a-4433d3b97618 .
 
 speco:Office  a          owl:Class ;
         rdfs:label       "Office" ;
@@ -57652,20 +57645,6 @@ fbpdo:BlockChain  a      owl:Class ;
         rdfs:label       "BlockChain" ;
         rdfs:subClassOf  fbpdo:General .
 
-mod:SequenceFlow_BPMN_Shape_4ec85e2f-c022-1a9f-5666-e1b5a4ac4095
-        a                   mod:Shape ;
-        rdfs:label          "" ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                108 ;
-        mod:shapePositionsOnCoordinateY
-                168 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_91489e76-338c-466a-9c26-6245f5bba082 .
-
 po:DoubleBackSlash  a  po:ArrowHead ;
         rdfs:label  "DoubleBackSlash" .
 
@@ -60474,6 +60453,9 @@ eo:CalendarDay11  a      owl:Class ;
         rdfs:label       "CalendarDay11" ;
         rdfs:subClassOf  eo:CalendarDay .
 
+mod:EndEvent_40f5160c-7ddb-4e27-a03a-4433d3b97618
+        a       mod:ConceptualElement , bpmn:EndEvent .
+
 apqc:12_5_4_Create_press_releases_11069
         a                    owl:Class ;
         rdfs:label           "Create press releases" ;
@@ -61370,6 +61352,19 @@ eo:Fukushima  a  top:PartOfCountry , owl:Thing ;
         top:partOfCountryHasTypeOfPartOfCountry
                 "Prefecture" .
 
+mod:SequenceFlow_BPMN_Shape_948275d5-6b2a-c49c-2247-b118906ad093
+        a                   mod:Shape ;
+        mod:shapeHasHeight  50 ;
+        mod:shapeHasWidth   100 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:SequenceFlow_BPMN ;
+        mod:shapePositionsOnCoordinateX
+                533 ;
+        mod:shapePositionsOnCoordinateY
+                -42 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SequenceFlow_9b1c9b01-2c6e-42d3-a6bc-8981ff8372f9 .
+
 eo:contractHasRoleRequirementContractPartner
         a                   owl:ObjectProperty ;
         rdfs:label          "contractHasRoleRequirementContractPartner" ;
@@ -61808,6 +61803,13 @@ apqc:3_5_2_4_Manage_customer_relationships_11174
         rdfs:subClassOf      apqc:3_5_2_Manage_customers_and_accounts_10183 ;
         apqc:hasHierarchyID  "3.5.2.4" ;
         apqc:hasPCFID        "11174" .
+
+mod:SequenceFlow_9b1c9b01-2c6e-42d3-a6bc-8981ff8372f9
+        a       mod:ConceptualElement , bpmn:SequenceFlow ;
+        lo:modelingRelationHasSourceModelingElement
+                mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a ;
+        lo:modelingRelationHasTargetModelingElement
+                mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 .
 
 bdata:oneclick_250499_User
         a                            bpaas:CloudService ;
