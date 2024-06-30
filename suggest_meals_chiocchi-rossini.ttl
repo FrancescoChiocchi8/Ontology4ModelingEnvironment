@@ -1339,19 +1339,6 @@ apqc:6_5_1_2_Analyze_customer_service_data_and_identify_improvement_opportunitie
         apqc:hasHierarchyID  "6.5.1.2" ;
         apqc:hasPCFID        "11688" .
 
-mod:SequenceFlow_BPMN_Shape_70c08dac-9850-34fa-741a-cd88acd4d63b
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                536 ;
-        mod:shapePositionsOnCoordinateY
-                -37 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_ec37e757-fee5-4709-a2e6-2ae5a56dd5b1 .
-
 bdata:Dyn365_for_Operations_Activity_Enterprise_Edition_Government_Pricing
         a                            bpaas:CloudService ;
         rdfs:label                   "Dyn365_for_Operations_Activity_Enterprise_Edition_Government_Pricing" ;
@@ -2320,13 +2307,6 @@ dsml4ptm:TMLleadsToTMR
 
 bpaas:One-timePasswordDevice
         a       bpaas:Authentication .
-
-mod:SequenceFlow_ec37e757-fee5-4709-a2e6-2ae5a56dd5b1
-        a       mod:ConceptualElement , bpmn:SequenceFlow ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:SuggestMeal_b8f9fb3d-e3c6-4224-9b85-057a7e4c59a2 ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 .
 
 iso42010:modelKindGovernsArchitectureModel
         a            owl:ObjectProperty ;
@@ -8529,7 +8509,7 @@ po:TimerStartEvent  a                   po:PaletteElement ;
 mod:Model_782184c3-6694-4632-96cd-e53e2ac80169
         a                  mod:Model ;
         rdfs:label         "Kebi_project" ;
-        mod:modelHasShape  mod:SequenceFlow_BPMN_Shape_70c08dac-9850-34fa-741a-cd88acd4d63b , mod:Pool_Shape_0c841ba7-f50e-8b0d-5f4b-2c6705b94e16 , mod:SequenceFlow_BPMN_Shape_a354618a-eb1c-ac3f-da70-c2ce4fc8f565 , mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_d1eb9984-b83f-5f1f-6b12-99afa2df0e93 , mod:StartEvent_Shape_2846c74e-57fe-3f6d-0588-5d8a971c9cb1 , mod:Task_Shape_2666a4e9-c595-cec6-a582-d319c03e5f91 , mod:SequenceFlow_BPMN_Shape_2c4e83a5-3c6a-f3a9-765f-2071fcfafabb , mod:Lane_4DSML4PTM_Shape_92471c56-4393-19f0-61fc-08ff54420059 , mod:Task_Shape_bb6f5e74-1e3c-a2f2-0575-1c3e4b18e7f5 , mod:Task_Shape_2e14513b-03fd-7655-1b16-60eee1ba521d , mod:SequenceFlow_BPMN_Shape_204cbba0-2408-5267-0fcb-31a342b67a2d , mod:MessageEndEvent_Shape_4f4134ec-657c-725f-b648-4c8cb0dc68cf , mod:Lane_4DSML4PTM_Shape_dbe18806-6e7c-43fc-6b2a-8336459b628a , mod:SequenceFlow_BPMN_Shape_4ec85e2f-c022-1a9f-5666-e1b5a4ac4095 .
+        mod:modelHasShape  mod:Pool_Shape_0c841ba7-f50e-8b0d-5f4b-2c6705b94e16 , mod:SequenceFlow_BPMN_Shape_a354618a-eb1c-ac3f-da70-c2ce4fc8f565 , mod:StartEvent_Shape_2846c74e-57fe-3f6d-0588-5d8a971c9cb1 , mod:Task_Shape_2666a4e9-c595-cec6-a582-d319c03e5f91 , mod:Lane_4DSML4PTM_Shape_92471c56-4393-19f0-61fc-08ff54420059 , mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_ec2dbf17-0c29-35d0-ee5a-bd3418185ab1 , mod:Task_Shape_bb6f5e74-1e3c-a2f2-0575-1c3e4b18e7f5 , mod:Task_Shape_2e14513b-03fd-7655-1b16-60eee1ba521d , mod:SequenceFlow_BPMN_Shape_204cbba0-2408-5267-0fcb-31a342b67a2d , mod:MessageEndEvent_Shape_4f4134ec-657c-725f-b648-4c8cb0dc68cf , mod:Lane_4DSML4PTM_Shape_dbe18806-6e7c-43fc-6b2a-8336459b628a , mod:SequenceFlow_BPMN_Shape_4ec85e2f-c022-1a9f-5666-e1b5a4ac4095 .
 
 po:ManualTask_4DSML4PTM
         a                               po:PaletteElement ;
@@ -16060,20 +16040,6 @@ fbpdo:Remotely  a        owl:Class ;
         rdfs:label       "Remotely" ;
         rdfs:subClassOf  fbpdo:General .
 
-mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_d1eb9984-b83f-5f1f-6b12-99afa2df0e93
-        a                   mod:Shape ;
-        rdfs:label          "SuggestMeal" ;
-        mod:shapeHasHeight  70 ;
-        mod:shapeHasWidth   108 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:37643096-6ff9-dc82-5cfa-ba6aa170b37a ;
-        mod:shapePositionsOnCoordinateX
-                492 ;
-        mod:shapePositionsOnCoordinateY
-                59 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SuggestMeal_b8f9fb3d-e3c6-4224-9b85-057a7e4c59a2 .
-
 archi:Representation  a  owl:Class ;
         rdfs:comment     "Archimate V1.0 Business Layer Concept.\r\n\"The perceptible form of the information carried by a business object.\" (OpenGroup 2009)" ;
         rdfs:subClassOf  archi:PassiveStructureElement .
@@ -18020,19 +17986,6 @@ speco:symptom_Justifies_Isolation
         rdfs:label          "symptom Justifies Isolation" ;
         rdfs:range          speco:Isolation ;
         rdfs:subPropertyOf  speco:reasonForMeasure_Justifies_Measure .
-
-mod:SequenceFlow_BPMN_Shape_2c4e83a5-3c6a-f3a9-765f-2071fcfafabb
-        a                   mod:Shape ;
-        mod:shapeHasHeight  50 ;
-        mod:shapeHasWidth   100 ;
-        mod:shapeInstantiatesPaletteConstruct
-                po:SequenceFlow_BPMN ;
-        mod:shapePositionsOnCoordinateX
-                362 ;
-        mod:shapePositionsOnCoordinateY
-                44 ;
-        mod:shapeVisualisesConceptualElement
-                mod:SequenceFlow_a6668601-bdac-400d-9675-8a8e3fc95e60 .
 
 eo:CalendarDay5  a       owl:Class ;
         rdfs:label       "CalendarDay5" ;
@@ -23968,6 +23921,20 @@ bpaas:auditingIncludesApplicableCertifications
         rdfs:domain  bpaas:Auditing ;
         rdfs:range   xsd:string .
 
+mod:37643096-6ff9-dc82-5cfa-ba6aa170b37a_Shape_ec2dbf17-0c29-35d0-ee5a-bd3418185ab1
+        a                   mod:Shape ;
+        rdfs:label          "SuggestMeal" ;
+        mod:shapeHasHeight  70 ;
+        mod:shapeHasWidth   129 ;
+        mod:shapeInstantiatesPaletteConstruct
+                po:37643096-6ff9-dc82-5cfa-ba6aa170b37a ;
+        mod:shapePositionsOnCoordinateX
+                479 ;
+        mod:shapePositionsOnCoordinateY
+                58 ;
+        mod:shapeVisualisesConceptualElement
+                mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a .
+
 speco:John  a              speco:HealthEmployee ;
         rdfs:label         "John" ;
         speco:healthEmployee_AllowedToTreat_Patient
@@ -26714,9 +26681,9 @@ po:37643096-6ff9-dc82-5cfa-ba6aa170b37a
         rdfs:label                    "SuggestMeal" ;
         po:paletteConstructHasHeight  70 ;
         po:paletteConstructHasModelImage
-                "Message_Task.png" ;
+                "model.png" ;
         po:paletteConstructHasPaletteThumbnail
-                "Message_Task.png" ;
+                "model.png" ;
         po:paletteConstructHasParentPaletteConstruct
                 po:Task ;
         po:paletteConstructHasWidth   100 ;
@@ -33232,7 +33199,7 @@ po:BusinessPartner  a                 po:PaletteElement ;
 mod:Lane_367c8803-1471-437b-87ca-5d109b2c3783
         a       mod:ConceptualElement , bpmn:Lane ;
         lo:modelingContainerContainsModelingLanguageConstruct
-                mod:SuggestMeal_f9eeb8f8-a7a6-47ad-b450-7680bf065c44 , mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 , mod:Task_7e474f18-c54e-4dc6-b20a-5cf79ce9e5ea , mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 , mod:SuggestMeal_12780425-4bcf-46d8-8ca9-c59c7d70c780 , mod:SuggestMeal_b8f9fb3d-e3c6-4224-9b85-057a7e4c59a2 .
+                mod:SuggestMeal_d4417cf5-f104-4235-8eab-bc61c25f718b , mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a , mod:SuggestMeal_f9eeb8f8-a7a6-47ad-b450-7680bf065c44 , mod:MessageEndEvent_18ff798c-2b9f-42a0-b015-3278cd657759 , mod:Task_7e474f18-c54e-4dc6-b20a-5cf79ce9e5ea , mod:Task_8b8f9061-f265-431f-a00c-b9a4a3139561 , mod:SuggestMeal_12780425-4bcf-46d8-8ca9-c59c7d70c780 .
 
 lo:OrganizationalModelingLanguage
         a           lo:ModelingLanguage ;
@@ -34441,6 +34408,14 @@ uso:EditHasSimilarityWithSee
         rdfs:domain        uso:Edit ;
         rdfs:range         uso:See ;
         uso:hasSimilarity  0.2 .
+
+mod:SuggestMeal_57a2b6bb-185f-4483-8e28-1354a2fb766a
+        a                        mod:ConceptualElement , mod:SuggestMeal ;
+        lo:meal_containsAllergy  "Lactose" ;
+        lo:meal_hasCalorieConsciousLevel
+                1 ;
+        lo:meal_hasCategory      "Vegetarian" ;
+        lo:meal_hasCourse        "Appetizer" .
 
 uso:PDPHasSimilarityWithInspirationPage
         a                  owl:ObjectProperty ;
@@ -62426,14 +62401,6 @@ bdata:Grow_Local  a                  bpaas:CloudService ;
         bpaas:cloudServiceHasTargetMarket
                 bpaas:NoTarget .
 
-mod:SuggestMeal_b8f9fb3d-e3c6-4224-9b85-057a7e4c59a2
-        a                        mod:ConceptualElement , mod:SuggestMeal ;
-        lo:meal_containsAllergy  "Lactose" ;
-        lo:meal_hasCalorieConsciousLevel
-                1 ;
-        lo:meal_hasCategory      "Carnivorous" ;
-        lo:meal_hasCourse        "First Dish" .
-
 bm:directChannelDelivery_hasChannelOwner_ChannelOwner
         a                   owl:ObjectProperty ;
         rdfs:domain         bm:DirectChannels ;
@@ -63231,13 +63198,6 @@ po:HealthInsuranceOU  a               po:PaletteElement ;
                 false ;
         po:paletteConstructIsRelatedToModelingLanguageConstruct
                 dsml4ptm:HealthInsuranceOU .
-
-mod:SequenceFlow_a6668601-bdac-400d-9675-8a8e3fc95e60
-        a       mod:ConceptualElement , bpmn:SequenceFlow ;
-        lo:modelingRelationHasSourceModelingElement
-                mod:Task_91563b32-139e-453b-8e4d-f414bd9e5b7e ;
-        lo:modelingRelationHasTargetModelingElement
-                mod:SuggestMeal_b8f9fb3d-e3c6-4224-9b85-057a7e4c59a2 .
 
 fbpdo:Spreadsheet  a     owl:Class ;
         rdfs:label       "Spreadsheet" ;
